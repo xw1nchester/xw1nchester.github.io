@@ -301,9 +301,18 @@
 
 @media (max-width:320px) {
     .header-burger__menu {
+        position: fixed;
         width: 100%;
-        min-height: 100vh;
+        height: 100%;
         padding: 20px;
+    }
+
+    .header-menu__list {
+        overflow: auto;
+    }
+
+    body.lock {
+        overflow: hidden;
     }
 
     .header-burger__body .header-phone {

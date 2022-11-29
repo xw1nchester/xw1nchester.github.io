@@ -17,7 +17,7 @@ $(document).ready(function () {
         }
       },
       {
-        breakpoint: 700,
+        breakpoint: 710,
         settings: {
           arrows: false,
         }
@@ -50,7 +50,7 @@ $(document).ready(function () {
         }
       },
       {
-        breakpoint:700,
+        breakpoint:710,
         settings: {
           arrows:false
         }

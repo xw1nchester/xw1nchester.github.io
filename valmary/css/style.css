@@ -7,17 +7,18 @@
     background: #ECFFEB;
     position: relative;
     z-index: 10;
-}
-
-.main-block__body {
-    padding: 70px 0 140px;
-    position: relative;
+    overflow: hidden;
 }
 
 .main-block__bg {
     position: absolute;
     bottom: 0;
-    right: -24px;
+    right: 95px;
+}
+
+.main-block__body {
+    padding: 70px 0 140px;
+    position: relative;
 }
 
 .main-block__content {
@@ -81,6 +82,12 @@
     border: 1px solid #55A630;
 }
 
+@media (max-width:1150px) {
+    .main-block__bg {
+        opacity: 0.4;
+    }
+}
+
 @media (max-width:1000px) {
     .main-block__subtitle {
         display: none;
@@ -96,6 +103,8 @@
         line-height: 110%;
     }
     .main-block__bg {
+        opacity: 1;
+        right: 0;
         width: 527px;
         height: 430px;
     }
@@ -142,11 +151,11 @@
         opacity: 1;
         width: 354px;
         height: 290px;
-        right: -20px;
+        right: 35px;
     }
 }
 
-@media (max-width:580px) {
+@media (max-width:630px) {
     .main-block__bg {
         opacity: 0.4;
     }
@@ -183,7 +192,13 @@
         opacity: 1;
         width: 226px;
         height: 192px;
-        right: -40px;
+        right: 20px;
+    }
+}
+
+@media (max-width:390px) {
+    .main-block__bg {
+        opacity: 0.4;
     }
 }
 
@@ -575,6 +590,20 @@
     background: rgba(0, 168, 150, 0.1);
 }
 
+@media(max-width:1150px) {
+    .courses-slider .slick-list {
+        margin: 0 -20px 76px;
+    }
+    
+    .courses-slider__slide {
+        padding: 0 20px;
+    }
+
+    .courses-slider__title {
+        font-size: 25px;
+    }
+}
+
 @media (max-width:1000px) {
     .courses {
         padding-bottom: 140px;
@@ -609,10 +638,6 @@
         font-weight: 400;
         font-size: 15px;
         margin-bottom: 6px;
-    }
-    
-    .courses-slider__title {
-        font-size: 25px;
     }
     
     .courses-slider__btn {
@@ -1685,12 +1710,14 @@
     
     .special-slider .slick-list {
         margin: 0 -12px 40px;
+        /* margin: 0 0 40px; */
     }
 
     .special-slider__item {
         padding: 0 12px;
-        width: 196px!important;
-        box-sizing: content-box;
+        /* padding: 0; */
+        /* width: 196px!important; */
+        /* box-sizing: content-box; */
     }
 
     .special-slider .slick-dots li button {
