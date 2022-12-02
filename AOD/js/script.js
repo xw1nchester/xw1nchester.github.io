@@ -21,6 +21,7 @@ function changeTemplate() {
 const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
   loop:true,
+  autoHeight:true,
   pagination: {
     el: '.swiper-pagination',
     clickable:true,

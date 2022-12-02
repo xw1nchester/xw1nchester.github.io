@@ -79,6 +79,7 @@ body.lock {
     right: 15px;
     top: 0;
     z-index: 100;
+    transition: .3s;
 }
 
 .menu__icon::before,
@@ -109,6 +110,10 @@ body.lock {
     transform: translateY(-50%);
 }
 
+.menu__icon.active {
+    right: 5px;
+}
+
 .menu__icon.active::before,
 .menu__icon.active::after,
 .menu__icon.active span {
@@ -120,7 +125,7 @@ body.lock {
 }
 
 .menu__icon.active::after {
-    transform: rotate(-45deg) translateY(-10px);
+    transform: rotate(-45deg) translateY(-10.5px);
 }
 
 .menu__icon.active span {
@@ -483,10 +488,11 @@ body.lock {
 .swiper {}
 
 .slider-block__slider {
-    min-height: 240px;
 }
 
-.swiper-wrapper {}
+.swiper-wrapper {
+    margin-bottom: 90px!important;
+}
 
 .swiper-slide {
     display: flex;
@@ -541,6 +547,18 @@ body.lock {
 @media (max-width:1100px) {
     .slider-block {
         padding: 60px 0;
+    }
+}
+
+@media (max-width:767px) {
+    .swiper-wrapper {
+        margin-bottom: 70px!important;
+    }
+}
+
+@media (max-width:576px) {
+    .swiper-wrapper {
+        margin-bottom: 50px!important;
     }
 }
 
