@@ -256,6 +256,13 @@ body.lock {
     min-height: 100vh;
 }
 
+@media (max-width:767px) {
+    .main-screen {
+        min-height: 0;
+        padding-bottom: 85%;
+    }
+}
+
 /* geneartion */
 .geneartion {
     padding: 120px 0 140px;
