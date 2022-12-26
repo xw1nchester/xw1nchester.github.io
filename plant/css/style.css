@@ -794,6 +794,12 @@ body.lock {
     }
 }
 
+@media (max-width:410px) {
+    .we__title {
+        font-size: 22px;
+    }
+}
+
 @media (max-width:400px) {
     .we {
         padding-bottom: 40px;
@@ -1175,6 +1181,12 @@ body.lock {
     margin: 0 auto;
 }
 
+@media (max-width:410px) {
+    .our__title {
+        font-size: 22px;
+    }
+}
+
 @media (max-width:400px) {
     .our {
         padding-bottom: 40px;
@@ -1415,6 +1427,12 @@ body.lock {
     }
 }
 
+@media (max-width:410px) {
+    .what__title {
+        font-size: 22px;
+    }
+}
+
 /* subscribe */
 .subscribe {
     padding-bottom: 80px;
@@ -1643,6 +1661,12 @@ body.lock {
 @media (max-width:530px) {
     .follow {
         padding-bottom: 50px;
+    }
+}
+
+@media (max-width:410px) {
+    .follow__title {
+        font-size: 22px;
     }
 }
 
