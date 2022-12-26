@@ -97,7 +97,9 @@ body.lock {
 .burger-btn {
     width: 40px;
     height: 24px;
-    position: relative;
+    position: absolute;
+    top: 20px;
+    right: 20px;
     z-index: 100;
     display: none;
 }
@@ -284,7 +286,7 @@ body.lock {
 
 @media (max-width:767px) {
     .header {
-        padding: 20px 0;
+        padding: 30px 0;
     }
 
     .header__body {
@@ -562,6 +564,10 @@ body.lock {
         text-align: center;
     }
 
+    .growing__text {
+        text-align: left;
+    }
+
     .growing__items {
         max-width: 440px;
         margin: 0 auto;
@@ -646,6 +652,12 @@ body.lock {
     font-size: 36px;
 }
 
+@media (max-width:1100px) {
+    .we__title {
+        margin-bottom: 10px;
+    }
+}
+
 .we__link {
     font-weight: 400;
     font-size: 18px;
@@ -718,7 +730,7 @@ body.lock {
 @media (max-width:1100px) {
     .we {
         margin-top: -80px;
-        padding-bottom: 70px;
+        padding-bottom: 60px;
     }
 
     .we__body {
@@ -910,10 +922,16 @@ body.lock {
         margin-bottom: 40px;
     }
 
-    .about-us__content-block>* {
-        margin-left: auto;
-        margin-right: auto;
+    .about-us__subtitle {
+        margin: 0 auto;
+    }
+
+    .about-us__title {
         text-align: center;
+    }
+
+    .about-us__btn {
+        margin: 0 auto;
     }
 }
 
@@ -935,6 +953,12 @@ body.lock {
     }
 }
 
+@media (max-width:600px) {
+    .our {
+        padding-bottom: 40px;
+    }
+}
+
 .our__body {
     display: flex;
     flex-direction: column;
@@ -945,11 +969,30 @@ body.lock {
     text-align: center;
 }
 
+@media (max-width:530px) {
+    .our__title {
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width:1100px) {
+    .our__title {
+        margin-bottom: 10px;
+    }
+}
+
 .our__tabs {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+}
+
+@media (max-width:1100px) {
+    .our__tabs {
+        margin-bottom: 30px;
+    }
 }
 
 .our__tab {
@@ -1111,7 +1154,7 @@ body.lock {
 
 @media (max-width:1100px) {
     .what {
-        padding-bottom: 106px;
+        padding-bottom: 70px;
     }
 }
 
@@ -1131,6 +1174,12 @@ body.lock {
 
 .what__title {
     margin-bottom: 12px;
+}
+
+@media (max-width:530px) {
+    .what__title {
+        font-size: 30px;
+    }
 }
 
 .what__image-block {
@@ -1156,6 +1205,12 @@ body.lock {
 
     .what__content-block>* {
         text-align: center;
+    }
+
+    .what__text {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align-last: left;
     }
 
     .what__image-block {
@@ -1190,6 +1245,12 @@ body.lock {
 
 .swiper-slide {
     padding: 20px 32px 32px;
+}
+
+@media (max-width:767px) {
+    .swiper-slide {
+        padding: 20px 32px 52px;
+    }
 }
 
 .human-what {
@@ -1239,6 +1300,14 @@ body.lock {
     bottom: 0;
 }
 
+@media (max-width:767px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 40px;
+        height: 40px;
+    }
+}
+
 .arrow-disabled {
     display: none;
 }
@@ -1249,6 +1318,12 @@ body.lock {
 
 .swiper-button-prev {
     right: 24px;
+}
+
+@media (max-width:767px) {
+    .swiper-button-prev {
+        right: 40px;
+    }
 }
 
 .swiper-button-next .arrow-disabled {
@@ -1311,6 +1386,12 @@ body.lock {
     }
 }
 
+@media (max-width:530px) {
+    .subscribe {
+        padding-bottom: 50px;
+    }
+}
+
 .subscribe__container {
     max-width: 1040px;
 }
@@ -1331,6 +1412,20 @@ body.lock {
 .subscribe__title {
     margin-bottom: 12px;
 }
+
+@media (max-width:530px) {
+    .subscribe__title {
+        font-size: 36px;
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width:350px) {
+    .subscribe__title {
+        font-size: 30px;
+    }
+}
+
 
 .subscribe__text {
     margin-bottom: 30px;
@@ -1411,12 +1506,6 @@ body.lock {
     }
 }
 
-@media (max-width:350px) {
-    .subscribe__title {
-        font-size: 36px;
-    }
-}
-
 /* follow */
 .follow {
     padding-bottom: 128px;
@@ -1438,6 +1527,12 @@ body.lock {
 .follow__title {
     margin-bottom: 12px;
     text-align: center;
+}
+
+@media (max-width:530px) {
+    .follow__title {
+        font-size: 30px;
+    }
 }
 
 .follow__subtitle {
@@ -1624,7 +1719,7 @@ body.lock {
     }
 }
 
-@media (max-width:476px) {
+@media (max-width:576px) {
     .footer {
         padding-bottom: 10px;
     }
