@@ -104,7 +104,13 @@ a {
 }
 
 .circle {
-    // display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.circle.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 // ---------------------------------------- header ----------------------------------------
@@ -563,31 +569,31 @@ a {
         }
 
         @media (max-width:1280px) {
-            transform: scale(0.9) translate(45px,90px);
+            transform: scale(0.9) translate(45px, 90px);
         }
 
         @media (max-width:1140px) {
-            transform: scale(0.8) translate(104px,60px);
+            transform: scale(0.8) translate(104px, 60px);
         }
 
         @media (max-width:1060px) {
-            transform: scale(0.7) translate(178px,60px);
+            transform: scale(0.7) translate(178px, 60px);
         }
 
         @media (max-width:992px) {
-            transform: scale(0.7) translate(178px,105px);
+            transform: scale(0.7) translate(178px, 105px);
         }
 
         @media (max-width:950px) {
-            transform: scale(0.6) translate(275px,125px);
+            transform: scale(0.6) translate(275px, 125px);
         }
 
         @media (max-width:880px) {
-            transform: scale(0.45) translate(510px,30px);
+            transform: scale(0.45) translate(510px, 30px);
         }
 
         @media (max-width:767px) {
-        display: none;
+            display: none;
         }
 
         &::before {
@@ -1000,9 +1006,9 @@ a {
             max-width: 240px;
         }
 
-        @media (max-width:440px) {
-            max-width: 240px*0.6;
-        }
+        // @media (max-width:440px) {
+        //     max-width: 240px*0.6;
+        // }
 
         &__image {
             width: 100%;
@@ -1021,9 +1027,9 @@ a {
                 margin-bottom: 20px;
             }
 
-            @media (max-width:440px) {
-                margin-bottom: 12px;
-            }
+            // @media (max-width:440px) {
+            //     margin-bottom: 12px;
+            // }
         }
 
         &__stats {
@@ -1045,9 +1051,9 @@ a {
                 font-size: 12px;
             }
 
-            @media (max-width:440px) {
-                font-size: 16px*0.6;
-            }
+            // @media (max-width:440px) {
+            //     font-size: 16px*0.6;
+            // }
 
             img {
                 position: static;
@@ -1057,10 +1063,15 @@ a {
                     width: 21px*0.75;
                     height: 17px*0.75;
                 }
-    
+
                 @media (max-width:880px) {
                     width: 21px*0.6;
                     height: 17px*0.6;
+                }
+
+                @media (max-width:440px) {
+                    width: unset;
+                    height: unset;
                 }
             }
         }
@@ -1187,6 +1198,10 @@ a {
 
     @media (max-width:960px) {
         padding: 24px 10px;
+    }
+
+    @media (max-width:420px) {
+        max-width: unset;
     }
 
     &__icon {
@@ -1371,12 +1386,12 @@ a {
 
     &__main-image {
         width: 232px;
-        height: 300px;
-        object-fit: cover;
+        padding-bottom: 87.72%;
+        
 
         @media (max-width:420px) {
             width: 100%;
-            height: 250px;
+            // height: 250px;
             margin-bottom: 12px;
         }
     }
@@ -1391,30 +1406,47 @@ a {
         }
 
         img {
-            width: 92px;
-            height: 90px;
-            object-fit: cover;
+            // width: 92px;
+            // height: 90px;
+            // object-fit: cover;
 
-            @media (max-width:420px) {
-                width: 80px;
-                height: 80px;
-            }
+            // @media (max-width:420px) {
+            //     width: 80px;
+            //     height: 80px;
+            // }
+        }
+    }
+
+    &__other-image {
+        width: 92px;
+        padding-bottom: 94.69%;
+
+        @media (max-width:420px) {
+            padding-bottom: 30%;
+            flex-basis: 30%;
         }
     }
 
     &__more-images {
-        width: 92px;
-        height: 90px;
-        box-sizing: content-box;
-        background: rgba(0, 0, 0, 0.35);
-        border: 1px solid #FFFFFF;
-        border-radius: 4px;
         position: relative;
 
-        @media (max-width:420px) {
-            width: 80px;
-            height: 80px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            border: 1px solid #FFFFFF;
+        border-radius: 4px;
+            background: rgba(0, 0, 0, 0.35);
+            z-index: 1;
         }
+
+        // @media (max-width:420px) {
+        //     width: 80px;
+        //     height: 80px;
+        // }
 
         span {
             position: absolute;
@@ -1423,6 +1455,7 @@ a {
             transform: translate(-50%, -50%);
             font-weight: 600;
             font-size: 24px;
+            z-index: 1;
         }
     }
 

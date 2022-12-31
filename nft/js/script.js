@@ -19,11 +19,26 @@ burgerBtn.addEventListener('click', function (e) {
     document.querySelector('.header__menu').classList.toggle('active');
 })
 
+document.querySelectorAll('.rtx').forEach(r => r.addEventListener('click', function () {
+    console.log('hello');
+    let circles = document.querySelectorAll('.circle');
+    circles.forEach(c => c.classList.toggle('active'));
+    e.preventDefault();
+}))
+
 new Swiper('.learn__slider', {
     autoplay: {
         disableOnInteraction: false
     },
-    spaceBetween: 60,
+    breakpoints: {
+        767: {
+            centeredSlides: false,
+        },
+        440: {
+            spaceBetween: 60
+        }
+    },
+    spaceBetween: 20,
     loop: true,
     slidesPerView: 'auto',
     centeredSlides: true,
@@ -36,11 +51,6 @@ new Swiper('.learn__slider', {
                     slides[i].style.visibility = 'hidden';
             }
         }
-    },
-    breakpoints: {
-        767: {
-            centeredSlides: false,
-        },
     },
 });
 
