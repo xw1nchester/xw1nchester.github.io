@@ -10,6 +10,8 @@ $(window).resize(function () {
     }
 });
 
+AOS.init();
+
 let burgerBtn = document.querySelector('.burger-btn');
 
 burgerBtn.addEventListener('click', function (e) {
