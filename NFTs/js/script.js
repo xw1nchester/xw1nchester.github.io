@@ -21,8 +21,7 @@ burgerBtn.addEventListener('click', function (e) {
     document.querySelector('.header__menu').classList.toggle('active');
 })
 
-document.querySelectorAll('.rtx').forEach(r => r.addEventListener('click', function () {
-    console.log('hello');
+document.querySelectorAll('.rtx').forEach(r => r.addEventListener('click', function (e) {
     let circles = document.querySelectorAll('.circle');
     circles.forEach(c => c.classList.toggle('active'));
     e.preventDefault();
