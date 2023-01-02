@@ -210,7 +210,19 @@ a {
         }
     }
 
-    &__item {
+    &__link {
+        font-weight: 400;
+        font-size: 16px;
+        transition: .3s;
+
+        @media (max-width:767px) {
+            font-size: 24px;
+        }
+
+        &:hover {
+            color: #681BF2;
+        }
+
         margin-right: 48px;
 
         @media (max-width:920px) {
@@ -225,20 +237,6 @@ a {
         &:last-child {
             margin-right: 0;
             margin-bottom: 0;
-        }
-    }
-
-    &__link {
-        font-weight: 400;
-        font-size: 16px;
-        transition: .3s;
-
-        @media (max-width:767px) {
-            font-size: 24px;
-        }
-
-        &:hover {
-            color: #681BF2;
         }
     }
 
