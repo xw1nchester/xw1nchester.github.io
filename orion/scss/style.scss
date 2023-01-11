@@ -137,7 +137,7 @@ $secondaryColor: #FF6600;
     }
 
     @media (max-width:468px) {
-    font-size: 24px;
+        font-size: 24px;
     }
 }
 
@@ -265,7 +265,8 @@ $secondaryColor: #FF6600;
             color: #000;
             position: relative;
 
-            &::before, &::after {
+            &::before,
+            &::after {
                 content: '';
                 position: absolute;
                 bottom: -2px;
@@ -285,7 +286,8 @@ $secondaryColor: #FF6600;
                 border-radius: 1px 0 0 1px;
             }
 
-            &:hover::before, &:hover::after {
+            &:hover::before,
+            &:hover::after {
                 width: 5px;
             }
         }
@@ -922,12 +924,13 @@ $secondaryColor: #FF6600;
         .video-block {
             position: absolute;
             top: 318px;
-            left: 249px;
+            left: 260px;
             z-index: 100;
-            width: 213px;
+            width: 190px;
             padding-bottom: 21%;
 
             iframe {
+                border: 0;
                 position: absolute;
                 width: 100%;
                 height: 100%;
@@ -1008,6 +1011,12 @@ $secondaryColor: #FF6600;
         &::before {
             background-color: #000;
         }
+    }
+
+    &__stats {
+        position: absolute;
+        bottom: -110px;
+        left: 100px;
     }
 }
 
@@ -1597,8 +1606,7 @@ $secondaryColor: #FF6600;
             }
         }
 
-        &_3 {
-        }
+        &_3 {}
 
         &_4 {
             @media (max-width:576px) {
@@ -1618,7 +1626,7 @@ $secondaryColor: #FF6600;
         margin-bottom: 26px;
 
         @media (max-width:820px) {
-        margin-bottom: 16px;
+            margin-bottom: 16px;
         }
     }
 
