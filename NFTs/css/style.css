@@ -103,16 +103,6 @@ a {
   background-position: 75% 50% !important;
 }
 
-.circle {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.circle.active {
-  opacity: 1;
-  visibility: visible;
-}
-
 .header {
   width: 100%;
   padding: 40px 0;
@@ -125,7 +115,7 @@ a {
 }
 @media (max-width: 767px) {
   .header {
-    padding: 10px 0;
+    padding: 20px 0;
   }
 }
 .header__body {

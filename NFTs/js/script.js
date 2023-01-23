@@ -21,12 +21,6 @@ burgerBtn.addEventListener('click', function (e) {
     document.querySelector('.header__menu').classList.toggle('active');
 })
 
-document.querySelectorAll('.rtx').forEach(r => r.addEventListener('click', function (e) {
-    let circles = document.querySelectorAll('.circle');
-    circles.forEach(c => c.classList.toggle('active'));
-    e.preventDefault();
-}))
-
 new Swiper('.learn__slider', {
     autoplay: {
         disableOnInteraction: false
@@ -35,6 +29,7 @@ new Swiper('.learn__slider', {
     loop: true,
     slidesPerView: 'auto',
     centeredSlides: true,
+    allowTouchMove: false,
     on: {
         slideChange: function (e) {
             let slides = document.querySelectorAll('.swiper-slide');
