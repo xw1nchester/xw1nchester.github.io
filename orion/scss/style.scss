@@ -1784,7 +1784,12 @@ $secondaryColor: #FF6600;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 80px 20px;
+    overflow: auto;
+
+    @media (orientation: landscape) {
+        align-items: flex-start;    
+    }
 
     &.active {
         opacity: 1;

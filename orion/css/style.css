@@ -1735,7 +1735,13 @@ body.lock {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 80px 20px;
+  overflow: auto;
+}
+@media (orientation: landscape) {
+  .video-popup {
+    align-items: flex-start;
+  }
 }
 .video-popup.active {
   opacity: 1;
