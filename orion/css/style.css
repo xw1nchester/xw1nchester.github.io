@@ -105,7 +105,7 @@ body.lock {
 .ibg {
   position: relative;
 }
-.ibg img {
+.ibg > img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -928,19 +928,28 @@ body.lock {
 }
 .faster .image-block .video-block {
   position: absolute;
-  top: 318px;
-  left: 260px;
+  top: 328px;
+  left: 261px;
   z-index: 100;
-  width: 190px;
-  padding-bottom: 21%;
+  width: 189px;
+  padding-bottom: 18%;
 }
-.faster .image-block .video-block iframe {
-  border: 0;
+.faster .image-block .video-block span {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #593FFB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.faster .image-block .video-block span:hover {
+  background-color: #4933d6;
 }
 .faster__content-block {
   display: flex;
@@ -1169,12 +1178,22 @@ body.lock {
     left: 5px;
   }
 }
-.story__video iframe {
+.story__video span {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 49px;
+  height: 49px;
+  background-color: #593FFB;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.story__video span:hover {
+  background-color: #4933d6;
 }
 .story .stats-card {
   position: absolute;
@@ -1703,4 +1722,55 @@ body.lock {
   font-size: 16px;
   color: #F2F2F2;
   text-align: center;
+}
+
+.video-popup {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 500;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.video-popup.active {
+  opacity: 1;
+  visibility: visible;
+}
+.video-popup.active .video-popup__inner {
+  transform: scale(1);
+}
+.video-popup__inner {
+  transform: scale(0);
+  width: 100%;
+  max-width: 854px;
+  height: 480px;
+  transition: 0.3s;
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media (max-width: 894px) {
+  .video-popup__inner {
+    height: unset;
+    padding-bottom: 56.207%;
+  }
+}
+.video-popup iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.video-popup__close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
 }
