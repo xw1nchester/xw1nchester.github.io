@@ -2,7 +2,7 @@ $(document).ready(function () {
     $('.footer__label').click(function (e) {
         if ($(window).width() < 441) {
             $(this).toggleClass('active');
-            $(this).next().slideToggle();
+            $(this).next().slideToggle(100);
 
             e.preventDefault();
         }
@@ -10,7 +10,17 @@ $(document).ready(function () {
 });
 
 $(window).resize(function () {
-    if ($(window).width() > 440) {
+    if ($(window).width() > 992) {
+        burgerBtn.classList.remove('active');
+        document.querySelector('.menu-popup').classList.remove('active');
+        header.classList.remove('active');
+        document.body.classList.remove('lock');
+    } else {
+        header.classList.remove('opt');
+        headerMenu.classList.remove('opt');
+        document.querySelector('.header__logo').classList.remove('hide');
+        document.querySelector('.header__langs').classList.remove('hide');
+        document.querySelector('.header__btns').classList.remove('hide');
     }
 });
 
@@ -82,5 +92,49 @@ new Swiper('.categories__slider', {
             slidesPerView: 3,
             spaceBetween: 10,
         }
+    }
+});
+
+let isMobile = {
+    Android: function () {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function () {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function () {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function () {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function () {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function () {
+        return (isMobile.Android() ||
+            isMobile.BlackBerry() ||
+            isMobile.iOS() ||
+            isMobile.Opera() ||
+            isMobile.Windows());
+    }
+};
+
+let headerDropBtns = document.querySelectorAll('.header__lang a');
+
+headerDropBtns.forEach(b => {
+    b.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (isMobile.any()) {
+            let parent = e.target.closest('.header__lang');
+            parent.classList.toggle('active');
+        }
+    });
+});
+
+document.addEventListener('click', function(e) {
+    if(!e.target.closest('.header__lang a')) {
+        let subLists = document.querySelectorAll('.header__lang');
+        subLists.forEach(l => l.classList.remove('active'));
     }
 });
