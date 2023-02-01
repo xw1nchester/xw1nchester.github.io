@@ -60,7 +60,7 @@ let dropLinks = document.querySelectorAll('.header__nav a');
 dropLinks.forEach(l =>
     l.addEventListener('click', function (e) {
         e.preventDefault();
-        
+
         if (isMobile.any()) {
             l.classList.toggle('active');
             if (l.nextElementSibling != null)
@@ -193,7 +193,6 @@ new Swiper('.slider-main-block', {
         clickable: true,
     },
 
-    paginationClickable: true,
     loop: true,
     spaceBetween: 0,
     autoplay: true,
@@ -411,19 +410,19 @@ if (!isMobile.any()) {
 
         galleryItems.style.cssText = `transform: translate3d(${-pos}px,0,0);`;
 
-        if(Math.abs(distX) > 0) {
+        if (Math.abs(distX) > 0) {
             requestAnimationFrame(setMouseGalleryStyle);
         } else {
             galleryItems.classList.remove('init');
         }
     }
 
-    document.addEventListener('mousemove', function(e) {
+    document.addEventListener('mousemove', function (e) {
         let width = galleryItems.offsetWidth;
         let coordX = e.pageX - width / 2;
         posPercentX = coordX / width * 200;
 
-        if(!galleryItems.classList.contains('init')) {
+        if (!galleryItems.classList.contains('init')) {
             requestAnimationFrame(setMouseGalleryStyle);
             galleryItems.classList.add('init');
         }

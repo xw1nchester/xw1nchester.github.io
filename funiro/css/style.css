@@ -447,6 +447,10 @@ a {
 .header__nav li ul a {
   color: #fff;
 }
+.header__nav li ul a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
 .header__nav a {
   font-weight: 500;
   font-size: 16px;

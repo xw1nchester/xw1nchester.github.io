@@ -358,6 +358,11 @@ $mainColor: #E89F71;
 
                 a {
                     color: #fff;
+
+                    &:hover {
+                        text-decoration: underline;
+                        color: #fff;
+                    }
                 }
             }
         }
