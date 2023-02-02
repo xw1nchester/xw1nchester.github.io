@@ -31,7 +31,7 @@ let header = document.querySelector('.header');
 burgerBtn.addEventListener('click', function (e) {
     e.preventDefault();
     burgerBtn.classList.toggle('active');
-    if (window.screen.width > 992) {
+    if (window.innerWidth > 992) {
         header.classList.toggle('opt');
         headerMenu.classList.toggle('opt');
         document.querySelector('.header__logo').classList.toggle('hide');
