@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;1,600&display=swap');
+@import 'menu';
+
+@mixin adaptive-width($columns, $gap) {
+    width: calc(100% / $columns - ($columns - 1) * #{$gap+px} / $columns);
+}
+
+@mixin adaptive-value($property, $maxValue, $minValue, $minWidth: 320) {
+    // макетная ширина
+    $maxWidth: 1440;
+    $widthDiff: $maxWidth - $minWidth;
+    $valueDiff: $maxValue - $minValue;
+    $step: $valueDiff / $widthDiff;
+
+    #{$property}: #{$maxValue+px};
+
+    @media (max-width:#{$maxWidth+px}) {
+        #{$property}: calc(#{$maxValue+px} - (#{$step * $maxWidth+px} - #{$step * 100 + vw}));
+    }
+
+    @media (max-width:#{$minWidth+px}) {
+        #{$property}: #{$minValue+px};
+    }
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+body {
+    font-family: "Libre Franklin", sans-serif;
+    background-color: #fff;
+
+    &.lock {
+        overflow: hidden;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1160px;
+    padding: 0 20px;
+    box-sizing: content-box;
+    margin: 0 auto;
+}
+
+.ibg {
+    position: relative;
+
+    >img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+    border: 0;
+    outline: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+.label {
+    font-weight: 200;
+    font-size: 17px;
+    color: #8A8A8A;
+}
+
+.title {
+    font-weight: 200;
+    @include adaptive-value('font-size', 50, 33, 360);
+    color: #323232;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+}
+
+.text {
+    font-weight: 300;
+    @include adaptive-value('font-size', 20, 16, 360);
+    color: #615363;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+}
+
+.left-offset {
+    @include adaptive-value('padding-left', 60, 0, 767);
+}
+
+$secondaryColor: #8C798F;
+
+// ======================================== header ========================================
+.header {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+
+    @media (max-width:576px) {
+        top: 16px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        @media (min-width:992px) {
+            flex-basis: 25%;
+        }
+
+        display: flex;
+        justify-content: flex-start;
+
+        a {
+            display: flex;
+
+            @media (max-width:576px) {
+                img {
+                    width: 128px;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    &__nav {
+        @media (min-width:767px) {
+            padding: 0 20px;
+        }
+
+        @media (min-width:992px) {
+            flex-basis: 50%;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px 30px;
+
+            @media (max-width:992px) {
+                gap: 10px 20px;
+            }
+
+            @media (max-width:767px) {
+                flex-direction: column;
+                margin-bottom: 40px;
+                gap: 15px;
+            }
+        }
+
+        a {
+            font-weight: 400;
+            font-size: 16px;
+            color: #323232;
+            transform: .3s;
+
+            &:hover {
+                color: $secondaryColor;
+            }
+
+            @media (max-width:767px) {
+                font-size: 32px;
+            }
+        }
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: flex-end;
+        flex-shrink: 0;
+
+        @media (min-width:992px) {
+            flex-basis: 25%;
+        }
+
+        @media (max-width:767px) {
+            justify-content: center;
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #615363;
+            border-radius: 20px;
+            padding: 7.5px 10px;
+            font-weight: 500;
+            font-size: 17px;
+            color: #615363;
+            width: 100%;
+            max-width: 134px;
+            transform: .3s;
+
+            &:hover {
+                color: $secondaryColor;
+                border: 2px solid $secondaryColor;
+            }
+
+            @media (max-width:767px) {
+                font-size: 32px;
+                max-width: 280px;
+                padding: 8.5px 10px;
+                border-radius: 30px;
+            }
+        }
+    }
+}
+
+// ======================================== main-block ========================================
+.main-block {
+    padding: 195px 0 60px;
+
+    @media (max-width:767px) {
+        padding: 165px 0 100px;
+    }
+
+    @media (max-width:992px) {
+        padding: 145px 0 70px;
+    }
+
+    @media (max-width:576px) {
+        padding: 125px 0 45px;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+
+        @media (max-width:700px) {
+            justify-content: flex-start;
+            gap: 14px;
+            flex-direction: column;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 3px;
+
+        @media (min-width:700px) {
+            padding-top: 25px;
+        }
+    }
+
+    &__label {}
+
+    &__title {
+        font-weight: 100;
+        @include adaptive-value('font-size', 100, 60, 767);
+        line-height: 1.02;
+    }
+
+    &__image-block {
+        width: 100%;
+        max-width: 600px;
+        @include adaptive-value('gap', 15, 8, 360);
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__image {
+        padding-bottom: 81%;
+
+        @media (max-width:767px) {
+            padding-bottom: 93.182%;
+        }
+
+        @media (max-width:700px) {
+            padding-bottom: 73.44%;
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        @include adaptive-value('font-size', 15, 13, 360);
+        color: #616161;
+        text-transform: uppercase;
+    }
+}
+
+// ======================================== about-us ========================================
+.about-us {
+    padding: 75px 0 80px;
+    background: #8C798F;
+    border-radius: 40px 40px 0px 0px;
+    color: #fff;
+
+    @media (max-width:992px) {
+        padding: 70px 0 55px;
+    }
+
+    @media (max-width:767px) {
+        padding: 60px 0 30px;
+    }
+
+    @media (max-width:576px) {
+        padding: 60px 0 20px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+
+        @media (max-width:767px) {
+            gap: 35px;
+        }
+
+        @media (max-width:576px) {
+            gap: 25px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+
+        @media (max-width:576px) {
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 25px;
+        }
+    }
+
+    &__title {
+        width: 100%;
+        max-width: 320px;
+        color: inherit;
+        position: relative;
+    }
+
+    &__column {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 40px;
+        width: 45%;
+
+        &_big {
+            width: 50%;
+        }
+
+        @media (max-width:767px) {
+            gap: 25px;
+        }
+
+        @media (max-width:576px) {
+            width: unset;
+        }
+    }
+
+    &__text {
+        color: inherit;
+    }
+
+    &__image-block {
+        position: relative;
+        width: 100%;
+    }
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        @media (max-width:576px) {
+            position: static;
+            height: unset!important;
+            padding-bottom: 62.5%;
+        }
+    }
+
+    &__label {
+        position: absolute;
+        top: 0;
+        white-space: nowrap;
+        min-width: 75px;
+        right: 100%;
+        font-weight: 500;
+        font-size: 17px;
+        transform: translateX(-64px);
+
+        @media (max-width:1360px) {
+            transform: translateX(-32px);
+        }
+
+        @media (max-width:1300px) {
+            display: none;
+        }
+    }
+}
+
+.space {
+    min-height: 1000px;
+}
