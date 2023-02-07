@@ -25,7 +25,7 @@ let isMobile = {
 };
 
 // изменение ширины экрана
-window.addEventListener('resize', function(e) {
+window.addEventListener('resize', function (e) {
     if (window.innerWidth > 767) {
         burgerBtn.classList.remove('active');
         menuPopup.classList.remove('active');
@@ -42,9 +42,9 @@ let burgerBtn = document.querySelector('.burger-btn');
 let menuPopup = document.querySelector('.menu-popup');
 let body = document.body;
 
-burgerBtn.addEventListener('click', function(e) {
+burgerBtn.addEventListener('click', function (e) {
     e.preventDefault();
-    
+
     burgerBtn.classList.toggle('active');
     menuPopup.classList.toggle('active');
     body.classList.toggle('lock');
@@ -61,10 +61,10 @@ function initImageHeight() {
     let step = 0.06;
     let coeff = 130;
 
-    if(window.innerWidth < 1440) {
-        coeff -= Math.abs(1440 - window.innerWidth)*step;
+    if (window.innerWidth < 1440) {
+        coeff -= Math.abs(1440 - window.innerWidth) * step;
     }
-    
+
     let height = aboutUs.clientHeight;
     height -= window.getComputedStyle(aboutUs).paddingTop.replace('px', '');
     height -= window.getComputedStyle(aboutUsInner).gap.replace('px', '');
@@ -75,3 +75,5 @@ function initImageHeight() {
 }
 
 document.addEventListener('onload', initImageHeight());
+document.addEventListener('DOMNodeInserted', initImageHeight());
+document.addEventListener('DOMNodeRemoved', initImageHeight());
