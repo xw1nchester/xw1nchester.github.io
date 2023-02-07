@@ -292,6 +292,7 @@ $secondaryColor: #8C798F;
         font-weight: 100;
         @include adaptive-value('font-size', 100, 60, 767);
         line-height: 1.02;
+        text-transform: unset;
     }
 
     &__image-block {
@@ -300,12 +301,16 @@ $secondaryColor: #8C798F;
         @include adaptive-value('gap', 15, 8, 360);
         display: flex;
         flex-direction: column;
+
+        @media (max-width:700px) {
+            max-width: unset;
+        }
     }
 
     &__image {
         padding-bottom: 81%;
 
-        @media (max-width:767px) {
+        @media (max-width:992px) {
             padding-bottom: 93.182%;
         }
 
@@ -416,7 +421,7 @@ $secondaryColor: #8C798F;
 
         @media (max-width:576px) {
             position: static;
-            height: unset!important;
+            height: unset !important;
             padding-bottom: 62.5%;
         }
     }

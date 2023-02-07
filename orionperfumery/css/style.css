@@ -365,6 +365,7 @@ button {
   font-weight: 100;
   font-size: 100px;
   line-height: 1.02;
+  text-transform: unset;
 }
 @media (max-width: 1440px) {
   .main-block__title {
@@ -393,10 +394,15 @@ button {
     gap: 8px;
   }
 }
+@media (max-width: 700px) {
+  .main-block__image-block {
+    max-width: unset;
+  }
+}
 .main-block__image {
   padding-bottom: 81%;
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .main-block__image {
     padding-bottom: 93.182%;
   }
