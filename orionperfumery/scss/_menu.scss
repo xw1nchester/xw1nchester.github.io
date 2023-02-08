@@ -3,7 +3,6 @@
     height: 14px;
     position: relative;
     display: none;
-    z-index: 100;
 
     @media (max-width:767px) {
         display: block;
@@ -42,20 +41,6 @@
     transform: translateY(-50%);
 }
 
-.burger-btn.active::before {
-    transform: rotate(-45deg) translateY(-50%);
-    top: 50%;
-}
-
-.burger-btn.active::after {
-    transform: rotate(45deg) translateY(50%);
-    bottom: 50%;
-}
-
-.burger-btn.active span {
-    opacity: 0;
-}
-
 .menu-popup {
     position: fixed;
     top: 0;
@@ -67,8 +52,21 @@
     transition: left .3s;
     overflow: auto;
     padding: 100px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 
     &.active {
         left: 0;
+    }
+
+    .close-btn {
+        display: inline-flex;
+        position: absolute;
+        flex: 0 0 40px;
+        height: 40px;
+        top: 20px;
+        right: 20px;
     }
 }
