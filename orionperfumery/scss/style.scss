@@ -555,7 +555,7 @@ $mainColor: #8C798F;
     &__content {
         display: flex;
         justify-content: space-between;
-        // align-items: flex-start;
+        align-items: flex-start;
         gap: 20px;
         width: 100%;
 
@@ -1106,13 +1106,67 @@ $mainColor: #8C798F;
     &__title {
         text-align: center;
         margin-bottom: 64px;
+
+        @media (max-width:992px) {
+            margin-bottom: 50px;
+        }
+
+        @media (max-width:767px) {
+            margin-bottom: 36px;
+        }
+    }
+
+    &__marquee {
+        display: flex;
+        overflow: hidden;
     }
 
     &__items {
+        flex-shrink: 0;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
+        min-width: 100%;
+        animation: scroll 15s linear infinite;
+    }
+
+    &__marquee,
+    &__items {
         gap: 76px;
+
+        @media (max-width:576px) {
+            gap: 56px;
+        }
+
+        @media (max-width:767px) {
+            gap: 36px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        
+        @media (max-width:767px) {
+            width: 22.35vw;
+        }
+
+        @media (max-width:576px) {
+            width: 28vw;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(calc(-100% - 76px));
     }
 }
 
@@ -1127,20 +1181,15 @@ $mainColor: #8C798F;
         align-items: center;
     }
 
-    &__link {
+    &__text {
         font-weight: 200;
         font-size: 13px;
         line-height: 29px;
         color: #fff;
         padding: 0 32px;
-        transition: .3s;
 
         &:not(:last-child) {
             border-right: 1px solid #C9C9C9;
-        }
-
-        &:hover {
-            opacity: 0.7;
         }
 
         @media (max-width:576px) {
@@ -1148,8 +1197,17 @@ $mainColor: #8C798F;
             line-height: 15px;
         }
     }
+
+    a {
+        transition: .3s;
+
+        &:hover {
+            color: rgba($color: #fff, $alpha: 0.7);
+        }
+    }
 }
 
+// ======================================== form-popup ========================================
 .form-popup {
     position: fixed;
     top: 0;

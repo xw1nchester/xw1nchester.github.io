@@ -60,9 +60,6 @@ function closeMenu() {
 // картинка в блоке about-us
 let image = document.querySelector('.about-us__image');
 let aboutUs = document.querySelector('.about-us');
-let aboutUsInner = document.querySelector('.about-us__inner');
-let aboutUsTitle = document.querySelector('.about-us__title');
-let aboutUsColumn = document.querySelector('.about-us__column');
 
 function initImageHeight() {
     let step = 0.06;
@@ -72,18 +69,15 @@ function initImageHeight() {
         coeff -= Math.abs(1440 - window.innerWidth) * step;
     }
 
-    let height = aboutUs.clientHeight;
-    height -= window.getComputedStyle(aboutUs).paddingTop.replace('px', '');
-    height -= window.getComputedStyle(aboutUsInner).gap.replace('px', '');
-    height -= aboutUsTitle.clientHeight;
-    height -= aboutUsColumn.clientHeight;
-    height += coeff;
+    let diff =  image.getBoundingClientRect().top - aboutUs.getBoundingClientRect().top;
+    let height = aboutUs.clientHeight - diff + coeff;
+
     image.style.height = height + 'px';
 }
 
 document.addEventListener('onload', initImageHeight());
 
-//slider
+// slider
 new Swiper('.slider-slider-block', {
     navigation: {
         nextEl: '.slider-slider-block__btn_next',
@@ -113,7 +107,7 @@ menuLinks.forEach(l => l.addEventListener('click', function (e) {
 
     if (menuLink.dataset.goto && document.querySelector(`.${menuLink.dataset.goto}`)) {
         let gotoBlock = document.querySelector(`.${menuLink.dataset.goto}`);
-        let gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset
+        let gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset;
 
         window.scrollTo({
             behavior: "smooth",
