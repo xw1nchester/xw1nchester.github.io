@@ -89,6 +89,7 @@ new Swiper('.slider-slider-block', {
     },
 
     loop: true,
+    spaceBetween: 20,
 
     breakpoints: {
         767: {

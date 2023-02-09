@@ -1127,7 +1127,15 @@ $mainColor: #8C798F;
         justify-content: space-around;
         align-items: center;
         min-width: 100%;
-        animation: scroll 15s linear infinite;
+        animation: scrollDesktop 15s linear infinite;
+
+        @media (max-width:992px) {
+            animation: scrollTablet 15s linear infinite;
+        }
+
+        @media (max-width:767px) {
+            animation: scrollMobile 15s linear infinite;
+        }
     }
 
     &__marquee,
@@ -1145,13 +1153,9 @@ $mainColor: #8C798F;
 
     &__item {
         display: flex;
-        
-        @media (max-width:767px) {
-            width: 22.35vw;
-        }
 
         @media (max-width:576px) {
-            width: 28vw;
+            max-width: 100px;
         }
 
         img {
@@ -1160,13 +1164,33 @@ $mainColor: #8C798F;
     }
 }
 
-@keyframes scroll {
+@keyframes scrollDesktop {
     0% {
         transform: translateX(0%);
     }
 
     100% {
         transform: translateX(calc(-100% - 76px));
+    }
+}
+
+@keyframes scrollTablet {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(calc(-100% - 50px));
+    }
+}
+
+@keyframes scrollMobile {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(calc(-100% - 36px));
     }
 }
 

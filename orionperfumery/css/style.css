@@ -1295,7 +1295,17 @@ button {
   justify-content: space-around;
   align-items: center;
   min-width: 100%;
-  animation: scroll 15s linear infinite;
+  animation: scrollDesktop 15s linear infinite;
+}
+@media (max-width: 992px) {
+  .partners__items {
+    animation: scrollTablet 15s linear infinite;
+  }
+}
+@media (max-width: 767px) {
+  .partners__items {
+    animation: scrollMobile 15s linear infinite;
+  }
 }
 .partners__marquee, .partners__items {
   gap: 76px;
@@ -1313,26 +1323,37 @@ button {
 .partners__item {
   display: flex;
 }
-@media (max-width: 767px) {
-  .partners__item {
-    width: 22.35vw;
-  }
-}
 @media (max-width: 576px) {
   .partners__item {
-    width: 28vw;
+    max-width: 100px;
   }
 }
 .partners__item img {
   width: 100%;
 }
 
-@keyframes scroll {
+@keyframes scrollDesktop {
   0% {
     transform: translateX(0%);
   }
   100% {
     transform: translateX(calc(-100% - 76px));
+  }
+}
+@keyframes scrollTablet {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(calc(-100% - 50px));
+  }
+}
+@keyframes scrollMobile {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(calc(-100% - 36px));
   }
 }
 .footer {
