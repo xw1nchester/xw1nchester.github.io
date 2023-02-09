@@ -1286,6 +1286,10 @@ $mainColor: #8C798F;
         position: relative;
         transform: scale(0);
         transition: .3s;
+
+        @media (max-width:440px) {
+            padding: 30px 20px;
+        }
     }
 
     .contact__form {
