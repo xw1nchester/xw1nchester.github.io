@@ -132,6 +132,8 @@ let formPopup = document.querySelector('.form-popup');
 openFormPopupBtn.addEventListener('click', function (e) {
     e.preventDefault();
     formPopup.classList.add('active');
+    let scrollWidth = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
+    setPadding(scrollWidth);
     body.classList.add('lock');
 });
 
@@ -141,9 +143,15 @@ document.addEventListener('click', function (e) {
         && formPopup.classList.contains('active')
         || e.target.closest('.form-popup__close-btn')) {
         formPopup.classList.remove('active');
+        setPadding('0px');
         body.classList.remove('lock');
     }
 });
+
+function setPadding(padding) {
+    document.querySelectorAll('.lock-padding')
+    .forEach(e => e.style.paddingRight = padding);
+}
 
 // карта
 let center = [25.155679, 55.300266];
