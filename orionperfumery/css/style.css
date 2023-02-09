@@ -1370,21 +1370,30 @@ button {
   font-size: 13px;
   line-height: 29px;
   color: #fff;
-  padding: 0 32px;
-}
-.footer__text:not(:last-child) {
-  border-right: 1px solid #C9C9C9;
 }
 @media (max-width: 576px) {
   .footer__text {
-    max-width: 142px;
     line-height: 15px;
   }
 }
-.footer a {
+.footer__item {
+  padding: 0 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__item:not(:last-child) {
+  border-right: 1px solid #C9C9C9;
+}
+@media (max-width: 576px) {
+  .footer__item {
+    max-width: 142px;
+  }
+}
+.footer__link {
   transition: 0.3s;
 }
-.footer a:hover {
+.footer__link:hover {
   color: rgba(255, 255, 255, 0.7);
 }
 
