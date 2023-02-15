@@ -846,6 +846,11 @@ $mainColor: #E7DDD2;
         justify-content: flex-end;
         align-items: flex-start;
         position: relative;
+        padding-right: 130px;
+
+        @media (max-width:1500px) {
+            padding-right: unset;
+        }
 
         @media (max-width:767px) {
             justify-content: center;
