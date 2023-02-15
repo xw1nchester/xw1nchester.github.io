@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container container">
+                <div class="header__inner">
+                    <a href="#" class="header__logo logo">
+                        <img src="img/header/logo.svg" alt="logo">
+                    </a>
+                    <div class="header__content" data-da="menu-popup,1024,last">
+                        <nav class="header__menu">
+                            <ul>
+                                <li><a href="#">Модели</a></li>
+                                <li><a href="#">Школа</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__social">
+                            <a href="#">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M18.6737 1.32178L11.7354 18.7646L7.79053 12.2236L18.6737 1.32178Z"
+                                        fill="#2C2C2C" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M18.9484 0.903984C19.1466 1.03434 19.226 1.2861 19.1383 1.50659L12.2 18.9494C12.1298 19.1259 11.9656 19.2474 11.7764 19.263C11.5871 19.2785 11.4053 19.1855 11.3072 19.0229L7.36238 12.4818C7.24375 12.2851 7.2744 12.0329 7.43668 11.8703L18.3198 0.968535C18.4875 0.800601 18.7501 0.773632 18.9484 0.903984ZM8.42061 12.3001L11.6432 17.6436L17.3112 3.39435L8.42061 12.3001Z"
+                                        fill="#2B2A29" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.78932 12.2232L1.24023 8.29538L18.6736 1.32153L7.78932 12.2232Z"
+                                        fill="#2B2A29" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.0909 1.04617C19.2216 1.24424 19.1951 1.50691 19.0274 1.67486L8.14316 12.5766C7.98098 12.739 7.72901 12.7702 7.53215 12.6521L0.983069 8.72422C0.82015 8.62651 0.726679 8.44491 0.741834 8.25554C0.756988 8.06618 0.878149 7.90175 1.05453 7.83119L18.4879 0.857351C18.7082 0.769208 18.9602 0.848098 19.0909 1.04617ZM2.36203 8.3852L7.71149 11.5936L16.602 2.68879L2.36203 8.3852Z"
+                                        fill="#2B2A29" />
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="22" height="16" viewBox="0 0 22 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.4598 2.63229C21.367 1.79358 20.6249 1.16454 19.6972 1.08067C13.8991 0.703253 8.10098 0.703253 2.30289 1.08067C1.37519 1.12261 0.679422 1.79358 0.540268 2.63229C0.076421 6.1968 0.076421 9.76132 0.540268 13.3258C0.633038 14.1645 1.37519 14.7936 2.30289 14.8774C8.10098 15.2549 13.8991 15.2549 19.6972 14.8774C20.6249 14.8355 21.3206 14.1645 21.4598 13.3258C21.9236 9.80325 21.9236 6.1968 21.4598 2.63229ZM14.4093 7.95809L9.16783 10.6839C8.98229 10.7678 8.75036 10.642 8.75036 10.4742V5.02261C8.75036 4.81293 8.98229 4.68712 9.16783 4.81293L14.4093 7.4968C14.6412 7.58067 14.6412 7.83228 14.4093 7.95809Z"
+                                        fill="#2B2A29" />
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="27" height="15" viewBox="0 0 27 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.44349 1.46593C2.58947 1.46593 4.97691 1.46593 5.78865 1.46593C5.97964 1.46593 6.12289 1.55947 6.17064 1.6998C7.17337 3.85141 8.41484 5.76915 9.84731 7.45302C9.99056 7.64012 10.2771 7.64012 10.3725 7.40625C10.85 6.33044 11.6618 3.66431 10.0383 1.74657C9.89506 1.55947 9.94281 1.3256 10.1816 1.23205C11.8528 0.530441 13.4762 0.436893 15.0519 1.13851C15.3862 1.27883 15.6249 1.60625 15.6249 1.98044L16.0069 7.4998C16.0069 7.73367 16.2457 7.92076 16.4844 7.87399C18.2989 7.4998 19.3971 4.83367 20.4476 2.02722C20.5908 1.6998 20.9251 1.46593 21.3071 1.46593H25.318C25.6522 1.46593 25.891 1.74657 25.8432 2.07399C25.4612 4.03851 23.408 6.61109 22.3575 7.87399C21.9755 8.29496 21.9755 8.90302 22.3575 9.37076L25.9387 13.5804C26.1775 13.8611 25.9865 14.3288 25.5567 14.3288H21.0206C20.6386 14.3288 20.3043 14.1885 20.0178 13.9079L16.8187 11.3353C16.6754 11.1482 16.3412 11.1014 16.1979 11.2885C15.8159 11.7562 15.8159 12.3175 15.6249 13.674C15.5772 14.095 15.1952 14.3756 14.7655 14.3756H11.6618C11.232 14.3756 10.8023 14.2821 10.3725 14.095C8.60584 13.253 3.68769 10.3062 0.966001 2.12076C0.918252 1.74657 1.10925 1.46593 1.44349 1.46593Z"
+                                        fill="#2B2A29" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="header__info">
+                            <a href="tel:" class="header__tel">+7 (499) 520-21-79</a>
+                            <p class="header__schedule">Режим работы: пн-сб с 9:00 до 21:00</p>
+                        </div>
+                    </div>
+                    <a href="#" class="burger-btn"><span></span></a>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main-screen ibg">
+                <img src="img/main-screen/bg.png" alt="background">
+            </div>
+            <section class="about-us">
+                <div class="container">
+                    <div class="about-us__inner">
+                        <div class="about-us__content">
+                            <h1 class="about-us__title title">top secret</h1>
+                            <div class="about-us__text-block">
+                                <p class="about-us__text text">Наше агентство появилось в 2007 году и стремительно
+                                    завоевало ведущие позиции среди детских модельных агентств и школ Москвы. Была
+                                    проделана поистине серьезная работа, создана и отточена своя уникальная программа
+                                    обучения моделей. Наши модели востребованы для самых значимых проектов и недель моды
+                                    Москвы.</p>
+                                <p class="about-us__text text">Мы уже много лет являемся партнерами Mercedes Benz
+                                    fashion Week, Estet Fashion Week, а также CJF неделя детской моды. </p>
+                                <p class="about-us__text text">В агентстве собрана серьезная команда профессионалов с
+                                    большим опытом реальной работы в мире Fashion индустрии и моды. Мы уделяем серьезное
+                                    внимание репутации агентства и модельной школы. Работаем честно, основательно и
+                                    всегда держим высокий уровень качества в подготовке моделей и оказания услуг
+                                    агентства.</p>
+                                <p class="about-us__text"><b>
+                                        Будем рады реализовать Ваши самые
+                                        смелые проекты. Присоединяйтесь!
+                                    </b></p>
+                            </div>
+                        </div>
+                        <div class="about-us__image ibg">
+                            <img src="img/about-us/01.png" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="directions">
+                <div class="container">
+                    <div class="directions__inner">
+                        <div class="directions__item">
+                            <h2 class="directions__title title">Школа моделей</h2>
+                            <div class="directions__text-block">
+                                <p class="directions__text text"><b>Школа моделей TOP SECRET</b> основана в 2007 году и
+                                    входит
+                                    в число лучших детских и молодежных агентств России.</p>
+                                <p class="directions__text text">Все преподаватели школы - практикующие профессионалы
+                                    модной индустрии, хореографии и театрального искусства.</p>
+                                <p class="directions__text text">Многие модели TOP SECRET построили карьеру и успешно
+                                    работают во взрослых модельных агентствах.</p>
+                                <p class="directions__text text">20 сезонов подряд агентство является участником
+                                    Mercedes-Benz Fashion Week Russia, Недели моды в Москве, Estet Fashion Week,
+                                    CJF-Детский подиум, Modest Fashion Week, Youth Fashion Week и др.</p>
+                            </div>
+                            <button class="directions__btn">
+                                Подробнее
+                                <img src="img/direction/arrow.svg" alt="arrow">
+                            </button>
+                        </div>
+                        <div class="directions__item">
+                            <h2 class="directions__title title">Модельное агентство</h2>
+                            <div class="directions__text-block">
+                                <p class="directions__text text"><b>TOP SECRET</b> – одно из лучших модельных агентств в
+                                    Москве, в базе которого не просто дети в возрасте от 4 до 18 лет разных типажей, а
+                                    наши ученики, за чью профессиональную подготовку мы ручаемся на все 100%.</p>
+                                <p class="directions__text text">Мы гарантируем своим заказчикам лучший результат даже в
+                                    том случае, когда если есть временные и финансовые ограничения. </p>
+                                <p class="directions__text text">Наш многолетний опыт работы в модельной индустрии и
+                                    слаженная команда профессионалов позволяет найти решение для самых сложных задач,
+                                    связанных с режиссурой и проведением fashon мероприятий с участием детей-моделей, а
+                                    также рекламных и TV съёмок.</p>
+                            </div>
+                            <button class="directions__btn">
+                                Подробнее
+                                <img src="img/direction/arrow.svg" alt="arrow">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="reasons">
+                <div class="container">
+                    <div class="reasons__inner">
+                        <h4 class="reasons__title title">4 причины работать именно с нами:</h4>
+                        <div class="reasons__items">
+                            <div class="reasons__item">
+                                <span class="reasons__circles"></span>
+                                <h6 class="reasons__label text">Быстро</h6>
+                                <p class="reasons__text text">
+                                    Мы максимально быстро реагируем на запросы и помогаем подобрать модель по заданным
+                                    параметрам всего за несколько часов.</p>
+                            </div>
+                            <div class="reasons__item">
+                                <span class="reasons__circles"></span>
+                                <h6 class="reasons__label text">Просто</h6>
+                                <p class="reasons__text text">
+                                    Вам не нужно заполнять разные формы и сразу уточнять все детали. Достаточно письма
+                                    или звонка с описанием Вашей задачи в свободной форме.</p>
+                            </div>
+                            <div class="reasons__item">
+                                <span class="reasons__circles"></span>
+                                <h6 class="reasons__label text">Легко</h6>
+                                <p class="reasons__text text">
+                                    Ваш проект ведет персональный менеджер от оформления заявки начала до получения
+                                    результата.
+                                </p>
+                            </div>
+                            <div class="reasons__item">
+                                <span class="reasons__circles"></span>
+                                <h6 class="reasons__label text">Выгодно</h6>
+                                <p class="reasons__text text">
+                                    У нас доступные цены, потому что мы не закладываем агентский процент в сумму
+                                    договора.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="projects">
+                <div class="container">
+                    <div class="projects__inner">
+                        <div class="projects__content">
+                            <h2 class="projects__title title title_deco">Наши модели работают для таких проектов как
+                            </h2>
+                            <ul class="projects__list">
+                                <li class="projects__item">Модные показы</li>
+                                <li class="projects__item">Коммерческие рекламные фото- и видео съемки</li>
+                                <li class="projects__item">Съемки фильмов, сериалов</li>
+                                <li class="projects__item">Съемки телепрограмм и музыкальных клипов</li>
+                                <li class="projects__item">Съемки для каталогов одежды, обуви и аксессуаров</li>
+                                <li class="projects__item">Cъёмки для глянцевых изданий</li>
+                            </ul>
+                        </div>
+                        <div class="projects__image ibg">
+                            <img src="img/projects/01.png" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="additional">
+                <div class="container">
+                    <div class="additional__inner">
+                        <div class="additional__content">
+                            <h2 class="additional__title title title_deco">Дополнительные услуги</h2>
+                            <ul class="additional__list">
+                                <li class="additional__item">Услуги режиссера, сценариста, творческой группы</li>
+                                <li class="additional__item">Подготовка и реализация показа, шоу-программы, конкурса
+                                    красоты, дефиле, презентации</li>
+                                <li class="additional__item">Подбор места проведения мероприятия</li>
+                                <li class="additional__item">Подбор и микширование музыкального материала</li>
+                                <li class="additional__item">Координация технических служб (светового, звукового и
+                                    пиротехнического оформления) для мероприятия</li>
+                                <li class="additional__item">Проведение фото- и видео- съемки мероприятия, акции,
+                                    рекламы с привлечением профессиональных фотографов, операторов и дизайнеров</li>
+                                <li class="additional__item">Привлечение артистов, музыкальных групп, танцевальных
+                                    коллективов, DJ, детей-звезд эстрады и телевидения, промо- персонала для создания
+                                    зрелищности мероприятия</li>
+                                <li class="additional__item">Подбор стилистов, визажистов и парикмахеров для создания
+                                    образов.</li>
+                            </ul>
+                        </div>
+                        <div class="additional__image ibg">
+                            <img src="img/additional/01.png" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="algorithm">
+                <div class="algorithm__container container">
+                    <div class="algorithm__inner">
+                        <h2 class="algorithm__title title">Алгоритм работы</h2>
+                        <div class="algorithm__items">
+                            <div class="algorithm__item">
+                                <p class="algorithm__text text">Узнаем Ваши задачи,
+                                    критерии и параметры для подбора модели (типаж, возраст, рост, размеры одежды и
+                                    обуви, опыт съемок)
+                                </p>
+                            </div>
+                            <div class="algorithm__item">
+                                <p class="algorithm__text text">Организуем кастинг (онлайн или очный)
+                                    и поможем Вам быстро выбрать модель
+                                </p>
+                            </div>
+                            <div class="algorithm__item">
+                                <p class="algorithm__text text">Обеспечим явку модели
+                                    на кастинг и съемку
+                                    в точно установленное время</p>
+                            </div>
+                            <div class="algorithm__item">
+                                <p class="algorithm__text text">При форс-мажоре
+                                    срочно подберём замену</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="trust">
+                <div class="container">
+                    <div class="trust__inner">
+                        <h2 class="trust__title title">Нам доверяют:</h2>
+                        <div class="trust__slider-block">
+                            <div class="trust-slider__btn trust-slider__btn-prev slider-btn slider-btn">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="1" y1="-1" x2="5.60906" y2="-1"
+                                        transform="matrix(-0.701295 0.712871 -0.701295 -0.712871 4.85693 0.11377)"
+                                        stroke="black" stroke-width="2" stroke-linecap="round" />
+                                    <line x1="1" y1="-1" x2="5.09226" y2="-1"
+                                        transform="matrix(0.633987 0.773343 -0.763034 0.646358 0.221924 4.8252)"
+                                        stroke="black" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div class="swiper trust-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide trust-slider__slide">
+                                        <div class="trust-slider__person">
+                                            <div class="trust-slider__photo ibg">
+                                                <img src="img/trust/01.png" alt="Photo">
+                                            </div>
+                                            <div class="trust-slider__content">
+                                                <p class="trust-slider__name">Ася Ашумкова</p>
+                                                <p class="trust-slider__profession">Дизайнер марки Vitacci</p>
+                                            </div>
+                                        </div>
+                                        <p class="trust-slider__text text">Хотим выразить благодарность детскому
+                                            модельному агентству TOP SECRET kids за прекрасную работу с нашим брендом.
+                                            Безупречное отношение к клиентам, прекрасная организация съемок и модели,
+                                            которые легко и грамотно воплотили на фото все задумки и идеи дизайнеров
+                                            Vitacci kids. Фотографии для нашей коллекции детской одежды получились
+                                            яркими, живыми, выполненными на высоком профессиональном уровне.</p>
+                                    </div>
+                                    <div class="swiper-slide trust-slider__slide">
+                                        <div class="trust-slider__person">
+                                            <div class="trust-slider__photo ibg">
+                                                <img src="img/trust/01.png" alt="Photo">
+                                            </div>
+                                            <div class="trust-slider__content">
+                                                <p class="trust-slider__name">Ася Ашумкова</p>
+                                                <p class="trust-slider__profession">Дизайнер марки Vitacci</p>
+                                            </div>
+                                        </div>
+                                        <p class="trust-slider__text text">Хотим выразить благодарность детскому
+                                            модельному агентству TOP SECRET kids за прекрасную работу с нашим брендом.
+                                            Безупречное отношение к клиентам, прекрасная организация съемок и модели,
+                                            которые легко и грамотно воплотили на фото все задумки и идеи дизайнеров
+                                            Vitacci kids. Фотографии для нашей коллекции детской одежды получились
+                                            яркими, живыми, выполненными на высоком профессиональном уровне.</p>
+                                    </div>
+                                    <div class="swiper-slide trust-slider__slide">
+                                        <div class="trust-slider__person">
+                                            <div class="trust-slider__photo ibg">
+                                                <img src="img/trust/01.png" alt="Photo">
+                                            </div>
+                                            <div class="trust-slider__content">
+                                                <p class="trust-slider__name">Ася Ашумкова</p>
+                                                <p class="trust-slider__profession">Дизайнер марки Vitacci</p>
+                                            </div>
+                                        </div>
+                                        <p class="trust-slider__text text">Хотим выразить благодарность детскому
+                                            модельному агентству TOP SECRET kids за прекрасную работу с нашим брендом.
+                                            Безупречное отношение к клиентам, прекрасная организация съемок и модели,
+                                            которые легко и грамотно воплотили на фото все задумки и идеи дизайнеров
+                                            Vitacci kids. Фотографии для нашей коллекции детской одежды получились
+                                            яркими, живыми, выполненными на высоком профессиональном уровне.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trust-slider__btn trust-slider__btn-next slider-btn slider-btn">
+                                <svg width="6" height="10" viewBox="0 0 6 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="1" y1="-1" x2="5.60906" y2="-1"
+                                        transform="matrix(0.701295 0.712871 0.701295 -0.712871 1.14307 0.11377)"
+                                        stroke="black" stroke-width="2" stroke-linecap="round" />
+                                    <line x1="1" y1="-1" x2="5.09226" y2="-1"
+                                        transform="matrix(-0.633987 0.773343 0.763034 0.646358 5.77783 4.8252)"
+                                        stroke="black" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="trust-slider__dots"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="events">
+                <div class="container">
+                    <div class="events__inner">
+                        <h2 class="events__title title title_deco">Новости. События из жизни агентства и школы</h2>
+                        <div class="events__slider-block">
+                            <div class="swiper events-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide events-slider__slide">
+                                        <div class="events-slider__image ibg">
+                                            <img src="img/events/01.png" alt="Image">
+                                        </div>
+                                        <div class="events-slider__content">
+                                            <h4 class="events-slider__event">В Москве прошла XII Международная выставка
+                                                цветов</h4>
+                                            <p class="events-slider__event-name">FLOWERS EXPO 2022</p>
+                                            <p class="events-slider__event-date">27.09.2022</p>
+                                            <a href="#" class="events-slider__link">
+                                                Читать далее
+                                                <svg width="30" height="8" viewBox="0 0 30 8" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M29.3536 4.35355C29.5488 4.15829 29.5488 3.84171 29.3536 3.64645L26.1716 0.464466C25.9763 0.269204 25.6597 0.269204 25.4645 0.464466C25.2692 0.659728 25.2692 0.976311 25.4645 1.17157L28.2929 4L25.4645 6.82843C25.2692 7.02369 25.2692 7.34027 25.4645 7.53553C25.6597 7.7308 25.9763 7.7308 26.1716 7.53553L29.3536 4.35355ZM0 4.5H29V3.5H0V4.5Z"
+                                                        fill="#D02A2A" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="events-slider__btns">
+                                <div class="events-slider__btn events-slider__btn-prev slider-btn slider-btn_black">
+                                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="1" y1="-1" x2="5.60906" y2="-1"
+                                            transform="matrix(-0.701295 0.712871 -0.701295 -0.712871 4.85693 0.11377)"
+                                            stroke="black" stroke-width="2" stroke-linecap="round" />
+                                        <line x1="1" y1="-1" x2="5.09226" y2="-1"
+                                            transform="matrix(0.633987 0.773343 -0.763034 0.646358 0.221924 4.8252)"
+                                            stroke="black" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <div class="events-slider__btn events-slider__btn-next slider-btn slider-btn_black">
+                                    <svg width="6" height="10" viewBox="0 0 6 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="1" y1="-1" x2="5.60906" y2="-1"
+                                            transform="matrix(0.701295 0.712871 0.701295 -0.712871 1.14307 0.11377)"
+                                            stroke="black" stroke-width="2" stroke-linecap="round" />
+                                        <line x1="1" y1="-1" x2="5.09226" y2="-1"
+                                            transform="matrix(-0.633987 0.773343 0.763034 0.646358 5.77783 4.8252)"
+                                            stroke="black" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="events__news-btn">Смотреть все новости</a>
+                    </div>
+                </div>
+            </section>
+            <section class="partners">
+                <div class="container">
+                    <div class="partners__inner">
+                        <h2 class="partners__title title title_deco">Партнеры</h2>
+                        <div class="partners__section">
+                            <h4 class="partners__label title">Недели моды</h4>
+                            <div class="partners__items">
+                                <div class="partners__logo">
+                                    <img src="img/partners/01.png" alt="logo">
+                                </div>
+                                <div class="partners__logo">
+                                    <img src="img/partners/01.png" alt="logo">
+                                </div>
+                                <div class="partners__logo">
+                                    <img src="img/partners/01.png" alt="logo">
+                                </div>
+                                <div class="partners__logo">
+                                    <img src="img/partners/01.png" alt="logo">
+                                </div>
+                                <div class="partners__logo">
+                                    <img src="img/partners/01.png" alt="logo">
+                                </div>
+                                <div class="partners__logo">
+                                    <img src="img/partners/01.png" alt="logo">
+                                </div>
+                            </div>
+                            <div class="partners__section">
+                                <h4 class="partners__label title">Бренды и дизайнеры</h4>
+                                <div class="partners__items">
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="partners__section">
+                                <h4 class="partners__label title">ТВ и журналы</h4>
+                                <div class="partners__items">
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                    <div class="partners__logo">
+                                        <img src="img/partners/01.png" alt="logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="contact-us">
+                <div class="container">
+                    <div class="contact-us__inner">
+                        <div class="contact-us__content">
+                            <h2 class="contact-us__title">Остались вопросы?
+                                Или Вы приняли решение
+                                и уже готовы начать работу?</h2>
+                            <p class="contact-us__text text">Позвоните по номеру <a href="tel:">+7 (916) 368-33-00</a>
+                                или напишите на почту <b><a href="mailto:">ask@tskids.ru</a></b></p>
+                        </div>
+                        <div class="contact-us__image ibg">
+                            <img src="img/contact-us/01.png" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="up-btn">
+                <div class="up-btn__circle">
+                    <img src="img/footer/arrow.svg" alt="arrow">
+                </div>
+                <p class="up-btn__text">Наверх</p>
+            </div>
+            <div class="footer__container container">
+                <div class="footer__inner">
+                    <a href="#" class="footer__logo logo">
+                        <img src="img/footer/logo.svg" alt="logo">
+                    </a>
+                    <div class="footer__row footer__row_1">
+                        <div class="footer__text-block" data-da="footer__row_2,767,0">
+                            <p class="footer__text">Все права защищены. Конкретные результаты и сроки выхода ребенка
+                                на подиум зависят от многих факторов. Данный текст не является публичной офертой в том
+                                или ином виде.</p>
+                            <p class="footer__text">© 2022 TOP SECRET model agency.
+                                Модельное агентство и школа.</p>
+                        </div>
+                        <nav class="footer__menu">
+                            <ul>
+                                <li><a href="#">Модели</a></li>
+                                <li><a href="#">Школа</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div class="footer__info">
+                            <div class="footer__social">
+                                <a href="#">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M18.6737 1.32178L11.7354 18.7646L7.79053 12.2236L18.6737 1.32178Z"
+                                            fill="#2C2C2C" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M18.9484 0.903984C19.1466 1.03434 19.226 1.2861 19.1383 1.50659L12.2 18.9494C12.1298 19.1259 11.9656 19.2474 11.7764 19.263C11.5871 19.2785 11.4053 19.1855 11.3072 19.0229L7.36238 12.4818C7.24375 12.2851 7.2744 12.0329 7.43668 11.8703L18.3198 0.968535C18.4875 0.800601 18.7501 0.773632 18.9484 0.903984ZM8.42061 12.3001L11.6432 17.6436L17.3112 3.39435L8.42061 12.3001Z"
+                                            fill="#2B2A29" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.78932 12.2232L1.24023 8.29538L18.6736 1.32153L7.78932 12.2232Z"
+                                            fill="#2B2A29" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M19.0909 1.04617C19.2216 1.24424 19.1951 1.50691 19.0274 1.67486L8.14316 12.5766C7.98098 12.739 7.72901 12.7702 7.53215 12.6521L0.983069 8.72422C0.82015 8.62651 0.726679 8.44491 0.741834 8.25554C0.756988 8.06618 0.878149 7.90175 1.05453 7.83119L18.4879 0.857351C18.7082 0.769208 18.9602 0.848098 19.0909 1.04617ZM2.36203 8.3852L7.71149 11.5936L16.602 2.68879L2.36203 8.3852Z"
+                                            fill="#2B2A29" />
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg width="22" height="16" viewBox="0 0 22 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21.4598 2.63229C21.367 1.79358 20.6249 1.16454 19.6972 1.08067C13.8991 0.703253 8.10098 0.703253 2.30289 1.08067C1.37519 1.12261 0.679422 1.79358 0.540268 2.63229C0.076421 6.1968 0.076421 9.76132 0.540268 13.3258C0.633038 14.1645 1.37519 14.7936 2.30289 14.8774C8.10098 15.2549 13.8991 15.2549 19.6972 14.8774C20.6249 14.8355 21.3206 14.1645 21.4598 13.3258C21.9236 9.80325 21.9236 6.1968 21.4598 2.63229ZM14.4093 7.95809L9.16783 10.6839C8.98229 10.7678 8.75036 10.642 8.75036 10.4742V5.02261C8.75036 4.81293 8.98229 4.68712 9.16783 4.81293L14.4093 7.4968C14.6412 7.58067 14.6412 7.83228 14.4093 7.95809Z"
+                                            fill="#2B2A29" />
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg width="27" height="15" viewBox="0 0 27 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.44349 1.46593C2.58947 1.46593 4.97691 1.46593 5.78865 1.46593C5.97964 1.46593 6.12289 1.55947 6.17064 1.6998C7.17337 3.85141 8.41484 5.76915 9.84731 7.45302C9.99056 7.64012 10.2771 7.64012 10.3725 7.40625C10.85 6.33044 11.6618 3.66431 10.0383 1.74657C9.89506 1.55947 9.94281 1.3256 10.1816 1.23205C11.8528 0.530441 13.4762 0.436893 15.0519 1.13851C15.3862 1.27883 15.6249 1.60625 15.6249 1.98044L16.0069 7.4998C16.0069 7.73367 16.2457 7.92076 16.4844 7.87399C18.2989 7.4998 19.3971 4.83367 20.4476 2.02722C20.5908 1.6998 20.9251 1.46593 21.3071 1.46593H25.318C25.6522 1.46593 25.891 1.74657 25.8432 2.07399C25.4612 4.03851 23.408 6.61109 22.3575 7.87399C21.9755 8.29496 21.9755 8.90302 22.3575 9.37076L25.9387 13.5804C26.1775 13.8611 25.9865 14.3288 25.5567 14.3288H21.0206C20.6386 14.3288 20.3043 14.1885 20.0178 13.9079L16.8187 11.3353C16.6754 11.1482 16.3412 11.1014 16.1979 11.2885C15.8159 11.7562 15.8159 12.3175 15.6249 13.674C15.5772 14.095 15.1952 14.3756 14.7655 14.3756H11.6618C11.232 14.3756 10.8023 14.2821 10.3725 14.095C8.60584 13.253 3.68769 10.3062 0.966001 2.12076C0.918252 1.74657 1.10925 1.46593 1.44349 1.46593Z"
+                                            fill="#2B2A29" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <p class="footer__text">Режим работы:</p>
+                            <p class="footer__text">пн-сб с 9:00 до 21:00</p>
+                        </div>
+                    </div>
+                    <div class="footer__row footer__row_2">
+                        <a href="#" class="footer__text footer__policy-btn">Политика конфидециальности</a>
+                        <a href="tel:" class="footer__tel" data-da="footer__row_1,767,last">+7 (499) 520-21-79</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="menu-popup"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/dynamicAdaptive.js"></script>
+</body>
+
+</html>
