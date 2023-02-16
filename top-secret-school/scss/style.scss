@@ -575,6 +575,7 @@ $mainColor: #E7DDD2;
         @media (max-width:767px) {
             justify-content: flex-start;
             flex-direction: column;
+            align-items: center;
         }
     }
 
@@ -615,6 +616,7 @@ $mainColor: #E7DDD2;
             max-width: unset;
             min-height: unset;
             padding-bottom: 360 / 280 * 100%;
+            width: calc(100% + 40px);
         }
     }
 }
@@ -651,7 +653,7 @@ $mainColor: #E7DDD2;
 
     &__title {
         max-width: 400px;
-        @include adaptive-value('font-size', 55, 40);
+        @include adaptive-value('font-size', 55, 30);
         line-height: 60 / 55 * 100%;
 
         @media (max-width:767px) {
@@ -1174,7 +1176,15 @@ $mainColor: #E7DDD2;
     @include adaptive-value('padding-top', 70, 50);
     @include adaptive-value('padding-bottom', 130, 70);
 
-    &__inner {}
+    &__inner {
+        @media (max-width:767px) {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 
     &__title {}
 
@@ -1202,12 +1212,13 @@ $mainColor: #E7DDD2;
 
         @media (max-width:767px) {
             padding-left: unset;
+            width: calc(100% + 40px);
         }
+
     }
 }
 
 .events-slider {
-
     &__slide {
         display: flex;
         justify-content: flex-start;
@@ -1262,15 +1273,11 @@ $mainColor: #E7DDD2;
 
         @media (max-width:767px) {
             max-width: unset;
+            padding: 0 20px;
         }
     }
 
-    &__event {
-        font-weight: 600;
-        font-size: 18px;
-    }
-
-    &__event-name {
+    &__title {
         font-weight: 600;
         font-size: 18px;
     }
@@ -1462,27 +1469,47 @@ $mainColor: #E7DDD2;
 // ======================================== school ========================================
 .school {
     @include adaptive-value('padding-top', 90, 40);
-    @include adaptive-value('padding-bottom', 130, 40);
-    background-color: #ddd;
+    @include adaptive-value('padding-bottom', 130, 54, 767);
+    position: relative;
 
-    >img {
-        object-position: right;
+    @media (max-width:767px) {
+        padding-bottom: 0;
+    }
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
 
         @media (max-width:1050px) {
-            opacity: 0.4;
+            opacity: 0.5;
         }
 
         @media (max-width:767px) {
-            display: none;
+            position: relative;
+            padding-bottom: 80%;
+            opacity: 1;
+        }
+
+        img {
+            object-position: right;
         }
     }
 
     &__inner {
+        position: relative;
+        z-index: 2;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
         flex-direction: column;
         position: relative;
+
+        @media (max-width:767px) {
+            padding-bottom: 30px;
+        }
     }
 
     &__title {

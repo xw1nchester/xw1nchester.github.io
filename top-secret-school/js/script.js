@@ -99,12 +99,12 @@ new Swiper('.events-slider', {
         prevEl: '.events-slider__btn-prev',
     },
 
-    spaceBetween: 32,
+    spaceBetween: 0,
     loop: true,
 
     breakpoints: {
         767: {
-
+            spaceBetween: 32,
         },
     }
 });
