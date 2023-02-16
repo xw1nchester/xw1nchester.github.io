@@ -66,6 +66,7 @@
   transition: left 0.3s;
   overflow: auto;
   padding: 0 20px 20px;
+  z-index: 2;
 }
 .menu-popup.active {
   left: 0;

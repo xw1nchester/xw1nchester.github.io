@@ -65,6 +65,7 @@
     transition: left .3s;
     overflow: auto;
     padding: 0 20px 20px;
+    z-index: 2;
 
     &.active {
         left: 0;
