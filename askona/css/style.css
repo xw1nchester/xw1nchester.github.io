@@ -989,7 +989,7 @@ button {
     font-size: 18px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .banner-directions__text {
     text-align: center;
   }
