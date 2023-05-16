@@ -1,0 +1,44 @@
+.burger-btn {
+    position: relative;
+    display: none;   
+
+    @media (max-width:992px) {
+        display: flex;
+    }
+}
+
+.menu-popup {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transition: left .3s;
+    overflow: auto;
+    padding: 75px 20px 50px;
+    z-index: 1;
+
+    &.active {
+        left: 0;
+    }
+
+    &__btns {
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__nav {
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+}
