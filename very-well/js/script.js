@@ -64,6 +64,7 @@ document.addEventListener('click', function (e) {
         let inputValue = input.value;
         searchPopup.classList.add("active");
         searchPopupInner.classList.add("active");
+        body.classList.add('lock');
         searchPopupInput.value = inputValue;
     }
 
@@ -72,6 +73,7 @@ document.addEventListener('click', function (e) {
         || targetEl.closest('.search-popup') && !targetEl.closest('.search-popup__inner')) {
         searchPopup.classList.remove("active");
         searchPopupInner.classList.remove("active");
+        body.classList.remove('lock');
 
         if (targetEl.closest('.search-popup__close-btn')
             && window.innerWidth < 993) {
