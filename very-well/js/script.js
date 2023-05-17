@@ -125,7 +125,7 @@ function init() {
     // метка
     let placemark = new ymaps.Placemark(center, {}, {
         iconLayout: 'default#image',
-        iconImageHref: './../img/placemark.svg',
+        iconImageHref: './img/placemark.svg',
         iconImageSize: [32, 51],
         // отступ от центра (не нужен)
         // iconImageOffset: [0, 0]
