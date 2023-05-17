@@ -112,3 +112,35 @@ new Swiper('.main-block__swiper', {
         },
     }
 });
+
+// карта
+let center = [45.050329, 41.986017];
+
+function init() {
+    let map = new ymaps.Map('map-block__map', {
+        center: center,
+        zoom: 17
+    });
+
+    // метка
+    let placemark = new ymaps.Placemark(center, {}, {
+        iconLayout: 'default#image',
+        iconImageHref: '../img/placemark.svg',
+        iconImageSize: [32, 51],
+        // отступ от центра (не нужен)
+        // iconImageOffset: [0, 0]
+    });
+
+    map.geoObjects.add(placemark);
+
+    map.controls.remove('geolocationControl'); // удаляем геолокацию
+    map.controls.remove('searchControl'); // удаляем поиск
+    map.controls.remove('trafficControl'); // удаляем контроль трафика
+    map.controls.remove('typeSelector'); // удаляем тип
+    map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+    map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+    map.controls.remove('rulerControl'); // удаляем контрол правил
+    // map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+}
+
+ymaps.ready(init);

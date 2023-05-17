@@ -24,6 +24,16 @@ $safety: 20;
     }
 }
 
+/* скрытие доп элементов на карте */
+[class*="copyrights-pane"] {
+    display: none !important;
+}
+
+/* черно-белая карта */
+[class*="ground-pane"] {
+    filter: grayscale(1);
+}
+
 *,
 *::before,
 *::after {
@@ -150,6 +160,21 @@ a:hover {
 
 .input-inner {
     position: relative;
+
+    &__arrow-btn {
+        height: 100%;
+        width: 34px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+
+        &:hover {
+            path {
+                stroke: $mainC;
+            }
+        }
+    }
 }
 
 .input {
@@ -199,6 +224,7 @@ a:hover {
 .title {
     font-family: Montserrat, sans-serif;
     font-weight: 700;
+    text-transform: uppercase;
     @include adaptive-value('font-size', 30, 18);
 
 
@@ -273,6 +299,23 @@ a:hover {
             row-gap: 30px;
         }
     }
+
+    &_news {
+        @include adaptive-value('margin-top', 60, 35);
+        row-gap: 90px;
+
+        @media (max-width:992px) {
+            row-gap: 70px;
+        }
+
+        @media (max-width:768px) {
+            row-gap: 50px;
+        }
+
+        @media (max-width:576px) {
+            row-gap: 30px;
+        }
+    }
 }
 
 .card {
@@ -298,7 +341,6 @@ a:hover {
     }
 
     &__image {
-        @include adaptive-value('min-height', 510, 200, 360, 992);
         min-height: 510px;
         display: flex;
         flex-direction: column;
@@ -312,6 +354,15 @@ a:hover {
             @media (max-width:992px) {
                 min-height: unset;
                 padding-bottom: 107%;
+            }
+        }
+
+        &_news {
+            min-height: 370px;
+
+            @media (max-width:992px) {
+                min-height: unset;
+                padding-bottom: 125%;
             }
         }
     }
@@ -383,6 +434,7 @@ a:hover {
 
 .filter {
     position: relative;
+    padding: 10px 0;
 
     &:hover {
         .dropdown {
@@ -395,7 +447,7 @@ a:hover {
     &__btn {
         display: flex;
         align-items: center;
-        gap: 12px;
+        @include adaptive-value('gap', 12, 8, 768);
         text-transform: uppercase;
 
         &:hover {
@@ -420,15 +472,28 @@ a:hover {
     background-color: $secondaryC;
     box-shadow: 3.4px 3.4px 34px rgba(217, 217, 217, 0.7);
     min-width: 232px;
-    height: 370px;
+    max-height: 370px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px 30px 30px;
     transition: .3s;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+
+    &_checkboxes {
+        padding: 20px 30px 30px;
+    }
+
+    &_radioboxes {
+        padding: 32px 24px 24px;
+    }
+
+    &__radioboxes {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 
     &__select-btn {
         border-bottom: 1px solid $textC;
@@ -440,7 +505,7 @@ a:hover {
     }
 
     &__checkboxes {
-        margin-top: 35px;
+        margin-top: 30px;
         display: flex;
         flex-direction: column;
         gap: 24px;
@@ -449,7 +514,7 @@ a:hover {
 
         &::-webkit-scrollbar {
             display: none;
-          }
+        }
     }
 
     &__checkbox-inner {
@@ -474,16 +539,12 @@ a:hover {
     }
 }
 
-.checkbox {
+.checkbox,
+.radiobox {
     display: none;
 
     &:checked {
-        + .label::before {
-            opacity: 0;
-            visibility: hidden;
-        }
-
-        + .label::after {
+        +.label::after {
             opacity: 1;
             visibility: visible;
         }
@@ -493,9 +554,9 @@ a:hover {
 .label {
     display: flex;
     align-items: center;
-    gap: 13px;
+    gap: 12px;
     width: 100%;
-    padding-left: 25px;
+    padding-left: 24px;
     position: relative;
     cursor: pointer;
 
@@ -508,7 +569,6 @@ a:hover {
         transform: translateY(-50%);
         width: 12px;
         height: 12px;
-        border-radius: 2px;
         transition: .3s;
     }
 
@@ -517,15 +577,43 @@ a:hover {
     }
 
     &::after {
-        border: 1px solid $mainC;
-        background-color: $mainC;
-        background-image: url("../img/check.svg");
-        background-repeat: no-repeat;
-        background-position: center;
         opacity: 0;
         visibility: hidden;
     }
+
+    &_checkbox {
+
+        &::before,
+        &::after {
+            border-radius: 2px;
+        }
+
+        &::after {
+            border: 1px solid $mainC;
+            background-color: $mainC;
+            background-image: url("../img/check.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    &_radiobox {
+        &::before {
+            border-radius: 50%;
+        }
+
+        &::after {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: $mainC;
+            transform: translate(2px, -50%);
+        }
+    }
 }
+
 
 .pagination {
     display: flex;
@@ -1133,21 +1221,6 @@ a:hover {
         margin-top: 20px;
     }
 
-    &__search-btn {
-        height: 100%;
-        width: 34px;
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-
-        &:hover {
-            path {
-                stroke: $mainC;
-            }
-        }
-    }
-
     &__input {}
 }
 
@@ -1433,11 +1506,26 @@ a:hover {
     &__filters {
         display: flex;
         align-items: center;
-        gap: 36px;
+        @include adaptive-value('gap', 36, 20, 768);
+
+        @media (max-width:768px) {
+            display: none;
+        }
     }
 
+    &__filters-btn,
     &__count {
         display: none;
+        text-transform: uppercase;
+
+        @media (max-width:768px) {
+            display: flex;
+        }
+    }
+
+    &__filters-btn {
+        align-items: center;
+        @include adaptive-value('gap', 12, 8);
     }
 
     &__btn {
@@ -1448,5 +1536,278 @@ a:hover {
 
     &__pagination {
         @include adaptive-value('margin-top', 45, 30);
+    }
+}
+
+// ======================================== map-block ========================================
+.map-block {
+    @include adaptive-value('padding-top', 60, 0);
+    @include adaptive-value('padding-bottom', 110, 45);
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+
+        @media (max-width:768px) {
+            flex-direction: column;
+        }
+    }
+
+    &__content {
+        width: 100%;
+        @include adaptive-value('max-width', 360, 300, 768);
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        @include adaptive-value('gap', 40, 20);
+
+        @media (max-width:992px) {
+            padding-top: 0;
+        }
+
+        @media (max-width:768px) {
+            max-width: unset;
+        }
+    }
+
+    &__title {
+        @media (max-width:768px) {
+            text-align: center;
+        }
+    }
+
+    &__stores {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__map {
+        background-color: #eee;
+        width: 100%;
+        max-width: 754px;
+        min-height: 700px;
+
+        @media (max-width:768px) {
+            min-height: unset;
+            padding-bottom: 93%;
+        }
+    }
+}
+
+.item-map-block {
+    display: flex;
+    gap: 24px;
+    padding-top: 30px;
+    border-top: 1px solid rgba($color: $textC, $alpha: 0.3);
+
+    &__icon {
+        position: relative;
+        pointer-events: none;
+
+        span {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 10px;
+            font-weight: 700;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    &__text {
+        font-size: 12px;
+    }
+
+    &__open {
+        color: #12a83c;
+    }
+
+    &__close {
+        color: $extraC;
+    }
+
+    &__btn {
+        border-bottom: 1px solid $textC;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $mainC;
+            border-bottom: 1px solid $mainC;
+        }
+    }
+}
+
+// ======================================== contacts ========================================
+.contacts {
+    @include adaptive-value('padding-bottom', 110, 45);
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        @include adaptive-value('gap', 50, 35);
+    }
+
+    &__title {
+        @media (max-width:768px) {
+            text-align: center;
+        }
+    }
+
+    &__columns {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 24px;
+        column-gap: 80px;
+
+        @media (max-width:576px) {
+            column-gap: 20px;
+            justify-content: space-between;
+            row-gap: 20px;
+        }
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        &.big {
+            width: 100%;
+        }
+    }
+}
+
+// ======================================== news ========================================
+.news {
+    @include adaptive-value('padding-top', 60, 0);
+    @include adaptive-value('padding-bottom', 110, 45);
+
+    &__inner {}
+
+    &__title {
+        text-align: center;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        @include adaptive-value('gap', 30, 20);
+        flex-grow: 1;
+    }
+
+    &__item-title {
+        font-weight: 700;
+        @include adaptive-value('font-size', 16, 13);
+    }
+
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__more-link {
+        margin-left: auto;
+
+        @media (max-width:576px) {
+            margin-left: unset;
+        }
+    }
+
+    &__date {
+        font-size: 12px;
+        color: #BBBABA;
+
+        @media (max-width:576px) {
+            display: none;
+        }
+    }
+
+    &__pagination {
+        @include adaptive-value('margin-top', 45, 30);
+    }
+}
+
+// ======================================== single-news ========================================
+.single-news {
+    @include adaptive-value('padding-top', 60, 0);
+    @include adaptive-value('padding-bottom', 110, 45);
+
+    &__inner {
+        display: flex;
+        @include adaptive-value('gap', 130, 30);
+
+        @media (max-width:768px) {
+            flex-direction: column;
+        }
+    }
+
+    &__title {
+        &_hidden {
+            display: none;
+            text-align: center;
+        }
+
+        @media (max-width:768px) {
+            display: none;
+
+            &_hidden {
+                display: block;
+            }
+        }
+    }
+
+    &__image {
+        width: 100%;
+        max-width: 560px;
+        @include adaptive-value('min-height', 570, 350,768);
+
+        @media (max-width:768px) {
+            max-width: unset;
+            min-height: unset;
+            padding-bottom: 105%;
+        }
+    }
+
+    &__content {
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include adaptive-value('gap', 60, 30);
+
+        @media (max-width:768px) {
+            padding: unset;
+        }
+    }
+
+    &__btn {
+        @include adaptive-value('max-width', 360, 184);
+        @include adaptive-value('min-height', 60, 40);
+
+        @media (max-width:768px) {
+            margin: 0 auto;
+        }
     }
 }
