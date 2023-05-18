@@ -34,6 +34,14 @@
 //     wrapper.style.paddingRight = padding + 'px';
 // }
 
+document.addEventListener("DOMContentLoaded", function () {
+    const currentProductColor = document.querySelector('.product-card__color.active');
+
+    if (currentProductColor) {
+        setProductCurrentColor(currentProductColor.dataset.color);
+    }
+})
+
 // изменение ширины экрана
 window.addEventListener('resize', function (e) {
     if (window.innerWidth > 992 && burgerBtn && menuPopup) {
@@ -41,6 +49,13 @@ window.addEventListener('resize', function (e) {
         body.classList.remove('lock');
     }
 });
+
+// установка цвета
+const setProductCurrentColor = (color) => {
+    if (productCurrentColor) {
+        productCurrentColor.innerHTML = color;
+    }
+}
 
 // событие клика
 document.addEventListener('click', function (e) {
@@ -58,8 +73,8 @@ document.addEventListener('click', function (e) {
         body.classList.remove('lock');
     }
 
-    if (targetEl.closest('.search-btn') 
-    && !targetEl.closest('.search-popup__search-btn')) {
+    if (targetEl.closest('.search-btn')
+        && !targetEl.closest('.search-popup__search-btn')) {
         let input = targetEl.closest('.search-btn').nextElementSibling;
         let inputValue = input.value;
         searchPopup.classList.add("active");
@@ -77,21 +92,84 @@ document.addEventListener('click', function (e) {
 
         if (targetEl.closest('.search-popup__close-btn')
             && window.innerWidth < 993) {
-                menuPopup.classList.remove('active');
-                body.classList.remove('lock');
+            menuPopup.classList.remove('active');
+            body.classList.remove('lock');
         }
+    }
+
+    if (targetEl.closest('.product-card__color')) {
+        const activeColor = document.querySelector('.product-card__color.active');
+        activeColor.classList.remove('active');
+        const targetColor = targetEl.closest('.product-card__color');
+        targetColor.classList.add('active');
+        setProductCurrentColor(targetColor.dataset.color);
+    }
+
+    if (targetEl.closest('.product-card__size-item')) {
+        const activeSize = document.querySelector('.product-card__size-item.active');
+        if (activeSize) {
+            activeSize.classList.remove('active');
+        }
+        const selectedSize = targetEl.closest('.product-card__size-item');
+        selectedSize.classList.toggle('active');
+    }
+
+    if (targetEl.closest('.product-card__desc-btn')) {
+        productDescBtn.classList.toggle('active');
+        productDesc.classList.toggle('active');
+    }
+
+    if (targetEl.closest('.order__products-btn')) {
+        console.log(1);
+        orderProductsBtn.classList.toggle('active');
+        orderProducts.classList.toggle('active');
     }
 });
 
-// бургер меню
-let burgerBtn = document.querySelector('.burger-btn');
-let menuPopup = document.querySelector('.menu-popup');
-let body = document.body;
-let searchInput = document.querySelector('.input_search');
-let searchPopup = document.querySelector('.search-popup');
-let searchPopupInner = document.querySelector('.search-popup__inner');
-let searchPopupInput = document.querySelector('.search-popup__input');
+const burgerBtn = document.querySelector('.burger-btn');
+const menuPopup = document.querySelector('.menu-popup');
+const body = document.body;
+const searchInput = document.querySelector('.input_search');
+const searchPopup = document.querySelector('.search-popup');
+const searchPopupInner = document.querySelector('.search-popup__inner');
+const searchPopupInput = document.querySelector('.search-popup__input');
+const productDescBtn = document.querySelector('.product-card__desc-btn');
+const productDesc = document.querySelector('.product-card__desc');
+const productCurrentColor = document.querySelector('.product-card__current-color');
+const orderProductsBtn = document.querySelector('.order__products-btn');
+const orderProducts = document.querySelector('.order__products');
 
+// инпут выбора магазина
+const pickupCheckbox = document.querySelector('.order__pickup-checkbox');
+const deliveryCheckbox = document.querySelector('.order__delivery-checkbox');
+const selectShopInput = document.querySelector('.order__input-inner_shop');
+
+if (pickupCheckbox && deliveryCheckbox && selectShopInput) {
+    const updateSelectShopInput = (e) => {
+        pickupCheckbox.checked ? selectShopInput.classList.add('active') : selectShopInput.classList.remove('active');
+    }
+
+    pickupCheckbox.addEventListener('change', (e) => updateSelectShopInput(e))
+    deliveryCheckbox.addEventListener('change', (e) => updateSelectShopInput(e))
+}
+
+// кнопка активации промокода
+const promoInput = document.querySelector('.order__promo-input');
+const promoBtn = document.querySelector('.order__promo-btn');
+
+if (promoInput && promoBtn) {
+    promoInput.addEventListener('input', function (e) {
+        if (promoInput.value) {
+            if (!promoBtn.classList.contains('active')) {
+                promoBtn.classList.add('active');
+            }
+        } else {
+            promoBtn.classList.remove('active');
+        }
+    })
+}
+
+// слайдер на главной
 new Swiper('.main-block__swiper', {
     navigation: {
         nextEl: '.main-block__btn_next',
@@ -105,13 +183,43 @@ new Swiper('.main-block__swiper', {
     slidesPerView: 1,
     loop: true,
     autoplay: true,
-
-    breakpoints: {
-        767: {
-
-        },
-    }
+    effect: "fade",
 });
+
+// слайдеры в карточке товара
+const verticalSlider = new Swiper('.vertical-slider', {
+    navigation: {
+        nextEl: '.vertical-slider__btn_next',
+        prevEl: '.vertical-slider__btn_prev',
+    },
+
+    slidesPerView: 3,
+    direction: "vertical",
+    spaceBetween: 20,
+});
+
+const gorizontalSlider = new Swiper('.gorizontal-slider', {
+    navigation: {
+        nextEl: '.gorizontal-slider__btn_next',
+        prevEl: '.gorizontal-slider__btn_prev',
+    },
+    pagination: {
+        el: '.gorizontal-slider__pagination',
+        clickable: true,
+    },
+
+    slidesPerView: 1
+});
+
+var verticalSliderSlides = document.querySelectorAll('.vertical-slider__slide');
+
+if (verticalSliderSlides) {
+    verticalSliderSlides.forEach(el =>
+        el.addEventListener('mouseenter', function () {
+            const index = el.dataset.slide;
+            gorizontalSlider.slideTo(index);
+        }));
+}
 
 // карта
 let center = [45.050329, 41.986017];
@@ -125,7 +233,7 @@ function init() {
     // метка
     let placemark = new ymaps.Placemark(center, {}, {
         iconLayout: 'default#image',
-        iconImageHref: './img/placemark.svg',
+        iconImageHref: '../img/placemark.svg',
         iconImageSize: [32, 51],
         // отступ от центра (не нужен)
         // iconImageOffset: [0, 0]

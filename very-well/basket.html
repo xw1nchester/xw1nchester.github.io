@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper lock-padding">
+        <header class="header">
+            <div class="container header__container">
+                <div class="header__inner">
+                    <div class="header__top">
+                        <button class="burger-btn">
+                            <img src="img/header/menu.svg" alt="menu">
+                        </button>
+                        <div class="header__left">
+                            <button class="header__btn btn">Консультация специалиста</button>
+                            <a href="tel:+78002012436" class="header__tel">8 (800) 201-24-36</a>
+                        </div>
+                        <div class="header__middle">
+                            <a href="#" class="header__logo logo">
+                                <span class="logo__title">Very well</span>
+                                <span class="logo__subtitle">Сеть салонов нижнего женского белья</span>
+                            </a>
+                        </div>
+                        <div class="header__right">
+                            <div class="header__search-inner input-inner">
+                                <button class="search-btn">
+                                    <img src="img/header/search.svg" alt="search">
+                                </button>
+                                <input type="text" class="input input_search" placeholder="Поиск">
+                            </div>
+                            <a href="#" class="header__basket">
+                                <img src="img/header/.svg" alt="">
+                                <span class="header__count">
+                                    0
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <nav class="header__nav">
+                        <ul>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Преимущества</a></li>
+                            <li><a href="#">Новости и акции</a></li>
+                            <li><a href="#">Интернет-магазин</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">До и после</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Белье оптом</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="basket">
+                <div class="container">
+                    <div class="basket__inner">
+                        <h1 class="basket__title title">Корзина</h1>
+                        <!-- Пустая корзина -->
+                        <!-- <p class="basket__empty-text">В вашей корзине пока нет товаров.</p>
+                        <a href="#" class="basket__empty-btn btn">Перейти к покупкам</a> -->
+                        <div class="basket__items">
+                            <div class="item-basket">
+                                <div class="item-basket__image ibg">
+                                    <img src="img/product-card/03.png" alt="image">
+                                </div>
+                                <div class="item-basket__content">
+                                    <div class="item-basket__row item-basket__row_header">
+                                        <div class="item-basket__col">Наименование</div>
+                                        <div class="item-basket__col">Цвет</div>
+                                        <div class="item-basket__col">Размер</div>
+                                        <div class="item-basket__col">Цена</div>
+                                        <div class="item-basket__col">Количество</div>
+                                        <div class="item-basket__col">Сумма</div>
+                                        <div class="item-basket__col item-basket__col_delete"></div>
+                                    </div>
+                                    <div class="item-basket__row">
+                                        <div class="item-basket__col item-basket__col_name">
+                                            <p class="item-basket__articul">Артикул: YK19610</p>
+                                            <div class="item-basket__hidden-name">
+                                                <b>Бюстгальтер моделирующий Push UP</b>
+                                            </div>
+                                        </div>
+                                        <div class="item-basket__col item-basket__col_color">
+                                            <img src="img/colors/01.png" alt="color" class="item-basket__color">
+                                        </div>
+                                        <div class="item-basket__col">
+                                            <div class="filter">
+                                                <button class="filter__btn">
+                                                    <b>80B</b>
+                                                    <svg width="17" height="9" viewBox="0 0 17 9" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16 1L8.36364 7L1 0.999999" stroke="#1D1919"
+                                                            stroke-width="2" />
+                                                    </svg>
+                                                </button>
+                                                <div class="dropdown">
+                                                    <div class="dropdown__sizes dropdown__list">
+                                                        <button
+                                                            class="dropdown__size product-card__size-item">70С</button>
+                                                        <button
+                                                            class="dropdown__size product-card__size-item">70С</button>
+                                                        <button
+                                                            class="dropdown__size product-card__size-item">70С</button>
+                                                        <button
+                                                            class="dropdown__size product-card__size-item">70С</button>
+                                                        <button
+                                                            class="dropdown__size product-card__size-item">70С</button>
+                                                        <button
+                                                            class="dropdown__size product-card__size-item">70С</button>
+                                                        <button
+                                                            class="dropdown__size product-card__size-item">70С</button>
+                                                        <button
+                                                            class="dropdown__size product-card__size-item">70С</button>
+                                                        <button
+                                                            class="dropdown__size product-card__size-item">70С</button>
+                                                        <button
+                                                            class="dropdown__size product-card__size-item">70С</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-basket__col item-basket__col_price">
+                                            <b class="item-basket__price">6850 ₽</b>
+                                        </div>
+                                        <div class="item-basket__col">
+                                            <div class="item-basket__count-inner">
+                                                <button class="item-basket__count-btn item-basket__count-btn_plus">-</button>
+                                                <b class="item-basket__count">1</b>
+                                                <button class="item-basket__count-btn item-basket__count-btn_minus">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="item-basket__col item-basket__col_sum">
+                                            <b class="item-basket__sum">6850 ₽</b>
+                                        </div>
+                                        <div class="item-basket__col item-basket__col_delete">
+                                            <button class="item-basket__delete">
+                                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M1.5 5.25H19.5M6.75 5.25V4.5C6.75 3.50544 7.14509 2.55161 7.84835 1.84835C8.55161 1.14509 9.50544 0.75 10.5 0.75C11.4946 0.75 12.4484 1.14509 13.1517 1.84835C13.8549 2.55161 14.25 3.50544 14.25 4.5V5.25M8.25 8.25V16.5M12.75 8.25V16.5M3.75 5.25H17.25V18.75C17.25 19.1478 17.092 19.5294 16.8107 19.8107C16.5294 20.092 16.1478 20.25 15.75 20.25H5.25C4.85218 20.25 4.47064 20.092 4.18934 19.8107C3.90804 19.5294 3.75 19.1478 3.75 18.75V5.25Z"
+                                                        stroke="#BBBABA" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="item-basket__row item-basket__row_name">
+                                        <div class="item-basket__col">
+                                            <b>Бюстгальтер моделирующий Push UP</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-basket">
+                                <div class="item-basket__image ibg">
+                                    <img src="img/product-card/01.png" alt="image">
+                                </div>
+                                <div class="item-basket__content">
+                                    <div class="item-basket__row item-basket__row_header">
+                                        <div class="item-basket__col">Наименование</div>
+                                        <div class="item-basket__col">Цвет</div>
+                                        <div class="item-basket__col">Размер</div>
+                                        <div class="item-basket__col">Цена</div>
+                                        <div class="item-basket__col">Количество</div>
+                                        <div class="item-basket__col">Сумма</div>
+                                        <div class="item-basket__col item-basket__col_delete"></div>
+                                    </div>
+                                    <div class="item-basket__row">
+                                        <div class="item-basket__col item-basket__col_name">
+                                            <p class="item-basket__articul">Артикул: YK19610</p>
+                                            <div class="item-basket__hidden-name">
+                                                <b>Трусики</b>
+                                            </div>
+                                        </div>
+                                        <div class="item-basket__col item-basket__col_color">
+                                            <img src="img/colors/06.png" alt="color" class="item-basket__color">
+                                        </div>
+                                        <div class="item-basket__col">
+                                            <div class="filter">
+                                                <button class="filter__btn">
+                                                    <b>80B</b>
+                                                    <svg width="17" height="9" viewBox="0 0 17 9" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16 1L8.36364 7L1 0.999999" stroke="#1D1919"
+                                                            stroke-width="2" />
+                                                    </svg>
+                                                </button>
+                                                <div class="dropdown">
+                                                    <div class="dropdown__sizes dropdown__list">
+                                                        <button
+                                                            class="dropdown__size product-card__size-item">70С</button>
+                                                        <button
+                                                            class="dropdown__size product-card__size-item">70С</button>
+                                                        <button
+                                                            class="dropdown__size product-card__size-item">70С</button>
+                                                        <button
+                                                            class="dropdown__size product-card__size-item">70С</button>
+                                                        <button
+                                                            class="dropdown__size product-card__size-item">70С</button>
+                                                        <button
+                                                            class="dropdown__size product-card__size-item">70С</button>
+                                                        <button
+                                                            class="dropdown__size product-card__size-item">70С</button>
+                                                        <button
+                                                            class="dropdown__size product-card__size-item">70С</button>
+                                                        <button
+                                                            class="dropdown__size product-card__size-item">70С</button>
+                                                        <button
+                                                            class="dropdown__size product-card__size-item">70С</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-basket__col item-basket__col_price">
+                                            <b class="item-basket__price">1850 ₽</b>
+                                        </div>
+                                        <div class="item-basket__col">
+                                            <div class="item-basket__count-inner">
+                                                <button class="item-basket__count-btn item-basket__count-btn_plus">-</button>
+                                                <b class="item-basket__count">1</b>
+                                                <button class="item-basket__count-btn item-basket__count-btn_minus">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="item-basket__col item-basket__col_sum">
+                                            <b class="item-basket__sum">1850 ₽</b>
+                                        </div>
+                                        <div class="item-basket__col item-basket__col_delete">
+                                            <button class="item-basket__delete">
+                                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M1.5 5.25H19.5M6.75 5.25V4.5C6.75 3.50544 7.14509 2.55161 7.84835 1.84835C8.55161 1.14509 9.50544 0.75 10.5 0.75C11.4946 0.75 12.4484 1.14509 13.1517 1.84835C13.8549 2.55161 14.25 3.50544 14.25 4.5V5.25M8.25 8.25V16.5M12.75 8.25V16.5M3.75 5.25H17.25V18.75C17.25 19.1478 17.092 19.5294 16.8107 19.8107C16.5294 20.092 16.1478 20.25 15.75 20.25H5.25C4.85218 20.25 4.47064 20.092 4.18934 19.8107C3.90804 19.5294 3.75 19.1478 3.75 18.75V5.25Z"
+                                                        stroke="#BBBABA" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="item-basket__row item-basket__row_name">
+                                        <div class="item-basket__col">
+                                            <b>Трусики</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket__bottom">
+                            <div class="basket__total-inner">
+                                <p>Итого:</p>
+                                <p class="basket__total">8700 ₽</p>
+                            </div>
+                            <a href="#" class="basket__btn btn">Оформить заказ</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="recently">
+                <div class="container">
+                    <div class="recently__inner">
+                        <h1 class="recently__title title">Вы недавно смотрели:</h1>
+                        <div class="cards">
+                            <div class="card">
+                                <a href="#" class="card__image ibg">
+                                    <img src="img/product-card/01.png" alt="image">
+                                </a>
+                                <a href="#">Верх купальника</a>
+                            </div>
+                            <div class="card">
+                                <a href="#" class="card__image ibg">
+                                    <img src="img/product-card/02.png" alt="image">
+                                </a>
+                                <a href="#">Купальник слитный</a>
+                            </div>
+                            <div class="card">
+                                <a href="#" class="card__image ibg">
+                                    <img src="img/product-card/03.png" alt="image">
+                                </a>
+                                <a href="#">Купальник</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__left">
+                        <a href="#" class="footer__logo logo">
+                            <span class="logo__title">Very well</span>
+                            <span class="logo__subtitle">Сеть салонов нижнего женского белья</span>
+                        </a>
+                        <p class="footer__text">Сеть салонов женского нижнего белья «Very Well». © 2010-2022 Все права
+                            защищены</p>
+                    </div>
+                    <div class="footer__middle">
+                        <div class="footer__columns">
+                            <div class="footer__column">
+                                <div class="footer__links">
+                                    <a href="mailto:info@verywellcompany.com">info@verywellcompany.com</a>
+                                    <a href="tel:+78002012436">8 (800) 201-24-36</a>
+                                </div>
+                            </div>
+                            <div class="footer__column">
+                                <div class="footer__links">
+                                    <a href="#">Оптовый раздел</a>
+                                    <a href="#">Публичная оферта</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__social">
+                            <a href="#">
+                                <img src="img/footer/soc1.png" alt="social">
+                            </a>
+                            <a href="#">
+                                <img src="img/footer/soc2.png" alt="social">
+                            </a>
+                            <a href="#">
+                                <img src="img/footer/soc3.png" alt="social">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__right">
+                        <p>Способы оплаты:</p>
+                        <div class="footer__pay-methods">
+                            <img src="img/footer/pay1.png" alt="pay">
+                            <img src="img/footer/pay2.png" alt="pay">
+                            <img src="img/footer/pay3.png" alt="pay">
+                            <img src="img/footer/pay4.png" alt="pay">
+                            <img src="img/footer/pay5.png" alt="pay">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="menu-popup">
+            <button class="menu-popup__close-btn close-btn">
+                <img src="img/header/close-btn.svg" alt="close">
+            </button>
+            <div class="menu-popup__search-inner input-inner">
+                <button class="search-btn">
+                    <img src="img/header/search.svg" alt="search">
+                </button>
+                <input type="text" class="input input_search" placeholder="Поиск">
+            </div>
+            <div class="menu-popup__nav">
+                <ul>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Преимущества</a></li>
+                    <li><a href="#">Новости и акции</a></li>
+                    <li><a href="#">Интернет-магазин</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">До и после</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Белье оптом</a></li>
+                </ul>
+            </div>
+            <div class="menu-popup__btns">
+                <button class="menu-popup__btn btn">Консультация специалиста</button>
+                <a href="tel:+78002012436">8 (800) 201-24-36</a>
+            </div>
+        </div>
+        <div class="search-popup">
+            <div class="search-popup__inner">
+                <button class="close-btn search-popup__close-btn">
+                    <img src="img/header/close-btn.svg" alt="close">
+                </button>
+                <button class="search-popup__back-btn">
+                    <img src="img/header/back-btn.svg" alt="arrow">
+                </button>
+                <div class="search-popup__search-inner input-inner">
+                    <button class="search-btn search-popup__search-btn">
+                        <img src="img/header/search.svg" alt="search">
+                    </button>
+                    <input type="text" class="input input_search search-popup__input" placeholder="Поиск">
+                </div>
+                <div class="search-popup__variants-inner">
+                    <p class="dim">Вы имели в виду:</p>
+                    <div class="search-popup__variants">
+                        <a href="#">Бюст</a>
+                        <a href="#">Бюстгарльтер</a>
+                    </div>
+                </div>
+                <div class="search-popup__header">
+                    <p class="dim">Товары</p>
+                    <a href="#" class="search-popup__link more-link">
+                        Посмотреть все
+                        <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L7 8.63636L1 16" stroke="#1D1919" stroke-width="2" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="search-popup__items">
+                    <div class="search-popup__item">
+                        <a href="#" class="search-popup__img ibg">
+                            <img src="img/header/01.png" alt="image">
+                        </a>
+                        <a href="#">Бюстгальтер моделирующий мягкая чашка</a>
+                    </div>
+                    <div class="search-popup__item">
+                        <a href="#" class="search-popup__img ibg">
+                            <img src="img/header/02.png" alt="image">
+                        </a>
+                        <a href="#">Бюстгальтер моделирующий Push UP</a>
+                    </div>
+                    <div class="search-popup__item">
+                        <a href="#" class="search-popup__img ibg">
+                            <img src="img/header/03.png" alt="image">
+                        </a>
+                        <a href="#">Бюстгальтер "Corin"</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- <script src="js/dynamicAdaptive.js"></script> -->
+</body>
+
+</html>

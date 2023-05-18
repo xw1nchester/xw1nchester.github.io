@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper lock-padding">
+        <header class="header">
+            <div class="container header__container">
+                <div class="header__inner">
+                    <div class="header__top">
+                        <button class="burger-btn">
+                            <img src="img/header/menu.svg" alt="menu">
+                        </button>
+                        <div class="header__left">
+                            <button class="header__btn btn">Консультация специалиста</button>
+                            <a href="tel:+78002012436" class="header__tel">8 (800) 201-24-36</a>
+                        </div>
+                        <div class="header__middle">
+                            <a href="#" class="header__logo logo">
+                                <span class="logo__title">Very well</span>
+                                <span class="logo__subtitle">Сеть салонов нижнего женского белья</span>
+                            </a>
+                        </div>
+                        <div class="header__right">
+                            <div class="header__search-inner input-inner">
+                                <button class="search-btn">
+                                    <img src="img/header/search.svg" alt="search">
+                                </button>
+                                <input type="text" class="input input_search" placeholder="Поиск">
+                            </div>
+                            <a href="#" class="header__basket">
+                                <img src="img/header/bascket.svg" alt="bascket">
+                                <span class="header__count">
+                                    0
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <nav class="header__nav">
+                        <ul>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Преимущества</a></li>
+                            <li><a href="#">Новости и акции</a></li>
+                            <li><a href="#">Интернет-магазин</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">До и после</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Белье оптом</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="breadcrumbs">
+                <div class="container">
+                    <div class="breadcrumbs__inner">
+                        <a href="#" class="dim">Главная</a>
+                        <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L7 8.63636L1 16" stroke="#BBBABA" stroke-width="2" />
+                        </svg>
+                        <p>Оформление заказа</p>
+                    </div>
+                </div>
+            </div>
+            <div class="order">
+                <div class="container">
+                    <div class="order__inner">
+                        <h1 class="order__title title">Оформление заказа</h1>
+                        <form action="#" class="order__form">
+                            <div class="order__columns">
+                                <div class="order__column order__column_1">
+                                    <div class="order__block">
+                                        <p class="order__caption">1. Данные покупателя</p>
+                                        <div class="order__content">
+                                            <div class="order__input-inner input-inner">
+                                                <input type="text" class="order__input input" placeholder="Имя">
+                                            </div>
+                                            <div class="order__input-inner input-inner">
+                                                <input type="text" class="order__input input" placeholder="Телефон">
+                                            </div>
+                                            <div class="order__input-inner input-inner">
+                                                <input type="text" class="order__input input" placeholder="Фамилия">
+                                            </div>
+                                            <div class="order__input-inner input-inner">
+                                                <input type="text" class="order__input input" placeholder="E-mail">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order__block">
+                                        <p class="order__caption">2. Доставка</p>
+                                        <div class="order__content">
+                                            <div class="order__input-inner input-inner">
+                                                <button class="input-inner__arrow-btn">
+                                                    <svg width="17" height="9" viewBox="0 0 17 9" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16 1L8.36364 7L1 0.999999" stroke="#1D1919"
+                                                            stroke-width="2" />
+                                                    </svg>
+                                                </button>
+                                                <input type="text" class="order__input input" placeholder="Город">
+                                            </div>
+                                            <b>Варианты доставки</b>
+                                            <div class="order__checkbox-inner">
+                                                <input type="radio" name="delivery" class="radiobox order__pickup-checkbox" id="radiobox1">
+                                                <label for="radiobox1" class="order__label label label_checkbox">
+                                                    Самовывоз
+                                                </label>
+                                            </div>
+                                            <div class="order__input-inner order__input-inner_shop input-inner">
+                                                <button class="input-inner__arrow-btn">
+                                                    <svg width="17" height="9" viewBox="0 0 17 9" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16 1L8.36364 7L1 0.999999" stroke="#1D1919"
+                                                            stroke-width="2" />
+                                                    </svg>
+                                                </button>
+                                                <input type="text" class="order__input input"
+                                                    placeholder="Выбрать магазин для самовывоза">
+                                            </div>
+                                            <div class="order__checkbox-inner">
+                                                <input type="radio" name="delivery" class="radiobox order__delivery-checkbox" id="radiobox2">
+                                                <label for="radiobox2" class="order__label label label_checkbox">
+                                                    Платная доставка
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order__block">
+                                        <p class="order__caption">3. Способы оплаты</p>
+                                        <div class="order__content">
+                                            <div class="order__checkbox-inner">
+                                                <input type="radio" name="pay" class="radiobox" id="radiobox3">
+                                                <label for="radiobox3" class="order__label label label_checkbox">
+                                                    Оплата онлайн
+                                                </label>
+                                            </div>
+                                            <div class="order__checkbox-inner">
+                                                <input type="radio" name="pay" class="radiobox" id="radiobox4">
+                                                <label for="radiobox4" class="order__label label label_checkbox">
+                                                    Оплатить по частям с помощью сервиса “Долями”
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order__column order__column_2">
+                                    <div class="order__block">
+                                        <p class="order__caption order__caption_small">Информация о заказе</p>
+                                        <div class="order__info">
+                                            <div class="order__row">
+                                                <p>Всего товаров:</p>
+                                                <p>8700 <b>₽</b></p>
+                                            </div>
+                                            <div class="order__row">
+                                                <p>Стоимость доставки:</p>
+                                                <p>Бесплатно</p>
+                                            </div>
+                                            <div class="order__row">
+                                                <p>Итого:</p>
+                                                <p>8700 <b>₽</b></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order__block">
+                                        <div class="order__promo">
+                                            <div class="order__input-inner input-inner">
+                                                <input type="text" class="order__input order__promo-input input" placeholder="Ввести промокод">
+                                            </div>
+                                            <button class="order__promo-btn">применить</button>
+                                        </div>
+                                        <div class="order__products-inner">
+                                            <div class="filter__btn filter__btn_no-animate order__products-btn">
+                                                Ваши товары
+                                                <svg width="17" height="9" viewBox="0 0 17 9" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M16 1L8.36364 7L1 0.999999" stroke="#1D1919"
+                                                        stroke-width="2" />
+                                                </svg>
+                                            </div>
+                                            <div class="order__products">
+                                                <div class="product-order">
+                                                    <div class="product-order__image ibg">
+                                                        <img src="img/examples/01.png" alt="image">
+                                                    </div>
+                                                    <div class="product-order__content">
+                                                        <p class="product-order__articul">Артикул: YK19610</p>
+                                                        <b>Бюстгальтер моделирующий Push UP</b>
+                                                        <div class="product-order__bottom">
+                                                            <p>1× руб 4.499,00</p>
+                                                            <p>Цвет: светло-розовый </p>
+                                                            <p>Размер: S</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-order">
+                                                    <div class="product-order__image ibg">
+                                                        <img src="img/examples/02.png" alt="image">
+                                                    </div>
+                                                    <div class="product-order__content">
+                                                        <p class="product-order__articul">Артикул: YK19610</p>
+                                                        <b>Трусики</b>
+                                                        <div class="product-order__bottom">
+                                                            <p>1× руб 4.499,00</p>
+                                                            <p>Цвет: светло-розовый </p>
+                                                            <p>Размер: S</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order__bottom">
+                                <div class="order__total">
+                                    <div class="order__info">
+                                        <div class="order__row">
+                                            <p>Всего товаров:</p>
+                                            <p>8700 <b>₽</b></p>
+                                        </div>
+                                        <div class="order__row">
+                                            <p>Стоимость доставки:</p>
+                                            <p>Бесплатно</p>
+                                        </div>
+                                        <div class="order__row order__row_total">
+                                            <b>Итого:</b>
+                                            <b>8700 ₽</b>
+                                        </div>
+                                    </div>
+                                    <button class="order__btn btn">Заказать</button>
+                                </div>
+                                <div class="order__checkbox-inner">
+                                    <input type="checkbox" name="delivery" class="checkbox" id="agree">
+                                    <label for="agree" class="order__label label label_checkbox">
+                                        <b>Согласен с <span class="order__agree">политикой обработки персональных данных</span></b>
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                        <p class="order__text">Вы можете позвонить по бесплатному номеру 8 (800) 350-09-19, чтобы мы вручную записали данные о Вашем заказе</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__left">
+                        <a href="#" class="footer__logo logo">
+                            <span class="logo__title">Very well</span>
+                            <span class="logo__subtitle">Сеть салонов нижнего женского белья</span>
+                        </a>
+                        <p class="footer__text">Сеть салонов женского нижнего белья «Very Well». © 2010-2022 Все права
+                            защищены</p>
+                    </div>
+                    <div class="footer__middle">
+                        <div class="footer__columns">
+                            <div class="footer__column">
+                                <div class="footer__links">
+                                    <a href="mailto:info@verywellcompany.com">info@verywellcompany.com</a>
+                                    <a href="tel:+78002012436">8 (800) 201-24-36</a>
+                                </div>
+                            </div>
+                            <div class="footer__column">
+                                <div class="footer__links">
+                                    <a href="#">Оптовый раздел</a>
+                                    <a href="#">Публичная оферта</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__social">
+                            <a href="#">
+                                <img src="img/footer/soc1.png" alt="social">
+                            </a>
+                            <a href="#">
+                                <img src="img/footer/soc2.png" alt="social">
+                            </a>
+                            <a href="#">
+                                <img src="img/footer/soc3.png" alt="social">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__right">
+                        <p>Способы оплаты:</p>
+                        <div class="footer__pay-methods">
+                            <img src="img/footer/pay1.png" alt="pay">
+                            <img src="img/footer/pay2.png" alt="pay">
+                            <img src="img/footer/pay3.png" alt="pay">
+                            <img src="img/footer/pay4.png" alt="pay">
+                            <img src="img/footer/pay5.png" alt="pay">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="menu-popup">
+            <button class="menu-popup__close-btn close-btn">
+                <img src="img/header/close-btn.svg" alt="close">
+            </button>
+            <div class="menu-popup__search-inner input-inner">
+                <button class="search-btn">
+                    <img src="img/header/search.svg" alt="search">
+                </button>
+                <input type="text" class="input input_search" placeholder="Поиск">
+            </div>
+            <div class="menu-popup__nav">
+                <ul>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Преимущества</a></li>
+                    <li><a href="#">Новости и акции</a></li>
+                    <li><a href="#">Интернет-магазин</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">До и после</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Белье оптом</a></li>
+                </ul>
+            </div>
+            <div class="menu-popup__btns">
+                <button class="menu-popup__btn btn">Консультация специалиста</button>
+                <a href="tel:+78002012436">8 (800) 201-24-36</a>
+            </div>
+        </div>
+        <div class="search-popup">
+            <div class="search-popup__inner">
+                <button class="close-btn search-popup__close-btn">
+                    <img src="img/header/close-btn.svg" alt="close">
+                </button>
+                <button class="search-popup__back-btn">
+                    <img src="img/header/back-btn.svg" alt="arrow">
+                </button>
+                <div class="search-popup__search-inner input-inner">
+                    <button class="search-btn search-popup__search-btn">
+                        <img src="img/header/search.svg" alt="search">
+                    </button>
+                    <input type="text" class="input input_search search-popup__input" placeholder="Поиск">
+                </div>
+                <div class="search-popup__variants-inner">
+                    <p class="dim">Вы имели в виду:</p>
+                    <div class="search-popup__variants">
+                        <a href="#">Бюст</a>
+                        <a href="#">Бюстгарльтер</a>
+                    </div>
+                </div>
+                <div class="search-popup__header">
+                    <p class="dim">Товары</p>
+                    <a href="#" class="search-popup__link more-link">
+                        Посмотреть все
+                        <svg width="9" height="17" viewBox="0 0 9 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L7 8.63636L1 16" stroke="#1D1919" stroke-width="2" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="search-popup__items">
+                    <div class="search-popup__item">
+                        <a href="#" class="search-popup__img ibg">
+                            <img src="img/header/01.png" alt="image">
+                        </a>
+                        <a href="#">Бюстгальтер моделирующий мягкая чашка</a>
+                    </div>
+                    <div class="search-popup__item">
+                        <a href="#" class="search-popup__img ibg">
+                            <img src="img/header/02.png" alt="image">
+                        </a>
+                        <a href="#">Бюстгальтер моделирующий Push UP</a>
+                    </div>
+                    <div class="search-popup__item">
+                        <a href="#" class="search-popup__img ibg">
+                            <img src="img/header/03.png" alt="image">
+                        </a>
+                        <a href="#">Бюстгальтер "Corin"</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- <script src="js/dynamicAdaptive.js"></script> -->
+</body>
+
+</html>
