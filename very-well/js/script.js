@@ -1,28 +1,28 @@
 // проверка на мобильное устройство
-// let isMobile = {
-//     Android: function () {
-//         return navigator.userAgent.match(/Android/i);
-//     },
-//     BlackBerry: function () {
-//         return navigator.userAgent.match(/BlackBerry/i);
-//     },
-//     iOS: function () {
-//         return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-//     },
-//     Opera: function () {
-//         return navigator.userAgent.match(/Opera Mini/i);
-//     },
-//     Windows: function () {
-//         return navigator.userAgent.match(/IEMobile/i);
-//     },
-//     any: function () {
-//         return (isMobile.Android() ||
-//             isMobile.BlackBerry() ||
-//             isMobile.iOS() ||
-//             isMobile.Opera() ||
-//             isMobile.Windows());
-//     }
-// };
+let isMobile = {
+    Android: function () {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function () {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function () {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function () {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function () {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function () {
+        return (isMobile.Android() ||
+            isMobile.BlackBerry() ||
+            isMobile.iOS() ||
+            isMobile.Opera() ||
+            isMobile.Windows());
+    }
+};
 
 // для попапов
 // let wrapper = document.querySelector('.wrapper');
@@ -54,6 +54,13 @@ window.addEventListener('resize', function (e) {
 const setProductCurrentColor = (color) => {
     if (productCurrentColor) {
         productCurrentColor.innerHTML = color;
+    }
+}
+
+const closeActiveFilter = () => {
+    const activeFilter = document.querySelector('.filter.active');
+    if (activeFilter) {
+        activeFilter.classList.remove('active');
     }
 }
 
@@ -120,9 +127,21 @@ document.addEventListener('click', function (e) {
     }
 
     if (targetEl.closest('.order__products-btn')) {
-        console.log(1);
         orderProductsBtn.classList.toggle('active');
         orderProducts.classList.toggle('active');
+    }
+
+    if (isMobile.any()) {
+        if (targetEl.closest('.filter__btn')) {
+            closeActiveFilter();
+            const filter = targetEl.closest('.filter');
+            filter.classList.toggle('active');
+        }
+
+        if (!targetEl.closest('.filter__btn')
+            && !targetEl.closest('.dropdown')) {
+            closeActiveFilter();
+        }
     }
 });
 

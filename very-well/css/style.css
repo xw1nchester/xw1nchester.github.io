@@ -102,11 +102,13 @@ path {
   transition: 0.3s;
 }
 
-a:hover {
-  color: #AD655F;
-}
-a:hover path {
-  stroke: #AD655F;
+@media (any-hover: hover) {
+  a:hover {
+    color: #AD655F;
+  }
+  a:hover path {
+    stroke: #AD655F;
+  }
 }
 
 .burger-btn {
@@ -203,8 +205,10 @@ a:hover path {
   right: 0;
   transform: translateY(-50%);
 }
-.input-inner__arrow-btn:hover path {
-  stroke: #AD655F;
+@media (any-hover: hover) {
+  .input-inner__arrow-btn:hover path {
+    stroke: #AD655F;
+  }
 }
 
 .input {
@@ -223,8 +227,10 @@ a:hover path {
   left: 0;
   transform: translateY(-50%);
 }
-.search-btn:hover path {
-  fill: #AD655F;
+@media (any-hover: hover) {
+  .search-btn:hover path {
+    fill: #AD655F;
+  }
 }
 
 .close-btn {
@@ -354,17 +360,21 @@ a:hover path {
   align-items: center;
   text-align: center;
 }
-.btn:hover {
-  color: #AD655F;
-  background-color: #fff;
+@media (any-hover: hover) {
+  .btn:hover {
+    color: #AD655F;
+    background-color: #fff;
+  }
 }
 .btn.transparent {
   border: 1px solid #fff;
   background: rgba(188, 188, 188, 0.3);
 }
-.btn.transparent:hover {
-  background-color: #fff;
-  color: #1D1919;
+@media (any-hover: hover) {
+  .btn.transparent:hover {
+    background-color: #fff;
+    color: #1D1919;
+  }
 }
 
 .cards {
@@ -679,10 +689,25 @@ a:hover path {
   position: relative;
   padding-bottom: 10px;
 }
-.filter:hover .dropdown {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
+@media (any-hover: hover) {
+  .filter:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+  .filter:hover .filter__btn svg {
+    transform: rotate(-180deg);
+  }
+}
+@media (any-hover: none) {
+  .filter.active .dropdown {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+  .filter.active .filter__btn svg {
+    transform: rotate(-180deg);
+  }
 }
 .filter__btn {
   display: flex;
@@ -699,15 +724,6 @@ a:hover path {
   .filter__btn {
     gap: 8px;
   }
-}
-.filter__btn:hover {
-  color: #AD655F;
-}
-.filter__btn:hover svg {
-  transform: rotate(-180deg);
-}
-.filter__btn:hover path {
-  stroke: #AD655F;
 }
 .filter__btn_no-animate svg {
   transition: 0s;
@@ -742,12 +758,6 @@ a:hover path {
   visibility: hidden;
   pointer-events: none;
 }
-@media (max-width: 400px) {
-  .dropdown {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
 .dropdown_checkboxes {
   padding: 20px 30px 30px;
 }
@@ -762,9 +772,11 @@ a:hover path {
 .dropdown__select-btn {
   border-bottom: 1px solid #1D1919;
 }
-.dropdown__select-btn:hover {
-  border-bottom: 1px solid #AD655F;
-  color: #AD655F;
+@media (any-hover: hover) {
+  .dropdown__select-btn:hover {
+    border-bottom: 1px solid #AD655F;
+    color: #AD655F;
+  }
 }
 .dropdown__list {
   overflow: auto;
@@ -782,6 +794,7 @@ a:hover path {
   flex-direction: column;
   gap: 24px;
   width: 100%;
+  padding-right: 3px;
 }
 .dropdown__checkbox-inner {
   display: flex;
@@ -816,9 +829,15 @@ a:hover path {
   padding: 0 70px;
   min-height: 40px;
 }
-.dropdown__size.active, .dropdown__size:hover {
+.dropdown__size.active {
   background-color: #AD655F;
   color: #fff;
+}
+@media (any-hover: hover) {
+  .dropdown__size:hover {
+    background-color: #AD655F;
+    color: #fff;
+  }
 }
 
 .checkbox,
@@ -893,11 +912,13 @@ a:hover path {
   justify-content: center;
   align-items: center;
 }
-.pagination__btn:hover {
-  color: #AD655F;
-}
-.pagination__btn:hover path {
-  stroke: #AD655F;
+@media (any-hover: hover) {
+  .pagination__btn:hover {
+    color: #AD655F;
+  }
+  .pagination__btn:hover path {
+    stroke: #AD655F;
+  }
 }
 .pagination__btn.active {
   color: #AD655F;
@@ -1043,8 +1064,10 @@ a:hover path {
   width: 30px;
   height: 27px;
 }
-.header__basket:hover {
-  opacity: 0.7;
+@media (any-hover: hover) {
+  .header__basket:hover {
+    opacity: 0.7;
+  }
 }
 .header__count {
   min-height: 16px;
@@ -1877,8 +1900,10 @@ a:hover path {
 .footer__social a {
   display: flex;
 }
-.footer__social a:hover {
-  opacity: 0.7;
+@media (any-hover: hover) {
+  .footer__social a:hover {
+    opacity: 0.7;
+  }
 }
 .footer__right {
   display: flex;
@@ -2486,9 +2511,11 @@ a:hover path {
   border-bottom: 1px solid #1D1919;
   text-transform: uppercase;
 }
-.item-map-block__btn:hover {
-  color: #AD655F;
-  border-bottom: 1px solid #AD655F;
+@media (any-hover: hover) {
+  .item-map-block__btn:hover {
+    color: #AD655F;
+    border-bottom: 1px solid #AD655F;
+  }
 }
 
 .contacts {
@@ -2962,7 +2989,7 @@ a:hover path {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 10px;
+  gap: 10px;
 }
 @media (max-width: 1186px) {
   .product-card__size-inner {
@@ -2976,12 +3003,12 @@ a:hover path {
 }
 @media (max-width: 1186px) {
   .product-card__size-inner {
-    margin-top: calc(10px - (2.7390300231px - 0.2309468822vw));
+    gap: calc(10px - (2.7390300231px - 0.2309468822vw));
   }
 }
 @media (max-width: 320px) {
   .product-card__size-inner {
-    margin-top: 8px;
+    gap: 8px;
   }
 }
 .product-card__size-btns {
@@ -2994,9 +3021,11 @@ a:hover path {
   font-size: 12px;
   border-bottom: 1px solid #1D1919;
 }
-.product-card__size-btn:hover {
-  color: #AD655F;
-  border-bottom: 1px solid #AD655F;
+@media (any-hover: hover) {
+  .product-card__size-btn:hover {
+    color: #AD655F;
+    border-bottom: 1px solid #AD655F;
+  }
 }
 .product-card__desc-inner {
   margin-top: 50px;
@@ -3478,11 +3507,21 @@ a:hover path {
 .item-basket__count-btn {
   font-size: 20px;
 }
-.item-basket__count-btn:hover {
-  opacity: 0.7;
+@media (any-hover: hover) {
+  .item-basket__count-btn:hover {
+    opacity: 0.7;
+  }
 }
-.item-basket__delete:hover {
-  opacity: 0.7;
+@media (any-hover: hover) {
+  .item-basket__delete:hover {
+    opacity: 0.7;
+  }
+}
+@media (max-width: 400px) {
+  .item-basket__dropdown {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .order {
@@ -3696,8 +3735,10 @@ a:hover path {
   border-bottom: 1px solid rgba(29, 25, 25, 0.3);
   pointer-events: none;
 }
-.order__promo-btn:hover {
-  opacity: 0.7;
+@media (any-hover: hover) {
+  .order__promo-btn:hover {
+    opacity: 0.7;
+  }
 }
 .order__promo-btn.active {
   pointer-events: all;
