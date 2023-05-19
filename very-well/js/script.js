@@ -133,7 +133,6 @@ document.addEventListener('click', function (e) {
 
     if (isMobile.any()) {
         if (targetEl.closest('.filter__btn')) {
-            closeActiveFilter();
             const filter = targetEl.closest('.filter');
             filter.classList.toggle('active');
         }
