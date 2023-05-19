@@ -57,9 +57,9 @@ const setProductCurrentColor = (color) => {
     }
 }
 
-const closeActiveFilter = () => {
+const closeActiveFilter = (currentFilter) => {
     const activeFilter = document.querySelector('.filter.active');
-    if (activeFilter) {
+    if (activeFilter && activeFilter !== currentFilter) {
         activeFilter.classList.remove('active');
     }
 }
@@ -134,7 +134,10 @@ document.addEventListener('click', function (e) {
     if (isMobile.any()) {
         if (targetEl.closest('.filter__btn')) {
             const filter = targetEl.closest('.filter');
-            filter.classList.toggle('active');
+            if (filter) {
+                closeActiveFilter(filter);
+                filter.classList.toggle('active');
+            }
         }
 
         if (!targetEl.closest('.filter__btn')
