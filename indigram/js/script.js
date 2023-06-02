@@ -34,8 +34,7 @@
 //     wrapper.style.paddingRight = padding + 'px';
 // }
 
-// инициализация
-document.addEventListener('DOMContentLoaded', function (e) {
+const updateDropdownsPostions = () => {
     if (dropdowns) {
         dropdowns.forEach(dropdown => {
             const parent = dropdown.closest('.filter');
@@ -43,6 +42,11 @@ document.addEventListener('DOMContentLoaded', function (e) {
             dropdown.style.top = top + "px";
         })
     }
+}
+
+// инициализация
+document.addEventListener('DOMContentLoaded', function (e) {
+    updateDropdownsPostions();
 })
 
 // изменение ширины экрана
@@ -50,8 +54,12 @@ window.addEventListener('resize', function (e) {
     if (window.innerWidth > 998 && burgerBtn && menuPopup) {
         burgerBtn.classList.remove('active');
         menuPopup.classList.remove('active');
-        body.classList.remove('lock');
+        if (!cityPopup.classList.contains('active')) {
+            body.classList.remove('lock');
+        }
     }
+
+    updateDropdownsPostions();
 });
 
 // событие клика
@@ -82,11 +90,13 @@ document.addEventListener('click', function (e) {
         const filter = targetEl.closest('.filter');
         const activeFilter = document.querySelector('.filter.active');
 
-        if (activeFilter && activeFilter != filter) {
-            activeFilter.classList.remove('active');
-        }
+        if (filter) {
+            if (activeFilter && activeFilter != filter) {
+                activeFilter.classList.remove('active');
+            }
 
-        filter.classList.toggle('active');
+            filter.classList.toggle('active');
+        }
     }
 
     if (targetEl.closest('.review__open')) {
@@ -111,24 +121,21 @@ document.addEventListener('click', function (e) {
 
     if (targetEl.closest('.open-city-popup')) {
         cityPopup.classList.toggle('active');
-
-        if (window.innerWidth > 998) {
-            body.classList.add('lock');
-        }
+        body.classList.add('lock');
     }
 
     if (!targetEl.closest('.city-popup__inner')
         && !targetEl.closest('.open-city-popup')
         || targetEl.closest('.city-popup__close-btn')) {
-        cityPopup.classList.remove('active');
-        if (window.innerWidth > 998) {
+        if (cityPopup.classList.contains('active')) {
+            cityPopup.classList.remove('active');
             body.classList.remove('lock');
         }
     }
 
-    if(targetEl.closest('.profile__map--btn')) {
+    if (targetEl.closest('.profile__map--btn')) {
         const parent = document.querySelector('.profile__map');
-        if(parent) {
+        if (parent) {
             parent.classList.add('active');
         }
     }
