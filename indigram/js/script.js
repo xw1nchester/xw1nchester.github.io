@@ -50,7 +50,6 @@ window.addEventListener('resize', function (e) {
     if (window.innerWidth > 998 && burgerBtn && menuPopup) {
         burgerBtn.classList.remove('active');
         menuPopup.classList.remove('active');
-        cityPopup.classList.remove('active');
         body.classList.remove('lock');
     }
 });
