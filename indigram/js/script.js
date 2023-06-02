@@ -34,11 +34,23 @@
 //     wrapper.style.paddingRight = padding + 'px';
 // }
 
+// инициализация
+document.addEventListener('DOMContentLoaded', function (e) {
+    if (dropdowns) {
+        dropdowns.forEach(dropdown => {
+            const parent = dropdown.closest('.filter');
+            const top = parent.getBoundingClientRect().top;
+            dropdown.style.top = top + "px";
+        })
+    }
+})
+
 // изменение ширины экрана
 window.addEventListener('resize', function (e) {
     if (window.innerWidth > 998 && burgerBtn && menuPopup) {
         burgerBtn.classList.remove('active');
         menuPopup.classList.remove('active');
+        cityPopup.classList.remove('active');
         body.classList.remove('lock');
     }
 });
@@ -74,11 +86,11 @@ document.addEventListener('click', function (e) {
         if (activeFilter && activeFilter != filter) {
             activeFilter.classList.remove('active');
         }
-        
+
         filter.classList.toggle('active');
     }
 
-    if(targetEl.closest('.review__open')) {
+    if (targetEl.closest('.review__open')) {
         let reviewToggleButton = document.querySelector(".review__open");
         let reviewContent = document.querySelector(".profile__review");
 
@@ -88,7 +100,7 @@ document.addEventListener('click', function (e) {
         reviewContent.classList.toggle("active");
     }
 
-    if(targetEl.closest('.comment__open')) {
+    if (targetEl.closest('.comment__open')) {
         let commentToggleButton = document.querySelector(".comment__open");
         let reviewContent = document.querySelector(".profile__comment");
 
@@ -97,12 +109,39 @@ document.addEventListener('click', function (e) {
         commentToggleButton.classList.toggle("active");
         reviewContent.classList.toggle("active");
     }
+
+    if (targetEl.closest('.open-city-popup')) {
+        cityPopup.classList.toggle('active');
+
+        if (window.innerWidth > 998) {
+            body.classList.add('lock');
+        }
+    }
+
+    if (!targetEl.closest('.city-popup__inner')
+        && !targetEl.closest('.open-city-popup')
+        || targetEl.closest('.city-popup__close-btn')) {
+        cityPopup.classList.remove('active');
+        if (window.innerWidth > 998) {
+            body.classList.remove('lock');
+        }
+    }
+
+    if(targetEl.closest('.profile__map--btn')) {
+        const parent = document.querySelector('.profile__map');
+        if(parent) {
+            parent.classList.add('active');
+        }
+    }
 });
 
 // бургер меню
 let burgerBtn = document.querySelector('.burger-btn');
 let menuPopup = document.querySelector('.sidebar');
 let body = document.body;
+
+const dropdowns = document.querySelectorAll('.dropdown');
+const cityPopup = document.querySelector('.city-popup');
 
 $(".profile__main--slider").slick({
     slidesToShow: 1,
@@ -126,7 +165,7 @@ $(".profile__slider--small").slick({
     ]
 });
 
-const allSwipers = document.querySelectorAll('.swiper');
+const allSwipers = document.querySelectorAll('.card__slider');
 
 allSwipers.forEach(swiper => {
     const card = swiper.closest('.card');
