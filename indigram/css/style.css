@@ -729,7 +729,7 @@ button {
 }
 
 .footer {
-  padding: 10px 0;
+  padding: 20px 0;
   background-color: var(--secondBgColor);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -747,27 +747,17 @@ button {
   }
 }
 
-.footer__city {
+.footer__city,
+.footer__archive,
+.footer .sidebar__sign-btn {
   display: flex;
   align-items: center;
   gap: 15px;
+  font-size: 15px;
 }
 
 .footer__city:hover {
   opacity: 0.7;
-}
-
-.footer__archive {
-  border: 1px solid var(--mainTextColor);
-  opacity: 0.5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px;
-  border-radius: 4px;
-  width: 100%;
-  max-width: 200px;
 }
 
 .footer__archive:hover {
