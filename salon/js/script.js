@@ -178,6 +178,10 @@ const header = document.querySelector('.header');
 const headerHeight = header.offsetHeight;
 
 window.addEventListener('scroll', (e) => {
+    if(!header || !imageBlock) {
+        return;
+    }
+    
     if (header.getBoundingClientRect().top < -headerHeight) {
         if (!imageBlock.classList.contains('hide')) {
             imageBlock.classList.add('hide');
