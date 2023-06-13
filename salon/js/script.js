@@ -181,7 +181,7 @@ window.addEventListener('scroll', (e) => {
     if(!header || !imageBlock) {
         return;
     }
-    
+
     if (header.getBoundingClientRect().top < -headerHeight) {
         if (!imageBlock.classList.contains('hide')) {
             imageBlock.classList.add('hide');

@@ -32,7 +32,7 @@
 a {
     text-decoration: none;
     color: inherit;
-    transition: .3s;
+    transition: opacity .3s;
 }
 
 ul,
@@ -78,6 +78,10 @@ body {
 
         .light-theme-icon {
             display: block;
+        }
+
+        .profile__btn {
+            background-color: rgba($color: #fff, $alpha: 0.6);
         }
     }
 
@@ -138,7 +142,7 @@ textarea::placeholder {
 button {
     cursor: pointer;
     background-color: transparent;
-    transition: .3s;
+    transition: opacity .3s;
 }
 
 .video {
@@ -278,8 +282,7 @@ button {
         }
 
         @media (max-width:576px) {
-            padding-top: 0;
-            padding-bottom: 30px;
+            padding: 30px 0;
             overflow: unset;
         }
     }
@@ -288,6 +291,10 @@ button {
         display: flex;
         flex-direction: column;
         gap: 30px;
+
+        @media (max-width:576px) {
+            gap: 20px;
+        }
     }
 
     &__cards {
@@ -368,8 +375,14 @@ button {
         @include adaptive-width(2, 20);
     }
 
-    @media (max-width:768px) {
+    @media (max-width:640px) {
         width: 100%;
+    }
+
+    &__image-inner {
+        width: 100%;
+        position: relative;
+        display: flex;
     }
 
     &__image {
@@ -389,8 +402,14 @@ button {
 
     &__video-btn {
         position: absolute;
-        top: 10px;
-        right: 10px;
+        top: 0;
+        right: 0;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
     }
 
     &__content {
@@ -438,6 +457,24 @@ button {
         display: flex;
         align-items: center;
         gap: 20px;
+
+        @media (max-width:768px) {
+            gap: 16px;
+        }
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__social-link {
+        display: flex;
+
+        &:hover {
+            opacity: 0.7;
+        }
     }
 }
 
@@ -655,7 +692,7 @@ button {
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 20px;
 
         @media (max-width:768px) {
             gap: 20px;
@@ -710,7 +747,6 @@ button {
     &__filters {
         display: flex;
         flex-direction: column;
-        gap: 10px;
     }
 
     &__link {
@@ -758,7 +794,7 @@ button {
     padding: 10px;
     border-radius: 10px;
     width: calc(100% - 315px - 335px - #{$safety*2}px);
-    max-height: 300px;
+    max-height: 500px;
     overflow: auto;
     z-index: 3;
 
@@ -774,6 +810,7 @@ button {
     @media (max-width:992px) {
         width: 100%;
         position: static;
+        max-height: 400px;
     }
 
     &__inner {
@@ -970,6 +1007,7 @@ button {
 
     @media (max-width:576px) {
         background-color: transparent;
+        padding: 0 0 30px;
     }
 
     &__content {
@@ -1019,7 +1057,7 @@ button {
         justify-content: center;
         gap: 10px;
         padding: 10px;
-        color: #fff;
+        color: var(--textColor);
     }
 
     &__short-info {
@@ -1065,6 +1103,10 @@ button {
         border-radius: 10px;
         background-color: var(--blockColor);
         line-height: 1.375;
+
+        p {
+            opacity: 0.7;
+        }
     }
 
     &__slider-block {
@@ -1229,10 +1271,6 @@ button {
         line-height: 1.375;
         background-color: var(--blockColor);
         border-radius: 10px;
-
-        p {
-            opacity: 0.7;
-        }
     }
 }
 
@@ -1306,7 +1344,6 @@ button {
         width: 100%;
         height: 100%;
         background-color: var(--darkColor);
-        opacity: 0.1;
         opacity: 0;
         transition: .3s;
         z-index: 1;
@@ -1569,6 +1606,12 @@ button {
         display: none;
         flex-direction: column;
         gap: 20px;
+        max-height: 360px;
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
 
         &.active {
             display: flex;
@@ -1667,14 +1710,6 @@ button {
     @include adaptive-value('gap', 30, 20);
     text-align: center;
 
-    @media (max-width:768px) {
-        padding: 40px 0;
-    }
-
-    @media (max-width:576px) {
-        padding: 30px 0;
-    }
-
     &__image {
         max-width: 90%;
     }
@@ -1732,7 +1767,7 @@ button {
         width: 100%;
 
         @media (max-width:768px) {
-            padding: 10px;
+            padding: 10px 20px;
         }
     }
 
@@ -1752,26 +1787,6 @@ button {
         background-color: var(--darkColor);
     }
 
-    &__rows {
-        background-color: var(--blockColor);
-        border-radius: 10px;
-        width: 100%;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 40px;
-        overflow: auto;
-
-        @media (max-width:768px) {
-            padding: 10px;
-        }
-
-        &::-webkit-scrollbar {
-            display: none;
-        }
-    }
-
     &__row {
         display: flex;
         flex-direction: column;
@@ -1788,36 +1803,53 @@ button {
     &__columns {
         display: flex;
         flex-wrap: wrap;
-        column-gap: 20px;
-        row-gap: 30px;
+        gap: 30px;
         width: 100%;
+        background-color: var(--blockColor);
+        padding: 20px;
+        border-radius: 10px;
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 
     &__column {
-        @include adaptive-width(5, 20);
+        @include adaptive-width(4, 30);
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 16px;
+        gap: 20px;
 
         @media (max-width:992px) {
-            @include adaptive-width(4, 20);
+            @include adaptive-width(3, 30);
         }
 
         @media (max-width:768px) {
-            @include adaptive-width(3, 20);
+            @include adaptive-width(2, 30);
         }
 
-        @media (max-width:576px) {
-            @include adaptive-width(2, 20);
-        }
-
-        @media (max-width:400px) {
+        @media (max-width:480px) {
             width: 100%;
         }
     }
 
+    &__links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        width: 100%;
+    }
+
     &__link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+
         &:hover {
             opacity: 0.7;
         }
