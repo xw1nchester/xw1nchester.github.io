@@ -47,7 +47,19 @@ const updateDropdownsPostions = () => {
 }
 
 // инициализация
-document.addEventListener('DOMContentLoaded', updateDropdownsPostions)
+const reviewsItems = document.querySelector('.reviews__items');
+const reviewsForm = document.querySelector('.reviews__form');
+
+document.addEventListener('DOMContentLoaded', () => {
+    updateDropdownsPostions();
+
+    const formHeight = reviewsForm.getBoundingClientRect().height;
+
+    reviewsItems.style.maxHeight = `${formHeight}px`;
+
+    reviewsItems.classList.remove('active');
+    reviewsForm.classList.remove('active');
+})
 
 const sidebar = document.querySelector('.sidebar');
 
@@ -121,20 +133,16 @@ document.addEventListener('click', function (e) {
         map.classList.add('active');
     }
 
-    if (targetEl.closest('.open-reviews-list')) {
+    if (targetEl.closest('.open-reviews-list') && reviewsItems) {
         const btn = targetEl.closest('.open-reviews-list');
-        const parent = targetEl.closest('.reviews__block');
-        const reviewsList = parent.querySelector('.reviews__items');
         btn.classList.toggle('active');
-        reviewsList.classList.toggle('active');
+        reviewsItems.classList.toggle('active');
     }
 
-    if (targetEl.closest('.open-reviews-form')) {
+    if (targetEl.closest('.open-reviews-form') && reviewsForm) {
         const btn = targetEl.closest('.open-reviews-form');
-        const parent = targetEl.closest('.reviews__block');
-        const form = parent.querySelector('.reviews__form');
         btn.classList.toggle('active');
-        form.classList.toggle('active');
+        reviewsForm.classList.toggle('active');
     }
 
     if (cityPopup && targetEl.closest('.open-city-popup')) {
@@ -178,7 +186,7 @@ const header = document.querySelector('.header');
 const headerHeight = header.offsetHeight;
 
 window.addEventListener('scroll', (e) => {
-    if(!header || !imageBlock) {
+    if (!header || !imageBlock) {
         return;
     }
 
