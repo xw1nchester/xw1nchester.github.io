@@ -1503,6 +1503,7 @@ button {
   flex-direction: column;
   gap: 20px;
   overflow: auto;
+  max-height: 456px;
 }
 .reviews__items::-webkit-scrollbar {
   display: none;

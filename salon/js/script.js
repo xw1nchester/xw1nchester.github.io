@@ -47,19 +47,7 @@ const updateDropdownsPostions = () => {
 }
 
 // инициализация
-const reviewsItems = document.querySelector('.reviews__items');
-const reviewsForm = document.querySelector('.reviews__form');
-
-document.addEventListener('DOMContentLoaded', () => {
-    updateDropdownsPostions();
-
-    const formHeight = reviewsForm.getBoundingClientRect().height;
-
-    reviewsItems.style.maxHeight = `${formHeight}px`;
-
-    reviewsItems.classList.remove('active');
-    reviewsForm.classList.remove('active');
-})
+document.addEventListener('DOMContentLoaded', updateDropdownsPostions)
 
 const sidebar = document.querySelector('.sidebar');
 
@@ -174,6 +162,9 @@ document.addEventListener('click', function (e) {
 // бургер меню
 const burgerBtn = document.querySelector('.burger-btn');
 const body = document.body;
+
+const reviewsItems = document.querySelector('.reviews__items');
+const reviewsForm = document.querySelector('.reviews__form');
 
 const themeSwitchers = document.querySelectorAll('.theme-switcher');
 const cityPopup = document.querySelector('.city-popup');
