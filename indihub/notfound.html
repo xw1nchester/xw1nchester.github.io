@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper lock-padding">
+        <header class="header">
+            <div class="header__container container">
+                <div class="header__top">
+                    <a href="#" class="header__link">ТОП-100 анкет</a>
+                    <a href="#" class="header__link">избранные анкеты</a>
+                    <a href="#" class="header__link">пункт 3</a>
+                    <a href="#" class="header__link">пункт 4</a>
+                </div>
+                <div class="header__middle">
+                    <a href="/" class="header__logo">
+                        <img src="img/header-logo.svg" alt="logo">
+                    </a>
+                    <div class="header__input-inner">
+                        <button class="header__search-btn">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.87398 14.4999C4.25872 15.8866 6.10275 16.7191 8.05868 16.8405C10.0146 16.9618 11.9474 16.3638 13.493 15.1589L18.811 20.4769C18.9996 20.6591 19.2522 20.7599 19.5144 20.7576C19.7766 20.7553 20.0274 20.6502 20.2128 20.4648C20.3982 20.2793 20.5034 20.0285 20.5057 19.7663C20.5079 19.5041 20.4071 19.2515 20.225 19.0629L14.907 13.7449C16.1653 12.1301 16.7602 10.0961 16.5704 8.0577C16.3805 6.01933 15.4203 4.13013 13.8855 2.7754C12.3506 1.42067 10.3568 0.702446 8.31065 0.767212C6.26447 0.831978 4.32007 1.67485 2.87398 3.12393C2.12678 3.87076 1.53405 4.75748 1.12964 5.73345C0.725238 6.70942 0.51709 7.7555 0.51709 8.81193C0.51709 9.86837 0.725238 10.9145 1.12964 11.8904C1.53405 12.8664 2.12678 13.7531 2.87398 14.4999ZM4.28798 4.53993C5.27656 3.55138 6.57731 2.93618 7.96861 2.79913C9.35992 2.66209 10.7557 3.01168 11.9181 3.78836C13.0806 4.56503 13.9378 5.72073 14.3437 7.05855C14.7496 8.39637 14.6791 9.83354 14.1441 11.1252C13.6092 12.4169 12.643 13.4831 11.4101 14.1422C10.1772 14.8014 8.75391 15.0126 7.38271 14.74C6.0115 14.4674 4.77723 13.7279 3.89018 12.6473C3.00313 11.5667 2.51819 10.212 2.51798 8.81393C2.51524 8.01951 2.67029 7.23245 2.97413 6.49842C3.27798 5.76439 3.72456 5.098 4.28798 4.53793V4.53993Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                        <input type="text" class="header__input" placeholder="Изучить Индихаб">
+                    </div>
+                    <button class="burger-btn">
+                        <span></span>
+                    </button>
+                </div>
+                <div class="header__bottom">
+                    <div class="header__input-inner hidden">
+                        <button class="header__search-btn">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.87398 14.4999C4.25872 15.8866 6.10275 16.7191 8.05868 16.8405C10.0146 16.9618 11.9474 16.3638 13.493 15.1589L18.811 20.4769C18.9996 20.6591 19.2522 20.7599 19.5144 20.7576C19.7766 20.7553 20.0274 20.6502 20.2128 20.4648C20.3982 20.2793 20.5034 20.0285 20.5057 19.7663C20.5079 19.5041 20.4071 19.2515 20.225 19.0629L14.907 13.7449C16.1653 12.1301 16.7602 10.0961 16.5704 8.0577C16.3805 6.01933 15.4203 4.13013 13.8855 2.7754C12.3506 1.42067 10.3568 0.702446 8.31065 0.767212C6.26447 0.831978 4.32007 1.67485 2.87398 3.12393C2.12678 3.87076 1.53405 4.75748 1.12964 5.73345C0.725238 6.70942 0.51709 7.7555 0.51709 8.81193C0.51709 9.86837 0.725238 10.9145 1.12964 11.8904C1.53405 12.8664 2.12678 13.7531 2.87398 14.4999ZM4.28798 4.53993C5.27656 3.55138 6.57731 2.93618 7.96861 2.79913C9.35992 2.66209 10.7557 3.01168 11.9181 3.78836C13.0806 4.56503 13.9378 5.72073 14.3437 7.05855C14.7496 8.39637 14.6791 9.83354 14.1441 11.1252C13.6092 12.4169 12.643 13.4831 11.4101 14.1422C10.1772 14.8014 8.75391 15.0126 7.38271 14.74C6.0115 14.4674 4.77723 13.7279 3.89018 12.6473C3.00313 11.5667 2.51819 10.212 2.51798 8.81393C2.51524 8.01951 2.67029 7.23245 2.97413 6.49842C3.27798 5.76439 3.72456 5.098 4.28798 4.53793V4.53993Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                        <input type="text" class="header__input" placeholder="Изучить Индихаб">
+                    </div>
+                    <div class="filter parent">
+                        <button class="header__btn filter__btn">
+                            <svg class="header__btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22.4213 9.39C22.245 8.862 21.7995 8.48325 21.2595 8.40075L15.7778 7.5795L13.3103 2.3415C13.065 1.8225 12.5633 1.5 12 1.5C11.4368 1.5 10.935 1.8225 10.6898 2.3415L8.25826 7.56075L2.74051 8.40075C2.20051 8.48325 1.75576 8.862 1.57876 9.39C1.39801 9.93225 1.53151 10.5203 1.92751 10.9245L5.91826 15.009L4.97551 20.766C4.88176 21.3412 5.11426 21.9045 5.58376 22.2352C6.03526 22.5555 6.61576 22.587 7.09876 22.3207L11.9655 19.6027L16.9013 22.3207C17.3858 22.587 17.9648 22.554 18.4163 22.2352C18.8858 21.9045 19.119 21.3412 19.0245 20.766L18.0803 15.0015L22.0725 10.9245C22.4685 10.5203 22.602 9.93225 22.4213 9.39Z"
+                                    fill="white" />
+                            </svg>
+                            Популярное
+                            <svg class="header__btn-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.815017 2.20711C0.185052 1.57714 0.631219 0.5 1.52212 0.5H6.17898H10.8358C11.7267 0.5 12.1729 1.57714 11.5429 2.20711L6.88608 6.86396C6.49556 7.25449 5.8624 7.25448 5.47187 6.86396L0.815017 2.20711Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                        <div class="dropdown small">
+                            <div class="dropdown__inner">
+                                <div class="dropdown__column big">
+                                    <div class="dropdown__items">
+                                        <a href="#" class="dropdown__item">Проверенные анкеты <span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Проверенные анкеты <span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Проверенные анкеты <span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Проверенные анкеты <span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Проверенные анкеты <span
+                                                class="dropdown__count">(20)</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <button class="header__btn filter__btn">
+                            <svg class="header__btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.9999 22C14.3813 21.0317 16.4165 19.3696 17.841 17.2296C19.2655 15.0896 20.0135 12.5706 19.9879 10C20.0117 8.9357 19.8226 7.87737 19.4318 6.88713C19.0409 5.8969 18.4562 4.99473 17.7119 4.23359C16.9676 3.47246 16.0788 2.86769 15.0975 2.4548C14.1163 2.04191 13.0624 1.82922 11.9979 1.82922C10.9333 1.82922 9.87945 2.04191 8.8982 2.4548C7.91696 2.86769 7.0281 3.47246 6.2838 4.23359C5.5395 4.99473 4.95477 5.8969 4.56394 6.88713C4.1731 7.87737 3.98404 8.9357 4.00786 10C3.98252 12.5711 4.73113 15.0904 6.1564 17.2304C7.58167 19.3705 9.61769 21.0323 11.9999 22ZM9.99986 10C9.99986 9.60445 10.1172 9.21777 10.3369 8.88887C10.5567 8.55997 10.869 8.30362 11.2345 8.15225C11.5999 8.00087 12.0021 7.96127 12.39 8.03844C12.778 8.11561 13.1344 8.30609 13.4141 8.5858C13.6938 8.8655 13.8843 9.22187 13.9614 9.60983C14.0386 9.99779 13.999 10.3999 13.8476 10.7654C13.6962 11.1308 13.4399 11.4432 13.111 11.6629C12.7821 11.8827 12.3954 12 11.9999 12C11.4694 12 10.9607 11.7893 10.5856 11.4142C10.2106 11.0391 9.99986 10.5304 9.99986 10Z"
+                                    fill="white" />
+                            </svg>
+                            Район
+                            <svg class="header__btn-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.815017 2.20711C0.185052 1.57714 0.631219 0.5 1.52212 0.5H6.17898H10.8358C11.7267 0.5 12.1729 1.57714 11.5429 2.20711L6.88608 6.86396C6.49556 7.25449 5.8624 7.25448 5.47187 6.86396L0.815017 2.20711Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                        <div class="dropdown">
+                            <div class="dropdown__inner">
+                                <div class="dropdown__column">
+                                    <p class="dropdown__label">А</p>
+                                    <div class="dropdown__items">
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                    </div>
+                                </div>
+                                <div class="dropdown__column">
+                                    <p class="dropdown__label">А</p>
+                                    <div class="dropdown__items">
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                    </div>
+                                </div>
+                                <div class="dropdown__column">
+                                    <p class="dropdown__label">А</p>
+                                    <div class="dropdown__items">
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                    </div>
+                                </div>
+                                <div class="dropdown__column">
+                                    <p class="dropdown__label">А</p>
+                                    <div class="dropdown__items">
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                    </div>
+                                </div>
+                                <div class="dropdown__column">
+                                    <p class="dropdown__label">А</p>
+                                    <div class="dropdown__items">
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                    </div>
+                                </div>
+                                <div class="dropdown__column">
+                                    <p class="dropdown__label">А</p>
+                                    <div class="dropdown__items">
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <button class="header__btn filter__btn">
+                            <svg class="header__btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.99983 8V6C1.99983 5.73478 2.10518 5.48043 2.29272 5.29289C2.48026 5.10536 2.73461 5 2.99983 5C3.26504 5 3.5194 5.10536 3.70693 5.29289C3.89447 5.48043 3.99983 5.73478 3.99983 6V8C3.99983 8.26522 3.89447 8.51957 3.70693 8.70711C3.5194 8.89464 3.26504 9 2.99983 9C2.73461 9 2.48026 8.89464 2.29272 8.70711C2.10518 8.51957 1.99983 8.26522 1.99983 8ZM20.9998 9C21.265 9 21.5194 8.89464 21.7069 8.70711C21.8945 8.51957 21.9998 8.26522 21.9998 8V6C21.9998 5.73478 21.8945 5.48043 21.7069 5.29289C21.5194 5.10536 21.265 5 20.9998 5C20.7346 5 20.4803 5.10536 20.2927 5.29289C20.1052 5.48043 19.9998 5.73478 19.9998 6V8C19.9998 8.26522 20.1052 8.51957 20.2927 8.70711C20.4803 8.89464 20.7346 9 20.9998 9ZM6.08383 15.544C6.03089 15.3674 6.00262 15.1843 5.99983 15V13H17.9998V15C17.997 15.1843 17.9688 15.3674 17.9158 15.544L21.7808 20.375C21.8629 20.4776 21.924 20.5953 21.9606 20.7215C21.9971 20.8476 22.0085 20.9797 21.994 21.1103C21.9795 21.2409 21.9395 21.3673 21.8761 21.4824C21.8128 21.5975 21.7274 21.6989 21.6248 21.781C21.5223 21.8631 21.4045 21.9241 21.2784 21.9607C21.1522 21.9973 21.0201 22.0087 20.8895 21.9942C20.759 21.9797 20.6325 21.9396 20.5175 21.8763C20.4024 21.813 20.3009 21.7276 20.2188 21.625L18.9188 20H5.07983L3.77983 21.625C3.69775 21.7276 3.59628 21.813 3.4812 21.8763C3.36612 21.9396 3.2397 21.9797 3.10914 21.9942C2.97858 22.0087 2.84644 21.9973 2.72028 21.9607C2.59411 21.9241 2.47639 21.8631 2.37383 21.781C2.27127 21.6989 2.18587 21.5975 2.12253 21.4824C2.05918 21.3673 2.01912 21.2409 2.00464 21.1103C1.99015 20.9797 2.00152 20.8476 2.0381 20.7215C2.07468 20.5953 2.13575 20.4776 2.21783 20.375L6.08383 15.544ZM6.67983 18H17.3188L16.4698 16.939C16.3161 16.9777 16.1583 16.9982 15.9998 17H7.99983C7.84123 16.9984 7.68342 16.9776 7.52983 16.938L6.67983 18ZM17.9998 4C17.9998 3.46957 17.7891 2.96086 17.414 2.58579C17.039 2.21071 16.5303 2 15.9998 2H7.99983C7.4694 2 6.96069 2.21071 6.58561 2.58579C6.21054 2.96086 5.99983 3.46957 5.99983 4V11H17.9998V4Z"
+                                    fill="white" />
+                            </svg>
+                            Метро
+                            <svg class="header__btn-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.815017 2.20711C0.185052 1.57714 0.631219 0.5 1.52212 0.5H6.17898H10.8358C11.7267 0.5 12.1729 1.57714 11.5429 2.20711L6.88608 6.86396C6.49556 7.25449 5.8624 7.25448 5.47187 6.86396L0.815017 2.20711Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                        <div class="dropdown">
+                            <div class="dropdown__inner">
+                                <div class="dropdown__column">
+                                    <p class="dropdown__label">А</p>
+                                    <div class="dropdown__items">
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                    </div>
+                                </div>
+                                <div class="dropdown__column">
+                                    <p class="dropdown__label">А</p>
+                                    <div class="dropdown__items">
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                    </div>
+                                </div>
+                                <div class="dropdown__column">
+                                    <p class="dropdown__label">А</p>
+                                    <div class="dropdown__items">
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                    </div>
+                                </div>
+                                <div class="dropdown__column">
+                                    <p class="dropdown__label">А</p>
+                                    <div class="dropdown__items">
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Орехово-Борисово Северное<span
+                                                class="dropdown__count">(20)</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <button class="header__btn filter__btn">
+                            <svg class="header__btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2 4C2 3.60444 2.1173 3.21776 2.33706 2.88886C2.55682 2.55996 2.86918 2.30362 3.23463 2.15224C3.60009 2.00087 4.00222 1.96126 4.39018 2.03843C4.77814 2.1156 5.13451 2.30608 5.41421 2.58579C5.69392 2.86549 5.8844 3.22186 5.96157 3.60982C6.03874 3.99778 5.99913 4.39992 5.84776 4.76537C5.69638 5.13082 5.44004 5.44318 5.11114 5.66294C4.78224 5.8827 4.39556 6 4 6C3.46957 6 2.96086 5.78929 2.58579 5.41421C2.21071 5.03914 2 4.53043 2 4ZM4 14C4.39556 14 4.78224 13.8827 5.11114 13.6629C5.44004 13.4432 5.69638 13.1308 5.84776 12.7654C5.99913 12.3999 6.03874 11.9978 5.96157 11.6098C5.8844 11.2219 5.69392 10.8655 5.41421 10.5858C5.13451 10.3061 4.77814 10.1156 4.39018 10.0384C4.00222 9.96126 3.60009 10.0009 3.23463 10.1522C2.86918 10.3036 2.55682 10.56 2.33706 10.8889C2.1173 11.2178 2 11.6044 2 12C2 12.5304 2.21071 13.0391 2.58579 13.4142C2.96086 13.7893 3.46957 14 4 14ZM4 22C4.39556 22 4.78224 21.8827 5.11114 21.6629C5.44004 21.4432 5.69638 21.1308 5.84776 20.7654C5.99913 20.3999 6.03874 19.9978 5.96157 19.6098C5.8844 19.2219 5.69392 18.8655 5.41421 18.5858C5.13451 18.3061 4.77814 18.1156 4.39018 18.0384C4.00222 17.9613 3.60009 18.0009 3.23463 18.1522C2.86918 18.3036 2.55682 18.56 2.33706 18.8889C2.1173 19.2178 2 19.6044 2 20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22ZM21 3H10C9.73478 3 9.48043 3.10536 9.29289 3.29289C9.10536 3.48043 9 3.73478 9 4C9 4.26522 9.10536 4.51957 9.29289 4.70711C9.48043 4.89464 9.73478 5 10 5H21C21.2652 5 21.5196 4.89464 21.7071 4.70711C21.8946 4.51957 22 4.26522 22 4C22 3.73478 21.8946 3.48043 21.7071 3.29289C21.5196 3.10536 21.2652 3 21 3V3ZM21 11H10C9.73478 11 9.48043 11.1054 9.29289 11.2929C9.10536 11.4804 9 11.7348 9 12C9 12.2652 9.10536 12.5196 9.29289 12.7071C9.48043 12.8946 9.73478 13 10 13H21C21.2652 13 21.5196 12.8946 21.7071 12.7071C21.8946 12.5196 22 12.2652 22 12C22 11.7348 21.8946 11.4804 21.7071 11.2929C21.5196 11.1054 21.2652 11 21 11ZM21 19H10C9.73478 19 9.48043 19.1054 9.29289 19.2929C9.10536 19.4804 9 19.7348 9 20C9 20.2652 9.10536 20.5196 9.29289 20.7071C9.48043 20.8946 9.73478 21 10 21H21C21.2652 21 21.5196 20.8946 21.7071 20.7071C21.8946 20.5196 22 20.2652 22 20C22 19.7348 21.8946 19.4804 21.7071 19.2929C21.5196 19.1054 21.2652 19 21 19Z"
+                                    fill="white" />
+                            </svg>
+                            Услуги
+                            <svg class="header__btn-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.815017 2.20711C0.185052 1.57714 0.631219 0.5 1.52212 0.5H6.17898H10.8358C11.7267 0.5 12.1729 1.57714 11.5429 2.20711L6.88608 6.86396C6.49556 7.25449 5.8624 7.25448 5.47187 6.86396L0.815017 2.20711Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                        <div class="dropdown">
+                            <div class="dropdown__inner">
+                                <div class="dropdown__column dropdown__column_service">
+                                    <p class="dropdown__label">Дополнительно</p>
+                                    <div class="dropdown__items">
+                                        <a href="#" class="dropdown__item">Золотой дождь выдача<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Золотой дождь выдача<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Золотой дождь выдача<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Золотой дождь выдача<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Золотой дождь выдача<span
+                                                class="dropdown__count">(20)</span></a>
+                                    </div>
+                                </div>
+                                <div class="dropdown__column dropdown__column_service">
+                                    <p class="dropdown__label">Дополнительно</p>
+                                    <div class="dropdown__items">
+                                        <a href="#" class="dropdown__item">Золотой дождь выдача<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Золотой дождь выдача<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Золотой дождь выдача<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Золотой дождь выдача<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Золотой дождь выдача<span
+                                                class="dropdown__count">(20)</span></a>
+                                    </div>
+                                </div>
+                                <div class="dropdown__column dropdown__column_service">
+                                    <p class="dropdown__label">Дополнительно</p>
+                                    <div class="dropdown__items">
+                                        <a href="#" class="dropdown__item">Золотой дождь выдача<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Золотой дождь выдача<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Золотой дождь выдача<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Золотой дождь выдача<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Золотой дождь выдача<span
+                                                class="dropdown__count">(20)</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter parent">
+                        <button class="header__btn filter__btn">
+                            <svg class="header__btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1434_571)">
+                                    <path
+                                        d="M23.5605 10.9395L13.0605 0.4395C12.7792 0.15825 12.3983 0 12 0H1.5C0.670875 0 0 0.670875 0 1.5V12C0 12.3983 0.15825 12.7792 0.4395 13.0605L10.9395 23.5605C11.2324 23.8534 11.6164 24 12 24C12.3836 24 12.7676 23.8534 13.0605 23.5605L23.5605 13.0605C24.1466 12.4747 24.1466 11.5253 23.5605 10.9395ZM7.5 10.5015C5.84325 10.5015 4.5 9.15825 4.5 7.5015C4.5 5.84475 5.84325 4.5015 7.5 4.5015C9.15675 4.5015 10.5 5.84475 10.5 7.5015C10.5 9.15825 9.15675 10.5015 7.5 10.5015Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1434_571">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            Цена
+                            <svg class="header__btn-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.815017 2.20711C0.185052 1.57714 0.631219 0.5 1.52212 0.5H6.17898H10.8358C11.7267 0.5 12.1729 1.57714 11.5429 2.20711L6.88608 6.86396C6.49556 7.25449 5.8624 7.25448 5.47187 6.86396L0.815017 2.20711Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                        <div class="dropdown small">
+                            <div class="dropdown__inner">
+                                <div class="dropdown__column big">
+                                    <div class="dropdown__items">
+                                        <a href="#" class="dropdown__item">Дешевые проститутки<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Дешевые проститутки<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Дешевые проститутки<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Дешевые проститутки<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Дешевые проститутки<span
+                                                class="dropdown__count">(20)</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter parent">
+                        <button class="header__btn filter__btn">
+                            <svg class="header__btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19 4H17V2H15V4H9V2H7V4H5C3.897 4 3 4.897 3 6V20C3 21.103 3.897 22 5 22H19C20.103 22 21 21.103 21 20V6C21 4.897 20.103 4 19 4ZM17 12V14H7V11H17V12ZM19 9H5V7H19V9Z"
+                                    fill="white" />
+                            </svg>
+                            Возраст
+                            <svg class="header__btn-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.815017 2.20711C0.185052 1.57714 0.631219 0.5 1.52212 0.5H6.17898H10.8358C11.7267 0.5 12.1729 1.57714 11.5429 2.20711L6.88608 6.86396C6.49556 7.25449 5.8624 7.25448 5.47187 6.86396L0.815017 2.20711Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                        <div class="dropdown small">
+                            <div class="dropdown__inner">
+                                <div class="dropdown__column big">
+                                    <div class="dropdown__items">
+                                        <a href="#" class="dropdown__item">Дешевые проститутки<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Дешевые проститутки<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Дешевые проститутки<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Дешевые проститутки<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Дешевые проститутки<span
+                                                class="dropdown__count">(20)</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter parent">
+                        <button class="header__btn filter__btn">
+                            <svg class="header__btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 2C6.486 2 2 6.486 2 12C2 17.514 6.486 22 12 22C17.514 22 22 17.514 22 12C22 6.486 17.514 2 12 2ZM12 4C15.213 4 17.982 5.908 19.254 8.648C18.9451 8.50179 18.6461 8.33543 18.359 8.15C17.95 7.892 17.486 7.599 16.899 7.378C16.23 7.123 15.499 7 14.665 7C13.831 7 13.1 7.123 12.431 7.377C11.844 7.6 11.38 7.893 10.959 8.158C10.581 8.395 10.256 8.601 9.856 8.752C9.41 8.921 8.926 9 8.33 9C7.735 9 7.251 8.921 6.806 8.752C6.406 8.601 6.078 8.394 5.7 8.154C5.539 8.053 5.36 7.946 5.18 7.841C6.587 5.542 9.113 4 12 4ZM12 20C7.589 20 4 16.411 4 12C4 11.19 4.123 10.41 4.348 9.673C4.442 9.731 4.533 9.783 4.631 9.846C5.042 10.106 5.507 10.4 6.097 10.622C6.766 10.877 7.496 11 8.33 11C9.163 11 9.894 10.877 10.565 10.623C11.152 10.4 11.616 10.107 12.037 9.842C12.415 9.605 12.74 9.399 13.14 9.247C13.585 9.079 14.069 9 14.665 9C15.261 9 15.745 9.079 16.19 9.248C16.589 9.398 16.915 9.604 17.304 9.85C17.713 10.108 18.177 10.401 18.764 10.623C19.127 10.761 19.512 10.852 19.917 10.914C19.966 11.271 20 11.631 20 12C20 16.411 16.411 20 12 20Z"
+                                    fill="white" />
+                                <path
+                                    d="M8.5 15C9.32843 15 10 14.3284 10 13.5C10 12.6716 9.32843 12 8.5 12C7.67157 12 7 12.6716 7 13.5C7 14.3284 7.67157 15 8.5 15Z"
+                                    fill="white" />
+                                <path
+                                    d="M15.5 15C16.3284 15 17 14.3284 17 13.5C17 12.6716 16.3284 12 15.5 12C14.6716 12 14 12.6716 14 13.5C14 14.3284 14.6716 15 15.5 15Z"
+                                    fill="white" />
+                            </svg>
+                            Внешность
+                            <svg class="header__btn-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.815017 2.20711C0.185052 1.57714 0.631219 0.5 1.52212 0.5H6.17898H10.8358C11.7267 0.5 12.1729 1.57714 11.5429 2.20711L6.88608 6.86396C6.49556 7.25449 5.8624 7.25448 5.47187 6.86396L0.815017 2.20711Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                        <div class="dropdown small">
+                            <div class="dropdown__inner">
+                                <div class="dropdown__column big">
+                                    <div class="dropdown__items">
+                                        <a href="#" class="dropdown__item">Дешевые проститутки<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Дешевые проститутки<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Дешевые проститутки<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Дешевые проститутки<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Дешевые проститутки<span
+                                                class="dropdown__count">(20)</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter parent">
+                        <button class="header__btn filter__btn">
+                            <svg class="header__btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1434_579)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.57122 6.76267C9.51802 6.76267 10.2855 5.99071 10.2855 5.03844C10.2855 4.08617 9.51802 3.31421 8.57122 3.31421C7.62445 3.31421 6.85693 4.08617 6.85693 5.03844C6.85693 5.99071 7.62445 6.76267 8.57122 6.76267ZM8.57122 5.64192C8.90259 5.64192 9.17122 5.37173 9.17122 5.03844C9.17122 4.70515 8.90259 4.43496 8.57122 4.43496C8.23985 4.43496 7.97122 4.70515 7.97122 5.03844C7.97122 5.37173 8.23985 5.64192 8.57122 5.64192Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M4.41408 4.82291C4.41408 2.58886 6.3203 0.857178 8.57122 0.857178C10.8222 0.857178 12.7284 2.58886 12.7284 4.82291C12.7284 5.19442 12.6953 5.6017 12.6228 6.0307L15.4284 6.73615L22.0776 5.06419C22.3337 4.9998 22.605 5.05767 22.813 5.22104C23.021 5.38442 23.1426 5.63509 23.1426 5.90056V20.5566C23.1426 20.9521 22.875 21.297 22.4934 21.393L15.6362 23.1172C15.4998 23.1515 15.357 23.1515 15.2205 23.1172L8.57122 21.4452L1.92197 23.1172C1.6659 23.1816 1.39462 23.1237 1.18658 22.9603C0.978536 22.797 0.856934 22.5462 0.856934 22.2808V7.62479C0.856934 7.2292 1.12462 6.88437 1.50618 6.78842L4.51959 6.0307C4.44719 5.6017 4.41408 5.19442 4.41408 4.82291ZM8.57122 2.32277C7.03504 2.32277 5.87122 3.48596 5.87122 4.82291C5.87122 6.18592 6.43908 8.20535 8.06532 9.73846C8.35043 10.0073 8.79202 10.0073 9.0771 9.73846C10.7034 8.20535 11.2712 6.18592 11.2712 4.82291C11.2712 3.48596 10.1074 2.32277 8.57122 2.32277ZM4.97897 7.69249L2.76565 8.24902C2.65135 8.27776 2.57122 8.38054 2.57122 8.4984V20.8468C2.57122 21.0142 2.72868 21.137 2.89107 21.0961L7.51964 19.9323C7.63394 19.9036 7.71408 19.8008 7.71408 19.683V11.3577C6.34567 10.3063 5.47895 8.98221 4.97897 7.69249ZM9.42836 11.3577V19.683C9.42836 19.8008 9.5085 19.9036 9.62276 19.9323L14.2513 21.0961C14.4138 21.137 14.5712 21.0142 14.5712 20.8468V8.49841C14.5712 8.38054 14.4911 8.27776 14.3768 8.24902L12.1635 7.69249C11.6634 8.98221 10.7968 10.3063 9.42836 11.3577ZM21.4284 19.683C21.4284 19.8008 21.3482 19.9036 21.234 19.9323L16.6054 21.0961C16.443 21.137 16.2855 21.0142 16.2855 20.8468V8.49841C16.2855 8.38054 16.3656 8.27777 16.4799 8.24902L21.1085 7.08517C21.2709 7.04434 21.4284 7.16711 21.4284 7.33455V19.683Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1434_579">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            Национальность
+                            <svg class="header__btn-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.815017 2.20711C0.185052 1.57714 0.631219 0.5 1.52212 0.5H6.17898H10.8358C11.7267 0.5 12.1729 1.57714 11.5429 2.20711L6.88608 6.86396C6.49556 7.25449 5.8624 7.25448 5.47187 6.86396L0.815017 2.20711Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                        <div class="dropdown small">
+                            <div class="dropdown__inner">
+                                <div class="dropdown__column big">
+                                    <div class="dropdown__items">
+                                        <a href="#" class="dropdown__item">Дешевые проститутки<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Дешевые проститутки<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Дешевые проститутки<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Дешевые проститутки<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Дешевые проститутки<span
+                                                class="dropdown__count">(20)</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter parent">
+                        <button class="header__btn filter__btn">
+                            <svg class="header__btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.06176 11.346C1.97876 11.1231 1.97876 10.8779 2.06176 10.655C3.77276 6 7.67376 3 11.9998 3C16.3258 3 20.2268 6 21.9378 10.655C22.0208 10.8775 22.0208 11.1225 21.9378 11.345C21.6497 12.1319 21.2881 12.8899 20.8578 13.609C20.7918 13.7247 20.7035 13.8262 20.5978 13.9073C20.4922 13.9884 20.3714 14.0476 20.2425 14.0814C20.1137 14.1152 19.9794 14.1229 19.8475 14.1041C19.7157 14.0853 19.5889 14.0403 19.4747 13.9718C19.3604 13.9034 19.261 13.8128 19.1823 13.7053C19.1035 13.5979 19.047 13.4758 19.0161 13.3463C18.9852 13.2167 18.9805 13.0823 19.0022 12.9508C19.024 12.8194 19.0717 12.6937 19.1428 12.581C19.4452 12.0753 19.7077 11.5467 19.9278 11C18.4508 7.343 15.3728 5 11.9998 5C8.62676 5 5.54876 7.343 4.07176 11C4.57022 12.3827 5.38883 13.6279 6.46066 14.6337C7.5325 15.6395 8.82714 16.3774 10.2388 16.787C10.4949 16.8517 10.7149 17.0151 10.851 17.2416C10.987 17.468 11.0279 17.739 10.9648 17.9955C10.9017 18.252 10.7396 18.4731 10.514 18.6105C10.2884 18.748 10.0176 18.7906 9.76076 18.729C7.97242 18.22 6.33584 17.2811 4.99383 15.9942C3.65182 14.7073 2.64518 13.1114 2.06176 11.346V11.346ZM15.9998 11C15.9996 10.338 15.8351 9.68646 15.5211 9.1037C15.2072 8.52094 14.7534 8.02521 14.2007 7.66097C13.6479 7.29674 13.0134 7.07537 12.3541 7.01674C11.6947 6.9581 11.0311 7.06402 10.4228 7.325C10.5947 7.45394 10.7369 7.61833 10.8398 7.80702C10.9426 7.99571 11.0037 8.2043 11.019 8.41867C11.0342 8.63303 11.0032 8.84817 10.9281 9.04951C10.8529 9.25085 10.7354 9.4337 10.5834 9.58566C10.4315 9.73762 10.2486 9.85516 10.0473 9.93031C9.84593 10.0055 9.63079 10.0365 9.41642 10.0212C9.20205 10.006 8.99346 9.94487 8.80477 9.842C8.61608 9.73914 8.4517 9.59693 8.32276 9.425C8.08913 9.97053 7.97982 10.5612 8.00274 11.1542C8.02567 11.7472 8.18026 12.3277 8.45531 12.8536C8.73036 13.3795 9.11898 13.8375 9.59299 14.1946C10.067 14.5517 10.6145 14.7988 11.1959 14.9181C11.7772 15.0374 12.3778 15.0258 12.9541 14.8842C13.5304 14.7426 14.068 14.4745 14.5279 14.0994C14.9878 13.7243 15.3585 13.2516 15.613 12.7155C15.8676 12.1795 15.9997 11.5935 15.9998 11V11ZM17.4998 21C17.765 21 18.0193 20.8946 18.2069 20.7071C18.3944 20.5196 18.4998 20.2652 18.4998 20V18.5H19.9998C20.265 18.5 20.5193 18.3946 20.7069 18.2071C20.8944 18.0196 20.9998 17.7652 20.9998 17.5C20.9998 17.2348 20.8944 16.9804 20.7069 16.7929C20.5193 16.6054 20.265 16.5 19.9998 16.5H18.4998V15C18.4998 14.7348 18.3944 14.4804 18.2069 14.2929C18.0193 14.1054 17.765 14 17.4998 14C17.2345 14 16.9802 14.1054 16.7926 14.2929C16.6051 14.4804 16.4998 14.7348 16.4998 15V16.5H14.9998C14.7345 16.5 14.4802 16.6054 14.2927 16.7929C14.1051 16.9804 13.9998 17.2348 13.9998 17.5C13.9998 17.7652 14.1051 18.0196 14.2927 18.2071C14.4802 18.3946 14.7345 18.5 14.9998 18.5H16.4998V20C16.4998 20.2652 16.6051 20.5196 16.7926 20.7071C16.9802 20.8946 17.2345 21 17.4998 21Z"
+                                    fill="white" />
+                            </svg>
+                            Дополнительно
+                            <svg class="header__btn-arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.815017 2.20711C0.185052 1.57714 0.631219 0.5 1.52212 0.5H6.17898H10.8358C11.7267 0.5 12.1729 1.57714 11.5429 2.20711L6.88608 6.86396C6.49556 7.25449 5.8624 7.25448 5.47187 6.86396L0.815017 2.20711Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+                        <div class="dropdown small">
+                            <div class="dropdown__inner">
+                                <div class="dropdown__column big">
+                                    <div class="dropdown__items">
+                                        <a href="#" class="dropdown__item">Дешевые проститутки<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Дешевые проститутки<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Дешевые проститутки<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Дешевые проститутки<span
+                                                class="dropdown__count">(20)</span></a>
+                                        <a href="#" class="dropdown__item">Дешевые проститутки<span
+                                                class="dropdown__count">(20)</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="header__btn">
+                        <svg class="header__btn-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.3 22.8L14.8 17.3C13.4 18.4 11.5 19.1 9.5 19.1C4.8 19.1 1 15.3 1 10.6C1 5.9 4.8 2.1 9.5 2.1C14.2 2.1 18 5.9 18 10.6C18 12.6 17.3 14.4 16.2 15.9L21.7 21.4L20.3 22.8ZM9.5 4C5.9 4 3 6.9 3 10.5C3 14.1 5.9 17 9.5 17C13.1 17 16 14.1 16 10.5C16 6.9 13.1 4 9.5 4ZM22 6H20V4H18V2H20V0H22V2H24V4H22V6Z"
+                                fill="white" />
+                        </svg>
+                        Расширенный поиск
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main class="main notfound">
+            <div class="notfound__container container">
+                <div class="notfound__inner">
+                    <h1 class="notfound__title">
+                        Ошибка!
+                        <span>Страница не найдена 404s - Indihub</span>
+                    </h1>
+                    <a href="/" class="notfound__link">Назад на главную</a>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <button class="footer__btn open-city-popup">
+                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.38452 13.022H11.3845V22C9.27852 21.093 7.61152 17.419 7.38452 13.022ZM13.3845 13.022V22C15.4845 21.093 17.1525 17.419 17.3785 13.022H13.3845ZM11.3845 2C9.27852 2.907 7.61152 6.581 7.38452 10.978H11.3845V2ZM17.2325 3.05C18.5942 5.47475 19.3375 8.19768 19.3965 10.978H22.3845C22.2271 9.33887 21.6759 7.76205 20.7781 6.38171C19.8802 5.00137 18.6621 3.85838 17.2275 3.05H17.2325ZM17.2325 20.95C18.6662 20.141 19.8833 18.9978 20.7802 17.6175C21.6772 16.2372 22.2276 14.6607 22.3845 13.022H19.3915C19.3325 15.8023 18.5892 18.5252 17.2275 20.95H17.2325ZM13.3895 2V10.978H17.3845C17.1575 6.581 15.4905 2.907 13.3895 2ZM7.54152 20.95C6.17982 18.5252 5.43658 15.8023 5.37752 13.022H2.38452C2.54198 14.6611 3.0931 16.238 3.99099 17.6183C4.88887 18.9986 6.10693 20.1416 7.54152 20.95ZM7.54152 3.05C6.10693 3.85838 4.88887 5.00137 3.99099 6.38171C3.0931 7.76205 2.54198 9.33887 2.38452 10.978H5.37752C5.43658 8.19768 6.17982 5.47475 7.54152 3.05Z"
+                                fill="white" />
+                        </svg>
+                        Санкт-Петербург
+                    </button>
+                    <div class="footer__bottom">
+                        <a href="/" class="footer__logo">
+                            <img src="img/footer-logo.svg" alt="logo">
+                        </a>
+                        <a href="#" class="footer__link">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g opacity="0.7">
+                                    <path
+                                        d="M12.7693 2C10.7915 2 8.85808 2.58649 7.21359 3.6853C5.5691 4.78412 4.28737 6.3459 3.5305 8.17317C2.77362 10.0004 2.57559 12.0111 2.96144 13.9509C3.34729 15.8907 4.2997 17.6725 5.69822 19.0711C7.09675 20.4696 8.87858 21.422 10.8184 21.8079C12.7582 22.1937 14.7689 21.9957 16.5961 21.2388C18.4234 20.4819 19.9852 19.2002 21.084 17.5557C22.1828 15.9112 22.7693 13.9778 22.7693 12C22.7693 10.6868 22.5106 9.38642 22.0081 8.17317C21.5055 6.95991 20.7689 5.85752 19.8404 4.92893C18.9118 4.00035 17.8094 3.26375 16.5961 2.7612C15.3829 2.25866 14.0825 2 12.7693 2ZM12.7693 7C13.3626 7 13.9427 7.17595 14.436 7.50559C14.9293 7.83524 15.3139 8.30377 15.5409 8.85195C15.768 9.40013 15.8274 10.0033 15.7116 10.5853C15.5959 11.1672 15.3102 11.7018 14.8906 12.1213C14.4711 12.5409 13.9365 12.8266 13.3546 12.9424C12.7726 13.0581 12.1694 12.9987 11.6212 12.7716C11.0731 12.5446 10.6045 12.1601 10.2749 11.6667C9.94524 11.1734 9.76929 10.5933 9.76929 10C9.76929 9.20435 10.0854 8.44129 10.648 7.87868C11.2106 7.31607 11.9736 7 12.7693 7ZM12.7693 20C10.8248 20.0001 8.94742 19.2887 7.49129 18C8.94833 16.7131 10.8253 16.0029 12.7693 16.0029C14.7133 16.0029 16.5903 16.7131 18.0473 18C16.5912 19.2887 14.7138 20.0001 12.7693 20Z"
+                                        fill="white" />
+                                </g>
+                            </svg>
+                            Вход в личный кабинет
+                        </a>
+                        <a href="#" class="footer__link">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.76929 21H19.7693C20.2997 21 20.8084 20.7893 21.1835 20.4142C21.5586 20.0391 21.7693 19.5304 21.7693 19V6C21.7693 5.20435 21.4532 4.44129 20.8906 3.87868C20.328 3.31607 19.5649 3 18.7693 3H6.76929C5.97364 3 5.21058 3.31607 4.64797 3.87868C4.08536 4.44129 3.76929 5.20435 3.76929 6V19C3.76929 19.5304 3.98 20.0391 4.35507 20.4142C4.73015 20.7893 5.23885 21 5.76929 21ZM5.76929 6C5.76929 5.73478 5.87464 5.48043 6.06218 5.29289C6.24972 5.10536 6.50407 5 6.76929 5H18.7693C19.0345 5 19.2889 5.10536 19.4764 5.29289C19.6639 5.48043 19.7693 5.73478 19.7693 6V11.5C19.7693 11.6326 19.7166 11.7598 19.6228 11.8536C19.5291 11.9473 19.4019 12 19.2693 12H16.2403C16.1219 11.9963 16.0062 12.0354 15.9143 12.1102C15.8225 12.185 15.7607 12.2903 15.7403 12.407C15.6431 13.1266 15.2882 13.7864 14.7415 14.2643C14.1948 14.7421 13.4934 15.0054 12.7673 15.0054C12.0412 15.0054 11.3398 14.7421 10.793 14.2643C10.2463 13.7864 9.89148 13.1266 9.79429 12.407C9.77388 12.2903 9.71209 12.185 9.62024 12.1102C9.52839 12.0354 9.41266 11.9963 9.29429 12H6.26929C6.13668 12 6.0095 11.9473 5.91573 11.8536C5.82197 11.7598 5.76929 11.6326 5.76929 11.5V6Z"
+                                    fill="#BABBBD" />
+                            </svg>
+                            Архив
+                        </a>
+                        <p class="footer__copy">(с) 2023, IndiHub</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="popup city-popup">
+            <div class="popup__container city-popup__container container">
+                <div class="popup__inner city-popup__inner">
+                    <div class="city-popup__header">
+                        <p class="city-popup__title">Город</p>
+                        <button class="city-popup__close-btn">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1.31693 1.34204L1.3987 1.24733C1.69849 0.947537 2.16761 0.920283 2.49819 1.16557L2.5929 1.24733L11.1505 9.80572L19.7098 1.24733C20.0396 0.917557 20.5743 0.917557 20.904 1.24733C21.2338 1.5771 21.2338 2.11176 20.904 2.44153L12.3451 10.9992L20.904 19.5585C21.2038 19.8583 21.2311 20.3274 20.9858 20.658L20.904 20.7527C20.6042 21.0525 20.1351 21.0797 19.8045 20.8344L19.7098 20.7527L11.1505 12.1938L2.5929 20.7527C2.26313 21.0824 1.72847 21.0824 1.3987 20.7527C1.06892 20.4229 1.06892 19.8882 1.3987 19.5585L9.95709 10.9992L1.3987 2.44153C1.0989 2.14174 1.07165 1.67262 1.31693 1.34204L1.3987 1.24733L1.31693 1.34204Z"
+                                    fill="white" />
+                                <path
+                                    d="M1.32798 1.17662L1.32779 1.17643L1.323 1.18198L1.24124 1.27669L1.24103 1.27651L1.23663 1.28245C0.96224 1.65225 0.992628 2.17689 1.32798 2.51224L1.32799 2.51225L9.81567 10.9992L1.32798 19.4878C0.959161 19.8566 0.959161 20.4546 1.32798 20.8234C1.69681 21.1922 2.29479 21.1922 2.66361 20.8234L2.5929 20.7527L2.66362 20.8234L11.1506 12.3352L19.6391 20.8234L19.6389 20.8236L19.6445 20.8284L19.7392 20.9101L19.739 20.9103L19.745 20.9147C20.1148 21.1891 20.6394 21.1587 20.9748 20.8234L20.9749 20.8236L20.9797 20.818L21.0615 20.7233L21.0617 20.7235L21.0661 20.7176C21.3405 20.3477 21.3101 19.8231 20.9748 19.4878L12.4866 10.9992L20.9747 2.51225L20.9044 2.44192L20.9748 2.51224C21.3436 2.14342 21.3436 1.54544 20.9748 1.17662C20.6059 0.807794 20.0079 0.807794 19.6391 1.17661L11.1506 9.6643L2.66361 1.17662L2.6638 1.17643L2.65825 1.17163L2.56354 1.08987L2.56372 1.08966L2.55778 1.08526C2.18798 0.810873 1.66334 0.841261 1.32798 1.17662Z"
+                                    stroke="black" stroke-opacity="0.2" stroke-width="0.2" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="city-popup__columns">
+                        <div class="city-popup__column">
+                            <p class="city-popup__label">А</p>
+                            <div class="city-popup__links">
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                            </div>
+                        </div>
+                        <div class="city-popup__column">
+                            <p class="city-popup__label">А</p>
+                            <div class="city-popup__links">
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                            </div>
+                        </div>
+                        <div class="city-popup__column">
+                            <p class="city-popup__label">А</p>
+                            <div class="city-popup__links">
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                            </div>
+                        </div>
+                        <div class="city-popup__column">
+                            <p class="city-popup__label">А</p>
+                            <div class="city-popup__links">
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                            </div>
+                        </div>
+                        <div class="city-popup__column">
+                            <p class="city-popup__label">А</p>
+                            <div class="city-popup__links">
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                            </div>
+                        </div>
+                        <div class="city-popup__column">
+                            <p class="city-popup__label">А</p>
+                            <div class="city-popup__links">
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                            </div>
+                        </div>
+                        <div class="city-popup__column">
+                            <p class="city-popup__label">А</p>
+                            <div class="city-popup__links">
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                                <a href="#" class="city-popup__link">Ростов-на-Дону<span
+                                        class="city-popup__count">(20)</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/dynamicAdaptive.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
