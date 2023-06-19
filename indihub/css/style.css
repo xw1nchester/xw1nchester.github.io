@@ -580,6 +580,7 @@ button {
 }
 @media (max-width: 768px) {
   .header__middle {
+    min-height: 55px;
     padding: 10px 0;
   }
 }
@@ -708,7 +709,7 @@ button {
   .header__bottom {
     flex: unset;
     position: fixed;
-    top: 50px;
+    top: 56px;
     left: -100%;
     width: 100%;
     height: calc(100% - 50px);
@@ -720,6 +721,7 @@ button {
     flex-wrap: nowrap;
     align-items: flex-start;
     gap: 10px;
+    border: 0;
   }
   .header__bottom.active {
     left: 0;
@@ -881,13 +883,6 @@ button {
   .footer__link:hover {
     opacity: 0.7;
   }
-}
-.footer__btn {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px;
-  font-weight: 700;
 }
 .footer__copy {
   opacity: 0.5;

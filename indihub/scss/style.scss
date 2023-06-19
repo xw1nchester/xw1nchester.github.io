@@ -598,6 +598,7 @@ button {
 
         @media (max-width:768px) {
             // order: 1;
+            min-height: 55px;
             padding: 10px 0;
         }
     }
@@ -729,7 +730,7 @@ button {
         @media (max-width:768px) {
             flex: unset;
             position: fixed;
-            top: 50px;
+            top: 56px;
             left: -100%;
             width: 100%;
             height: calc(100% - 50px);
@@ -741,6 +742,7 @@ button {
             flex-wrap: nowrap;
             align-items: flex-start;
             gap: 10px;
+            border: 0;
 
             &.active {
                 left: 0;
@@ -892,14 +894,6 @@ button {
                 opacity: 0.7;
             }
         }
-    }
-
-    &__btn {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding: 10px;
-        font-weight: 700;
     }
 
     &__copy {
