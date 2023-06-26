@@ -403,6 +403,14 @@ button {
 .header {
   border-bottom: 1px solid var(--borderColor);
   padding: 20px 0;
+  background-color: var(--bodyColor);
+  z-index: 1;
+}
+.header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 .header__inner {
   display: flex;
@@ -558,6 +566,14 @@ button {
 @media (max-width: 992px) {
   .main__inner {
     padding-left: unset;
+  }
+}
+.main__inner.padding {
+  padding-top: 96px;
+}
+@media (max-width: 375px) {
+  .main__inner.padding {
+    padding-top: 95px;
   }
 }
 .main__header {

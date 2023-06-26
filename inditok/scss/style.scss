@@ -433,6 +433,15 @@ button {
 .header {
     border-bottom: 1px solid var(--borderColor);
     padding: 20px 0;
+    background-color: var(--bodyColor);
+    z-index: 1;
+
+    &.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
 
     &__inner {
         display: flex;
@@ -591,6 +600,14 @@ button {
 
         @media (max-width:992px) {
             padding-left: unset;
+        }
+
+        &.padding {
+            padding-top: 96px;
+
+            @media (max-width:375px) {
+                padding-top: 95px;
+            }
         }
     }
 

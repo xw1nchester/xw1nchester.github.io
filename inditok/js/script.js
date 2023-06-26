@@ -60,6 +60,8 @@ window.addEventListener('resize', function (e) {
     if (window.innerWidth > 992 && burgerBtn && sidebar) {
         burgerBtn.classList.remove('active');
         sidebar.classList.remove('active');
+        header.classList.remove('fixed');
+        mainInner.classList.remove('padding');
         body.classList.remove('lock');
     }
 });
@@ -69,9 +71,11 @@ document.addEventListener('click', function (e) {
     let targetEl = e.target;
 
     if (targetEl.closest('.burger-btn')) {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
         burgerBtn.classList.toggle('active');
         sidebar.classList.toggle('active');
+        header.classList.toggle('fixed');
+        mainInner.classList.toggle('padding');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
         body.classList.toggle('lock');
     }
 
@@ -150,6 +154,8 @@ const sidebar = document.querySelector('.sidebar');
 const body = document.body;
 const cityPopup = document.querySelector('.city-popup');
 const wrapper = document.querySelector('.wrapper');
+const header = document.querySelector('.header');
+const mainInner = document.querySelector('.main__inner');
 
 // слайдер с отзывами
 $(".reviews-slider").slick({
