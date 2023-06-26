@@ -69,11 +69,10 @@ document.addEventListener('click', function (e) {
     let targetEl = e.target;
 
     if (targetEl.closest('.burger-btn')) {
-        e.preventDefault();
-
         burgerBtn.classList.toggle('active');
         sidebar.classList.toggle('active');
         body.classList.toggle('lock');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     if (targetEl.closest('.up-btn')) {
