@@ -33,8 +33,10 @@ a {
     color: inherit;
     transition: opacity .3s;
 
-    &:hover {
-        opacity: 0.7;
+    @media (any-hover:hover) {
+        &:hover {
+            opacity: 0.7;
+        }
     }
 }
 
@@ -117,8 +119,10 @@ button {
     background-color: transparent;
     transition: opacity .3s;
 
-    &:hover {
-        opacity: 0.7;
+    @media (any-hover:hover) {
+        &:hover {
+            opacity: 0.7;
+        }
     }
 }
 
@@ -198,8 +202,10 @@ button {
 .logo {
     display: flex;
 
-    &:hover {
-        opacity: 1;
+    @media (any-hover:hover) {
+        &:hover {
+            opacity: 1;
+        }
     }
 
     img {
@@ -248,11 +254,13 @@ button {
         }
     }
 
-    &:hover {
-        opacity: 1;
+    @media (any-hover:hover) {
+        &:hover {
+            opacity: 1;
 
-        .option__icon {
-            background-color: #DBDBDB;
+            .option__icon {
+                background-color: #DBDBDB;
+            }
         }
     }
 
@@ -317,9 +325,11 @@ button {
         display: block;
         transition: transform .3s;
 
-        &:hover {
-            opacity: 1;
-            transform: scale(1.05);
+        @media (any-hover:hover) {
+            &:hover {
+                opacity: 1;
+                transform: scale(1.05);
+            }
         }
     }
 
@@ -362,9 +372,11 @@ button {
     &__link {
         transition: color .3s;
 
-        &:hover {
-            opacity: 1;
-            color: var(--mainColor);
+        @media (any-hover:hover) {
+            &:hover {
+                opacity: 1;
+                color: var(--mainColor);
+            }
         }
     }
 
@@ -497,13 +509,15 @@ button {
             transition: background-color .3s;
         }
 
-        &:hover {
-            path {
-                fill: var(--mainColor);
-            }
+        @media (any-hover:hover) {
+            &:hover {
+                path {
+                    fill: var(--mainColor);
+                }
 
-            &::before {
-                background-color: var(--mainColor);
+                &::before {
+                    background-color: var(--mainColor);
+                }
             }
         }
     }
@@ -528,12 +542,14 @@ button {
             transition: .3s;
         }
 
-        &:hover {
-            border: 1px solid var(--mainColor);
-            color: var(--mainColor);
+        @media (any-hover:hover) {
+            &:hover {
+                border: 1px solid var(--mainColor);
+                color: var(--mainColor);
 
-            path {
-                fill: var(--mainColor);
+                path {
+                    fill: var(--mainColor);
+                }
             }
         }
 
@@ -544,8 +560,10 @@ button {
             max-width: unset;
         }
 
-        &:hover {
-            opacity: 0.7;
+        @media (any-hover:hover) {
+            &:hover {
+                opacity: 0.7;
+            }
         }
     }
 }
@@ -617,9 +635,11 @@ button {
         padding: 12px;
         transition: .3s;
 
-        &:hover {
-            border: 1px solid var(--mainColor);
-            color: var(--mainColor);
+        @media (any-hover:hover) {
+            &:hover {
+                border: 1px solid var(--mainColor);
+                color: var(--mainColor);
+            }
         }
     }
 }
@@ -633,9 +653,11 @@ button {
     &__link {
         transition: color .3s;
 
-        &:hover {
-            opacity: 1;
-            color: var(--mainColor);
+        @media (any-hover:hover) {
+            &:hover {
+                opacity: 1;
+                color: var(--mainColor);
+            }
         }
     }
 
@@ -670,9 +692,11 @@ button {
         border: 1px solid var(--borderColor);
         transition: border .3s;
 
-        &:hover {
-            opacity: 1;
-            border: 1px solid var(--mainColor);
+        @media (any-hover:hover) {
+            &:hover {
+                opacity: 1;
+                border: 1px solid var(--mainColor);
+            }
         }
 
         &_active {
@@ -789,8 +813,10 @@ button {
         justify-content: center;
         align-items: center;
 
-        &:hover {
-            opacity: 0.7;
+        @media (any-hover:hover) {
+            &:hover {
+                opacity: 0.7;
+            }
         }
     }
 
@@ -809,8 +835,10 @@ button {
         gap: 10px;
         border-radius: 10px;
 
-        &:hover {
-            opacity: 0.7;
+        @media (any-hover:hover) {
+            &:hover {
+                opacity: 0.7;
+            }
         }
     }
 }
@@ -837,12 +865,14 @@ button {
             transition: .3s;
         }
 
-        &:hover {
-            opacity: 1;
-            color: var(--mainColor);
+        @media (any-hover:hover) {
+            &:hover {
+                opacity: 1;
+                color: var(--mainColor);
 
-            path {
-                fill: var(--mainColor);
+                path {
+                    fill: var(--mainColor);
+                }
             }
         }
     }
@@ -951,8 +981,10 @@ button {
         transition: color .3s;
         padding: 8px 0;
 
-        &:hover {
-            color: var(--mainColor);
+        @media (any-hover:hover) {
+            &:hover {
+                color: var(--mainColor);
+            }
         }
     }
 
@@ -1019,12 +1051,14 @@ button {
             transition: .3s;
         }
 
-        &:hover {
-            opacity: 1;
-            color: var(--mainColor);
+        @media (any-hover:hover) {
+            &:hover {
+                opacity: 1;
+                color: var(--mainColor);
 
-            path {
-                fill: var(--mainColor);
+                path {
+                    fill: var(--mainColor);
+                }
             }
         }
     }
@@ -1107,12 +1141,14 @@ button {
             transition: .3s;
         }
 
-        &:hover {
-            opacity: 1;
+        @media (any-hover:hover) {
+            &:hover {
+                opacity: 1;
 
-            path {
-                fill: var(--mainColor);
-                stroke: var(--mainColor);
+                path {
+                    fill: var(--mainColor);
+                    stroke: var(--mainColor);
+                }
             }
         }
     }
@@ -1479,8 +1515,10 @@ button {
     &__link {
         transition: color .3s;
 
-        &:hover {
-            color: var(--mainColor);
+        @media (any-hover:hover) {
+            &:hover {
+                color: var(--mainColor);
+            }
         }
     }
 
@@ -1665,8 +1703,10 @@ button {
         font-weight: 700;
         font-size: 13px;
 
-        &:hover {
-            opacity: 1;
+        @media (any-hover:hover) {
+            &:hover {
+                opacity: 1;
+            }
         }
     }
 
@@ -1783,8 +1823,10 @@ button {
         border-bottom: 1px solid var(--borderColor);
         transition: color .3s;
 
-        &:hover {
-            color: var(--mainColor);
+        @media (any-hover:hover) {
+            &:hover {
+                color: var(--mainColor);
+            }
         }
 
         &:last-child {

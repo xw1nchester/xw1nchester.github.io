@@ -12,8 +12,10 @@ a {
   color: inherit;
   transition: opacity 0.3s;
 }
-a:hover {
-  opacity: 0.7;
+@media (any-hover: hover) {
+  a:hover {
+    opacity: 0.7;
+  }
 }
 
 ul,
@@ -89,8 +91,10 @@ button {
   background-color: transparent;
   transition: opacity 0.3s;
 }
-button:hover {
-  opacity: 0.7;
+@media (any-hover: hover) {
+  button:hover {
+    opacity: 0.7;
+  }
 }
 
 .video {
@@ -192,8 +196,10 @@ button:hover {
 .logo {
   display: flex;
 }
-.logo:hover {
-  opacity: 1;
+@media (any-hover: hover) {
+  .logo:hover {
+    opacity: 1;
+  }
 }
 .logo img {
   width: 100%;
@@ -240,11 +246,13 @@ button:hover {
     height: 20px;
   }
 }
-.option:hover {
-  opacity: 1;
-}
-.option:hover .option__icon {
-  background-color: #DBDBDB;
+@media (any-hover: hover) {
+  .option:hover {
+    opacity: 1;
+  }
+  .option:hover .option__icon {
+    background-color: #DBDBDB;
+  }
 }
 .option_fav.active path {
   fill: #EE8D02;
@@ -304,9 +312,11 @@ button:hover {
   display: block;
   transition: transform 0.3s;
 }
-.card__image:hover {
-  opacity: 1;
-  transform: scale(1.05);
+@media (any-hover: hover) {
+  .card__image:hover {
+    opacity: 1;
+    transform: scale(1.05);
+  }
 }
 .card__video-btn {
   position: absolute;
@@ -341,9 +351,11 @@ button:hover {
 .card__link {
   transition: color 0.3s;
 }
-.card__link:hover {
-  opacity: 1;
-  color: var(--mainColor);
+@media (any-hover: hover) {
+  .card__link:hover {
+    opacity: 1;
+    color: var(--mainColor);
+  }
 }
 .card__age {
   opacity: 0.5;
@@ -462,11 +474,13 @@ button:hover {
   border-radius: 0.5px;
   transition: background-color 0.3s;
 }
-.header__search-btn:hover path {
-  fill: var(--mainColor);
-}
-.header__search-btn:hover::before {
-  background-color: var(--mainColor);
+@media (any-hover: hover) {
+  .header__search-btn:hover path {
+    fill: var(--mainColor);
+  }
+  .header__search-btn:hover::before {
+    background-color: var(--mainColor);
+  }
 }
 .header__link {
   display: flex;
@@ -487,12 +501,14 @@ button:hover {
 .header__link path {
   transition: 0.3s;
 }
-.header__link:hover {
-  border: 1px solid var(--mainColor);
-  color: var(--mainColor);
-}
-.header__link:hover path {
-  fill: var(--mainColor);
+@media (any-hover: hover) {
+  .header__link:hover {
+    border: 1px solid var(--mainColor);
+    color: var(--mainColor);
+  }
+  .header__link:hover path {
+    fill: var(--mainColor);
+  }
 }
 @media (max-width: 992px) {
   .header__link {
@@ -502,8 +518,10 @@ button:hover {
     max-width: unset;
   }
 }
-.header__link:hover {
-  opacity: 0.7;
+@media (any-hover: hover) {
+  .header__link:hover {
+    opacity: 0.7;
+  }
 }
 
 .main {
@@ -590,9 +608,11 @@ button:hover {
   padding: 12px;
   transition: 0.3s;
 }
-.main__filter:hover {
-  border: 1px solid var(--mainColor);
-  color: var(--mainColor);
+@media (any-hover: hover) {
+  .main__filter:hover {
+    border: 1px solid var(--mainColor);
+    color: var(--mainColor);
+  }
 }
 
 .breadcrumbs {
@@ -604,9 +624,11 @@ button:hover {
 .breadcrumbs__link {
   transition: color 0.3s;
 }
-.breadcrumbs__link:hover {
-  opacity: 1;
-  color: var(--mainColor);
+@media (any-hover: hover) {
+  .breadcrumbs__link:hover {
+    opacity: 1;
+    color: var(--mainColor);
+  }
 }
 .breadcrumbs__text {
   opacity: 0.5;
@@ -637,9 +659,11 @@ button:hover {
   border: 1px solid var(--borderColor);
   transition: border 0.3s;
 }
-.pagination__item:hover {
-  opacity: 1;
-  border: 1px solid var(--mainColor);
+@media (any-hover: hover) {
+  .pagination__item:hover {
+    opacity: 1;
+    border: 1px solid var(--mainColor);
+  }
 }
 .pagination__item_active {
   border: 1px solid var(--mainColor);
@@ -744,8 +768,10 @@ button:hover {
   justify-content: center;
   align-items: center;
 }
-.sidebar__search-btn:hover {
-  opacity: 0.7;
+@media (any-hover: hover) {
+  .sidebar__search-btn:hover {
+    opacity: 0.7;
+  }
 }
 .sidebar__filters {
   display: flex;
@@ -761,8 +787,10 @@ button:hover {
   gap: 10px;
   border-radius: 10px;
 }
-.sidebar__link:hover {
-  opacity: 0.7;
+@media (any-hover: hover) {
+  .sidebar__link:hover {
+    opacity: 0.7;
+  }
 }
 
 .filter {
@@ -787,12 +815,14 @@ button:hover {
 .filter__btn path {
   transition: 0.3s;
 }
-.filter__btn:hover {
-  opacity: 1;
-  color: var(--mainColor);
-}
-.filter__btn:hover path {
-  fill: var(--mainColor);
+@media (any-hover: hover) {
+  .filter__btn:hover {
+    opacity: 1;
+    color: var(--mainColor);
+  }
+  .filter__btn:hover path {
+    fill: var(--mainColor);
+  }
 }
 .filter__arrow {
   margin-left: auto;
@@ -891,8 +921,10 @@ button:hover {
   transition: color 0.3s;
   padding: 8px 0;
 }
-.dropdown__item:hover {
-  color: var(--mainColor);
+@media (any-hover: hover) {
+  .dropdown__item:hover {
+    color: var(--mainColor);
+  }
 }
 .dropdown__title {
   font-weight: 700;
@@ -964,12 +996,14 @@ button:hover {
 .footer__link path {
   transition: 0.3s;
 }
-.footer__link:hover {
-  opacity: 1;
-  color: var(--mainColor);
-}
-.footer__link:hover path {
-  fill: var(--mainColor);
+@media (any-hover: hover) {
+  .footer__link:hover {
+    opacity: 1;
+    color: var(--mainColor);
+  }
+  .footer__link:hover path {
+    fill: var(--mainColor);
+  }
 }
 .footer__text {
   opacity: 0.5;
@@ -1051,12 +1085,14 @@ button:hover {
 .city-popup__close-btn path {
   transition: 0.3s;
 }
-.city-popup__close-btn:hover {
-  opacity: 1;
-}
-.city-popup__close-btn:hover path {
-  fill: var(--mainColor);
-  stroke: var(--mainColor);
+@media (any-hover: hover) {
+  .city-popup__close-btn:hover {
+    opacity: 1;
+  }
+  .city-popup__close-btn:hover path {
+    fill: var(--mainColor);
+    stroke: var(--mainColor);
+  }
 }
 .city-popup__row {
   display: flex;
@@ -1395,8 +1431,10 @@ button:hover {
 .profile-table__link {
   transition: color 0.3s;
 }
-.profile-table__link:hover {
-  color: var(--mainColor);
+@media (any-hover: hover) {
+  .profile-table__link:hover {
+    color: var(--mainColor);
+  }
 }
 .profile-table__opt {
   color: #fff;
@@ -1565,8 +1603,10 @@ button:hover {
   font-weight: 700;
   font-size: 13px;
 }
-.map-block__btn:hover {
-  opacity: 1;
+@media (any-hover: hover) {
+  .map-block__btn:hover {
+    opacity: 1;
+  }
 }
 .map-block__map {
   position: absolute;
@@ -1682,8 +1722,10 @@ button:hover {
   border-bottom: 1px solid var(--borderColor);
   transition: color 0.3s;
 }
-.district__row:hover {
-  color: var(--mainColor);
+@media (any-hover: hover) {
+  .district__row:hover {
+    color: var(--mainColor);
+  }
 }
 .district__row:last-child {
   border: 0;
