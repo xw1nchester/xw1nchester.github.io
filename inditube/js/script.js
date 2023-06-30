@@ -51,10 +51,15 @@ const updateDropdownPosition = (filter) => {
 
 // изменение ширины экрана
 window.addEventListener('resize', function (e) {
-    if (window.innerWidth > 992) {
+    if (window.innerWidth > 992 && burgerBtn && sidebar && header && mainInner) {
         burgerBtn.classList.remove('active');
         sidebar.classList.remove('active');
-        body.classList.remove('lock');
+        header.classList.remove('fixed');
+        mainInner.classList.remove('padding');
+
+        if (cityPopup && !cityPopup.classList.contains('active')) {
+            body.classList.remove('lock');
+        }
     }
 });
 
@@ -65,8 +70,8 @@ document.addEventListener('click', function (e) {
     if (targetEl.closest('.burger-btn')) {
         burgerBtn.classList.toggle('active');
         sidebar.classList.toggle('active');
-        // header.classList.toggle('fixed');
-        // mainInner.classList.toggle('padding');
+        header.classList.toggle('fixed');
+        mainInner.classList.toggle('padding');
         window.scrollTo({ top: 0, behavior: 'smooth' });
         body.classList.toggle('lock');
     }
@@ -116,6 +121,28 @@ document.addEventListener('click', function (e) {
         setPadding(0);
         body.classList.remove('lock');
     }
+
+    if(targetEl.closest('.open-reviews')) {
+        const btn = targetEl.closest('.open-reviews');
+        const reviewsBlock = btn.closest('.profile__block_reviews');
+        
+        if(reviewsBlock){
+        reviewsBlock.classList.toggle('active');}
+    }
+
+    if(targetEl.closest('.open-review-form')) {
+        const btn = targetEl.closest('.open-review-form');
+        const reviewForm = btn.closest('.profile__block_review-form');
+
+        if(reviewForm) {
+            reviewForm.classList.toggle('active');
+        }
+    }
+
+    if (targetEl.closest('.map-block__btn')) {
+        const map = document.querySelector('.map-block');
+        map.classList.add('active');
+    }
 });
 
 // бургер меню
@@ -124,5 +151,51 @@ const sidebar = document.querySelector('.sidebar');
 const body = document.body;
 const wrapper = document.querySelector('.wrapper');
 const cityPopup = document.querySelector('.city-popup');
-// const header = document.querySelector('.header');
-// const mainInner = document.querySelector('.main__inner');
+const header = document.querySelector('.header');
+const mainInner = document.querySelector('.main__inner');
+
+// слайдер с отзывами
+$(".reviews-slider").slick({
+    slidesToShow: 1,
+    arrows: false,
+    dots: true,
+    adaptiveHeight: true
+});
+
+// большой слайдер
+$(".big-slider").slick({
+    slidesToShow: 1,
+    arrows: false,
+    asNavFor: '.small-slider'
+});
+
+// маленький слайдер
+$(".small-slider").slick({
+    slidesToShow: 6,
+    arrows: false,
+    focusOnSelect: true,
+    asNavFor: '.big-slider',
+
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 5,
+            }
+        },
+        {
+            breakpoint: 769,
+            settings: {
+                dots: true,
+                slidesToShow: 5
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                dots: true,
+                slidesToShow: 4
+            }
+        },
+    ]
+});
