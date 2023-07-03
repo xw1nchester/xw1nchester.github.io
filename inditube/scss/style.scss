@@ -33,8 +33,10 @@ a {
     color: inherit;
     transition: .3s;
 
-    &:hover {
-        opacity: 0.7;
+    @media (any-hover:hover) {
+        &:hover {
+            opacity: 0.7;
+        }
     }
 }
 
@@ -119,8 +121,10 @@ button {
     background-color: transparent;
     transition: .3s;
 
-    &:hover {
-        opacity: 0.7;
+    @media (any-hover:hover) {
+        &:hover {
+            opacity: 0.7;
+        }
     }
 }
 
@@ -206,8 +210,10 @@ button {
         font-size: 24px;
     }
 
-    &:hover {
-        opacity: 1;
+    @media (any-hover:hover) {
+        &:hover {
+            opacity: 1;
+        }
     }
 }
 
@@ -629,9 +635,11 @@ button {
         padding-bottom: 130%;
         transition: transform .3s;
 
-        &:hover {
-            opacity: 1;
-            transform: scale(1.05);
+        @media (any-hover:hover) {
+            &:hover {
+                opacity: 1;
+                transform: scale(1.05);
+            }
         }
     }
 
@@ -857,10 +865,12 @@ button {
         border-radius: 10px;
         padding: 10px 12px;
 
-        &:hover {
-            opacity: 1;
-            background-color: #fff;
-            color: #0E0E0E;
+        @media (any-hover:hover) {
+            &:hover {
+                opacity: 1;
+                background-color: #fff;
+                color: #0E0E0E;
+            }
         }
 
         &.active {
@@ -955,9 +965,11 @@ button {
         align-items: center;
         font-weight: 700;
 
-        &:hover {
-            border: 1px solid var(--mainColor);
-            opacity: 1;
+        @media (any-hover:hover) {
+            &:hover {
+                border: 1px solid var(--mainColor);
+                opacity: 1;
+            }
         }
 
         &.active {
@@ -1041,7 +1053,7 @@ button {
         justify-content: space-between;
         gap: 20px;
 
-        @media (max-width:800px) {
+        @media (max-width:992px) {
             flex-direction: column;
         }
     }
@@ -1073,9 +1085,18 @@ button {
         min-height: 340px;
         overflow: hidden;
         background-color: #272727;
+        padding: 40px;
+
+        @media (max-width:992px) {
+            padding: 30px;
+        }
 
         @media (max-width:768px) {
-            padding: 10px;
+            padding: 20px;
+        }
+
+        @media (max-width:576px) {
+            padding: 16px;
         }
     }
 
@@ -1083,7 +1104,6 @@ button {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 20px;
         width: 100%;
     }
 
@@ -1125,7 +1145,6 @@ button {
         flex-wrap: wrap;
         gap: 30px;
         width: 100%;
-        padding: 0 20px;
         border-radius: 10px;
         overflow: auto;
 
@@ -1272,6 +1291,12 @@ button {
         @media (max-width:600px) {
             width: 100%;
             padding: 12px;
+        }
+    }
+
+    &__warning {
+        p {
+            opacity: 0.5;
         }
     }
 
@@ -1524,14 +1549,14 @@ button {
             border: 0;
             font-weight: 700;
             font-size: 20px;
-            color: var(--mainColor);
+            color: var(--secondaryColor);
         }
     }
 
     &__opt {
         font-weight: 700;
         color: #000;
-        background-color: var(--mainColor);
+        background-color: #FFF;
         padding: 5px;
     }
 }
@@ -1797,10 +1822,10 @@ button {
 
     &__items {
         display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    gap: 4px;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 4px;
     }
 
     &__item {

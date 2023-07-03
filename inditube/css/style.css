@@ -12,8 +12,10 @@ a {
   color: inherit;
   transition: 0.3s;
 }
-a:hover {
-  opacity: 0.7;
+@media (any-hover: hover) {
+  a:hover {
+    opacity: 0.7;
+  }
 }
 
 ul,
@@ -91,8 +93,10 @@ button {
   background-color: transparent;
   transition: 0.3s;
 }
-button:hover {
-  opacity: 0.7;
+@media (any-hover: hover) {
+  button:hover {
+    opacity: 0.7;
+  }
 }
 
 .video {
@@ -199,8 +203,10 @@ button:hover {
   font-weight: 700;
   font-size: 24px;
 }
-.logo:hover {
-  opacity: 1;
+@media (any-hover: hover) {
+  .logo:hover {
+    opacity: 1;
+  }
 }
 
 .block {
@@ -597,9 +603,11 @@ button:hover {
   padding-bottom: 130%;
   transition: transform 0.3s;
 }
-.card__image:hover {
-  opacity: 1;
-  transform: scale(1.05);
+@media (any-hover: hover) {
+  .card__image:hover {
+    opacity: 1;
+    transform: scale(1.05);
+  }
 }
 .card__video-btn {
   position: absolute;
@@ -809,10 +817,12 @@ button:hover {
   border-radius: 10px;
   padding: 10px 12px;
 }
-.main__filter:hover {
-  opacity: 1;
-  background-color: #fff;
-  color: #0E0E0E;
+@media (any-hover: hover) {
+  .main__filter:hover {
+    opacity: 1;
+    background-color: #fff;
+    color: #0E0E0E;
+  }
 }
 .main__filter.active {
   background-color: #fff;
@@ -908,9 +918,11 @@ button:hover {
   align-items: center;
   font-weight: 700;
 }
-.pagination__item:hover {
-  border: 1px solid var(--mainColor);
-  opacity: 1;
+@media (any-hover: hover) {
+  .pagination__item:hover {
+    border: 1px solid var(--mainColor);
+    opacity: 1;
+  }
 }
 .pagination__item.active {
   border: 1px solid var(--mainColor);
@@ -985,7 +997,7 @@ button:hover {
   justify-content: space-between;
   gap: 20px;
 }
-@media (max-width: 800px) {
+@media (max-width: 992px) {
   .footer__content {
     flex-direction: column;
   }
@@ -1013,17 +1025,27 @@ button:hover {
   min-height: 340px;
   overflow: hidden;
   background-color: #272727;
+  padding: 40px;
+}
+@media (max-width: 992px) {
+  .city-popup__inner {
+    padding: 30px;
+  }
 }
 @media (max-width: 768px) {
   .city-popup__inner {
-    padding: 10px;
+    padding: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .city-popup__inner {
+    padding: 16px;
   }
 }
 .city-popup__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
   width: 100%;
 }
 .city-popup__title {
@@ -1079,7 +1101,6 @@ button:hover {
   flex-wrap: wrap;
   gap: 30px;
   width: 100%;
-  padding: 0 20px;
   border-radius: 10px;
   overflow: auto;
 }
@@ -1224,6 +1245,9 @@ button:hover {
     width: 100%;
     padding: 12px;
   }
+}
+.profile__warning p {
+  opacity: 0.5;
 }
 .profile__block {
   display: flex;
@@ -1460,12 +1484,12 @@ button:hover {
   border: 0;
   font-weight: 700;
   font-size: 20px;
-  color: var(--mainColor);
+  color: var(--secondaryColor);
 }
 .service-table__opt {
   font-weight: 700;
   color: #000;
-  background-color: var(--mainColor);
+  background-color: #FFF;
   padding: 5px;
 }
 
