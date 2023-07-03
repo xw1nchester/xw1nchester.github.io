@@ -1488,8 +1488,8 @@ button {
 }
 .service-table__opt {
   font-weight: 700;
-  color: #000;
-  background-color: #FFF;
+  color: #FFF;
+  background-color: var(--mainColor);
   padding: 5px;
 }
 
