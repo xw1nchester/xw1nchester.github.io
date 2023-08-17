@@ -46,7 +46,8 @@ body {
     background-color: var(--bodyColor);
     color: var(--darkColor);
 
-    &.lock {
+    &.lock,
+    &.disable {
         overflow: hidden;
     }
 }
@@ -102,7 +103,10 @@ textarea::placeholder {
 }
 
 button {
-    cursor: pointer;
+    @media (any-hover:hover) {
+        cursor: pointer;
+    }
+
     background-color: transparent;
     transition: .3s;
 }
@@ -124,9 +128,12 @@ button {
 @import 'menu';
 @import 'popup';
 
-a:hover,
-button:hover {
-    opacity: 0.7;
+@media (any-hover:hover) {
+
+    a:hover,
+    button:hover {
+        opacity: 0.7;
+    }
 }
 
 :root {
@@ -145,8 +152,10 @@ button:hover {
     &__icon {
         display: flex;
 
-        &:hover {
-            opacity: 1;
+        @media (any-hover:hover) {
+            &:hover {
+                opacity: 1;
+            }
         }
     }
 }
@@ -265,9 +274,11 @@ button:hover {
             pointer-events: none;
         }
 
-        &:hover {
-            opacity: 1;
-            background-color: var(--darkColor);
+        @media (any-hover:hover) {
+            &:hover {
+                opacity: 1;
+                background-color: var(--darkColor);
+            }
         }
     }
 }
@@ -582,9 +593,11 @@ button:hover {
         gap: 20px;
         padding: 6px 0;
 
-        &:hover {
-            opacity: 1;
-            color: var(--hoverColor);
+        @media (any-hover:hover) {
+            &:hover {
+                opacity: 1;
+                color: var(--hoverColor);
+            }
         }
     }
 }
@@ -607,9 +620,11 @@ button:hover {
     &__link {
         gap: 5px;
 
-        &:hover {
-            opacity: 1;
-            color: var(--hoverColor);
+        @media (any-hover:hover) {
+            &:hover {
+                opacity: 1;
+                color: var(--hoverColor);
+            }
         }
     }
 
@@ -834,11 +849,13 @@ button:hover {
             transition: .3s;
         }
 
-        &:hover {
-            opacity: 1;
+        @media (any-hover:hover) {
+            &:hover {
+                opacity: 1;
 
-            img {
-                transform: scale(1.05);
+                img {
+                    transform: scale(1.05);
+                }
             }
         }
     }
@@ -1157,7 +1174,10 @@ button:hover {
 
     &__open {
         flex-direction: row;
-        cursor: pointer;
+
+        @media (any-hover:hover) {
+            cursor: pointer;
+        }
 
         &.active {
             svg {
@@ -1409,7 +1429,10 @@ button:hover {
     flex-shrink: 0;
     background-color: #C1C1C1;
     border-radius: 50%;
-    cursor: pointer;
+
+    @media (any-hover:hover) {
+        cursor: pointer;
+    }
 }
 
 .slick-dots .slick-active {
@@ -1565,9 +1588,11 @@ button:hover {
     &__link {
         text-decoration: underline;
 
-        &:hover {
-            opacity: 1;
-            color: var(--hoverColor);
+        @media (any-hover:hover) {
+            &:hover {
+                opacity: 1;
+                color: var(--hoverColor);
+            }
         }
     }
 
@@ -1658,10 +1683,15 @@ button:hover {
         min-height: 44px;
         font-size: 14px;
         transition: .3s;
-        cursor: pointer;
 
-        &:hover {
-            opacity: 0.7;
+        @media (any-hover:hover) {
+            cursor: pointer;
+        }
+
+        @media (any-hover:hover) {
+            &:hover {
+                opacity: 0.7;
+            }
         }
     }
 }
@@ -1728,9 +1758,11 @@ button:hover {
         padding: 4px 0;
         width: 100%;
 
-        &:hover {
-            opacity: 1;
-            color: var(--hoverColor);
+        @media (any-hover:hover) {
+            &:hover {
+                opacity: 1;
+                color: var(--hoverColor);
+            }
         }
     }
 }

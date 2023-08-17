@@ -102,7 +102,7 @@ document.addEventListener('click', function (e) {
         cityPopup.classList.add('active');
         let scrollWidth = window.innerWidth - wrapper.offsetWidth;
         setPadding(scrollWidth);
-        body.classList.add('lock');
+        body.classList.add('disable');
     }
 
     if (cityPopup && cityPopup.classList.contains('active')
@@ -111,7 +111,7 @@ document.addEventListener('click', function (e) {
             || targetEl.closest('.city-popup__close-btn'))) {
         cityPopup.classList.remove('active');
         setPadding(0);
-        body.classList.remove('lock');
+        body.classList.remove('disable');
     }
 });
 

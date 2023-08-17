@@ -25,7 +25,7 @@ body {
   background-color: var(--bodyColor);
   color: var(--darkColor);
 }
-body.lock {
+body.lock, body.disable {
   overflow: hidden;
 }
 
@@ -75,9 +75,13 @@ textarea::placeholder {
 }
 
 button {
-  cursor: pointer;
   background-color: transparent;
   transition: 0.3s;
+}
+@media (any-hover: hover) {
+  button {
+    cursor: pointer;
+  }
 }
 
 .video {
@@ -163,11 +167,12 @@ button {
   transform: scale(1);
 }
 
-a:hover,
-button:hover {
-  opacity: 0.7;
+@media (any-hover: hover) {
+  a:hover,
+  button:hover {
+    opacity: 0.7;
+  }
 }
-
 :root {
   --darkColor: #0D1036;
   --lightColor: #4A6DFF;
@@ -184,8 +189,10 @@ button:hover {
 .logo__icon {
   display: flex;
 }
-.logo__icon:hover {
-  opacity: 1;
+@media (any-hover: hover) {
+  .logo__icon:hover {
+    opacity: 1;
+  }
 }
 
 .item {
@@ -296,9 +303,11 @@ button:hover {
 .paggin__link.points {
   pointer-events: none;
 }
-.paggin__link:hover {
-  opacity: 1;
-  background-color: var(--darkColor);
+@media (any-hover: hover) {
+  .paggin__link:hover {
+    opacity: 1;
+    background-color: var(--darkColor);
+  }
 }
 
 .header {
@@ -598,9 +607,11 @@ button:hover {
   gap: 20px;
   padding: 6px 0;
 }
-.submenu__link:hover {
-  opacity: 1;
-  color: var(--hoverColor);
+@media (any-hover: hover) {
+  .submenu__link:hover {
+    opacity: 1;
+    color: var(--hoverColor);
+  }
 }
 
 .footer {
@@ -621,9 +632,11 @@ button:hover {
 .footer__link {
   gap: 5px;
 }
-.footer__link:hover {
-  opacity: 1;
-  color: var(--hoverColor);
+@media (any-hover: hover) {
+  .footer__link:hover {
+    opacity: 1;
+    color: var(--hoverColor);
+  }
 }
 .footer__copy {
   opacity: 0.5;
@@ -851,11 +864,13 @@ button:hover {
 .card__image img {
   transition: 0.3s;
 }
-.card__image:hover {
-  opacity: 1;
-}
-.card__image:hover img {
-  transform: scale(1.05);
+@media (any-hover: hover) {
+  .card__image:hover {
+    opacity: 1;
+  }
+  .card__image:hover img {
+    transform: scale(1.05);
+  }
 }
 .card__video-icon {
   position: absolute;
@@ -1160,7 +1175,11 @@ button:hover {
 }
 .profile__open {
   flex-direction: row;
-  cursor: pointer;
+}
+@media (any-hover: hover) {
+  .profile__open {
+    cursor: pointer;
+  }
 }
 .profile__open.active svg {
   transform: rotate(-180deg);
@@ -1386,7 +1405,11 @@ button:hover {
   flex-shrink: 0;
   background-color: #C1C1C1;
   border-radius: 50%;
-  cursor: pointer;
+}
+@media (any-hover: hover) {
+  .slick-dots li {
+    cursor: pointer;
+  }
 }
 
 .slick-dots .slick-active {
@@ -1533,9 +1556,11 @@ button:hover {
 .services__link {
   text-decoration: underline;
 }
-.services__link:hover {
-  opacity: 1;
-  color: var(--hoverColor);
+@media (any-hover: hover) {
+  .services__link:hover {
+    opacity: 1;
+    color: var(--hoverColor);
+  }
 }
 .services__opt {
   border-radius: 4px;
@@ -1612,10 +1637,16 @@ button:hover {
   min-height: 44px;
   font-size: 14px;
   transition: 0.3s;
-  cursor: pointer;
 }
-.review-form__btn:hover {
-  opacity: 0.7;
+@media (any-hover: hover) {
+  .review-form__btn {
+    cursor: pointer;
+  }
+}
+@media (any-hover: hover) {
+  .review-form__btn:hover {
+    opacity: 0.7;
+  }
 }
 
 .nearby {
@@ -1676,9 +1707,11 @@ button:hover {
   padding: 4px 0;
   width: 100%;
 }
-.location__link:hover {
-  opacity: 1;
-  color: var(--hoverColor);
+@media (any-hover: hover) {
+  .location__link:hover {
+    opacity: 1;
+    color: var(--hoverColor);
+  }
 }
 
 .notfound {
