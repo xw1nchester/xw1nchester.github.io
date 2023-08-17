@@ -432,6 +432,7 @@ button {
         padding: 12px;
         border: 1px solid var(--lightColor);
         border-radius: 4px;
+        min-height: 48px;
 
         @media (max-width:#{$container+2*$safety}px) {
             padding: 8px;
