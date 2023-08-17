@@ -33,6 +33,8 @@ window.addEventListener('resize', function (e) {
     if (window.innerWidth > 768) {
         burgerBtn.classList.remove('active');
         menu.classList.remove('active');
+        header.classList.remove('fixed');
+        main.classList.remove('padding');
         body.classList.remove('lock');
     }
 });
@@ -44,6 +46,9 @@ document.addEventListener('click', function (e) {
     if (targetEl.closest('.burger-btn')) {
         burgerBtn.classList.toggle('active');
         menu.classList.toggle('active');
+        header.classList.toggle('fixed');
+        main.classList.toggle('padding');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
         body.classList.toggle('lock');
     }
 
@@ -118,6 +123,8 @@ document.addEventListener('click', function (e) {
 // бургер меню
 const burgerBtn = document.querySelector('.burger-btn');
 const menu = document.querySelector('.menu');
+const header = document.querySelector('.header');
+const main = document.querySelector('.main');
 const body = document.body;
 const wrapper = document.querySelector('.wrapper');
 const cityPopup = document.querySelector('.city-popup');

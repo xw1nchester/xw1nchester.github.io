@@ -314,6 +314,12 @@ button {
   background-color: var(--darkColor);
   padding: 16px 0;
 }
+.header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 .header__inner {
   display: flex;
   align-items: center;
@@ -646,9 +652,15 @@ button {
   padding: 40px 0;
   flex-grow: 1;
 }
+.main.padding {
+  padding-top: 162px;
+}
 @media (max-width: 576px) {
   .main {
     padding: 30px 0;
+  }
+  .main.padding {
+    padding-top: 152px;
   }
 }
 .main__inner {
