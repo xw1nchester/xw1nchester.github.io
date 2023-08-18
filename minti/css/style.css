@@ -765,9 +765,15 @@ button {
     width: calc(100% / 2 - (2 - 1) * 20px / 2);
   }
 }
+@media (max-width: 992px) {
+  .card {
+    padding: 16px;
+  }
+}
 @media (max-width: 576px) {
   .card {
     width: 100%;
+    padding: 12px;
   }
 }
 .card__title {

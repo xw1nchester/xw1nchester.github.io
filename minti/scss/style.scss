@@ -751,8 +751,13 @@ button {
         @include adaptive-width(2, 20);
     }
 
+    @media (max-width:992px) {
+        padding: 16px;
+    }
+
     @media (max-width:576px) {
         width: 100%;
+        padding: 12px;
     }
 
     &__title {
