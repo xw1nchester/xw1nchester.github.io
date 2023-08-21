@@ -70,17 +70,20 @@ document.addEventListener('click', function (e) {
 
         const smallSubmenu = menuItem.querySelector('.submenu.small');
 
-        if (menuItem.classList.contains('active') && window.innerWidth > 768 && smallSubmenu) {
+        if (!window.innerWidth > 768 || !smallSubmenu) {
+            return;
+        }
+
+        if (menuItem.classList.contains('active')) {
             const smallSubmenuRect = smallSubmenu.getBoundingClientRect();
 
             if (smallSubmenuRect.left + smallSubmenuRect.width / 2 > window.innerWidth / 2) {
-                smallSubmenu.style.left = 'auto';
+                smallSubmenu.style.left = 'unset';
                 smallSubmenu.style.right = '0';
-            } else {
-                smallSubmenu.style.left = '0';
-                smallSubmenu.style.right = 'auto';
             }
-
+        } else {
+            smallSubmenu.style.left = '0';
+            smallSubmenu.style.right = 'unset';
         }
     }
 

@@ -312,6 +312,7 @@ button {
 .header {
   background-color: var(--darkColor);
   padding: 16px 0;
+  z-index: 3;
 }
 .header.fixed {
   position: fixed;
@@ -1793,7 +1794,7 @@ button {
 }
 
 .city-popup {
-  z-index: 2;
+  z-index: 4;
 }
 .city-popup__container {
   max-width: 1200px;
