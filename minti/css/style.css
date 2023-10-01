@@ -1752,22 +1752,25 @@ button {
   }
 }
 
-.notfound {
+.full-height {
   display: flex;
   flex-direction: column;
 }
+.full-height__container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.full-height__inner {
+  flex-grow: 1;
+}
+
 @media (max-width: 768px) {
   .notfound {
     min-height: calc(100vh - 122px);
   }
 }
-.notfound__container {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-}
 .notfound__inner {
-  flex-grow: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1903,4 +1906,113 @@ button {
     opacity: 1;
     color: var(--hoverColor);
   }
+}
+
+.auth__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.auth__form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 400px;
+}
+.auth__header {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  border-bottom: 2px solid var(--secondaryColor);
+}
+.auth__title {
+  color: var(--lightColor);
+  border-bottom: 4px solid transparent;
+  transition: 0s;
+}
+.auth__title:hover {
+  opacity: 1;
+}
+.auth__title.active {
+  color: var(--darkColor);
+  border-bottom: 4px solid var(--darkColor);
+}
+.auth__form {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  min-height: 420px;
+}
+.auth__form.active {
+  display: flex;
+}
+.auth__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+.auth__input {
+  min-height: 48px;
+  padding: 12px;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.auth__input::placeholder {
+  opacity: 0.7;
+}
+.auth__radio {
+  display: none;
+}
+.auth__radio:checked + .auth__label::after {
+  opacity: 1;
+  visibility: visible;
+}
+.auth__label {
+  cursor: pointer;
+  position: relative;
+}
+.auth__label::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #FFF;
+  border-radius: 4px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.auth__label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  background-color: var(--lightColor);
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+.auth__link {
+  color: var(--lightColor);
+  text-decoration: underline;
+}
+.auth__btn {
+  background-color: #FF5E7D;
+  color: #FFF;
+  width: 100%;
+  border-radius: 4px;
+  min-height: 48px;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  gap: 16px;
+}
+.auth__btn_telegram {
+  background-color: var(--lightColor);
+  border-radius: 24px;
 }

@@ -121,6 +121,22 @@ document.addEventListener('click', function (e) {
         setPadding(0);
         body.classList.remove('disable');
     }
+
+    if(targetEl.closest('.auth__title')) {
+        const activeAuthTitle = document.querySelector('.auth__title.active');
+        activeAuthTitle.classList.remove('active');
+
+        const activeForm = document.querySelector('.auth__form.active');
+        activeForm.classList.remove('active');
+
+        const targetAuthTitle = targetEl.closest('.auth__title');
+        targetAuthTitle.classList.add('active');
+
+        const attributeValue = targetAuthTitle.getAttribute("data-auth");
+        
+        const targetForm = document.querySelector(`[data-form="${attributeValue}"]`);
+        targetForm.classList.add('active');
+    }
 });
 
 // бургер меню
