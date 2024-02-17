@@ -28,6 +28,16 @@ const setPadding = (padding) => {
     wrapper.style.paddingRight = padding + 'px';
 }
 
+const closeActivePopup = () => {
+    activePopup = document.querySelector('.popup.active');
+
+    if (activePopup) {
+        activePopup.classList.remove('active');
+        setPadding(0);
+        body.classList.remove('disable');
+    }
+}
+
 // изменение ширины экрана
 window.addEventListener('resize', function (e) {
     if (window.innerWidth > 768) {
@@ -113,16 +123,7 @@ document.addEventListener('click', function (e) {
         body.classList.add('disable');
     }
 
-    if (cityPopup && cityPopup.classList.contains('active')
-        && !targetEl.closest('.open-city-popup')
-        && (!targetEl.closest('.city-popup__inner')
-            || targetEl.closest('.city-popup__close-btn'))) {
-        cityPopup.classList.remove('active');
-        setPadding(0);
-        body.classList.remove('disable');
-    }
-
-    if(targetEl.closest('.auth__title')) {
+    if (targetEl.closest('.auth__title')) {
         const activeAuthTitle = document.querySelector('.auth__title.active');
         activeAuthTitle.classList.remove('active');
 
@@ -133,9 +134,34 @@ document.addEventListener('click', function (e) {
         targetAuthTitle.classList.add('active');
 
         const attributeValue = targetAuthTitle.getAttribute("data-auth");
-        
+
         const targetForm = document.querySelector(`[data-form="${attributeValue}"]`);
         targetForm.classList.add('active');
+    }
+
+    if (targetEl.closest('.abuse-btn')) {
+        abusePopup.classList.add('active');
+        let scrollWidth = window.innerWidth - wrapper.offsetWidth;
+        setPadding(scrollWidth);
+        body.classList.add('disable');
+    }
+
+    if (targetEl.closest('.popup') && !targetEl.closest('.popup__inner') || targetEl.closest('.close-popup')) {
+        closeActivePopup();
+    }
+
+    if (targetEl.closest('.abuse-popup__delete-file')) {
+        e.preventDefault();
+        abuseFileInput.value = ''; 
+        abuseFileLabel.classList.remove('uploaded');
+        abuseFileLabel.style.backgroundImage = ``;
+        abuseFileDeleteBtn.classList.remove('active');
+    }
+});
+
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') {
+        closeActivePopup();
     }
 });
 
@@ -147,6 +173,10 @@ const main = document.querySelector('.main');
 const body = document.body;
 const wrapper = document.querySelector('.wrapper');
 const cityPopup = document.querySelector('.city-popup');
+const abusePopup = document.querySelector('.abuse-popup');
+const abuseFileInput = document.querySelector('.abuse-popup__file-input');
+const abuseFileLabel = document.querySelector('.abuse-popup__file-label');
+const abuseFileDeleteBtn = document.querySelector('.abuse-popup__delete-file');
 // const wrapper = document.querySelector('.wrapper');
 
 const upBtn = document.querySelector('.up-btn');
@@ -180,4 +210,16 @@ $(".small-slider").slick({
     focusOnSelect: true,
     asNavFor: '.big-slider',
     dots: true
+});
+
+// показ файла в форме жалобы
+abuseFileInput.addEventListener('change', function () {
+    const reader = new FileReader();
+    reader.readAsDataURL(abuseFileInput.files[0]);
+
+    reader.onload = function (e) {
+        abuseFileLabel.classList.add('uploaded');
+        abuseFileLabel.style.backgroundImage = `url("${e.target.result}")`;
+        abuseFileDeleteBtn.classList.add('active');
+    };
 });
