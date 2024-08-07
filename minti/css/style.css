@@ -2094,6 +2094,11 @@ button {
 .city-select__column {
   width: calc(50% - 4px);
 }
+@media (max-width: 400px) {
+  .city-select__column {
+    width: 100%;
+  }
+}
 .city-select__list {
   width: 100%;
   display: flex;

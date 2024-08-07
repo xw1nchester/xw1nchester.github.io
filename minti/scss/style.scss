@@ -2175,6 +2175,10 @@ button {
 
     &__column {
         width: calc(100% / 2 - 8px / 2);
+
+        @media (max-width:400px) {
+            width: 100%;
+        }
     }
 
     &__list {

@@ -49,11 +49,13 @@ const closeCitySelect = () => {
 // изменение ширины экрана
 window.addEventListener('resize', function (e) {
     if (window.innerWidth > 768) {
-        burgerBtn.classList.remove('active');
-        menu.classList.remove('active');
-        header.classList.remove('fixed');
-        main.classList.remove('padding');
-        body.classList.remove('lock');
+        if (burgerBtn && menu && header && main && body) {
+            burgerBtn.classList.remove('active');
+            menu.classList.remove('active');
+            header.classList.remove('fixed');
+            main.classList.remove('padding');
+            body.classList.remove('lock');
+        }
     }
 });
 
@@ -209,7 +211,10 @@ const upBtn = document.querySelector('.up-btn');
 
 window.addEventListener('scroll', function (e) {
     const shouldShow = document.documentElement.scrollTop > 100;
-    upBtn.classList.toggle('active', shouldShow);
+
+    if (upBtn) {
+        upBtn.classList.toggle('active', shouldShow);
+    }
 });
 
 new Swiper('.reviews__slider', {
