@@ -1,175 +1,747 @@
 <!DOCTYPE html>
 <html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="css/slick.css" />
+        <link rel="stylesheet" href="css/style.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/style.css">
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="img/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="img/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="img/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="img/favicon/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+        <title>Document</title>
+    </head>
 
-    <title>Document</title>
-</head>
+    <body>
+        <div class="wrapper lock-padding">
+            <main class="main full-height">
+                <div class="container full-height__container">
+                    <div class="auth__inner full-height__inner">
+                        <div class="auth__form-wrapper">
+                            <a href="/" class="logo auth__logo">
+                                <span class="logo__icon">
+                                    <img src="img/logo.svg" alt="logo" />
+                                </span>
+                                <svg
+                                    width="83"
+                                    height="29"
+                                    viewBox="0 0 83 29"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M26.4133 29H21.1417V9.76684C21.1417 9.39119 21.068 9.04059 20.9205 8.71503C20.7853 8.38946 20.5949 8.10773 20.3491 7.86982C20.1156 7.61939 19.8391 7.4253 19.5197 7.28756C19.2002 7.14983 18.8561 7.08096 18.4875 7.08096C18.1188 7.08096 17.7747 7.14983 17.4553 7.28756C17.1358 7.4253 16.8531 7.61939 16.6074 7.86982C16.3739 8.10773 16.1896 8.38946 16.0544 8.71503C15.9192 9.04059 15.8517 9.39119 15.8517 9.76684V29H10.5616V9.76684C10.5616 9.39119 10.494 9.04059 10.3589 8.71503C10.2237 8.38946 10.0332 8.10773 9.78747 7.86982C9.554 7.61939 9.27752 7.4253 8.95803 7.28756C8.63854 7.14983 8.29447 7.08096 7.92583 7.08096C7.55718 7.08096 7.21312 7.14983 6.89363 7.28756C6.57414 7.4253 6.29151 7.61939 6.04575 7.86982C5.81227 8.10773 5.62795 8.38946 5.49278 8.71503C5.35761 9.04059 5.29003 9.39119 5.29003 9.76684V29H0V9.76684C0 8.65242 0.202754 7.60687 0.608261 6.63018C1.02606 5.64098 1.59131 4.78325 2.30402 4.05699C3.02902 3.31822 3.87075 2.74223 4.82923 2.32902C5.79999 1.90328 6.83219 1.69041 7.92583 1.69041C8.90888 1.69041 9.85506 1.87198 10.7644 2.2351C11.6737 2.58571 12.4909 3.09909 13.2159 3.77526C13.9409 3.09909 14.7519 2.58571 15.6489 2.2351C16.5582 1.87198 17.5044 1.69041 18.4875 1.69041C19.5811 1.69041 20.6072 1.90328 21.5656 2.32902C22.5364 2.74223 23.3781 3.31822 24.0908 4.05699C24.8158 4.78325 25.3811 5.64098 25.7866 6.63018C26.2044 7.60687 26.4133 8.65242 26.4133 9.76684V29Z"
+                                        fill="#0D1036"
+                                    />
+                                    <path
+                                        d="M36.551 3.41839C36.551 3.89421 36.4588 4.33873 36.2745 4.75194C36.1024 5.16515 35.8628 5.52828 35.5556 5.84132C35.2484 6.14184 34.8859 6.38601 34.4681 6.57383C34.0626 6.74914 33.6264 6.83679 33.1595 6.83679C32.6925 6.83679 32.2501 6.74914 31.8323 6.57383C31.4268 6.38601 31.0705 6.14184 30.7633 5.84132C30.4684 5.52828 30.2287 5.16515 30.0444 4.75194C29.8724 4.33873 29.7864 3.89421 29.7864 3.41839C29.7864 2.95509 29.8724 2.51684 30.0444 2.10363C30.2287 1.67789 30.4684 1.31477 30.7633 1.01425C31.0705 0.701209 31.4268 0.457038 31.8323 0.281736C32.2501 0.0939119 32.6925 0 33.1595 0C33.6264 0 34.0626 0.0939119 34.4681 0.281736C34.8859 0.457038 35.2484 0.701209 35.5556 1.01425C35.8628 1.31477 36.1024 1.67789 36.2745 2.10363C36.4588 2.51684 36.551 2.95509 36.551 3.41839ZM35.6847 29H30.6158V8.88407H35.6847V29Z"
+                                        fill="#0D1036"
+                                    />
+                                    <path
+                                        d="M44.569 29H39.537V8.88407H40.7535L42.4124 10.8374C43.2234 10.0861 44.1389 9.51015 45.1588 9.10946C46.191 8.69624 47.2662 8.48964 48.3844 8.48964C49.5886 8.48964 50.7253 8.72755 51.7944 9.20337C52.8634 9.66667 53.7973 10.3115 54.596 11.138C55.3948 11.9519 56.0215 12.9098 56.4761 14.0117C56.9431 15.101 57.1765 16.2655 57.1765 17.5052V29H52.1446V17.5052C52.1446 16.9793 52.0463 16.4847 51.8497 16.0214C51.653 15.5456 51.3827 15.1323 51.0386 14.7817C50.6946 14.4311 50.2952 14.1557 49.8405 13.9553C49.3859 13.755 48.9005 13.6548 48.3844 13.6548C47.856 13.6548 47.3584 13.755 46.8914 13.9553C46.4245 14.1557 46.019 14.4311 45.6749 14.7817C45.3308 15.1323 45.0605 15.5456 44.8639 16.0214C44.6673 16.4847 44.569 16.9793 44.569 17.5052V29Z"
+                                        fill="#0D1036"
+                                    />
+                                    <path
+                                        d="M70.4108 29C69.1943 29 68.0515 28.7684 66.9825 28.3051C65.9134 27.8292 64.9734 27.1844 64.1623 26.3705C63.3636 25.544 62.7308 24.5861 62.2638 23.4968C61.8092 22.4074 61.5818 21.2429 61.5818 20.0032V14.0304H59.1304V8.92163H61.5818V0.882772H66.5954V8.92163H74.2263V14.0304H66.5954V20.0032C66.5954 20.5417 66.6937 21.0488 66.8903 21.5246C67.0869 21.9879 67.3572 22.3949 67.7013 22.7455C68.0454 23.0961 68.4509 23.3778 68.9178 23.5907C69.3848 23.791 69.8824 23.8912 70.4108 23.8912H74.2263V29H70.4108Z"
+                                        fill="#0D1036"
+                                    />
+                                    <path
+                                        d="M83 3.41839C83 3.89421 82.9078 4.33873 82.7235 4.75194C82.5515 5.16515 82.3119 5.52828 82.0047 5.84132C81.6975 6.14184 81.335 6.38601 80.9172 6.57383C80.5117 6.74914 80.0754 6.83679 79.6085 6.83679C79.1415 6.83679 78.6992 6.74914 78.2814 6.57383C77.8759 6.38601 77.5195 6.14184 77.2123 5.84132C76.9174 5.52828 76.6778 5.16515 76.4934 4.75194C76.3214 4.33873 76.2354 3.89421 76.2354 3.41839C76.2354 2.95509 76.3214 2.51684 76.4934 2.10363C76.6778 1.67789 76.9174 1.31477 77.2123 1.01425C77.5195 0.701209 77.8759 0.457038 78.2814 0.281736C78.6992 0.0939119 79.1415 0 79.6085 0C80.0754 0 80.5117 0.0939119 80.9172 0.281736C81.335 0.457038 81.6975 0.701209 82.0047 1.01425C82.3119 1.31477 82.5515 1.67789 82.7235 2.10363C82.9078 2.51684 83 2.95509 83 3.41839ZM82.1337 29H77.0648V8.88407H82.1337V29Z"
+                                        fill="#0D1036"
+                                    />
+                                </svg>
+                            </a>
+                            <div class="auth__header">
+                                <button
+                                    class="auth__title title active"
+                                    data-auth="sign"
+                                >
+                                    Вход
+                                </button>
+                                <button
+                                    class="auth__title title"
+                                    data-auth="register"
+                                >
+                                    Регистрация
+                                </button>
+                            </div>
+                            <form
+                                action="#"
+                                class="auth__form active"
+                                data-form="sign"
+                            >
+                                <div class="notify__content">
+                                    <div class="notify__item success">
+                                        <img
+                                            src="img/cross.svg"
+                                            alt="cross"
+                                            class="notify__item--cross"
+                                        />
 
-<body>
-    <div class="wrapper lock-padding">
-        <main class="main full-height">
-            <div class="container full-height__container">
-                <div class="auth__inner full-height__inner">
-                    <div class="auth__form-wrapper">
-                        <a href="/" class="logo auth__logo">
-                            <span class="logo__icon">
-                                <img src="img/logo.svg" alt="logo">
-                            </span>
-                            <svg width="83" height="29" viewBox="0 0 83 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M26.4133 29H21.1417V9.76684C21.1417 9.39119 21.068 9.04059 20.9205 8.71503C20.7853 8.38946 20.5949 8.10773 20.3491 7.86982C20.1156 7.61939 19.8391 7.4253 19.5197 7.28756C19.2002 7.14983 18.8561 7.08096 18.4875 7.08096C18.1188 7.08096 17.7747 7.14983 17.4553 7.28756C17.1358 7.4253 16.8531 7.61939 16.6074 7.86982C16.3739 8.10773 16.1896 8.38946 16.0544 8.71503C15.9192 9.04059 15.8517 9.39119 15.8517 9.76684V29H10.5616V9.76684C10.5616 9.39119 10.494 9.04059 10.3589 8.71503C10.2237 8.38946 10.0332 8.10773 9.78747 7.86982C9.554 7.61939 9.27752 7.4253 8.95803 7.28756C8.63854 7.14983 8.29447 7.08096 7.92583 7.08096C7.55718 7.08096 7.21312 7.14983 6.89363 7.28756C6.57414 7.4253 6.29151 7.61939 6.04575 7.86982C5.81227 8.10773 5.62795 8.38946 5.49278 8.71503C5.35761 9.04059 5.29003 9.39119 5.29003 9.76684V29H0V9.76684C0 8.65242 0.202754 7.60687 0.608261 6.63018C1.02606 5.64098 1.59131 4.78325 2.30402 4.05699C3.02902 3.31822 3.87075 2.74223 4.82923 2.32902C5.79999 1.90328 6.83219 1.69041 7.92583 1.69041C8.90888 1.69041 9.85506 1.87198 10.7644 2.2351C11.6737 2.58571 12.4909 3.09909 13.2159 3.77526C13.9409 3.09909 14.7519 2.58571 15.6489 2.2351C16.5582 1.87198 17.5044 1.69041 18.4875 1.69041C19.5811 1.69041 20.6072 1.90328 21.5656 2.32902C22.5364 2.74223 23.3781 3.31822 24.0908 4.05699C24.8158 4.78325 25.3811 5.64098 25.7866 6.63018C26.2044 7.60687 26.4133 8.65242 26.4133 9.76684V29Z"
-                                    fill="#0D1036" />
-                                <path
-                                    d="M36.551 3.41839C36.551 3.89421 36.4588 4.33873 36.2745 4.75194C36.1024 5.16515 35.8628 5.52828 35.5556 5.84132C35.2484 6.14184 34.8859 6.38601 34.4681 6.57383C34.0626 6.74914 33.6264 6.83679 33.1595 6.83679C32.6925 6.83679 32.2501 6.74914 31.8323 6.57383C31.4268 6.38601 31.0705 6.14184 30.7633 5.84132C30.4684 5.52828 30.2287 5.16515 30.0444 4.75194C29.8724 4.33873 29.7864 3.89421 29.7864 3.41839C29.7864 2.95509 29.8724 2.51684 30.0444 2.10363C30.2287 1.67789 30.4684 1.31477 30.7633 1.01425C31.0705 0.701209 31.4268 0.457038 31.8323 0.281736C32.2501 0.0939119 32.6925 0 33.1595 0C33.6264 0 34.0626 0.0939119 34.4681 0.281736C34.8859 0.457038 35.2484 0.701209 35.5556 1.01425C35.8628 1.31477 36.1024 1.67789 36.2745 2.10363C36.4588 2.51684 36.551 2.95509 36.551 3.41839ZM35.6847 29H30.6158V8.88407H35.6847V29Z"
-                                    fill="#0D1036" />
-                                <path
-                                    d="M44.569 29H39.537V8.88407H40.7535L42.4124 10.8374C43.2234 10.0861 44.1389 9.51015 45.1588 9.10946C46.191 8.69624 47.2662 8.48964 48.3844 8.48964C49.5886 8.48964 50.7253 8.72755 51.7944 9.20337C52.8634 9.66667 53.7973 10.3115 54.596 11.138C55.3948 11.9519 56.0215 12.9098 56.4761 14.0117C56.9431 15.101 57.1765 16.2655 57.1765 17.5052V29H52.1446V17.5052C52.1446 16.9793 52.0463 16.4847 51.8497 16.0214C51.653 15.5456 51.3827 15.1323 51.0386 14.7817C50.6946 14.4311 50.2952 14.1557 49.8405 13.9553C49.3859 13.755 48.9005 13.6548 48.3844 13.6548C47.856 13.6548 47.3584 13.755 46.8914 13.9553C46.4245 14.1557 46.019 14.4311 45.6749 14.7817C45.3308 15.1323 45.0605 15.5456 44.8639 16.0214C44.6673 16.4847 44.569 16.9793 44.569 17.5052V29Z"
-                                    fill="#0D1036" />
-                                <path
-                                    d="M70.4108 29C69.1943 29 68.0515 28.7684 66.9825 28.3051C65.9134 27.8292 64.9734 27.1844 64.1623 26.3705C63.3636 25.544 62.7308 24.5861 62.2638 23.4968C61.8092 22.4074 61.5818 21.2429 61.5818 20.0032V14.0304H59.1304V8.92163H61.5818V0.882772H66.5954V8.92163H74.2263V14.0304H66.5954V20.0032C66.5954 20.5417 66.6937 21.0488 66.8903 21.5246C67.0869 21.9879 67.3572 22.3949 67.7013 22.7455C68.0454 23.0961 68.4509 23.3778 68.9178 23.5907C69.3848 23.791 69.8824 23.8912 70.4108 23.8912H74.2263V29H70.4108Z"
-                                    fill="#0D1036" />
-                                <path
-                                    d="M83 3.41839C83 3.89421 82.9078 4.33873 82.7235 4.75194C82.5515 5.16515 82.3119 5.52828 82.0047 5.84132C81.6975 6.14184 81.335 6.38601 80.9172 6.57383C80.5117 6.74914 80.0754 6.83679 79.6085 6.83679C79.1415 6.83679 78.6992 6.74914 78.2814 6.57383C77.8759 6.38601 77.5195 6.14184 77.2123 5.84132C76.9174 5.52828 76.6778 5.16515 76.4934 4.75194C76.3214 4.33873 76.2354 3.89421 76.2354 3.41839C76.2354 2.95509 76.3214 2.51684 76.4934 2.10363C76.6778 1.67789 76.9174 1.31477 77.2123 1.01425C77.5195 0.701209 77.8759 0.457038 78.2814 0.281736C78.6992 0.0939119 79.1415 0 79.6085 0C80.0754 0 80.5117 0.0939119 80.9172 0.281736C81.335 0.457038 81.6975 0.701209 82.0047 1.01425C82.3119 1.31477 82.5515 1.67789 82.7235 2.10363C82.9078 2.51684 83 2.95509 83 3.41839ZM82.1337 29H77.0648V8.88407H82.1337V29Z"
-                                    fill="#0D1036" />
-                            </svg>
-                        </a>
-                        <div class="auth__header">
-                            <button class="auth__title title active" data-auth="sign">
-                                Вход
-                            </button>
-                            <button class="auth__title title" data-auth="register">
-                                Регистрация
-                            </button>
-                        </div>
-                        <form action="#" class="auth__form active" data-form="sign">
-                            <div class="notify__content">                        
-                                <div class="notify__item success">
-                                    <img src="img/cross.svg" alt="cross" class="notify__item--cross">
-            
-                                    <img src="img/success.svg" alt="success" class="notify__item--icon">
-            
-                                    <div class="notify__item--text--inner">
-                                        <p class="notify__item--title">
-                                            Успешно
-                                        </p>
-            
-                                        <p class="notify__item--text">
-                                            Код отправлен на почту
-                                        </p>
+                                        <img
+                                            src="img/success.svg"
+                                            alt="success"
+                                            class="notify__item--icon"
+                                        />
+
+                                        <div class="notify__item--text--inner">
+                                            <p class="notify__item--title">
+                                                Успешно
+                                            </p>
+
+                                            <p class="notify__item--text">
+                                                Код отправлен на почту
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>                   
-                                <div class="notify__item error">
-                                    <img src="img/cross.svg" alt="cross" class="notify__item--cross">
-            
-                                    <img src="img/error.svg" alt="success" class="notify__item--icon">
-            
-                                    <div class="notify__item--text--inner">
-                                        <p class="notify__item--title">
-                                            Ошибка
-                                        </p>
-            
-                                        <p class="notify__item--text">
-                                            Почта не найдена / аккаунт заблокирован
-                                        </p>
+                                    <div class="notify__item error">
+                                        <img
+                                            src="img/cross.svg"
+                                            alt="cross"
+                                            class="notify__item--cross"
+                                        />
+
+                                        <img
+                                            src="img/error.svg"
+                                            alt="success"
+                                            class="notify__item--icon"
+                                        />
+
+                                        <div class="notify__item--text--inner">
+                                            <p class="notify__item--title">
+                                                Ошибка
+                                            </p>
+
+                                            <p class="notify__item--text">
+                                                Почта не найдена / аккаунт
+                                                заблокирован
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="auth__input-wrapper">
-                                <!-- <p class="auth__message">Код отправлен на почту</p>
+                                <div class="auth__input-wrapper">
+                                    <p class="auth__placeholder">Город</p>
+                                    <div class="city-select">
+                                        <button
+                                            class="city-select__value auth__input"
+                                        >
+                                            <div
+                                                class="city-select__placeholder"
+                                            >
+                                                Москва
+                                            </div>
+                                            <svg
+                                                width="12"
+                                                height="8"
+                                                viewBox="0 0 12 8"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M1 1.5L6 6.5L11 1.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></path>
+                                            </svg>
+                                        </button>
+                                        <div class="city-select__body">
+                                            <ul class="city-select__columns">
+                                                <li class="city-select__column">
+                                                    <ul
+                                                        class="city-select__list"
+                                                    >
+                                                        <li
+                                                            class="city-select__title"
+                                                        >
+                                                            В
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link active"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="city-select__column">
+                                                    <ul
+                                                        class="city-select__list"
+                                                    >
+                                                        <li
+                                                            class="city-select__title"
+                                                        >
+                                                            В
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="city-select__column">
+                                                    <ul
+                                                        class="city-select__list"
+                                                    >
+                                                        <li
+                                                            class="city-select__title"
+                                                        >
+                                                            В
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="city-select__column">
+                                                    <ul
+                                                        class="city-select__list"
+                                                    >
+                                                        <li
+                                                            class="city-select__title"
+                                                        >
+                                                            В
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="city-select__column">
+                                                    <ul
+                                                        class="city-select__list"
+                                                    >
+                                                        <li
+                                                            class="city-select__title"
+                                                        >
+                                                            В
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="auth__input-wrapper">
+                                    <!-- <p class="auth__message">Код отправлен на почту</p>
                                 <p class="auth__message auth__message_error">Почта не найдена</p>
                                 <p class="auth__message auth__message_error">Аккаунт заблокирован</p> -->
-                                <p class="auth__placeholder">Почта</p>
-                                <input type="text" class="auth__input" placeholder="example@mail.ru">
-                            </div>
-                            <button class="auth__btn item">
-                                Войти
-                            </button>
-                        </form>
-                        <form action="#" class="auth__form" data-form="register">
-                            <div class="notify__content">            
-                                <div class="notify__item error">
-                                    <img src="img/cross.svg" alt="cross" class="notify__item--cross">
-            
-                                    <img src="img/error.svg" alt="error" class="notify__item--icon">
-            
-                                    <div class="notify__item--text--inner">
-                                        <p class="notify__item--title">
-                                            Ошибка
-                                        </p>
-            
-                                        <p class="notify__item--text">
-                                            Почта уже занята
-                                        </p>
+                                    <p class="auth__placeholder">Почта</p>
+                                    <input
+                                        type="text"
+                                        class="auth__input"
+                                        placeholder="example@mail.ru"
+                                    />
+                                </div>
+                                <button class="auth__btn item">Войти</button>
+                            </form>
+                            <form
+                                action="#"
+                                class="auth__form"
+                                data-form="register"
+                            >
+                                <div class="notify__content">
+                                    <div class="notify__item error">
+                                        <img
+                                            src="img/cross.svg"
+                                            alt="cross"
+                                            class="notify__item--cross"
+                                        />
+
+                                        <img
+                                            src="img/error.svg"
+                                            alt="error"
+                                            class="notify__item--icon"
+                                        />
+
+                                        <div class="notify__item--text--inner">
+                                            <p class="notify__item--title">
+                                                Ошибка
+                                            </p>
+
+                                            <p class="notify__item--text">
+                                                Почта уже занята
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>            
-                                <div class="notify__item success">
-                                    <img src="img/cross.svg" alt="cross" class="notify__item--cross">
-            
-                                    <img src="img/success.svg" alt="error" class="notify__item--icon">
-            
-                                    <div class="notify__item--text--inner">
-                                        <p class="notify__item--title">
-                                            Успешно
-                                        </p>
-            
-                                        <p class="notify__item--text">
-                                            Успешно! Дальнейшие инструкции у вас на почте
-                                        </p>
+                                    <div class="notify__item success">
+                                        <img
+                                            src="img/cross.svg"
+                                            alt="cross"
+                                            class="notify__item--cross"
+                                        />
+
+                                        <img
+                                            src="img/success.svg"
+                                            alt="error"
+                                            class="notify__item--icon"
+                                        />
+
+                                        <div class="notify__item--text--inner">
+                                            <p class="notify__item--title">
+                                                Успешно
+                                            </p>
+
+                                            <p class="notify__item--text">
+                                                Успешно! Дальнейшие инструкции у
+                                                вас на почте
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="auth__input-wrapper">
-                                <!-- <p class="auth__message auth__message_error">Никнейм уже занят</p> -->
-                                <p class="auth__placeholder">Ник</p>
-                                <input type="text" class="auth__input" placeholder="Ваш ник на сайте">
-                            </div>
-                            <div class="auth__input-wrapper">
-                                <!-- <p class="auth__message auth__message_error">Почта уже занята</p>
+                                <div class="auth__input-wrapper">
+                                    <p class="auth__placeholder">Город</p>
+                                    <div class="city-select">
+                                        <button
+                                            class="city-select__value auth__input"
+                                        >
+                                            <div
+                                                class="city-select__placeholder"
+                                            >
+                                                Москва
+                                            </div>
+                                            <svg
+                                                width="12"
+                                                height="8"
+                                                viewBox="0 0 12 8"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M1 1.5L6 6.5L11 1.5"
+                                                    stroke="currentColor"
+                                                    stroke-width="1.2"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                ></path>
+                                            </svg>
+                                        </button>
+                                        <div class="city-select__body">
+                                            <ul class="city-select__columns">
+                                                <li class="city-select__column">
+                                                    <ul
+                                                        class="city-select__list"
+                                                    >
+                                                        <li
+                                                            class="city-select__title"
+                                                        >
+                                                            В
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link active"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="city-select__column">
+                                                    <ul
+                                                        class="city-select__list"
+                                                    >
+                                                        <li
+                                                            class="city-select__title"
+                                                        >
+                                                            В
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="city-select__column">
+                                                    <ul
+                                                        class="city-select__list"
+                                                    >
+                                                        <li
+                                                            class="city-select__title"
+                                                        >
+                                                            В
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="city-select__column">
+                                                    <ul
+                                                        class="city-select__list"
+                                                    >
+                                                        <li
+                                                            class="city-select__title"
+                                                        >
+                                                            В
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="city-select__column">
+                                                    <ul
+                                                        class="city-select__list"
+                                                    >
+                                                        <li
+                                                            class="city-select__title"
+                                                        >
+                                                            В
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                        <li
+                                                            class="city-select__item"
+                                                        >
+                                                            <a
+                                                                href="#"
+                                                                class="city-select__link"
+                                                                >Великий
+                                                                Новгород</a
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="auth__input-wrapper">
+                                    <!-- <p class="auth__message auth__message_error">Никнейм уже занят</p> -->
+                                    <p class="auth__placeholder">Ник</p>
+                                    <input
+                                        type="text"
+                                        class="auth__input"
+                                        placeholder="Ваш ник на сайте"
+                                    />
+                                </div>
+                                <div class="auth__input-wrapper">
+                                    <!-- <p class="auth__message auth__message_error">Почта уже занята</p>
                                 <p class="auth__message">Успешно! Дальнейшие инструкции у вас на почте</p>
                                 <p class="auth__placeholder">Почта</p> -->
-                                <input type="text" class="auth__input" placeholder="example@mail.ru">
-                            </div>
-                            <!-- <div class="auth__radiobox-wrapper">
+                                    <input
+                                        type="text"
+                                        class="auth__input"
+                                        placeholder="example@mail.ru"
+                                    />
+                                </div>
+                                <!-- <div class="auth__radiobox-wrapper">
                                 <input type="radio" name="user_type" id="walker" class="auth__radio">
                                 <label class="auth__label item" for="walker">Ходок</label>
                             </div> -->
-                            <div class="auth__radiobox-wrapper">
-                                <input type="radio" id="advertiser" name="user_type" class="auth__radio" checked>
-                                <label class="auth__label item" for="advertiser">Рекламодатель</label>
-                            </div>
-                            <p class="auth__agree">
-                                Нажимая зарегистрироваться вы соглашаетесь с <a href="#"
-                                    class="auth__link">пользовательским соглашением</a>
-                            </p>
-                            <button class="auth__btn item">
-                                Зарегистрироваться
-                            </button>
-                        </form>
+                                <div class="auth__radiobox-wrapper">
+                                    <input
+                                        type="radio"
+                                        id="advertiser"
+                                        name="user_type"
+                                        class="auth__radio"
+                                        checked
+                                    />
+                                    <label
+                                        class="auth__label item"
+                                        for="advertiser"
+                                        >Рекламодатель</label
+                                    >
+                                </div>
+                                <p class="auth__agree">
+                                    Нажимая зарегистрироваться вы соглашаетесь с
+                                    <a href="#" class="auth__link"
+                                        >пользовательским соглашением</a
+                                    >
+                                </p>
+                                <button class="auth__btn item">
+                                    Зарегистрироваться
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </main>
-    </div>
+            </main>
+        </div>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/dynamicAdaptive.js"></script>
-    <script src="js/script.js"></script>
-</body>
-
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="js/dynamicAdaptive.js"></script>
+        <script src="js/script.js"></script>
+    </body>
 </html>

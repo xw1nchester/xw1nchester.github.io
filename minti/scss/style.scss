@@ -2049,6 +2049,7 @@ button {
         width: 100%;
         border-radius: 4px;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        background-color: #FFF;
 
         &::placeholder {
             opacity: 0.7;
@@ -2116,6 +2117,93 @@ button {
         text-align: center;
         font-size: 20px;
         gap: 16px;
+    }
+}
+
+.city-select {
+    position: relative;
+    width: 100%;
+
+    &__value {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    &__placeholder {
+        opacity: 0.7;
+    }
+
+    &__body {
+        background-color: #FFF;
+        border-radius: 4px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        position: absolute;
+        top: 52px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        padding: 12px;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &__columns {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        max-height: 200px;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            width: 2px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--darkColor);
+            border-radius: 1px;
+        }
+    }
+
+    &__column {
+        width: calc(100% / 2 - 8px / 2);
+    }
+
+    &__list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__title {
+        width: 100%;
+        font-weight: 900;
+    }
+
+    &__item {
+        width: 100%;
+        display: flex;
+    }
+
+    &__link {
+        width: 100%;
+
+        &.active {
+            color: var(--hoverColor);
+        }
+    }
+
+    &__link:hover {
+        color: var(--hoverColor);
     }
 }
 

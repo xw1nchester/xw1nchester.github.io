@@ -24,9 +24,9 @@
 //     }
 // };
 
-const setPadding = (padding) => {
+const setPadding = padding => {
     wrapper.style.paddingRight = padding + 'px';
-}
+};
 
 const closeActivePopup = () => {
     activePopup = document.querySelector('.popup.active');
@@ -36,7 +36,15 @@ const closeActivePopup = () => {
         setPadding(0);
         body.classList.remove('disable');
     }
-}
+};
+
+const closeCitySelect = () => {
+    const citySelectBody = document.querySelector('.city-select__body');
+
+    if (citySelectBody) {
+        citySelectBody.classList.remove('active');
+    }
+};
 
 // изменение ширины экрана
 window.addEventListener('resize', function (e) {
@@ -67,8 +75,7 @@ document.addEventListener('click', function (e) {
     }
 
     if (targetEl.closest('.menu__btn')) {
-        const menuItem = targetEl
-            .closest('.menu__item');
+        const menuItem = targetEl.closest('.menu__item');
 
         const activeMenuItem = document.querySelector('.menu__item.active');
 
@@ -87,7 +94,10 @@ document.addEventListener('click', function (e) {
         if (menuItem.classList.contains('active')) {
             const smallSubmenuRect = smallSubmenu.getBoundingClientRect();
 
-            if (smallSubmenuRect.left + smallSubmenuRect.width / 2 > window.innerWidth / 2) {
+            if (
+                smallSubmenuRect.left + smallSubmenuRect.width / 2 >
+                window.innerWidth / 2
+            ) {
                 smallSubmenu.style.left = 'unset';
                 smallSubmenu.style.right = '0';
             }
@@ -106,8 +116,7 @@ document.addEventListener('click', function (e) {
     }
 
     if (targetEl.closest('.profile__open')) {
-        const clickedEl = targetEl
-            .closest('.profile__open');
+        const clickedEl = targetEl.closest('.profile__open');
         const openableEl = targetEl
             .closest('.profile__block')
             .querySelector('.profile__openable');
@@ -133,9 +142,11 @@ document.addEventListener('click', function (e) {
         const targetAuthTitle = targetEl.closest('.auth__title');
         targetAuthTitle.classList.add('active');
 
-        const attributeValue = targetAuthTitle.getAttribute("data-auth");
+        const attributeValue = targetAuthTitle.getAttribute('data-auth');
 
-        const targetForm = document.querySelector(`[data-form="${attributeValue}"]`);
+        const targetForm = document.querySelector(
+            `[data-form="${attributeValue}"]`
+        );
         targetForm.classList.add('active');
     }
 
@@ -146,22 +157,37 @@ document.addEventListener('click', function (e) {
         body.classList.add('disable');
     }
 
-    if (targetEl.closest('.popup') && !targetEl.closest('.popup__inner') || targetEl.closest('.close-popup')) {
+    if (
+        (targetEl.closest('.popup') && !targetEl.closest('.popup__inner')) ||
+        targetEl.closest('.close-popup')
+    ) {
         closeActivePopup();
     }
 
     if (targetEl.closest('.abuse-popup__delete-file')) {
         e.preventDefault();
-        abuseFileInput.value = ''; 
+        abuseFileInput.value = '';
         abuseFileLabel.classList.remove('uploaded');
         abuseFileLabel.style.backgroundImage = ``;
         abuseFileDeleteBtn.classList.remove('active');
+    }
+
+    if (targetEl.closest('.city-select__value')) {
+        e.preventDefault();
+        const citySelect = targetEl.closest('.city-select');
+        const citySelectBody = citySelect.querySelector('.city-select__body');
+        citySelectBody.classList.toggle('active');
+    }
+
+    if (!targetEl.closest('.city-select')) {
+        closeCitySelect();
     }
 });
 
 document.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') {
         closeActivePopup();
+        closeCitySelect();
     }
 });
 
@@ -189,7 +215,7 @@ window.addEventListener('scroll', function (e) {
 new Swiper('.reviews__slider', {
     pagination: {
         el: '.reviews__pagination',
-        clickable: true,
+        clickable: true
     },
 
     spaceBetween: 20,
@@ -197,14 +223,14 @@ new Swiper('.reviews__slider', {
 });
 
 // большой слайдер
-$(".big-slider").slick({
+$('.big-slider').slick({
     slidesToShow: 1,
     arrows: false,
     asNavFor: '.small-slider'
 });
 
 // маленький слайдер
-$(".small-slider").slick({
+$('.small-slider').slick({
     slidesToShow: 5,
     arrows: false,
     focusOnSelect: true,
@@ -213,7 +239,7 @@ $(".small-slider").slick({
 });
 
 // показ файла в форме жалобы
-abuseFileInput.addEventListener('change', function () {
+abuseFileInput?.addEventListener('change', function () {
     const reader = new FileReader();
     reader.readAsDataURL(abuseFileInput.files[0]);
 
