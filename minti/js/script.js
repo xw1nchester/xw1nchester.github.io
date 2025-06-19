@@ -254,3 +254,97 @@ abuseFileInput?.addEventListener('change', function () {
         abuseFileDeleteBtn.classList.add('active');
     };
 });
+
+// chat
+const chatBtn = document.querySelector('.chat-btn');
+const chat = document.querySelector('.chat');
+const messageCounter = document.querySelector('.chat-btn__counter');
+const chatInput = document.querySelector('.chat__input');
+const sendMessageBtn = document.querySelector('.chat__send-message');
+const messages = document.querySelector('.chat__messages');
+const userStatus = document.querySelector('.chat__status');
+
+const addMessage = (text, isOwn) => {
+    const msg = document.createElement('div');
+    msg.classList.add('chat__message');
+    if (isOwn) {
+        msg.classList.add('chat__message_own');
+    }
+    msg.textContent = text;
+    const timeBlock = document.createElement('div');
+    timeBlock.classList.add('chat__time');
+    const now = new Date();
+    timeBlock.textContent = `${now.getHours()}:${now
+        .getMinutes()
+        .toString()
+        .padStart(2, 0)}`;
+    msg.appendChild(timeBlock);
+    messages.appendChild(msg);
+    messages.scrollTop = messages.scrollHeight;
+};
+
+const startTyping = () => {
+    userStatus.textContent = 'Печатает...';
+    userStatus.classList.add('typing');
+};
+
+const stopTyping = () => {
+    userStatus.textContent = 'В сети';
+    userStatus.classList.remove('typing');
+};
+
+const sendMessageHandler = () => {
+    const text = chatInput.value.trim();
+
+    if (!text) return;
+
+    chatInput.value = '';
+
+    addMessage(text, true);
+
+    setTimeout(() => {
+        startTyping();
+    }, 1000);
+
+    setTimeout(() => {
+        stopTyping();
+        addMessage(text, false);
+    }, 2500);
+};
+
+document.addEventListener('click', function (e) {
+    let targetEl = e.target;
+
+    if (targetEl.closest('.chat-btn')) {
+        chatBtn.classList.toggle('active');
+        messageCounter.classList.add('disable');
+        chat.classList.toggle('active');
+
+        if (window.innerWidth < 576) {
+            body.classList.add('lock');
+        }
+    }
+
+    if (targetEl.closest('.chat__close')) {
+        chatBtn.classList.remove('active');
+        chat.classList.remove('active');
+        body.classList.remove('lock');
+    }
+
+    if (targetEl.closest('.chat__send-message')) {
+        sendMessageHandler();
+    }
+});
+
+chatInput.addEventListener('input', e => {
+    e.target.value != ''
+        ? sendMessageBtn.classList.add('active')
+        : sendMessageBtn.classList.remove('active');
+});
+
+chatInput.addEventListener('keydown', e => {
+    if (e.key === 'Enter') {
+        e.preventDefault();
+        sendMessageHandler();
+    }
+});
