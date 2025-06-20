@@ -2477,6 +2477,7 @@ button {
     justify-content: center;
     align-items: center;
     border: 2px solid #4a6dff;
+    z-index: 3;
 
     &.active {
         background-color: transparent;
@@ -2705,6 +2706,9 @@ button {
         opacity: 0.5;
         width: 30px;
         height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__send-message {
@@ -2719,6 +2723,60 @@ button {
 
     &__btn:hover {
         opacity: 0.75;
+    }
+
+    &__emoji-picker {
+        position: absolute;
+        bottom: calc(100% + 12px);
+        right: 0;
+        width: 100%;
+        max-width: 182px;
+        background-color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        overflow-y: auto;
+        max-height: 195px;
+        border-radius: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        visibility: hidden;
+
+        @media (max-width: 576px) {
+            max-width: 242px;
+            max-height: 260px;
+        }
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__emoji-btn {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        font-size: 18px;
+
+        @media (max-width: 576px) {
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                opacity: 1;
+                background-color: #b8c3cc;
+            }
+        }
     }
 }
 

@@ -2344,6 +2344,7 @@ button {
   justify-content: center;
   align-items: center;
   border: 2px solid #4a6dff;
+  z-index: 3;
 }
 .chat-btn.active {
   background-color: transparent;
@@ -2552,6 +2553,9 @@ button {
   opacity: 0.5;
   width: 30px;
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .chat__send-message {
   opacity: 0.25;
@@ -2563,6 +2567,57 @@ button {
 }
 .chat__btn:hover {
   opacity: 0.75;
+}
+.chat__emoji-picker {
+  position: absolute;
+  bottom: calc(100% + 12px);
+  right: 0;
+  width: 100%;
+  max-width: 182px;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  max-height: 195px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+}
+@media (max-width: 576px) {
+  .chat__emoji-picker {
+    max-width: 242px;
+    max-height: 260px;
+  }
+}
+.chat__emoji-picker.active {
+  opacity: 1;
+  visibility: visible;
+}
+.chat__emoji-picker::-webkit-scrollbar {
+  display: none;
+}
+.chat__emoji-btn {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 18px;
+}
+@media (max-width: 576px) {
+  .chat__emoji-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+@media (any-hover: hover) {
+  .chat__emoji-btn:hover {
+    opacity: 1;
+    background-color: #b8c3cc;
+  }
 }
 
 @keyframes typingAnimation {

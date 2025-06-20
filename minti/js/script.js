@@ -263,6 +263,7 @@ const chatInput = document.querySelector('.chat__input');
 const sendMessageBtn = document.querySelector('.chat__send-message');
 const messages = document.querySelector('.chat__messages');
 const userStatus = document.querySelector('.chat__status');
+const emojiPicker = document.querySelector('.chat__emoji-picker');
 
 const addMessage = (text, isOwn) => {
     const msg = document.createElement('div');
@@ -333,6 +334,22 @@ document.addEventListener('click', function (e) {
 
     if (targetEl.closest('.chat__send-message')) {
         sendMessageHandler();
+    }
+
+    if (targetEl.closest('.chat__open-emoji-picker')) {
+        emojiPicker.classList.toggle('active');
+    }
+
+    if (
+        emojiPicker.classList.contains('active') &&
+        !targetEl.closest('.chat__open-emoji-picker') &&
+        !targetEl.closest('.chat__emoji-picker')
+    ) {
+        emojiPicker.classList.remove('active');
+    }
+
+    if (targetEl.closest('.chat__emoji-btn')) {
+        chatInput.value += targetEl.textContent;
     }
 });
 
