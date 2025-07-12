@@ -186,6 +186,7 @@ button {
   transform: translateX(-50%);
   border-radius: 0 0 40px 40px;
   padding: 36px 60px;
+  z-index: 1;
 }
 @media (max-width: 992px) {
   .header {
@@ -324,8 +325,8 @@ button {
   border-top: 2px solid rgba(255, 255, 255, 0.5);
   text-align: left;
   padding: 40px 4px 4px 4px;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 700;
 }
 @media (max-width: 992px) {
   .banner__item {
@@ -407,6 +408,216 @@ button {
 
 .play {
   width: 13px;
+}
+
+.marquee {
+  display: flex;
+  gap: 36px;
+  overflow: hidden;
+  background-color: var(--bgColor);
+  padding: 40px 0;
+}
+.marquee__items {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 100%;
+  animation: scrollDesktop 15s linear infinite;
+}
+.marquee__items {
+  gap: 36px;
+}
+.marquee__item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.marquee__text {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+}
+.marquee__text_green {
+  color: var(--acidColor);
+}
+.marquee__text_red {
+  color: #ff614d;
+}
+
+@keyframes scrollDesktop {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(calc(-100% - 36px));
+  }
+}
+.section {
+  padding: 100px 0;
+}
+.section_default-bg {
+  background-color: var(--bgColor);
+}
+.section_default-bg .title {
+  color: #fff;
+}
+.section_news {
+  padding-top: 40px;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.slider-btns {
+  display: flex;
+  gap: 12px;
+}
+
+.slider-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 16px;
+  background-color: var(--acidColor);
+  color: var(--darkColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (any-hover: hover) {
+  .slider-btn:hover {
+    background-color: var(--darkColor);
+    color: var(--acidColor);
+  }
+}
+.card-slider {
+  width: 100%;
+  overflow: visible;
+  position: relative;
+}
+.card-slider__slide {
+  height: auto;
+  display: flex;
+  cursor: grab;
+}
+.card-slider__slide:hover .card-slider-front {
+  opacity: 0;
+  visibility: hidden;
+}
+.card-slider__slide:hover .card-slider-back {
+  opacity: 1;
+  visibility: visible;
+}
+.card-slider__content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 48px 40px 64px;
+}
+.card-slider__date {
+  font-size: 20px;
+  font-weight: 700;
+}
+.card-slider__title {
+  font-weight: 700;
+  color: var(--darkColor);
+}
+.card-slider__link {
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 22px;
+  border-radius: 32px;
+  text-transform: uppercase;
+  margin-top: auto;
+}
+
+.card-slider-front {
+  background-color: #fff;
+  border-radius: 40px;
+  overflow: hidden;
+  width: 100%;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+.card-slider-front__img {
+  width: 100%;
+  aspect-ratio: 213/148;
+}
+.card-slider-front__date {
+  color: #8bafb0;
+}
+.card-slider-front__title {
+  font-size: 24px;
+}
+.card-slider-front__link {
+  background-color: #defbf3;
+  color: var(--darkColor);
+}
+
+.card-slider-back {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  min-height: 100%;
+  transform: translateY(-50%);
+  opacity: 0;
+  visibility: hidden;
+  background-color: #25e8ae;
+  padding: 84px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 40px;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-slider-back__date, .card-slider-back__title, .card-slider-back__text {
+  color: var(--darkColor);
+}
+.card-slider-back__title {
+  font-size: 28px;
+}
+.card-slider-back__text {
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  line-clamp: 8;
+  -webkit-box-orient: vertical;
+}
+.card-slider-back__link {
+  background-color: var(--darkColor);
+  color: #fff;
 }
 
 .footer {

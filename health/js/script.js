@@ -56,6 +56,7 @@ document.addEventListener('click', function (e) {
     }
 });
 
+// главный слайдер
 const bannerSlider = new Swiper('.banner__slider', {
     slidesPerView: 1,
     autoplay: {
@@ -133,4 +134,24 @@ bannerSlider.on('slideChange', () => {
     if (bannerItems[activeIndex]) {
         bannerItems[activeIndex].classList.add('active');
     }
+});
+
+// слайдеры карточек
+document.querySelectorAll('.card-slider').forEach(slider => {
+    new Swiper(slider, {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop: true,
+        centeredSlides: true,
+        autoplay: true,
+        navigation: {
+            nextEl: slider
+                .closest('.section')
+                .querySelector('.slider-btn-next'),
+            prevEl: slider.closest('.section').querySelector('.slider-btn-prev')
+        },
+        breakpoints: {
+            0: {}
+        }
+    });
 });
