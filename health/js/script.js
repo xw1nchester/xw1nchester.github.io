@@ -139,10 +139,9 @@ bannerSlider.on('slideChange', () => {
 // слайдеры карточек
 document.querySelectorAll('.card-slider').forEach(slider => {
     new Swiper(slider, {
-        slidesPerView: 4,
+        slidesPerView: 'auto',
         spaceBetween: 20,
         loop: true,
-        centeredSlides: true,
         // autoplay: true,
         navigation: {
             nextEl: slider
@@ -151,7 +150,33 @@ document.querySelectorAll('.card-slider').forEach(slider => {
             prevEl: slider.closest('.section').querySelector('.slider-btn-prev')
         },
         breakpoints: {
-            0: {}
+            0: {
+                slidesPerView: 1.1
+            },
+            576: {
+                slidesPerView: 1.5,
+                centeredSlides: true
+            },
+            768: {
+                slidesPerView: 2,
+                centeredSlides: true
+            },
+            992: {
+                slidesPerView: 2.5,
+                centeredSlides: true
+            },
+            1200: {
+                slidesPerView: 2.75,
+                centeredSlides: true
+            },
+            1400: {
+                slidesPerView: 3.5,
+                centeredSlides: true
+            },
+            1600: {
+                slidesPerView: 4,
+                centeredSlides: true
+            }
         }
     });
 });
@@ -159,11 +184,9 @@ document.querySelectorAll('.card-slider').forEach(slider => {
 // слайдеры больших карточек
 document.querySelectorAll('.big-slider').forEach(slider => {
     new Swiper(slider, {
-        slidesPerView: "auto",
         spaceBetween: 20,
         loop: true,
-        centeredSlides: true,
-        // autoplay: true,
+        autoplay: true,
         navigation: {
             nextEl: slider
                 .closest('.section')
@@ -171,7 +194,25 @@ document.querySelectorAll('.big-slider').forEach(slider => {
             prevEl: slider.closest('.section').querySelector('.slider-btn-prev')
         },
         breakpoints: {
-            0: {}
+            0: {
+                slidesPerView: 1.1
+            },
+            576: {
+                slidesPerView: 1.1,
+                centeredSlides: true
+            },
+            768: {
+                slidesPerView: 1.5,
+                centeredSlides: true
+            },
+            922: {
+                slidesPerView: 1.75,
+                centeredSlides: true
+            },
+            1200: {
+                slidesPerView: 'auto',
+                centeredSlides: true
+            }
         }
     });
 });
@@ -179,11 +220,9 @@ document.querySelectorAll('.big-slider').forEach(slider => {
 // слайдеры видео
 document.querySelectorAll('.video-slider').forEach(slider => {
     new Swiper(slider, {
-        slidesPerView: 3,
         spaceBetween: 20,
         loop: true,
-        centeredSlides: true,
-        // autoplay: true,
+        autoplay: true,
         navigation: {
             nextEl: slider
                 .closest('.section')
@@ -191,7 +230,25 @@ document.querySelectorAll('.video-slider').forEach(slider => {
             prevEl: slider.closest('.section').querySelector('.slider-btn-prev')
         },
         breakpoints: {
-            0: {}
+            0: {
+                slidesPerView: 1.1
+            },
+            576: {
+                slidesPerView: 1.5,
+                centeredSlides: true
+            },
+            768: {
+                slidesPerView: 2,
+                centeredSlides: true
+            },
+            992: {
+                slidesPerView: 2.5,
+                centeredSlides: true
+            },
+            1200: {
+                slidesPerView: 2.75,
+                centeredSlides: true
+            }
         }
     });
 });
