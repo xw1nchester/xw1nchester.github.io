@@ -688,6 +688,14 @@ button {
   background-color: var(--bgColor);
   color: #fff;
 }
+.section_first {
+  padding-top: 275px;
+}
+@media (max-width: 992px) {
+  .section_first {
+    padding-top: 130px;
+  }
+}
 
 .inner {
   display: flex;
@@ -763,6 +771,8 @@ button {
   position: relative;
 }
 .card-slider__slide {
+  width: 100%;
+  position: relative;
   height: auto;
   display: flex;
   cursor: grab;
@@ -936,6 +946,9 @@ button {
   background-color: #defbf3;
   color: var(--darkColor);
 }
+.card-slider-front_border {
+  border: 1px solid #25e8ae;
+}
 
 .card-slider-back {
   position: absolute;
@@ -1096,6 +1109,11 @@ button {
 .big-slider__content_acid {
   background-color: var(--acidColor);
   color: var(--darkColor);
+}
+.big-slider__content_expert {
+  background-color: #25e8ae;
+  color: var(--darkColor);
+  justify-content: flex-start;
 }
 .big-slider__title {
   font-size: 28px;
@@ -1588,4 +1606,187 @@ button {
     background-color: var(--acidColor);
     color: var(--darkColor);
   }
+}
+
+.search {
+  position: relative;
+  width: 100%;
+  max-width: 384px;
+  color: #fff;
+}
+.search__btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search__input {
+  width: 100%;
+  min-height: 56px;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  background-color: transparent;
+  padding-left: 44px;
+  padding-right: 16px;
+}
+@media (max-width: 1200px) {
+  .search__input {
+    min-height: 52px;
+  }
+}
+@media (max-width: 992px) {
+  .search__input {
+    min-height: 48px;
+  }
+}
+@media (max-width: 768px) {
+  .search__input {
+    min-height: 46px;
+  }
+}
+@media (max-width: 576px) {
+  .search__input {
+    min-height: 44px;
+  }
+}
+.search__input::-moz-placeholder {
+  color: #8bafb0;
+}
+.search__input::placeholder {
+  color: #8bafb0;
+}
+
+.experts__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 36px 20px;
+}
+.experts__item {
+  width: calc(100% / 4 - (4 - 1) * 20px / 4);
+}
+@media (max-width: 1400px) {
+  .experts__item {
+    width: calc(100% / 3 - (3 - 1) * 20px / 3);
+  }
+}
+@media (max-width: 992px) {
+  .experts__item {
+    width: calc(100% / 2 - (2 - 1) * 20px / 2);
+  }
+}
+@media (max-width: 576px) {
+  .experts__item {
+    width: 100%;
+  }
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: var(--bgColor);
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+@media (max-width: 992px) {
+  .back-btn {
+    gap: 16px;
+    font-size: 19px;
+  }
+}
+@media (max-width: 576px) {
+  .back-btn {
+    gap: 12px;
+    font-size: 18px;
+  }
+}
+
+.expert-page {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.expert-page__info-column {
+  width: 100%;
+  max-width: 870px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+@media (max-width: 992px) {
+  .expert-page__info-column {
+    gap: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .expert-page__info-column {
+    gap: 30px;
+  }
+}
+.expert-page__about {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 576px) {
+  .expert-page__about {
+    gap: 16px;
+  }
+}
+.expert-page__label {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--bgColor);
+}
+@media (max-width: 992px) {
+  .expert-page__label {
+    font-size: 19px;
+  }
+}
+@media (max-width: 576px) {
+  .expert-page__label {
+    font-size: 18px;
+  }
+}
+.expert-page__text {
+  font-weight: 500;
+  font-size: 18px;
+}
+@media (max-width: 992px) {
+  .expert-page__text {
+    font-size: 17px;
+  }
+}
+@media (max-width: 576px) {
+  .expert-page__text {
+    font-size: 16px;
+  }
+}
+.expert-page__events-column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 426px;
+}
+@media (max-width: 992px) {
+  .expert-page__events-column {
+    display: none;
+  }
+}
+.expert-page__event-label {
+  color: var(--bgColor);
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.expert-page__events {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }

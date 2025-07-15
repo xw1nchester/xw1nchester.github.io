@@ -105,19 +105,21 @@ startProgress();
 
 let isPaused = false;
 const circleIndicator = document.querySelector('.circle__indicator');
-circleIndicator.addEventListener('click', () => {
-    if (isPaused) {
-        bannerSlider.autoplay.start();
-        circleIndicator.classList.add('played');
-        startProgress();
-        isPaused = false;
-    } else {
-        bannerSlider.autoplay.stop();
-        circleIndicator.classList.remove('played');
-        clearInterval(progressInterval);
-        isPaused = true;
-    }
-});
+if (circleIndicator) {
+    circleIndicator.addEventListener('click', () => {
+        if (isPaused) {
+            bannerSlider.autoplay.start();
+            circleIndicator.classList.add('played');
+            startProgress();
+            isPaused = false;
+        } else {
+            bannerSlider.autoplay.stop();
+            circleIndicator.classList.remove('played');
+            clearInterval(progressInterval);
+            isPaused = true;
+        }
+    });
+}
 
 const bannerItems = document.querySelectorAll('.banner__item');
 bannerItems.forEach((item, index) => {

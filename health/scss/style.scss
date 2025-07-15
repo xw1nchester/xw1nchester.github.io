@@ -681,6 +681,14 @@ button {
             color: #fff;
         }
     }
+
+    &_first {
+        padding-top: 275px;
+
+        @media (max-width: 992px) {
+            padding-top: 130px;
+        }
+    }
 }
 
 .inner {
@@ -753,6 +761,8 @@ button {
     position: relative;
 
     &__slide {
+        width: 100%;
+        position: relative;
         height: auto;
         display: flex;
         cursor: grab;
@@ -921,6 +931,10 @@ button {
         background-color: #defbf3;
         color: var(--darkColor);
     }
+
+    &_border {
+        border: 1px solid #25e8ae;
+    }
 }
 
 .card-slider-back {
@@ -1075,6 +1089,12 @@ button {
         &_acid {
             background-color: var(--acidColor);
             color: var(--darkColor);
+        }
+
+        &_expert {
+            background-color: #25e8ae;
+            color: var(--darkColor);
+            justify-content: flex-start;
         }
     }
 
@@ -1558,5 +1578,184 @@ button {
                 color: var(--darkColor);
             }
         }
+    }
+}
+
+// ======================================== search ========================================
+.search {
+    position: relative;
+    width: 100%;
+    max-width: 384px;
+    color: #fff;
+
+    &__btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__input {
+        width: 100%;
+        min-height: 56px;
+        border: 1px solid #fff;
+        border-radius: 12px;
+        background-color: transparent;
+        padding-left: 44px;
+        padding-right: 16px;
+
+        @media (max-width: 1200px) {
+            min-height: 52px;
+        }
+
+        @media (max-width: 992px) {
+            min-height: 48px;
+        }
+
+        @media (max-width: 768px) {
+            min-height: 46px;
+        }
+
+        @media (max-width: 576px) {
+            min-height: 44px;
+        }
+
+        &::placeholder {
+            color: #8bafb0;
+        }
+    }
+}
+
+// ======================================== exprerts ========================================
+.experts {
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 36px 20px;
+    }
+
+    &__item {
+        @include adaptive-width(4, 20);
+
+        @media (max-width: 1400px) {
+            @include adaptive-width(3, 20);
+        }
+
+        @media (max-width: 992px) {
+            @include adaptive-width(2, 20);
+        }
+
+        @media (max-width: 576px) {
+            width: 100%;
+        }
+    }
+}
+
+// ======================================== expert page ========================================
+.back-btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--bgColor);
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    @media (max-width: 992px) {
+        gap: 16px;
+        font-size: 19px;
+    }
+
+    @media (max-width: 576px) {
+        gap: 12px;
+        font-size: 18px;
+    }
+}
+
+.expert-page {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    &__info-column {
+        width: 100%;
+        max-width: 870px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        @media (max-width: 992px) {
+            gap: 40px;
+        }
+
+        @media (max-width: 576px) {
+            gap: 30px;
+        }
+    }
+
+    &__about {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media (max-width: 576px) {
+            gap: 16px;
+        }
+    }
+
+    &__label {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--bgColor);
+
+        @media (max-width: 992px) {
+            font-size: 19px;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 18px;
+        }
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 18px;
+
+        @media (max-width: 992px) {
+            font-size: 17px;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 16px;
+        }
+    }
+
+    &__events-column {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 100%;
+        max-width: 426px;
+
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+
+    &__event-label {
+        color: var(--bgColor);
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__events {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
     }
 }
