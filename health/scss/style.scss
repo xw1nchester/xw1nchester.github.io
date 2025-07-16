@@ -1454,8 +1454,11 @@ button {
     &__inner {
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
         gap: 20px;
+
+        @media (max-width: 1200px) {
+            flex-wrap: wrap;
+        }
 
         @media (max-width: 768px) {
             gap: 30px;

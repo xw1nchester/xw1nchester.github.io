@@ -1489,8 +1489,12 @@ button {
 .footer__inner {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: 20px;
+}
+@media (max-width: 1200px) {
+  .footer__inner {
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 768px) {
   .footer__inner {
