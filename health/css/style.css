@@ -1790,3 +1790,21 @@ button {
   flex-direction: column;
   gap: 32px;
 }
+
+.news {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, calc(50% - 10px));
+  grid-gap: 20px;
+}
+@media (max-width: 1200px) {
+  .news {
+    grid-template-columns: 1fr;
+  }
+}
+.news__item {
+  cursor: unset;
+}
+.news__item_l {
+  grid-row: span 2;
+}
