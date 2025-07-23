@@ -888,6 +888,8 @@ button {
   font-weight: 500;
   font-size: 18px;
   color: #8bafb0;
+  display: flex;
+  flex-direction: column;
 }
 @media (max-width: 992px) {
   .card-slider__text {
