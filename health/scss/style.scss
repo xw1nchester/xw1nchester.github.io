@@ -176,7 +176,7 @@ button {
 }
 
 .text {
-    line-height: normal;
+    line-height: 1.5;
 }
 
 .item {
@@ -537,6 +537,10 @@ button {
     font-weight: 800;
     color: var(--darkColor);
 
+    &_no-upper {
+        text-transform: none;
+    }
+
     @media (max-width: 1200px) {
         font-size: 36px;
     }
@@ -679,6 +683,46 @@ button {
         &_dark {
             background-color: var(--bgColor);
             color: #fff;
+        }
+    }
+
+    &_workgroup {
+        padding: 50px 0;
+
+        @media (max-width: 1200px) {
+            padding: 45px 0;
+        }
+
+        @media (max-width: 992px) {
+            padding: 40px 0;
+        }
+
+        @media (max-width: 768px) {
+            padding: 35px 0;
+        }
+
+        @media (max-width: 576px) {
+            padding: 30px 0;
+        }
+
+        &:last-child {
+            padding-bottom: 100px;
+
+            @media (max-width: 1200px) {
+                padding-bottom: 90px;
+            }
+
+            @media (max-width: 992px) {
+                padding-bottom: 80px;
+            }
+
+            @media (max-width: 768px) {
+                padding-bottom: 60px;
+            }
+
+            @media (max-width: 576px) {
+                padding-bottom: 50px;
+            }
         }
     }
 
@@ -874,8 +918,6 @@ button {
         font-weight: 500;
         font-size: 18px;
         color: #8bafb0;
-        display: flex;
-        flex-direction: column;
 
         @media (max-width: 992px) {
             font-size: 17px;
@@ -899,6 +941,10 @@ button {
     transition: 0.3s;
     display: flex;
     flex-direction: column;
+
+    &_light {
+        background-color: #defbf3;
+    }
 
     &__img {
         width: 100%;
@@ -1593,6 +1639,10 @@ button {
     max-width: 384px;
     color: #fff;
 
+    &_dark {
+        color: var(--darkColor);
+    }
+
     &__btn {
         position: absolute;
         top: 0;
@@ -1606,9 +1656,9 @@ button {
 
     &__input {
         width: 100%;
-        min-height: 56px;
-        border: 1px solid #fff;
-        border-radius: 12px;
+        min-height: 60px;
+        border: 2px solid #fff;
+        border-radius: 30px;
         background-color: transparent;
         padding-left: 44px;
         padding-right: 16px;
@@ -1632,6 +1682,10 @@ button {
         &::placeholder {
             color: #8bafb0;
         }
+    }
+
+    &_dark &__input {
+        border: 2px solid var(--darkColor);
     }
 }
 
@@ -1727,8 +1781,13 @@ button {
     }
 
     &__text {
-        font-weight: 500;
         font-size: 18px;
+        font-weight: 500;
+        color: var(--darkColor);
+
+        &_dim {
+            color: #a8b2b7;
+        }
 
         @media (max-width: 992px) {
             font-size: 17px;
@@ -1763,6 +1822,16 @@ button {
         flex-direction: column;
         gap: 32px;
     }
+
+    &__media {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        &-img {
+            width: 100%;
+        }
+    }
 }
 
 // ======================================== news ========================================
@@ -1781,6 +1850,132 @@ button {
 
         &_l {
             grid-row: span 2;
+        }
+    }
+}
+
+// ======================================== article ========================================
+.article {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    max-width: 870px;
+    color: var(--darkColor);
+    padding-top: 16px;
+    border-top: 4px solid #aaff00;
+
+    @media (max-width: 576px) {
+        gap: 20px;
+    }
+
+    &__text {
+        font-size: 18px;
+
+        @media (max-width: 992px) {
+            font-size: 17px;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 16px;
+        }
+    }
+}
+
+// ======================================== tasks ========================================
+.tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @media (max-width: 992px) {
+        gap: 32px;
+    }
+
+    @media (max-width: 576px) {
+        gap: 24px;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+
+        @media (max-width: 576px) {
+            gap: 20px;
+        }
+    }
+
+    &__item {
+        @include adaptive-width(4, 24);
+        display: flex;
+        gap: 12px;
+        color: var(--darkColor);
+
+        @media (max-width: 1400px) {
+            @include adaptive-width(3, 24);
+        }
+
+        @media (max-width: 1200px) {
+            @include adaptive-width(2, 24);
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        @media (max-width: 576px) {
+            width: 100%;
+            gap: 8px;
+        }
+    }
+}
+
+// ======================================== member-slider ========================================
+.member-slider {
+    width: 100%;
+    // TODO: при наведении на слайд увеличенная сторона обрезается
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    padding-top: 16px;
+    margin-top: -16px;
+
+    @media (max-width: 1200px) {
+        gap: 32px;
+    }
+
+    @media (max-width: 992px) {
+        gap: 28px;
+    }
+
+    @media (max-width: 768px) {
+        gap: 24px;
+    }
+
+    @media (max-width: 576px) {
+        gap: 20px;
+    }
+
+    &__pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            border: 1px solid var(--darkColor);
+            background-color: transparent;
+            opacity: 1;
+            margin: 0!important;
+
+            &-active {
+                background-color: var(--darkColor);
+            }
         }
     }
 }

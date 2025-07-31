@@ -141,7 +141,6 @@ bannerSlider.on('slideChange', () => {
 // слайдеры карточек
 document.querySelectorAll('.card-slider').forEach(slider => {
     new Swiper(slider, {
-        slidesPerView: 'auto',
         spaceBetween: 20,
         loop: true,
         // autoplay: true,
@@ -250,6 +249,31 @@ document.querySelectorAll('.video-slider').forEach(slider => {
             1200: {
                 slidesPerView: 2.75,
                 centeredSlides: true
+            }
+        }
+    });
+});
+
+// слайдеры участников
+document.querySelectorAll('.member-slider').forEach(slider => {
+    new Swiper(slider, {
+        spaceBetween: 20,
+        pagination: {
+            clickable: true,
+            el: slider.querySelector('.member-slider__pagination')
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1
+            },
+            576: {
+                slidesPerView: 2
+            },
+            992: {
+                slidesPerView: 3
+            },
+            1400: {
+                slidesPerView: 4
             }
         }
     });
