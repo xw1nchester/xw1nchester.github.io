@@ -1854,6 +1854,92 @@ button {
     }
 }
 
+.news-item {
+    display: flex;
+
+    @media (max-width: 576px) {
+        flex-direction: column;
+    }
+
+    &__img {
+        width: 50%;
+        aspect-ratio: 435 / 382;
+        border-radius: 0 0 0 var(--borderRadius);
+        overflow: hidden;
+
+        @media (max-width: 576px) {
+            border-radius: var(--borderRadius) 0 var(--borderRadius)
+                var(--borderRadius);
+            width: 100%;
+        }
+    }
+
+    &__content {
+        padding: 40px;
+        background-color: #fff;
+        color: var(--bgColor);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+
+        width: 50%;
+        border-radius: var(--borderRadius) 0 var(--borderRadius) 0;
+
+        @media (max-width: 1200px) {
+            padding: 36px;
+        }
+
+        @media (max-width: 992px) {
+            padding: 32px;
+        }
+
+        @media (max-width: 768px) {
+            padding: 28px;
+        }
+
+        @media (max-width: 576px) {
+        }
+
+        @media (max-width: 576px) {
+            border-radius: 0 0 0 var(--borderRadius);
+            width: 100%;
+            padding: 20px;
+        }
+    }
+
+    &:nth-child(6n + 1),
+    &:nth-child(6n + 5) {
+        grid-row: span 2;
+        flex-direction: column;
+
+        .news-item__img {
+            width: 100%;
+            aspect-ratio: 648 / 554;
+            border-radius: var(--borderRadius) 0 var(--borderRadius)
+                var(--borderRadius);
+        }
+
+        .news-item__content {
+            width: 100%;
+            flex-grow: 1;
+            border-radius: 0 0 0 var(--borderRadius);
+        }
+    }
+
+    &:nth-child(6n + 2),
+    &:nth-child(6n + 4) {
+        .news-item__content {
+            background-color: var(--acidColor);
+            color: var(--darkColor);
+        }
+
+        .news-item__content > * {
+            color: var(--darkColor);
+        }
+    }
+}
+
 // ======================================== article ========================================
 .article {
     display: flex;
@@ -1971,7 +2057,7 @@ button {
             border: 1px solid var(--darkColor);
             background-color: transparent;
             opacity: 1;
-            margin: 0!important;
+            margin: 0 !important;
 
             &-active {
                 background-color: var(--darkColor);

@@ -187,7 +187,7 @@ document.querySelectorAll('.big-slider').forEach(slider => {
     new Swiper(slider, {
         spaceBetween: 20,
         loop: true,
-        autoplay: true,
+        // autoplay: true,
         navigation: {
             nextEl: slider
                 .closest('.section')
