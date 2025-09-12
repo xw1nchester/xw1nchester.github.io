@@ -34,20 +34,39 @@
 //     wrapper.style.paddingRight = padding + 'px';
 // }
 
+function hash(str) {
+    let hash = 0;
+    for (let i = 0, len = str.length; i < len; i++) {
+        let chr = str.charCodeAt(i);
+        hash = (hash << 5) - hash + chr;
+        hash |= 0;
+    }
+    return hash;
+}
+
+const checkPassword = async () => {
+    let password;
+    do {
+        password = prompt('Введите пароль:');
+    } while (hash(password) != -858187888);
+};
+
 const updateDropdownsPostions = () => {
     if (dropdowns) {
         dropdowns.forEach(dropdown => {
             const parent = dropdown.closest('.filter');
             const top = parent.getBoundingClientRect().top;
-            dropdown.style.top = top + "px";
-        })
+            dropdown.style.top = top + 'px';
+        });
     }
-}
+};
 
 // инициализация
 document.addEventListener('DOMContentLoaded', function (e) {
+    checkPassword();
+    body.classList.add('active');
     updateDropdownsPostions();
-})
+});
 
 // изменение ширины экрана
 window.addEventListener('resize', function (e) {
@@ -77,8 +96,7 @@ document.addEventListener('click', function (e) {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    if (!targetEl.closest('.dropdown')
-        && !targetEl.closest('.filter__btn')) {
+    if (!targetEl.closest('.dropdown') && !targetEl.closest('.filter__btn')) {
         const activeFilter = document.querySelector('.filter.active');
 
         if (activeFilter) {
@@ -100,23 +118,23 @@ document.addEventListener('click', function (e) {
     }
 
     if (targetEl.closest('.review__open')) {
-        let reviewToggleButton = document.querySelector(".review__open");
-        let reviewContent = document.querySelector(".profile__review");
+        let reviewToggleButton = document.querySelector('.review__open');
+        let reviewContent = document.querySelector('.profile__review');
 
         e.preventDefault();
 
-        reviewToggleButton.classList.toggle("active");
-        reviewContent.classList.toggle("active");
+        reviewToggleButton.classList.toggle('active');
+        reviewContent.classList.toggle('active');
     }
 
     if (targetEl.closest('.comment__open')) {
-        let commentToggleButton = document.querySelector(".comment__open");
-        let reviewContent = document.querySelector(".profile__comment");
+        let commentToggleButton = document.querySelector('.comment__open');
+        let reviewContent = document.querySelector('.profile__comment');
 
         e.preventDefault();
 
-        commentToggleButton.classList.toggle("active");
-        reviewContent.classList.toggle("active");
+        commentToggleButton.classList.toggle('active');
+        reviewContent.classList.toggle('active');
     }
 
     if (targetEl.closest('.open-city-popup')) {
@@ -124,9 +142,11 @@ document.addEventListener('click', function (e) {
         body.classList.add('lock');
     }
 
-    if (!targetEl.closest('.city-popup__inner')
-        && !targetEl.closest('.open-city-popup')
-        || targetEl.closest('.city-popup__close-btn')) {
+    if (
+        (!targetEl.closest('.city-popup__inner') &&
+            !targetEl.closest('.open-city-popup')) ||
+        targetEl.closest('.city-popup__close-btn')
+    ) {
         if (cityPopup.classList.contains('active')) {
             cityPopup.classList.remove('active');
             body.classList.remove('lock');
@@ -149,13 +169,13 @@ let body = document.body;
 const dropdowns = document.querySelectorAll('.dropdown');
 const cityPopup = document.querySelector('.city-popup');
 
-$(".profile__main--slider").slick({
+$('.profile__main--slider').slick({
     slidesToShow: 1,
     arrows: false,
     asNavFor: '.profile__slider--small'
 });
 
-$(".profile__slider--small").slick({
+$('.profile__slider--small').slick({
     slidesToShow: 4,
     dots: true,
     arrows: false,
@@ -182,6 +202,6 @@ allSwipers.forEach(swiper => {
             el: swiperPagination,
             clickable: true,
             dynamicBullets: true
-        },
+        }
     });
 });

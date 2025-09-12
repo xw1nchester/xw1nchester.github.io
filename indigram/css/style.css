@@ -172,6 +172,7 @@ li {
 }
 
 body {
+  display: none;
   font-family: SF, sans-serif;
   line-height: 1;
   background-color: var(--mainBgColor);
@@ -181,6 +182,10 @@ body {
 
 body.lock {
   overflow: hidden;
+}
+
+body.active {
+  display: block;
 }
 
 .wrapper {
