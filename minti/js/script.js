@@ -341,6 +341,7 @@ document.addEventListener('click', function (e) {
     }
 
     if (
+        emojiPicker &&
         emojiPicker.classList.contains('active') &&
         !targetEl.closest('.chat__open-emoji-picker') &&
         !targetEl.closest('.chat__emoji-picker')
@@ -353,15 +354,111 @@ document.addEventListener('click', function (e) {
     }
 });
 
-chatInput.addEventListener('input', e => {
-    e.target.value != ''
-        ? sendMessageBtn.classList.add('active')
-        : sendMessageBtn.classList.remove('active');
-});
+if (chatInput) {
+    chatInput.addEventListener('input', e => {
+        e.target.value != ''
+            ? sendMessageBtn.classList.add('active')
+            : sendMessageBtn.classList.remove('active');
+    });
 
-chatInput.addEventListener('keydown', e => {
-    if (e.key === 'Enter') {
-        e.preventDefault();
-        sendMessageHandler();
+    chatInput.addEventListener('keydown', e => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            sendMessageHandler();
+        }
+    });
+}
+
+const clipsSlider = new Swiper('.clips-slider', {
+    direction: 'vertical',
+    slidesPerView: 1,
+    spaceBetween: 0,
+    mousewheel: true,
+    // simulateTouch: true,
+    loop: true,
+    navigation: {
+        prevEl: '.clips-slider__btn_prev',
+        nextEl: '.clips-slider__btn_next'
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 1.05,
+            spaceBetween: 20
+        }
     }
 });
+
+// const slides = document.querySelectorAll('.clips-slider__slide-wrapper');
+const videos = document.querySelectorAll('.clips-slider__slide video');
+
+let globalVolume = 1;
+let globalMuted = true;
+
+videos.forEach(video => {
+    video.addEventListener('volumechange', () => {
+        globalVolume = video.volume;
+        globalMuted = video.muted;
+    });
+});
+
+// slides.forEach(slide => {
+//     slide.addEventListener('click', () => {
+//         const canHover = window.matchMedia('(hover: hover)').matches;
+
+//         console.log({ canHover });
+
+//         // if (canHover) return;
+
+//         // if (video.paused) {
+//         //     video.play();
+//         // } else {
+//         //     video.pause();
+//         // }
+//     });
+// });
+
+const playCurrent = index => {
+    videos.forEach((video, i) => {
+        if (i === index) {
+            video.volume = globalVolume;
+            video.muted = globalMuted;
+            video.play();
+        } else {
+            video.pause();
+            video.currentTime = 0;
+        }
+    });
+};
+
+if (clipsSlider) {
+    playCurrent(0);
+
+    clipsSlider.on('slideChange', () => {
+        const { activeIndex, realIndex } = clipsSlider;
+
+        // console.log({ activeIndex, realIndex });
+
+        const activeSlide = clipsSlider.slides[realIndex];
+        const videoId = activeSlide.dataset.id;
+
+        history.replaceState(null, '', `/clips/${videoId}`);
+
+        playCurrent(realIndex);
+    });
+
+    // небольшой костыль, т.к. на мобиле клик по видео не ставит его на паузу
+    clipsSlider.on('click', () => {
+        const canHover = window.matchMedia('(hover: hover)').matches;
+
+        if (canHover) return;
+
+        const activeSlide = clipsSlider.slides[clipsSlider.activeIndex];
+        const video = activeSlide.querySelector('video');
+
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    });
+}

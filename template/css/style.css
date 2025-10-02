@@ -55,10 +55,6 @@ textarea {
   resize: none;
 }
 
-input::-moz-placeholder, textarea::-moz-placeholder {
-  color: inherit;
-}
-
 input::placeholder,
 textarea::placeholder {
   color: inherit;
@@ -102,8 +98,7 @@ button {
   height: 100%;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .video {
@@ -187,3 +182,5 @@ button {
 .popup.active .popup__inner {
   transform: scale(1);
 }
+
+/*# sourceMappingURL=style.css.map */
