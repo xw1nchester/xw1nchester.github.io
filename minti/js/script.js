@@ -374,53 +374,76 @@ const clipsSlider = new Swiper('.clips-slider', {
     slidesPerView: 1,
     spaceBetween: 0,
     mousewheel: true,
-    // simulateTouch: true,
+    simulateTouch: true,
     loop: true,
     navigation: {
         prevEl: '.clips-slider__btn_prev',
         nextEl: '.clips-slider__btn_next'
     },
     breakpoints: {
-        768: {
+        992: {
             slidesPerView: 1.05,
             spaceBetween: 20
         }
     }
 });
 
-// const slides = document.querySelectorAll('.clips-slider__slide-wrapper');
-const videos = document.querySelectorAll('.clips-slider__slide video');
-
-let globalVolume = 1;
-let globalMuted = true;
-
-videos.forEach(video => {
-    video.addEventListener('volumechange', () => {
-        globalVolume = video.volume;
-        globalMuted = video.muted;
-    });
+document.addEventListener('keydown', e => {
+    if (clipsSlider) {
+        if (e.key === 'ArrowUp') {
+            clipsSlider.slidePrev();
+        } else if (e.key === 'ArrowDown') {
+            clipsSlider.slideNext();
+        }
+    }
 });
 
-// slides.forEach(slide => {
-//     slide.addEventListener('click', () => {
-//         const canHover = window.matchMedia('(hover: hover)').matches;
+const slides = document.querySelectorAll('.clips-slider__slide');
+const videos = document.querySelectorAll('.clips-slider__slide video');
+const muteBtns = document.querySelectorAll('.clips-slider__mute-btn');
 
-//         console.log({ canHover });
+// let globalVolume = 1;
+let globalMuted = true;
 
-//         // if (canHover) return;
+slides.forEach(slide => {
+    const video = slide.querySelector('video');
+    const progressBar = slide.querySelector('.clips-slider__progress');
+    const muteBtn = slide.querySelector('.clips-slider__mute-btn');
+    const tapIcon = slide.querySelector('.clips-slider__tap-icon');
 
-//         // if (video.paused) {
-//         //     video.play();
-//         // } else {
-//         //     video.pause();
-//         // }
-//     });
-// });
+    video.addEventListener('click', () => {
+        if (video.paused) {
+            tapIcon.classList.add('play');
+            video.play();
+        } else {
+            tapIcon.classList.remove('play');
+            video.pause();
+        }
+
+        tapIcon.classList.add('active');
+
+        setTimeout(() => {
+            tapIcon.classList.remove('active');
+        }, 300);
+    });
+
+    video.addEventListener('timeupdate', () => {
+        const percent = (video.currentTime / video.duration) * 100;
+        progressBar.style.width = percent + '%';
+    });
+
+    muteBtn.addEventListener('click', () => {
+        muteBtns.forEach(b => b.classList.toggle('on'));
+        const muted = !muteBtn.classList.contains('on');
+        video.muted = muted;
+        globalMuted = muted;
+    });
+});
 
 const playCurrent = index => {
     videos.forEach((video, i) => {
         if (i === index) {
-            video.volume = globalVolume;
+            // video.volume = globalVolume;
             video.muted = globalMuted;
             video.play();
         } else {
@@ -438,27 +461,11 @@ if (clipsSlider) {
 
         // console.log({ activeIndex, realIndex });
 
-        const activeSlide = clipsSlider.slides[realIndex];
-        const videoId = activeSlide.dataset.id;
+        // const activeSlide = clipsSlider.slides[realIndex];
+        // const videoId = activeSlide.dataset.id;
 
-        history.replaceState(null, '', `/clips/${videoId}`);
+        // history.replaceState(null, '', `/clips/${videoId}`);
 
         playCurrent(realIndex);
-    });
-
-    // небольшой костыль, т.к. на мобиле клик по видео не ставит его на паузу
-    clipsSlider.on('click', () => {
-        const canHover = window.matchMedia('(hover: hover)').matches;
-
-        if (canHover) return;
-
-        const activeSlide = clipsSlider.slides[clipsSlider.activeIndex];
-        const video = activeSlide.querySelector('video');
-
-        if (video.paused) {
-            video.play();
-        } else {
-            video.pause();
-        }
     });
 }
