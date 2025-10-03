@@ -2622,6 +2622,7 @@ button {
 @media (max-width: 992px) {
   .clips {
     padding: 0;
+    height: 100vh;
   }
 }
 
@@ -2651,11 +2652,6 @@ button {
 
 .clips-slider__slide-wrapper {
   width: 100%;
-}
-@media (max-width: 992px) {
-  .clips-slider__slide-wrapper {
-    max-height: 100dvh;
-  }
 }
 
 .clips-slider__slide {
