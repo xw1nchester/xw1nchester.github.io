@@ -461,10 +461,10 @@ if (clipsSlider) {
 
         // console.log({ activeIndex, realIndex });
 
-        // const activeSlide = clipsSlider.slides[realIndex];
-        // const videoId = activeSlide.dataset.id;
+        const activeSlide = clipsSlider.slides[realIndex];
+        const videoId = activeSlide.dataset.id;
 
-        // history.replaceState(null, '', `/clips/${videoId}`);
+        history.replaceState(null, '', `/clips/${videoId}`);
 
         playCurrent(realIndex);
     });
