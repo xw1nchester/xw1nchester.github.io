@@ -2806,8 +2806,8 @@ button {
     height: calc(100dvh - 71px);
 
     @media (max-width: 992px) {
-        padding: 0;
         height: 100dvh;
+        padding: 0;
     }
 }
 
@@ -2832,6 +2832,10 @@ button {
     height: 100%;
     width: 100%;
     position: relative;
+
+    @media (max-width: 992px) {
+        max-height: 100dvh;
+    }
 }
 
 .clips-slider__slide-wrapper {
@@ -2909,10 +2913,14 @@ button {
 
 .clips-slider__mute-btn {
     position: absolute;
-    bottom: 12px;
-    right: 12px;
+    bottom: 4px;
+    right: 0px;
     color: #fff;
+    width: 48px;
+    height: 48px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .clips-slider__mute-btn svg:first-child {
@@ -2963,11 +2971,11 @@ button {
 
 .clips-slider__info {
     position: absolute;
-    bottom: 12px;
+    bottom: 16px;
     left: 12px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 4px;
     color: #fff;
     font-size: 14px;
 }
@@ -2975,7 +2983,7 @@ button {
 .clips-slider__user {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
     font-weight: 600;
 }
 
