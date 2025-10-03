@@ -2622,7 +2622,7 @@ button {
 @media (max-width: 992px) {
   .clips {
     padding: 0;
-    height: 100vh;
+    height: 100dvh;
   }
 }
 
