@@ -145,14 +145,14 @@ textarea::placeholder {
   color: inherit;
 }
 
-button {
-  background-color: transparent;
-  transition: 0.3s;
-}
 @media (any-hover: hover) {
   button {
     cursor: pointer;
   }
+}
+button {
+  background-color: transparent;
+  transition: 0.3s;
 }
 
 .video {
@@ -2662,10 +2662,13 @@ button {
 .clips-slider__slide {
   margin: 0 auto;
   height: 100%;
-  aspect-ratio: 9/16;
-  border-radius: 16px;
-  overflow: hidden;
   position: relative;
+  aspect-ratio: 9/16;
+}
+@media (any-hover: hover) {
+  .clips-slider__slide {
+    cursor: pointer;
+  }
 }
 @media (max-width: 992px) {
   .clips-slider__slide {
@@ -2680,7 +2683,12 @@ button {
   left: 0;
   height: 100%;
   width: 100%;
-  cursor: pointer;
+  border-radius: 16px;
+}
+@media (max-width: 992px) {
+  .clips-slider__slide video {
+    border-radius: 0;
+  }
 }
 
 .clips-slider__btns {
@@ -2715,20 +2723,80 @@ button {
     background-color: #535353;
   }
 }
-.clips-slider__progress-wrapper {
+.clips-slider__progress-bar {
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
+  left: 10px;
+  width: calc(100% - 20px);
   height: 4px;
-  background-color: #777;
+  background-color: hsla(0, 0%, 100%, 0.4);
   display: flex;
+  transition: 0.2s;
+  border-radius: 0 0 16px 16px;
+}
+@media (max-width: 992px) {
+  .clips-slider__progress-bar {
+    left: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+}
+@media (any-hover: none) {
+  .clips-slider__progress-bar {
+    height: 6px;
+  }
 }
 
-.clips-slider__progress {
+.clips-slider__progress-bar::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 24px;
+}
+@media (max-width: 992px) {
+  .clips-slider__progress-bar::before {
+    height: 32px;
+  }
+}
+
+.clips-slider__progress-fill {
   background-color: var(--hoverColor);
+  position: relative;
+  border-radius: 0 0 0 16px;
+}
+@media (max-width: 992px) {
+  .clips-slider__progress-fill {
+    border-radius: 0;
+  }
 }
 
+.clips-slider__progress-fill::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 50%;
+  right: -6px;
+  transform: translateY(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s;
+}
+
+@media (any-hover: hover) {
+  .clips-slider__progress-bar:hover {
+    height: 6px;
+  }
+  .clips-slider__progress-bar:hover .clips-slider__progress-fill::before {
+    opacity: 1;
+    visibility: visible;
+  }
+}
 .clips-slider__mute-btn {
   position: absolute;
   bottom: 4px;
@@ -2768,6 +2836,7 @@ button {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
+  pointer-events: none;
 }
 
 .clips-slider__tap-icon.active {
