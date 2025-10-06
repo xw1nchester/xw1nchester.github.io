@@ -365,11 +365,6 @@ button {
     display: none;
   }
 }
-@media (max-width: 992px) {
-  .header.clips-page {
-    display: none;
-  }
-}
 
 .search {
   position: relative;
@@ -2621,8 +2616,15 @@ button {
 }
 @media (max-width: 992px) {
   .clips {
+    background-color: #000;
     height: 100dvh;
     padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
   }
 }
 
@@ -2872,6 +2874,7 @@ button {
   align-items: center;
   gap: 4px;
   font-weight: 600;
+  color: #fff;
 }
 
 .clips-slider__avatar {
