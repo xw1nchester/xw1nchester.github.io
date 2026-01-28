@@ -1,0 +1,1 @@
+.RichInboxNotifications-container_7ce047{position:fixed;top:calc(var(--header-offset) + 8px);right:0;z-index:var(--fasttrack-index);transition:all .3s}.RichInboxNotifications-withoutHeader_7ce047{top:calc(var(--top-line-height) + 72px)}@media (max-width: 1024px){.RichInboxNotifications-withoutHeader_7ce047{top:calc(var(--top-line-height) + 8px)}}
