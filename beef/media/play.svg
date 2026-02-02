@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
