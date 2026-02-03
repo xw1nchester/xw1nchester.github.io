@@ -307,7 +307,7 @@
         <header class="header">
             <div class="container">
                 <div class="header__inner">
-                    <a href="https://beefcasino50.com/ru" class="header__logo">
+                    <a href="https://beefcasino50.com/ru" class="logo">
                         <img src="media/logo.svg" alt="logo">
                     </a>
 
@@ -344,12 +344,13 @@
             </div>
         </header>
 
-        <main class="main">
+        <div class="main">
             <div class="main__container container">
                 <div class="welcome">
                     <div class="welcome-banner">
                         <div class="welcome-banner__video-wrap">
-                            <video src="media/fire.mp4" loop autoplay class="welcome-banner__video"></video>
+                            <video src="media/fire.mp4" loop autoplay muted playsinline preload="auto"
+                                class="welcome-banner__video"></video>
                         </div>
                         <img src="media/woman.webp" alt="woman" class="welcome-banner__woman">
 
@@ -491,6 +492,53 @@
                     </div>
                 </div>
 
+                <div class="parts">
+                    <a href="#" class="parts__btn btn active">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 20" class="icon custom-tabs__ic--lobby custom-tabs__ic" fill="currentColor" width="18" height="100%"><path d="M10.5 19a9 9 0 0 1-9-9 9 9 0 0 1 9-9 9 9 0 0 1 9 9 9 9 0 0 1-9 9Zm0-1.8a7.2 7.2 0 1 0 0-14.4 7.2 7.2 0 0 0 0 14.4Zm4.05-11.25L12.3 11.8l-5.85 2.25L8.7 8.2l5.85-2.25ZM10.5 10.9a.9.9 0 1 0 0-1.8.9.9 0 0 0 0 1.8Z"></path></svg>
+                        Лобби
+                    </a>
+                    
+                    <a href="#" class="parts__btn btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="icon custom-tabs__ic--casino custom-tabs__ic" fill="currentColor" width="18" height="100%"><path fill-rule="evenodd" d="M7.18 2.79h1.948c1.262 0 2.28 0 3.08.11.83.112 1.53.352 2.086.912.556.56.794 1.265.906 2.103.108.806.108 1.832.108 3.104v4.753c0 1.272 0 2.298-.108 3.104-.111.837-.35 1.542-.906 2.102-.556.56-1.255.801-2.086.914-.8.108-1.818.108-3.08.108H7.18c-1.262 0-2.28 0-3.08-.108-.83-.113-1.53-.354-2.086-.914-.556-.56-.795-1.265-.906-2.102C1 16.07 1 15.044 1 13.772V9.019c0-1.272 0-2.298.108-3.104.111-.838.35-1.543.906-2.103.555-.56 1.255-.8 2.086-.913.8-.108 1.818-.108 3.08-.108ZM4.284 4.283c-.677.092-1.036.26-1.291.517-.256.258-.422.619-.513 1.302-.094.702-.095 1.633-.095 2.969v4.65c0 1.336.001 2.268.095 2.97.09.683.257 1.044.513 1.302.255.257.614.425 1.291.517.698.094 1.622.096 2.947.096h1.846c1.325 0 2.25-.002 2.946-.096.678-.092 1.036-.26 1.292-.517.255-.258.422-.62.513-1.302.094-.703.095-1.634.095-2.97V9.07c0-1.336-.001-2.267-.095-2.97-.091-.682-.258-1.043-.513-1.3-.256-.258-.614-.426-1.292-.518-.697-.095-1.621-.096-2.946-.096H7.23c-1.325 0-2.25.002-2.947.096Z" clip-rule="evenodd"></path><path fill-rule="evenodd" d="M7.977 8.962c-.178.161-.394.418-.744.84l-.354.425c-.332.4-.54.652-.672.857-.122.19-.13.268-.13.311 0 .044.008.122.13.311.132.206.34.458.672.858l.354.425c.35.421.566.678.744.84a.738.738 0 0 0 .158.118l.017.006h.003l.018-.006a.738.738 0 0 0 .158-.118c.178-.162.394-.419.744-.84l.353-.425c.333-.4.54-.652.673-.858.121-.19.13-.267.13-.31 0-.044-.009-.122-.13-.312-.132-.205-.34-.457-.673-.857L9.075 9.8c-.35-.42-.566-.678-.744-.839a.739.739 0 0 0-.158-.118l-.017-.007h-.004l-.017.007a.739.739 0 0 0-.158.118Zm-.925-1.038c.283-.257.637-.482 1.102-.482.465 0 .819.225 1.102.482.26.236.54.572.85.946l.03.035.354.426.025.03c.3.36.564.679.748.966.2.31.352.655.352 1.068 0 .414-.152.758-.351 1.07-.185.286-.45.604-.749.965l-.025.03-.354.425-.03.036c-.31.374-.59.71-.85.946-.283.256-.637.482-1.102.482-.465 0-.819-.226-1.102-.482-.26-.236-.54-.572-.85-.946l-.03-.036-.354-.425-.025-.03c-.3-.36-.565-.679-.749-.966-.2-.311-.352-.655-.352-1.069 0-.413.153-.757.352-1.068.184-.287.449-.606.749-.966l.025-.03.354-.426.03-.035c.31-.374.59-.71.85-.946Z" clip-rule="evenodd"></path><path fill-rule="evenodd" d="m11.885.737 1.912.5c1.243.325 2.242.586 2.999.895.783.319 1.408.726 1.81 1.405.403.681.453 1.422.344 2.252-.106.798-.374 1.776-.706 2.986l-1.001 3.644c-.333 1.21-.601 2.189-.918 2.93-.331.773-.752 1.383-1.442 1.772l-.675-1.218c.322-.182.579-.484.845-1.106.275-.643.52-1.528.87-2.8l.972-3.544c.35-1.272.591-2.157.682-2.848.089-.669.02-1.049-.161-1.354-.183-.308-.492-.562-1.139-.826-.663-.27-1.574-.51-2.876-.85L11.585 2.1c-1.303-.34-2.214-.577-2.927-.667-.695-.087-1.1-.02-1.425.164-.462.26-.78.761-1.188 2.062l-1.32-.42C5.133 1.933 5.578.93 6.556.38c.687-.387 1.43-.436 2.272-.33.813.102 1.812.363 3.056.688Z" clip-rule="evenodd"></path></svg>
+                        Слоты
+                    </a>
+                    
+                    <a href="#" class="parts__btn btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon custom-tabs__ic--live custom-tabs__ic" fill="currentColor" width="18" height="100%"><path fill-rule="evenodd" d="M5 1.5h6A3.5 3.5 0 0 1 14.5 5v6a3.5 3.5 0 0 1-3.5 3.5H5A3.5 3.5 0 0 1 1.5 11V5A3.5 3.5 0 0 1 5 1.5ZM0 5a5 5 0 0 1 5-5h6a5 5 0 0 1 5 5v6a5 5 0 0 1-5 5H5a5 5 0 0 1-5-5V5Zm10.37 3a2.37 2.37 0 1 0 0-4.74 2.37 2.37 0 0 0 0 4.74Z" clip-rule="evenodd"></path></svg>
+                        live-casino
+                    </a>
+                    
+                    <a href="#" class="parts__btn btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 18" class="icon custom-tabs__ic--gift-nav custom-tabs__ic" fill="currentColor" width="18" height="100%"><path fill-rule="evenodd" d="M6.837 1.408a1.66 1.66 0 0 0-1.781.348 1.582 1.582 0 0 0-.354 1.751c.123.295.333.546.601.722.27.177.585.271.909.271h1.634V2.893c0-.318-.096-.629-.275-.893a1.629 1.629 0 0 0-.734-.592ZM8.5 1.075A2.939 2.939 0 0 0 7.338.22a2.99 2.99 0 0 0-1.7-.164A2.958 2.958 0 0 0 4.13.847c-.411.405-.692.92-.805 1.481a2.848 2.848 0 0 0 .44 2.172H1.961C.878 4.5 0 5.363 0 6.429v1.928c0 .84.546 1.554 1.308 1.819v5.253c0 .682.275 1.336.766 1.818.49.482 1.155.753 1.85.753h9.153c.694 0 1.359-.27 1.85-.753a2.55 2.55 0 0 0 .765-1.818v-5.253A1.932 1.932 0 0 0 17 8.357V6.43c0-1.066-.878-1.929-1.961-1.929h-1.804a2.847 2.847 0 0 0 .44-2.172 2.878 2.878 0 0 0-.806-1.48 2.958 2.958 0 0 0-1.506-.792 2.99 2.99 0 0 0-1.7.164c-.456.186-.855.48-1.163.855Zm.654 4.71V9h5.885a.648.648 0 0 0 .653-.643V6.43a.648.648 0 0 0-.653-.643H9.154ZM7.846 9V5.786H1.962a.648.648 0 0 0-.654.643v1.928c0 .355.292.643.654.643h5.884Zm0 1.286v6.428H3.923a1.32 1.32 0 0 1-.925-.376 1.275 1.275 0 0 1-.383-.91v-5.142h5.231Zm1.308 6.428v-6.428h5.23v5.143c0 .34-.137.668-.382.909a1.32 1.32 0 0 1-.925.376H9.154Zm0-12.214h1.635c.323 0 .639-.094.908-.27.268-.177.478-.428.602-.722a1.582 1.582 0 0 0-.355-1.752 1.66 1.66 0 0 0-1.781-.348A1.629 1.629 0 0 0 9.429 2c-.18.264-.275.575-.275.893V4.5Z" clip-rule="evenodd"></path></svg>
+                        bonus buy
+                    </a>
+                    
+                    <a href="#" class="parts__btn btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="icon custom-tabs__ic--instant custom-tabs__ic" fill="currentColor" width="18" height="100%"><path fill-rule="evenodd" d="M1.372.686A.686.686 0 1 0 0 .686v12.8A2.514 2.514 0 0 0 2.514 16h12.8a.686.686 0 0 0 0-1.371h-12.8a1.143 1.143 0 0 1-1.142-1.143V.686ZM14.099 1.75a.686.686 0 0 0-.994-.263l-2.742 1.828a.686.686 0 0 0 .76 1.141l1.339-.892c-1.292 4.62-4.713 7.044-7.302 7.414a.686.686 0 0 0 .194 1.358c3.142-.449 6.92-3.243 8.383-8.243l.507 1.014a.686.686 0 0 0 1.227-.614L14.099 1.75Z" clip-rule="evenodd"></path></svg>
+                        instant games
+                    </a>
+                    
+                    <a href="#" class="parts__btn btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" class="icon custom-tabs__ic--table custom-tabs__ic" fill="currentColor" width="18" height="100%"><path d="M12.375 0A5.625 5.625 0 0 1 18 5.625v6.75A5.625 5.625 0 0 1 12.375 18h-6.75A5.625 5.625 0 0 1 0 12.375v-6.75A5.625 5.625 0 0 1 5.625 0h6.75Zm-6.75 1.688a3.938 3.938 0 0 0-3.938 3.937v6.75a3.938 3.938 0 0 0 3.938 3.938h6.75a3.938 3.938 0 0 0 3.938-3.938v-6.75a3.938 3.938 0 0 0-3.938-3.938h-6.75ZM5.667 11a1.333 1.333 0 1 1 0 2.667 1.333 1.333 0 0 1 0-2.667Zm6.666 0a1.334 1.334 0 1 1 0 2.668 1.334 1.334 0 0 1 0-2.668ZM5.667 4.333a1.334 1.334 0 1 1-.002 2.668 1.334 1.334 0 0 1 .002-2.668Zm6.666 0a1.334 1.334 0 1 1 0 2.669 1.334 1.334 0 0 1 0-2.669Z"></path></svg>
+                        настольные
+                    </a>
+                    
+                    <a href="#" class="parts__btn btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 20" class="icon custom-tabs__ic--branded custom-tabs__ic" fill="currentColor" width="18" height="100%"><path d="M11.732 8.936a.871.871 0 0 1 1.225 1.225l-.06.065-2.937 2.935-1.776-1.775-.06-.066a.87.87 0 0 1 1.225-1.224l.066.06.545.545 1.706-1.705.066-.06Z"></path><path fill-rule="evenodd" d="M8.603 1.398c.91-1.388 2.964-1.388 3.875 0l.087.142 2.043 3.636 4.093.819.163.038c1.602.437 2.237 2.389 1.197 3.683l-.108.126-2.831 3.066.486 4.142.014.167c.082 1.711-1.694 2.942-3.289 2.21l-3.793-1.741-3.793 1.741c-1.645.756-3.485-.58-3.274-2.377l.485-4.142-2.83-3.066C-.1 8.512.604 6.35 2.38 5.995l4.092-.819L8.516 1.54l.087-.142Zm2.443.995a.58.58 0 0 0-1.011 0l-2.306 4.1-.072.102a.582.582 0 0 1-.32.183l-4.615.924a.58.58 0 0 0-.313.961l3.19 3.458a.58.58 0 0 1 .15.46l-.547 4.67a.58.58 0 0 0 .742.625l.077-.03 4.277-1.962a.583.583 0 0 1 .485 0l4.277 1.962a.581.581 0 0 0 .823-.512l-.004-.082-.547-4.671a.579.579 0 0 1 .15-.46l2.544-2.759.646-.699a.58.58 0 0 0-.233-.94l-.08-.021-4.615-.924a.583.583 0 0 1-.32-.183l-.072-.102-2.306-4.1Z" clip-rule="evenodd"></path></svg>
+                        только у нас
+                    </a>
+                    
+                    <a href="#" class="parts__btn btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 20" class="icon custom-tabs__ic--money custom-tabs__ic" fill="currentColor" width="18" height="100%"><path fill-rule="evenodd" d="M9.011 9.251a24.426 24.426 0 0 0-1.538-.524L7.849 4.3c.28.065.535.147.764.246.237.1.448.2.635.3.186.093.355.175.505.246.151.064.28.096.388.096a.615.615 0 0 0 .366-.107c.1-.071.197-.178.29-.32l.646-.974a6.876 6.876 0 0 0-1.431-1.037c-.553-.314-1.209-.532-1.97-.653L8.216 0h-.979a.667.667 0 0 0-.506.203.744.744 0 0 0-.215.46l-.118 1.348c-.79.035-1.488.185-2.098.449a5.178 5.178 0 0 0-1.55 1.005 4.14 4.14 0 0 0-.946 1.39 4.058 4.058 0 0 0-.323 1.583c0 .728.122 1.334.366 1.819.244.485.563.887.958 1.208.401.314.85.567 1.344.76.502.192 1.008.36 1.517.502l-.398 4.781a3.734 3.734 0 0 1-1.043-.331c-.294-.15-.556-.296-.786-.439-.23-.15-.434-.278-.613-.385a.953.953 0 0 0-.506-.171.755.755 0 0 0-.387.107.803.803 0 0 0-.28.257l-.817 1.208c.516.506 1.144.93 1.882 1.273.74.342 1.528.57 2.367.684L4.891 20h.979a.64.64 0 0 0 .495-.214.665.665 0 0 0 .215-.45l.129-1.571c.803-.05 1.517-.214 2.14-.492a5.188 5.188 0 0 0 1.582-1.091c.43-.45.757-.963.98-1.54a5.222 5.222 0 0 0 .333-1.872c0-.67-.126-1.226-.377-1.668a3.478 3.478 0 0 0-.99-1.123 5.306 5.306 0 0 0-1.366-.728Zm-.387 5.54c-.387.407-.961.66-1.722.76l.366-4.353c.28.1.538.207.775.32.237.115.441.25.613.407.18.157.316.339.409.546.1.2.15.434.15.706 0 .663-.197 1.2-.591 1.614ZM5.192 4.503c.28-.122.62-.207 1.022-.257L5.88 8.214a7.407 7.407 0 0 1-.753-.342 3.23 3.23 0 0 1-.602-.428 2.091 2.091 0 0 1-.398-.546 1.728 1.728 0 0 1-.14-.716c0-.235.04-.46.118-.674.086-.214.219-.406.398-.578.18-.17.41-.313.689-.427Z" clip-rule="evenodd"></path></svg>
+                        для хайроллеров
+                    </a>
+
+                    <a href="#" class="parts__btn btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 20" class="icon custom-tabs__ic--roullete custom-tabs__ic" fill="currentColor" width="18" height="100%"><path d="M12.175 3.243c.186-.363.616-.535.988-.368 3.091 1.388 5.237 4.433 5.237 7.966 0 4.842-4.03 8.768-9 8.768s-9-3.926-9-8.768c0-3.533 2.146-6.578 5.237-7.966.372-.167.801.005.988.368.228.445.003.987-.448 1.204-2.422 1.16-4.089 3.587-4.09 6.394.001 3.934 3.275 7.124 7.313 7.124 4.039 0 7.313-3.19 7.313-7.124 0-2.807-1.668-5.234-4.09-6.394-.451-.217-.677-.759-.448-1.204Z"></path><path d="M9.4 7.609a3 3 0 1 1 0 6 3 3 0 0 1 0-6ZM7.652.398a4.04 4.04 0 0 1 3.496 0 .808.808 0 0 1 .367 1.101L9.4 5.56 7.286 1.5A.808.808 0 0 1 7.652.398Z"></path></svg>
+                        рулетка
+                    </a>
+                </div>
+
                 <div class="section">
                     <div class="section__head">
                         <p class="section__title">
@@ -538,6 +586,11 @@
                                 <div class="section-swiper__img ibg">
                                     <img src="media/popular/1.webp" alt="game">
                                 </div>
+
+                                <span class="section-swiper__label section-swiper__label_green">
+                                    <img width="16" src="media/jackpot.svg" alt="jackpot">
+                                    9 151 065 ₽
+                                </span>
 
                                 <div class="section-swiper__actions">
                                     <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
@@ -723,6 +776,16 @@
                                     <img src="media/popular/5.webp" alt="game">
                                 </div>
 
+                                <span class="section-swiper__label section-swiper__label_purple">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14"
+                                        class="icon card-badge__bottom-icon" width="16">
+                                        <path fill="currentColor"
+                                            d="M8.45.5c.18 0 .34.13.4.32l.99 3 .1.33c.1.27.15.4.21.5l.07.1c.07.1.15.19.23.26l.1.07c.12.07.28.15.61.3l2.57 1.15c.16.08.27.26.27.47 0 .18-.08.35-.21.43l-.06.04-2.57 1.15c-.33.15-.5.23-.6.3l-.1.07a1 1 0 0 0-.24.26l-.07.1c-.06.1-.11.23-.2.5l-.11.32-.99 3.01c-.06.2-.22.32-.4.32-.15 0-.3-.1-.37-.25l-.02-.07-1-3a7.7 7.7 0 0 0-.24-.72l-.07-.11c-.06-.1-.13-.2-.21-.28l-.09-.08c-.09-.07-.2-.13-.43-.24l-.27-.13-2.57-1.15A.52.52 0 0 1 2.91 7c0-.2.1-.4.27-.47l2.57-1.15.27-.13c.24-.1.34-.17.43-.24l.09-.08c.08-.08.15-.17.21-.28l.07-.11c.06-.14.12-.33.25-.71L8.06.82l.02-.07A.42.42 0 0 1 8.45.5Zm-6.9 11.1v.98c0 .23.21.42.47.42.25 0 .46-.19.46-.42v-.98h1.09c.26 0 .46-.18.46-.41 0-.24-.2-.42-.46-.42H2.48v-.98c0-.23-.2-.42-.46-.42s-.47.19-.47.42v.98H.47c-.26 0-.47.18-.47.42 0 .23.2.41.47.41h1.08Zm0-8.37v.98c0 .23.21.42.47.42.25 0 .46-.19.46-.42v-.98h1.09c.26 0 .46-.18.46-.42 0-.23-.2-.41-.46-.41H2.48v-.98c0-.23-.2-.42-.46-.42s-.47.19-.47.42v.98H.47c-.27 0-.47.18-.47.4 0 .24.2.42.47.42h1.08Z">
+                                        </path>
+                                    </svg>
+                                    exclusive
+                                </span>
+
                                 <div class="section-swiper__actions">
                                     <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
                                         class="section-swiper__demo">
@@ -860,6 +923,16 @@
                                 <div class="section-swiper__img ibg">
                                     <img src="media/popular/8.webp" alt="game">
                                 </div>
+
+                                <span class="section-swiper__label section-swiper__label_purple">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14"
+                                        class="icon card-badge__bottom-icon" width="16">
+                                        <path fill="currentColor"
+                                            d="M8.45.5c.18 0 .34.13.4.32l.99 3 .1.33c.1.27.15.4.21.5l.07.1c.07.1.15.19.23.26l.1.07c.12.07.28.15.61.3l2.57 1.15c.16.08.27.26.27.47 0 .18-.08.35-.21.43l-.06.04-2.57 1.15c-.33.15-.5.23-.6.3l-.1.07a1 1 0 0 0-.24.26l-.07.1c-.06.1-.11.23-.2.5l-.11.32-.99 3.01c-.06.2-.22.32-.4.32-.15 0-.3-.1-.37-.25l-.02-.07-1-3a7.7 7.7 0 0 0-.24-.72l-.07-.11c-.06-.1-.13-.2-.21-.28l-.09-.08c-.09-.07-.2-.13-.43-.24l-.27-.13-2.57-1.15A.52.52 0 0 1 2.91 7c0-.2.1-.4.27-.47l2.57-1.15.27-.13c.24-.1.34-.17.43-.24l.09-.08c.08-.08.15-.17.21-.28l.07-.11c.06-.14.12-.33.25-.71L8.06.82l.02-.07A.42.42 0 0 1 8.45.5Zm-6.9 11.1v.98c0 .23.21.42.47.42.25 0 .46-.19.46-.42v-.98h1.09c.26 0 .46-.18.46-.41 0-.24-.2-.42-.46-.42H2.48v-.98c0-.23-.2-.42-.46-.42s-.47.19-.47.42v.98H.47c-.26 0-.47.18-.47.42 0 .23.2.41.47.41h1.08Zm0-8.37v.98c0 .23.21.42.47.42.25 0 .46-.19.46-.42v-.98h1.09c.26 0 .46-.18.46-.42 0-.23-.2-.41-.46-.41H2.48v-.98c0-.23-.2-.42-.46-.42s-.47.19-.47.42v.98H.47c-.27 0-.47.18-.47.4 0 .24.2.42.47.42h1.08Z">
+                                        </path>
+                                    </svg>
+                                    exclusive
+                                </span>
 
                                 <div class="section-swiper__actions">
                                     <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
@@ -1044,6 +1117,11 @@
                                 <div class="section-swiper__img ibg">
                                     <img src="media/popular/12.webp" alt="game">
                                 </div>
+
+                                <span class="section-swiper__label section-swiper__label_green">
+                                    <img width="16" src="media/jackpot.svg" alt="jackpot">
+                                    9 151 065 ₽
+                                </span>
 
                                 <div class="section-swiper__actions">
                                     <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
@@ -2048,14 +2126,1995 @@
                         </a>
                     </div>
                 </div>
-            </div>
-        </main>
-        <footer class="footer"></footer>
-    </div>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
+                <div class="section">
+                    <div class="section__head">
+                        <p class="section__title">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 28"
+                                class="icon games-slider__title-icon" fill="currentColor" width="18" height="100%">
+                                <path
+                                    d="M6.763 28a.963.963 0 0 1-.186-.017 1.049 1.049 0 0 1-.689-.438 1.052 1.052 0 0 1-.175-.8l1.634-9.012H1a.92.92 0 0 1-.84-.53.93.93 0 0 1 .117-.992L13.057.414a1.084 1.084 0 0 1 .98-.408 1.079 1.079 0 0 1 .94 1.202c0 .017-.006.034-.006.052l-1.651 9.007h6.347a.92.92 0 0 1 .84.53.93.93 0 0 1-.117.992L7.61 27.592c-.205.256-.52.408-.847.408ZM2.954 15.867h5.513a.95.95 0 0 1 .717.332c.175.21.25.49.204.764l-1.283 7.041 9.607-11.87H12.2a.936.936 0 0 1-.718-.339.953.953 0 0 1-.204-.764l1.29-7.047-9.614 11.883Z">
+                                </path>
+                            </svg>
+                            Новые
+                        </p>
+
+                        <a href="https://beefcasino50.com/ru/games?filter=popular" class="section__btn">
+                            показать все
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 12" class="icon" fill="currentColor"
+                                width="8" height="100%">
+                                <path fill-rule="evenodd"
+                                    d="M.296.293a1 1 0 0 1 1.414 0L7.417 6 1.71 11.707a1 1 0 0 1-1.414-1.414L4.589 6 .295 1.707a1 1 0 0 1 0-1.414Z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="section-swiper swiper">
+                        <button class="section-swiper__btn section-swiper__btn_prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 12" class="icon" fill="currentColor"
+                                width="8" height="100%">
+                                <path fill-rule="evenodd"
+                                    d="M7.121.293a1 1 0 0 0-1.414 0L0 6l5.707 5.707a1 1 0 0 0 1.414-1.414L2.828 6l4.293-4.293a1 1 0 0 0 0-1.414Z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+
+                        <button class="section-swiper__btn section-swiper__btn_next">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 12" class="icon" fill="currentColor"
+                                width="8" height="100%">
+                                <path fill-rule="evenodd"
+                                    d="M.296.293a1 1 0 0 1 1.414 0L7.417 6 1.71 11.707a1 1 0 0 1-1.414-1.414L4.589 6 .295 1.707a1 1 0 0 1 0-1.414Z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+
+                        <div class="swiper-wrapper">
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/1.webp" alt="game">
+                                </div>
+
+                                <span class="section-swiper__new">
+                                    new
+                                </span>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/2.webp" alt="game">
+                                </div>
+
+                                <span class="section-swiper__label section-swiper__label_green">
+                                    <img width="16" src="media/jackpot.svg" alt="jackpot">
+                                    9 151 065 ₽
+                                </span>
+
+                                <span class="section-swiper__new">
+                                    new
+                                </span>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/3.webp" alt="game">
+                                </div>
+
+                                <span class="section-swiper__new">
+                                    new
+                                </span>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/4.webp" alt="game">
+                                </div>
+
+                                <span class="section-swiper__new">
+                                    new
+                                </span>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/5.webp" alt="game">
+                                </div>
+
+                                <span class="section-swiper__label section-swiper__label_purple">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 13 14"
+                                        class="icon card-badge__bottom-icon" width="14">
+                                        <path fill="currentColor"
+                                            d="m8.42 9.12-1.12 4.5c-.09.32.34.53.55.25l5.09-6.77a.31.31 0 0 0-.13-.47L9.75 5.32a.31.31 0 0 1-.18-.34l.77-4.62c.05-.32-.37-.5-.56-.22L5.05 6.99a.31.31 0 0 0 .14.46l3.05 1.31a.3.3 0 0 1 .18.36ZM1.67 11.2l-.36 1.42c-.08.33.37.52.57.25l2.06-2.65a.3.3 0 0 0-.13-.46l-1.3-.54a.3.3 0 0 1-.2-.33l.27-1.54c.06-.32-.4-.49-.59-.21L.05 9.87a.3.3 0 0 0 .14.45l1.3.54c.14.06.22.2.18.35Zm.43-8.29-.14.61c-.08.32.34.51.53.25L3.64 2.2a.3.3 0 0 0-.12-.45l-.77-.33a.3.3 0 0 1-.17-.32L2.7.35c.05-.32-.37-.48-.55-.22L1.05 1.8a.3.3 0 0 0 .13.44l.76.34c.13.06.2.2.17.34Z">
+                                        </path>
+                                    </svg>
+                                    pre-release
+                                </span>
+
+                                <span class="section-swiper__new">
+                                    new
+                                </span>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/1.webp" alt="game">
+                                </div>
+
+                                <span class="section-swiper__new">
+                                    new
+                                </span>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/2.webp" alt="game">
+                                </div>
+
+                                <span class="section-swiper__label section-swiper__label_green">
+                                    <img width="16" src="media/jackpot.svg" alt="jackpot">
+                                    9 151 065 ₽
+                                </span>
+
+                                <span class="section-swiper__new">
+                                    new
+                                </span>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/3.webp" alt="game">
+                                </div>
+
+                                <span class="section-swiper__new">
+                                    new
+                                </span>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/4.webp" alt="game">
+                                </div>
+
+                                <span class="section-swiper__new">
+                                    new
+                                </span>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/5.webp" alt="game">
+                                </div>
+
+                                <span class="section-swiper__new">
+                                    new
+                                </span>
+
+                                <span class="section-swiper__label section-swiper__label_purple">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 13 14"
+                                        class="icon card-badge__bottom-icon" width="14">
+                                        <path fill="currentColor"
+                                            d="m8.42 9.12-1.12 4.5c-.09.32.34.53.55.25l5.09-6.77a.31.31 0 0 0-.13-.47L9.75 5.32a.31.31 0 0 1-.18-.34l.77-4.62c.05-.32-.37-.5-.56-.22L5.05 6.99a.31.31 0 0 0 .14.46l3.05 1.31a.3.3 0 0 1 .18.36ZM1.67 11.2l-.36 1.42c-.08.33.37.52.57.25l2.06-2.65a.3.3 0 0 0-.13-.46l-1.3-.54a.3.3 0 0 1-.2-.33l.27-1.54c.06-.32-.4-.49-.59-.21L.05 9.87a.3.3 0 0 0 .14.45l1.3.54c.14.06.22.2.18.35Zm.43-8.29-.14.61c-.08.32.34.51.53.25L3.64 2.2a.3.3 0 0 0-.12-.45l-.77-.33a.3.3 0 0 1-.17-.32L2.7.35c.05-.32-.37-.48-.55-.22L1.05 1.8a.3.3 0 0 0 .13.44l.76.34c.13.06.2.2.17.34Z">
+                                        </path>
+                                    </svg>
+                                    pre-release
+                                </span>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section__head">
+                        <p class="section__title">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"
+                                class="icon games-slider__title-icon" fill="currentColor" width="20">
+                                <path fill-rule="evenodd"
+                                    d="M1.615 7.535c.383 0 .693.281.693.628v3.349c0 1.399.001 2.385.112 3.131.108.728.308 1.134.631 1.427.323.293.77.475 1.573.572.823.1 1.91.102 3.453.102h1.846c1.543 0 2.63-.001 3.453-.102.803-.097 1.25-.28 1.573-.572.323-.293.523-.699.631-1.427.11-.746.112-1.732.112-3.131v-3.35c0-.346.31-.627.693-.627.382 0 .692.281.692.628v3.395c0 1.342 0 2.413-.125 3.253-.128.867-.4 1.582-1.024 2.147-.623.565-1.411.813-2.368.93-.926.112-2.106.112-3.585.112h-1.95c-1.479 0-2.66 0-3.585-.113-.957-.117-1.745-.364-2.368-.93-.623-.564-.896-1.279-1.024-2.146-.125-.84-.125-1.911-.125-3.253V8.163c0-.347.31-.628.692-.628Z"
+                                    clip-rule="evenodd"></path>
+                                <path fill-rule="evenodd"
+                                    d="M2.975 4.186h12.05c.41 0 .755 0 1.036.019.291.019.575.06.845.174.305.128.579.32.778.57.188.236.258.49.288.735.028.222.028.487.028.774v.06c0 .288 0 .553-.028.774-.03.245-.1.5-.288.736-.2.25-.473.442-.778.57-.27.113-.553.155-.845.174-.281.019-.626.019-1.036.019H2.975c-.41 0-.755 0-1.036-.019a2.592 2.592 0 0 1-.845-.174 1.95 1.95 0 0 1-.778-.57 1.416 1.416 0 0 1-.288-.736A6.641 6.641 0 0 1 0 6.458c0-.287 0-.552.028-.774.03-.244.1-.499.288-.735a1.95 1.95 0 0 1 .778-.57c.27-.114.553-.155.845-.174.281-.019.626-.019 1.036-.019ZM2.04 5.457c-.22.015-.313.04-.364.062a.59.59 0 0 0-.236.165.073.073 0 0 0-.01.022.567.567 0 0 0-.026.12 6.096 6.096 0 0 0-.018.662c0 .328 0 .52.018.663.009.065.018.1.025.12.006.015.01.02.011.022a.59.59 0 0 0 .236.165c.051.022.144.047.364.062.225.015.52.015.961.015h12c.442 0 .736 0 .96-.015.22-.015.314-.04.365-.062a.589.589 0 0 0 .236-.165c.001-.002.005-.006.01-.022a.57.57 0 0 0 .026-.12 6.11 6.11 0 0 0 .018-.663c0-.327 0-.52-.018-.662a.57.57 0 0 0-.025-.12.07.07 0 0 0-.011-.022.59.59 0 0 0-.236-.165c-.051-.022-.144-.047-.364-.062A16.42 16.42 0 0 0 15 5.442H3c-.442 0-.736 0-.96.015Z"
+                                    clip-rule="evenodd"></path>
+                                <path fill-rule="evenodd"
+                                    d="M2.77 2.123C2.77.95 3.816 0 5.11 0h.33c2.348 0 4.252 1.727 4.252 3.857v.957c0 .347-.31.628-.692.628H6.429c-2.021 0-3.66-1.486-3.66-3.32Zm2.34-.867c-.528 0-.956.388-.956.867 0 1.14 1.018 2.063 2.275 2.063h1.879v-.329c0-1.437-1.284-2.601-2.868-2.601h-.33Z"
+                                    clip-rule="evenodd"></path>
+                                <path fill-rule="evenodd"
+                                    d="M8.308 3.857C8.308 1.727 10.212 0 12.56 0h.33c1.293 0 2.34.95 2.34 2.123 0 1.833-1.638 3.319-3.659 3.319H9c-.382 0-.692-.281-.692-.628v-.957Zm4.252-2.601c-1.584 0-2.868 1.164-2.868 2.601v.329h1.88c1.256 0 2.274-.924 2.274-2.063 0-.479-.428-.867-.956-.867h-.33ZM9 7.535c.382 0 .692.281.692.628v9.21c0 .346-.31.627-.692.627-.382 0-.692-.281-.692-.628v-9.21c0-.346.31-.627.692-.627Z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Bonus Buy
+                        </p>
+
+                        <a href="https://beefcasino50.com/ru/games?filter=popular" class="section__btn">
+                            показать все
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 12" class="icon" fill="currentColor"
+                                width="8" height="100%">
+                                <path fill-rule="evenodd"
+                                    d="M.296.293a1 1 0 0 1 1.414 0L7.417 6 1.71 11.707a1 1 0 0 1-1.414-1.414L4.589 6 .295 1.707a1 1 0 0 1 0-1.414Z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="section-swiper swiper">
+                        <button class="section-swiper__btn section-swiper__btn_prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 12" class="icon" fill="currentColor"
+                                width="8" height="100%">
+                                <path fill-rule="evenodd"
+                                    d="M7.121.293a1 1 0 0 0-1.414 0L0 6l5.707 5.707a1 1 0 0 0 1.414-1.414L2.828 6l4.293-4.293a1 1 0 0 0 0-1.414Z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+
+                        <button class="section-swiper__btn section-swiper__btn_next">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 12" class="icon" fill="currentColor"
+                                width="8" height="100%">
+                                <path fill-rule="evenodd"
+                                    d="M.296.293a1 1 0 0 1 1.414 0L7.417 6 1.71 11.707a1 1 0 0 1-1.414-1.414L4.589 6 .295 1.707a1 1 0 0 1 0-1.414Z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+
+                        <div class="swiper-wrapper">
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/1.webp" alt="game">
+                                </div>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/2.webp" alt="game">
+                                </div>
+                                </span>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/3.webp" alt="game">
+                                </div>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/4.webp" alt="game">
+                                </div>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/5.webp" alt="game">
+                                </div>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/1.webp" alt="game">
+                                </div>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/2.webp" alt="game">
+                                </div>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/3.webp" alt="game">
+                                </div>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/4.webp" alt="game">
+                                </div>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/5.webp" alt="game">
+                                </div>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section program">
+                    <div class="section__head">
+                        <p class="section__title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M13.8382 5.88718L12.5374 3.24718C12.4877 3.14702 12.4111 3.06271 12.3161 3.00378C12.2211 2.94484 12.1116 2.91361 11.9998 2.91361C11.888 2.91361 11.7784 2.94484 11.6834 3.00378C11.5885 3.06271 11.5118 3.14702 11.4622 3.24718L10.1614 5.88718L7.25258 6.30958C7.14162 6.32569 7.03738 6.37257 6.95171 6.44491C6.86603 6.51724 6.80234 6.61214 6.76785 6.71884C6.73337 6.82554 6.72948 6.93976 6.75662 7.04856C6.78375 7.15736 6.84083 7.25637 6.92138 7.33438L9.02378 9.38398L8.52698 12.2808C8.50773 12.3913 8.51984 12.505 8.56194 12.609C8.60404 12.7129 8.67445 12.803 8.76517 12.869C8.8559 12.935 8.9633 12.9742 9.07519 12.9822C9.18708 12.9903 9.29898 12.9667 9.39818 12.9144L11.9998 11.5464L14.6014 12.9144C14.6873 12.9591 14.7829 12.9822 14.8798 12.9816C15.0063 12.9818 15.1297 12.9423 15.2326 12.8688C15.3238 12.8032 15.3947 12.7133 15.4372 12.6093C15.4796 12.5053 15.4919 12.3914 15.4726 12.2808L14.9758 9.38398L17.0782 7.33438C17.1587 7.25637 17.2158 7.15736 17.243 7.04856C17.2701 6.93976 17.2662 6.82554 17.2317 6.71884C17.1972 6.61214 17.1335 6.51724 17.0479 6.44491C16.9622 6.37257 16.858 6.32569 16.747 6.30958L13.8382 5.88718ZM13.9198 8.74558C13.8508 8.81374 13.7993 8.89755 13.7696 8.9899C13.7399 9.08224 13.733 9.18038 13.7494 9.27598L14.083 11.28L12.2782 10.32C12.1923 10.275 12.0968 10.2515 11.9998 10.2515C11.9028 10.2515 11.8073 10.275 11.7214 10.32L9.91658 11.28L10.2598 9.27118C10.2742 9.17555 10.2653 9.07787 10.234 8.98639C10.2027 8.8949 10.1498 8.81231 10.0798 8.74558L8.63978 7.32238L10.6582 7.02958C10.7544 7.01544 10.8458 6.97813 10.9244 6.92085C11.003 6.86358 11.0665 6.78805 11.1094 6.70078L11.9998 4.87438L12.9022 6.70078C12.9451 6.78805 13.0086 6.86358 13.0872 6.92085C13.1658 6.97813 13.2572 7.01544 13.3534 7.02958L15.3718 7.32238L13.9198 8.74558ZM11.9998 0.599978C10.3595 0.598831 8.75764 1.09598 7.40625 2.02557C6.05486 2.95516 5.01774 4.27334 4.43224 5.80553C3.84674 7.33771 3.74049 9.01161 4.12756 10.6055C4.51464 12.1994 5.37677 13.6382 6.59978 14.7312V22.2C6.59943 22.3073 6.62799 22.4128 6.68247 22.5053C6.73695 22.5977 6.81533 22.6738 6.90938 22.7256C7.00352 22.7766 7.10942 22.8018 7.21644 22.7989C7.32345 22.7959 7.4278 22.7649 7.51898 22.7088L11.9998 19.92L16.4806 22.7088C16.5766 22.7679 16.687 22.7994 16.7998 22.8C16.8787 22.8003 16.9568 22.785 17.0298 22.755C17.1027 22.7249 17.169 22.6807 17.2248 22.6249C17.2805 22.5692 17.3247 22.5029 17.3548 22.43C17.3848 22.357 17.4001 22.2789 17.3998 22.2V14.7312C18.6228 13.6382 19.4849 12.1994 19.872 10.6055C20.2591 9.01161 20.1528 7.33771 19.5673 5.80553C18.9818 4.27334 17.9447 2.95516 16.5933 2.02557C15.2419 1.09598 13.64 0.598831 11.9998 0.599978ZM16.1998 21.12L12.319 18.6912C12.2234 18.6311 12.1127 18.5992 11.9998 18.5992C11.8869 18.5992 11.7762 18.6311 11.6806 18.6912L7.79978 21.12V15.624C9.06568 16.3932 10.5185 16.8 11.9998 16.8C13.4811 16.8 14.9339 16.3932 16.1998 15.624V21.12ZM11.9998 15.6C10.6351 15.6 9.30105 15.1953 8.16635 14.4371C7.03165 13.6789 6.14726 12.6013 5.62502 11.3405C5.10277 10.0797 4.96613 8.69232 5.23237 7.35385C5.4986 6.01539 6.15576 4.78592 7.12075 3.82094C8.08573 2.85596 9.31519 2.1988 10.6537 1.93256C11.9921 1.66632 13.3795 1.80296 14.6403 2.32521C15.9011 2.84745 16.9787 3.73184 17.7369 4.86654C18.4951 6.00124 18.8998 7.33529 18.8998 8.69998C18.8972 10.5292 18.1695 12.2828 16.876 13.5762C15.5826 14.8697 13.829 15.5974 11.9998 15.6Z" />
+                            </svg>
+                            Программа лояльности
+                        </p>
+                    </div>
+
+                    <div class="program__wrap">
+                        <div class="program__items">
+                            <div class="program-item">
+                                <img src="media/program/1.webp" alt="program" class="program-item__icon">
+
+                                <p class="program-item__title">Iron</p>
+
+                                <div class="program-item__text">
+                                    0 - 300
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.99999 0L1 4V12L7.99999 16L15 12V4L7.99999 0Z" fill="#82D2FF"></path>
+                                        <path d="M8.0001 0V7.99994L15 4V12L8.0001 7.99994L1.00011 4L8.0001 0Z"
+                                            fill="#08B7FC"></path>
+                                        <path d="M7.99999 8L1 12L7.99999 16V8Z" fill="#0050C0"></path>
+                                        <path d="M8 8.00005L1.00011 12V4L8 8.00005L15 12L8 16V8.00005Z" fill="#006DFF">
+                                        </path>
+                                        <path
+                                            d="M11.9505 10.2574V5.74255L7.99997 3.48508L4.04944 5.74255V10.2574L7.99997 12.5149L11.9505 10.2574Z"
+                                            fill="#82D2FF"></path>
+                                        <path d="M11.9506 10.2574V5.74255L8.00002 3.48508V12.5149L11.9506 10.2574Z"
+                                            fill="#55CBFF"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="program-item">
+                                <img src="media/program/2.webp" alt="program" class="program-item__icon">
+
+                                <p class="program-item__title">Bronze</p>
+
+                                <div class="program-item__text">
+                                    300 - 5000
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.99999 0L1 4V12L7.99999 16L15 12V4L7.99999 0Z" fill="#82D2FF"></path>
+                                        <path d="M8.0001 0V7.99994L15 4V12L8.0001 7.99994L1.00011 4L8.0001 0Z"
+                                            fill="#08B7FC"></path>
+                                        <path d="M7.99999 8L1 12L7.99999 16V8Z" fill="#0050C0"></path>
+                                        <path d="M8 8.00005L1.00011 12V4L8 8.00005L15 12L8 16V8.00005Z" fill="#006DFF">
+                                        </path>
+                                        <path
+                                            d="M11.9505 10.2574V5.74255L7.99997 3.48508L4.04944 5.74255V10.2574L7.99997 12.5149L11.9505 10.2574Z"
+                                            fill="#82D2FF"></path>
+                                        <path d="M11.9506 10.2574V5.74255L8.00002 3.48508V12.5149L11.9506 10.2574Z"
+                                            fill="#55CBFF"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="program-item">
+                                <img src="media/program/3.webp" alt="program" class="program-item__icon">
+
+                                <p class="program-item__title">Silver</p>
+
+                                <div class="program-item__text">
+                                    5000 - 15000
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.99999 0L1 4V12L7.99999 16L15 12V4L7.99999 0Z" fill="#82D2FF"></path>
+                                        <path d="M8.0001 0V7.99994L15 4V12L8.0001 7.99994L1.00011 4L8.0001 0Z"
+                                            fill="#08B7FC"></path>
+                                        <path d="M7.99999 8L1 12L7.99999 16V8Z" fill="#0050C0"></path>
+                                        <path d="M8 8.00005L1.00011 12V4L8 8.00005L15 12L8 16V8.00005Z" fill="#006DFF">
+                                        </path>
+                                        <path
+                                            d="M11.9505 10.2574V5.74255L7.99997 3.48508L4.04944 5.74255V10.2574L7.99997 12.5149L11.9505 10.2574Z"
+                                            fill="#82D2FF"></path>
+                                        <path d="M11.9506 10.2574V5.74255L8.00002 3.48508V12.5149L11.9506 10.2574Z"
+                                            fill="#55CBFF"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="program-item">
+                                <img src="media/program/4.webp" alt="program" class="program-item__icon">
+
+                                <p class="program-item__title">Gold</p>
+
+                                <div class="program-item__text">
+                                    15000 - 30000
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.99999 0L1 4V12L7.99999 16L15 12V4L7.99999 0Z" fill="#82D2FF"></path>
+                                        <path d="M8.0001 0V7.99994L15 4V12L8.0001 7.99994L1.00011 4L8.0001 0Z"
+                                            fill="#08B7FC"></path>
+                                        <path d="M7.99999 8L1 12L7.99999 16V8Z" fill="#0050C0"></path>
+                                        <path d="M8 8.00005L1.00011 12V4L8 8.00005L15 12L8 16V8.00005Z" fill="#006DFF">
+                                        </path>
+                                        <path
+                                            d="M11.9505 10.2574V5.74255L7.99997 3.48508L4.04944 5.74255V10.2574L7.99997 12.5149L11.9505 10.2574Z"
+                                            fill="#82D2FF"></path>
+                                        <path d="M11.9506 10.2574V5.74255L8.00002 3.48508V12.5149L11.9506 10.2574Z"
+                                            fill="#55CBFF"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="program-item">
+                                <img src="media/program/5.webp" alt="program" class="program-item__icon">
+
+                                <p class="program-item__title">Diamond</p>
+
+                                <div class="program-item__text">
+                                    30000+
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.99999 0L1 4V12L7.99999 16L15 12V4L7.99999 0Z" fill="#82D2FF"></path>
+                                        <path d="M8.0001 0V7.99994L15 4V12L8.0001 7.99994L1.00011 4L8.0001 0Z"
+                                            fill="#08B7FC"></path>
+                                        <path d="M7.99999 8L1 12L7.99999 16V8Z" fill="#0050C0"></path>
+                                        <path d="M8 8.00005L1.00011 12V4L8 8.00005L15 12L8 16V8.00005Z" fill="#006DFF">
+                                        </path>
+                                        <path
+                                            d="M11.9505 10.2574V5.74255L7.99997 3.48508L4.04944 5.74255V10.2574L7.99997 12.5149L11.9505 10.2574Z"
+                                            fill="#82D2FF"></path>
+                                        <path d="M11.9506 10.2574V5.74255L8.00002 3.48508V12.5149L11.9506 10.2574Z"
+                                            fill="#55CBFF"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#" class="program__link">Читать дальше</a>
+                    </div>
+                </div>
+
+                <div class="section ibg">
+                    <img src="media/hot.webp" alt="bg" class="section__bg">
+
+                    <div class="section__head">
+                        <p class="section__title">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 21" class="icon games-slider__title-icon" fill="currentColor" width="18" height="100%"><path d="M7.043.372c.37-.334.889-.46 1.376-.307l.103.037.1.044a1.5 1.5 0 0 1 .817 1.212h.001l.001.008.007.051.057.286.057.224c.07.247.179.565.345.93l.186.377c.448.852 1.205 1.908 2.491 2.937l.307.237.061.052.463.445c.424.425.734.794.978 1.177.327.515.512 1.02.714 1.629l.08.25a9.27 9.27 0 0 1 .322 3.81l-.041.28c-.229 1.413-.825 2.824-1.911 3.976l-.225.228c-1.12 1.086-2.73 2.05-4.716 2.22l-.402.022a9.16 9.16 0 0 1-.413 0v.001h-.184C3.135 20.498.08 16.575.08 12c0-2.246.95-4.364 2.037-6.075l.064-.092c.31-.416.823-.648 1.353-.568l.114.022.11.03c.255.082.471.23.638.42.14-.843.386-1.608.666-2.27l.149-.335c.355-.765.75-1.388 1.071-1.835L6.54.951c.079-.1.15-.187.21-.259l.147-.168.046-.051.001-.002.012-.013.01-.01.078-.076ZM1.58 12c0 3.974 2.593 7 6.037 7h.249a8.316 8.316 0 0 0 .303 0l.317-.02c1.569-.133 2.868-.896 3.802-1.801l.176-.178c.852-.904 1.335-2.024 1.523-3.188l.034-.233a7.76 7.76 0 0 0-.21-2.972l-.127-.422c-.199-.596-.336-.95-.557-1.298-.221-.348-.55-.726-1.176-1.31-1.64-1.237-2.611-2.553-3.184-3.642l-.224-.455c-.2-.44-.335-.83-.424-1.145l-.075-.289a5.644 5.644 0 0 1-.05-.233l-.03-.173-.007-.053-.06.071c-.05.059-.109.132-.175.217L7.5 2.17c-.278.388-.622.93-.929 1.59l-.129.292c-.563 1.33-.938 3.085-.426 5.027a.75.75 0 0 1-1.181.787 2.826 2.826 0 0 1-.537-.551l-.15-.213c-.462-.706-.733-1.594-.85-2.238C2.323 8.433 1.58 10.213 1.58 12Z"></path></svg>
+                            Горячие игры за 24 часа
+                        </p>
+
+                        <a href="https://beefcasino50.com/ru/games?filter=popular" class="section__btn">
+                            показать все
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 12" class="icon" fill="currentColor"
+                                width="8" height="100%">
+                                <path fill-rule="evenodd"
+                                    d="M.296.293a1 1 0 0 1 1.414 0L7.417 6 1.71 11.707a1 1 0 0 1-1.414-1.414L4.589 6 .295 1.707a1 1 0 0 1 0-1.414Z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="section-swiper swiper">
+                        <button class="section-swiper__btn section-swiper__btn_prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 12" class="icon" fill="currentColor"
+                                width="8" height="100%">
+                                <path fill-rule="evenodd"
+                                    d="M7.121.293a1 1 0 0 0-1.414 0L0 6l5.707 5.707a1 1 0 0 0 1.414-1.414L2.828 6l4.293-4.293a1 1 0 0 0 0-1.414Z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+
+                        <button class="section-swiper__btn section-swiper__btn_next">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 12" class="icon" fill="currentColor"
+                                width="8" height="100%">
+                                <path fill-rule="evenodd"
+                                    d="M.296.293a1 1 0 0 1 1.414 0L7.417 6 1.71 11.707a1 1 0 0 1-1.414-1.414L4.589 6 .295 1.707a1 1 0 0 1 0-1.414Z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+
+                        <div class="swiper-wrapper">
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/1.webp" alt="game">
+                                </div>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/2.webp" alt="game">
+                                </div>
+                                </span>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/3.webp" alt="game">
+                                </div>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/4.webp" alt="game">
+                                </div>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/5.webp" alt="game">
+                                </div>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/1.webp" alt="game">
+                                </div>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/2.webp" alt="game">
+                                </div>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/3.webp" alt="game">
+                                </div>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/4.webp" alt="game">
+                                </div>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="section-swiper__slide swiper-slide">
+                                <div class="section-swiper__img ibg">
+                                    <img src="media/new/5.webp" alt="game">
+                                </div>
+
+                                <div class="section-swiper__actions">
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss?mode=fun"
+                                        class="section-swiper__demo">
+                                        Демо
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__play">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 40 44"
+                                            class="icon games-list-card__body-play-icon" width="18">
+                                            <g filter="url(#i-1144668514__a)">
+                                                <path fill="#fff"
+                                                    d="M32.188 13.986c2.069 1.573 3.104 2.36 3.531 3.455.357.914.375 2.077.047 3.003-.393 1.11-1.398 1.926-3.408 3.56-6.529 5.309-12.02 8.655-19.487 11.743-2.266.937-3.4 1.405-4.506 1.209-.914-.163-1.878-.757-2.455-1.512-.699-.915-.85-2.185-1.154-4.725-1.026-8.574-.978-15.225-.038-23.253.313-2.672.47-4.009 1.192-4.937.602-.773 1.587-1.355 2.533-1.498 1.137-.171 2.32.373 4.687 1.46 7.006 3.22 12.535 6.538 19.058 11.495Z">
+                                                </path>
+                                            </g>
+                                            <defs>
+                                                <filter id="i-1144668514__a" width="38.8" height="42.8" x=".6" y=".6"
+                                                    color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                    <feColorMatrix in="SourceAlpha" result="hardAlpha"
+                                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0">
+                                                    </feColorMatrix>
+                                                    <feOffset dy="3"></feOffset>
+                                                    <feGaussianBlur stdDeviation="1.7"></feGaussianBlur>
+                                                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                                                    <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0">
+                                                    </feColorMatrix>
+                                                    <feBlend in2="BackgroundImageFix"
+                                                        result="effect1_dropShadow_11381_1839"></feBlend>
+                                                    <feBlend in="SourceGraphic" in2="effect1_dropShadow_11381_1839"
+                                                        result="shape"></feBlend>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                    </a>
+                                    <a href="https://beefcasino50.com/ru/online-slots/burningchillix-softswiss"
+                                        class="section-swiper__game">
+                                        Burning Chilli X
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section__head">
+                        <p class="section__title">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 24"
+                                class="icon games-slider__title-icon" fill="currentColor" width="24" height="100%">
+                                <path fill-rule="evenodd"
+                                    d="M10.354 1c.915-1.378 3.035-1.332 3.87.138l3.735 6.573.073.14c.697 1.447-.38 3.149-2.05 3.15h-7.47C6.789 11 5.698 9.185 6.536 7.71l3.735-6.573.084-.138ZM8.513 8.786h7.469l-3.735-6.573-3.734 6.573Zm10.769 4.164c3.048 0 5.52 2.463 5.52 5.5 0 3.038-2.472 5.5-5.52 5.5-3.049 0-5.52-2.462-5.52-5.5 0-3.037 2.471-5.5 5.52-5.5Zm0 2a3.506 3.506 0 0 0-3.513 3.5c0 1.933 1.572 3.5 3.513 3.5a3.507 3.507 0 0 0 3.512-3.5c0-1.933-1.573-3.5-3.512-3.5Zm-10.2-1.542c1.016 0 1.84.821 1.84 1.834v6.416a1.837 1.837 0 0 1-1.84 1.834h-6.44a1.837 1.837 0 0 1-1.83-1.647l-.01-.187v-6.416c0-1.013.823-1.834 1.84-1.834h6.44Zm-6.44 8.25h6.44v-6.416h-6.44v6.416Z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Провайдеры
+                        </p>
+
+                        <a href="https://beefcasino50.com/ru/games?filter=popular" class="section__btn">
+                            показать все
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 12" class="icon" fill="currentColor"
+                                width="8" height="100%">
+                                <path fill-rule="evenodd"
+                                    d="M.296.293a1 1 0 0 1 1.414 0L7.417 6 1.71 11.707a1 1 0 0 1-1.414-1.414L4.589 6 .295 1.707a1 1 0 0 1 0-1.414Z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="section-swiper provider-swiper swiper">
+                        <button class="section-swiper__btn section-swiper__btn_prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 12" class="icon" fill="currentColor"
+                                width="8" height="100%">
+                                <path fill-rule="evenodd"
+                                    d="M7.121.293a1 1 0 0 0-1.414 0L0 6l5.707 5.707a1 1 0 0 0 1.414-1.414L2.828 6l4.293-4.293a1 1 0 0 0 0-1.414Z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+
+                        <button class="section-swiper__btn section-swiper__btn_next">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 12" class="icon" fill="currentColor"
+                                width="8" height="100%">
+                                <path fill-rule="evenodd"
+                                    d="M.296.293a1 1 0 0 1 1.414 0L7.417 6 1.71 11.707a1 1 0 0 1-1.414-1.414L4.589 6 .295 1.707a1 1 0 0 1 0-1.414Z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
+
+                        <div class="swiper-wrapper">
+                            <a href="#" class="provider-swiper__slide swiper-slide">
+                                <img src="media/providers/1.svg" alt="provider" class="provider-swiper__logo">
+                            </a>
+
+                            <a href="#" class="provider-swiper__slide swiper-slide">
+                                <img src="media/providers/2.svg" alt="provider" class="provider-swiper__logo">
+                            </a>
+
+                            <a href="#" class="provider-swiper__slide swiper-slide">
+                                <img src="media/providers/3.svg" alt="provider" class="provider-swiper__logo">
+                            </a>
+
+                            <a href="#" class="provider-swiper__slide swiper-slide">
+                                <img src="media/providers/4.svg" alt="provider" class="provider-swiper__logo">
+                            </a>
+
+                            <a href="#" class="provider-swiper__slide swiper-slide">
+                                <img src="media/providers/5.svg" alt="provider" class="provider-swiper__logo">
+                            </a>
+
+                            <a href="#" class="provider-swiper__slide swiper-slide">
+                                <img src="media/providers/1.svg" alt="provider" class="provider-swiper__logo">
+                            </a>
+
+                            <a href="#" class="provider-swiper__slide swiper-slide">
+                                <img src="media/providers/2.svg" alt="provider" class="provider-swiper__logo">
+                            </a>
+
+                            <a href="#" class="provider-swiper__slide swiper-slide">
+                                <img src="media/providers/3.svg" alt="provider" class="provider-swiper__logo">
+                            </a>
+
+                            <a href="#" class="provider-swiper__slide swiper-slide">
+                                <img src="media/providers/4.svg" alt="provider" class="provider-swiper__logo">
+                            </a>
+
+                            <a href="#" class="provider-swiper__slide swiper-slide">
+                                <img src="media/providers/5.svg" alt="provider" class="provider-swiper__logo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="footer">
+                    <div class="footer-head">
+                        <a href="https://beefcasino50.com/ru" class="logo">
+                            <img src="media/logo.svg" alt="logo">
+                        </a>
+
+                        <div class="footer-head__middle">
+                            <p class="footer__text">Скачать приложение</p>
+                            <div class="footer-head__app">
+                                <a href="#" class="sidebar__link-block sidebar__link-block_app">
+                                    ios
+                                    <img width="16" height="19" src="./media/apple.webp" alt="apple">
+                                </a>
+
+                                <a href="#" class="sidebar__link-block sidebar__link-block_app">
+                                    android
+                                    <img width="15" height="20" src="./media/android.webp" alt="android">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="footer-head__right">
+                            <a href="#" class="sidebar__link-block footer-head__social">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16"
+                                    width="16" height="100%">
+                                    <path fill="#29AAEC"
+                                        d="M2.15 6.89C7.52 4.63 11.1 3.14 12.9 2.42 18.01.37 19.07.02 19.77 0c.15 0 .49.03.71.2.18.15.24.35.26.49.02.14.06.45.03.7-.28 2.8-1.48 9.63-2.09 12.78-.25 1.33-.76 1.78-1.25 1.82-1.07.1-1.89-.68-2.92-1.34C12.89 13.63 11.97 13 10.4 12c-1.82-1.16-.64-1.8.4-2.83.27-.27 4.98-4.41 5.07-4.79.01-.04.02-.22-.09-.31-.1-.1-.26-.06-.38-.04-.16.04-2.75 1.7-7.77 4.96-.73.49-1.4.72-2 .71-.65-.01-1.92-.36-2.86-.65C1.62 8.68.7 8.48.8 7.87c.04-.32.5-.65 1.36-.98Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <a href="#" class="sidebar__link-block footer-head__social">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 13"
+                                    width="16" height="100%">
+                                    <path fill="#07F"
+                                        d="M4.2 0H.78c.16 8.12 4.06 13 10.9 13h.38V8.35c2.51.26 4.41 2.18 5.17 4.65h3.55a10.16 10.16 0 0 0-5.13-6.52A9.9 9.9 0 0 0 20.03 0h-3.22c-.7 2.58-2.78 4.92-4.75 5.14V0H8.84v9c-2-.52-4.52-3.04-4.64-9Z">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <a href="#" class="sidebar__link-block footer-head__social">
+                                <svg width="14" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    viewBox="0 0 21 18" height="100%">
+                                    <path fill="#fff"
+                                        d="M16.55 0h3.05l-6.66 7.62L20.78 18h-6.14l-4.81-6.3-5.5 6.3H1.27L8.4 9.84.9 0h6.29l4.34 5.75L16.55 0Zm-1.07 16.17h1.69L6.26 1.73H4.44l11.04 14.44Z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__cols">
+                        <div class="footer__col">
+                            <a href="#" class="footer__link">
+                                О нас
+                                <img src="media/arrow-right.svg" alt="arrow">
+                            </a>
+
+                            <a href="#" class="footer__link">
+                                Контакты
+                                <img src="media/arrow-right.svg" alt="arrow">
+                            </a>
+
+                            <a href="#" class="footer__link">
+                                FAQ
+                                <img src="media/arrow-right.svg" alt="arrow">
+                            </a>
+
+                            <a href="#" class="footer__link">
+                                Бонусы
+                                <img src="media/arrow-right.svg" alt="arrow">
+                            </a>
+                        </div>
+
+                        <div class="footer__col">
+                            <a href="#" class="footer__link">
+                                Самоисключение
+                                <img src="media/arrow-right.svg" alt="arrow">
+                            </a>
+
+                            <a href="#" class="footer__link">
+                                Политика ответственной игры
+                                <img src="media/arrow-right.svg" alt="arrow">
+                            </a>
+
+                            <a href="#" class="footer__link">
+                                Требования к аккаунту
+                                <img src="media/arrow-right.svg" alt="arrow">
+                            </a>
+
+                            <a href="#" class="footer__link">
+                                Депозиты и выплаты
+                                <img src="media/arrow-right.svg" alt="arrow">
+                            </a>
+                        </div>
+
+                        <div class="footer__col">
+                            <a href="#" class="footer__link">
+                                Правила и условия
+                                <img src="media/arrow-right.svg" alt="arrow">
+                            </a>
+
+                            <a href="#" class="footer__link">
+                                Антиблокировка
+                                <img src="media/arrow-right.svg" alt="arrow">
+                            </a>
+
+                            <a href="#" class="footer__link">
+                                Разрешение споров
+                                <img src="media/arrow-right.svg" alt="arrow">
+                            </a>
+
+                            <a href="#" class="footer__link">
+                                Методы тестирования справедливости и генераторов случайных чисел
+                                <img src="media/arrow-right.svg" alt="arrow">
+                            </a>
+                        </div>
+
+                        <div class="footer__col">
+                            <a href="#" class="footer__link">
+                                Противодействие отмыванию доходов
+                                <img src="media/arrow-right.svg" alt="arrow">
+                            </a>
+
+                            <a href="#" class="footer__link">
+                                Политика проверки клиентов
+                                <img src="media/arrow-right.svg" alt="arrow">
+                            </a>
+
+                            <a href="#" class="footer__link">
+                                Конфиденциальность и управление персональными данными
+                                <img src="media/arrow-right.svg" alt="arrow">
+                            </a>
+
+                            <a href="#" class="footer__link">
+                                Партнерам
+                                <img src="media/arrow-right.svg" alt="arrow">
+                            </a>
+                        </div>
+                    </div>
+
+                    <p class="footer__text text">Информация на сайте предоставлена оператором сайта – GALAKTIKA N.V.,
+                        зарегистрированным по адресу: Scharlooweg 39, Willemstad, Curaçao (регистрационный номер:
+                        140803). Деятельность компании GALAKTIKA N.V. полностью лицензируется и регулируется Управлением
+                        азартных игр Кюрасао (Curaçao Gaming Authority, лицензия № OGL/2024/169/0146, выдана 28 октября
+                        2024 года) и законодательством Кюрасао. Платежи обрабатываются Unionstar Limited
+                        (регистрационный номер: HE 356131, адрес: Agias Fylaxeos & Zinonos Rossidi 2, 1st Floor, 3082
+                        Limassol, Cyprus), дочерней компанией GALAKTIKA N.V.
+                    </p>
+
+                    <div class="footer__end">
+                        <p>© 2026 BEEF Casino</p>
+
+                        <div class="footer__icons">
+                            <img src="media/footer/1.svg" alt="icon">
+                            <img src="media/footer/2.svg" alt="icon">
+                            <img src="media/footer/3.svg" alt="icon">
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            </main>
+        </div>
+
+        <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
 </body>
 
 </html>

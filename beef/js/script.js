@@ -57,7 +57,7 @@ new Swiper('.welcome-swiper', {
     }
 });
 
-new Swiper('.popular-swiper', {
+const sectionSwiperBaseCfg = {
     navigation: {
         nextEl: '.section-swiper__btn_next',
         prevEl: '.section-swiper__btn_prev'
@@ -65,6 +65,12 @@ new Swiper('.popular-swiper', {
     slidesPerView: 7.75,
     slidesPerGroup: 7,
     spaceBetween: 12,
+}
+
+new Swiper('.section-swiper', sectionSwiperBaseCfg);
+
+new Swiper('.popular-swiper', {
+    ...sectionSwiperBaseCfg,
     grid: {
         fill: 'row', // или 'column',
         rows: 2
@@ -77,7 +83,6 @@ new Swiper('.tournament-swiper', {
     //     prevEl: '.section-swiper__btn_prev'
     // },
     slidesPerView: 5.25,
-    // slidesPerGroup: 7,
     spaceBetween: 4,
     loop: true,
     autoplay: {
@@ -85,8 +90,4 @@ new Swiper('.tournament-swiper', {
         disableOnInteraction: false, // не останавливать после свайпа
         pauseOnMouseEnter: true
     }
-    // grid: {
-    //     fill: 'row', // или 'column',
-    //     rows: 2
-    // },
 });
