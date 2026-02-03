@@ -2,14 +2,29 @@ const burgerBtn = document.querySelector('.burger-btn');
 const body = document.body;
 const wrapper = document.querySelector('.wrapper');
 const header = document.querySelector('.header');
+const sidebar = document.querySelector('.sidebar');
+const blur = document.querySelector('.blur');
 
 document.addEventListener('click', function (e) {
     const targetEl = e.target;
 
-    // if (targetEl.closest('.burger-btn')) {
-    //     burgerBtn.classList.toggle('active');
-    //     body.classList.toggle('lock');
-    // }
+    if (targetEl.closest('.burger-btn')) {
+        body.classList.add('lock');
+        blur.classList.add('active');
+        sidebar.classList.add('active');
+    }
+
+    if (
+        sidebar.classList.contains('active') &&
+        !targetEl.closest('.sidebar') &&
+        !targetEl.closest('.burger-btn')
+    ) {
+        e.preventDefault();
+        
+        body.classList.remove('lock');
+        blur.classList.remove('active');
+        sidebar.classList.remove('active');
+    }
 
     if (targetEl.closest('.sidebar__btn')) {
         const parent = targetEl.closest('.sidebar-dropdown');
@@ -21,7 +36,7 @@ document.addEventListener('click', function (e) {
 });
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 1) {
         header.classList.add('active');
     } else {
         header.classList.remove('active');
@@ -49,11 +64,14 @@ new Swiper('.welcome-swiper', {
         nextEl: '.welcome-swiper__btn_next',
         prevEl: '.welcome-swiper__btn_prev'
     },
-    slidesPerView: 8.75,
-    slidesPerGroup: 8,
+    slidesPerView: 'auto',
     spaceBetween: 12,
+    freeMode: true,
     breakpoints: {
-        767: {}
+        922: {
+            slidesPerGroup: 8,
+            freeMode: false
+        }
     }
 });
 
@@ -62,10 +80,17 @@ const sectionSwiperBaseCfg = {
         nextEl: '.section-swiper__btn_next',
         prevEl: '.section-swiper__btn_prev'
     },
-    slidesPerView: 7.75,
-    slidesPerGroup: 7,
     spaceBetween: 12,
-}
+    freeMode: true,
+    slidesPerView: 'auto',
+    breakpoints: {
+        992: {
+            slidesPerGroup: 8,
+            freeMode: false,
+            slidesPerView: 7.75
+        }
+    }
+};
 
 new Swiper('.section-swiper', sectionSwiperBaseCfg);
 
