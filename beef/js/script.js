@@ -20,7 +20,7 @@ document.addEventListener('click', function (e) {
         !targetEl.closest('.burger-btn')
     ) {
         e.preventDefault();
-        
+
         body.classList.remove('lock');
         blur.classList.remove('active');
         sidebar.classList.remove('active');
@@ -92,7 +92,9 @@ const sectionSwiperBaseCfg = {
     }
 };
 
-new Swiper('.section-swiper', sectionSwiperBaseCfg);
+document.querySelectorAll('.section-swiper').forEach(el => {
+    new Swiper(el, sectionSwiperBaseCfg);
+});
 
 new Swiper('.popular-swiper', {
     ...sectionSwiperBaseCfg,

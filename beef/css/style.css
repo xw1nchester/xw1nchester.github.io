@@ -849,22 +849,22 @@ button {
   }
 }
 
-.section-swiper {
+.section-swiper, .popular-swiper {
   width: 100%;
   padding: 0 30px;
   position: relative;
 }
 @media (max-width: 992px) {
-  .section-swiper {
+  .section-swiper, .popular-swiper {
     padding: 0 24px;
   }
 }
 @media (max-width: 576px) {
-  .section-swiper {
+  .section-swiper, .popular-swiper {
     padding: 0 16px;
   }
 }
-.section-swiper__btn {
+.section-swiper__btn, .popular-swiper__btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -879,57 +879,57 @@ button {
   visibility: hidden;
   transition: 0.3s;
 }
-.section-swiper__btn_prev {
+.section-swiper__btn_prev, .popular-swiper__btn_prev {
   left: 0;
   border-radius: 0 20px 20px 0;
 }
-.section-swiper__btn_next {
+.section-swiper__btn_next, .popular-swiper__btn_next {
   right: 0;
   border-radius: 20px 0 0 20px;
 }
-.section-swiper:hover .section-swiper__btn {
+.section-swiper:hover .section-swiper__btn, .section-swiper:hover .popular-swiper__btn, .popular-swiper:hover .section-swiper__btn, .popular-swiper:hover .popular-swiper__btn {
   opacity: 1;
   visibility: visible;
 }
-.section-swiper:hover .section-swiper__btn.swiper-button-disabled {
+.section-swiper:hover .section-swiper__btn.swiper-button-disabled, .section-swiper:hover .popular-swiper__btn.swiper-button-disabled, .popular-swiper:hover .section-swiper__btn.swiper-button-disabled, .popular-swiper:hover .popular-swiper__btn.swiper-button-disabled {
   opacity: 0;
   visibility: hidden;
 }
-.section-swiper__slide {
+.section-swiper__slide, .popular-swiper__slide {
   display: flex;
   position: relative;
   cursor: pointer;
 }
 @media (max-width: 992px) {
-  .section-swiper__slide {
+  .section-swiper__slide, .popular-swiper__slide {
     width: 100%;
     max-width: 144px;
   }
 }
 @media (max-width: 576px) {
-  .section-swiper__slide {
+  .section-swiper__slide, .popular-swiper__slide {
     max-width: 120px;
   }
 }
-.section-swiper__img {
+.section-swiper__img, .popular-swiper__img {
   width: 100%;
   height: 224px;
   border-radius: 20px;
   overflow: hidden;
 }
 @media (max-width: 992px) {
-  .section-swiper__img {
+  .section-swiper__img, .popular-swiper__img {
     height: 180px;
     border-radius: 16px;
   }
 }
 @media (max-width: 576px) {
-  .section-swiper__img {
+  .section-swiper__img, .popular-swiper__img {
     height: 150px;
     border-radius: 8px;
   }
 }
-.section-swiper__label {
+.section-swiper__label, .popular-swiper__label {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -948,23 +948,23 @@ button {
   text-transform: uppercase;
 }
 @media (max-width: 576px) {
-  .section-swiper__label {
+  .section-swiper__label, .popular-swiper__label {
     padding: 4px 2px;
     max-width: 90%;
     font-size: 10px;
     border-radius: 4px 4px 0 0;
   }
 }
-.section-swiper__label_green {
+.section-swiper__label_green, .popular-swiper__label_green {
   background-color: #129353;
 }
-.section-swiper__label_purple {
+.section-swiper__label_purple, .popular-swiper__label_purple {
   background-color: #a74eff;
 }
-.section-swiper__label_pink {
+.section-swiper__label_pink, .popular-swiper__label_pink {
   background-color: #ff2e82;
 }
-.section-swiper__new {
+.section-swiper__new, .popular-swiper__new {
   position: absolute;
   top: 8px;
   left: 8px;
@@ -976,30 +976,31 @@ button {
   border-radius: 8px;
 }
 @media (max-width: 576px) {
-  .section-swiper__new {
+  .section-swiper__new, .popular-swiper__new {
     border-radius: 4px;
     padding: 4px;
     font-size: 10px;
   }
 }
-.section-swiper__actions {
+.section-swiper__actions, .popular-swiper__actions {
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.75);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  text-align: center;
   flex-direction: column;
   border-radius: 20px;
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
 }
-.section-swiper__slide:hover .section-swiper__actions {
+.section-swiper__slide:hover .section-swiper__actions, .section-swiper__slide:hover .popular-swiper__actions, .popular-swiper__slide:hover .section-swiper__actions, .popular-swiper__slide:hover .popular-swiper__actions {
   opacity: 1;
   visibility: visible;
 }
-.section-swiper__demo {
+.section-swiper__demo, .popular-swiper__demo {
   text-transform: uppercase;
   background-color: var(--blockColor);
   font-size: 12px;
@@ -1007,10 +1008,10 @@ button {
   padding: 8px;
   border-radius: 8px;
 }
-.section-swiper__demo:hover {
+.section-swiper__demo:hover, .popular-swiper__demo:hover {
   background-color: #1c222f;
 }
-.section-swiper__play {
+.section-swiper__play, .popular-swiper__play {
   width: 66px;
   height: 66px;
   display: flex;
@@ -1019,18 +1020,18 @@ button {
   background: linear-gradient(180deg, #ff8b48 46%, #ff1433);
   border-radius: 50%;
 }
-.section-swiper__play svg {
+.section-swiper__play svg, .popular-swiper__play svg {
   position: relative;
   top: 2px;
   left: 2px;
 }
-.section-swiper__play:hover {
+.section-swiper__play:hover, .popular-swiper__play:hover {
   transform: scale(1.1);
 }
-.section-swiper__game {
+.section-swiper__game, .popular-swiper__game {
   font-size: 14px;
 }
-.section-swiper__game:hover {
+.section-swiper__game:hover, .popular-swiper__game:hover {
   opacity: 0.75;
 }
 
@@ -1135,6 +1136,11 @@ button {
   overflow: hidden;
   height: 336px;
 }
+@media (max-width: 576px) {
+  .tournament__block {
+    height: unset;
+  }
+}
 .tournament__block_big {
   width: calc(66.6666666667% - 16px);
   display: flex;
@@ -1144,6 +1150,17 @@ button {
 @media (max-width: 992px) {
   .tournament__block_big {
     width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .tournament__block_big img {
+    -o-object-position: 30%;
+       object-position: 30%;
+  }
+}
+@media (max-width: 576px) {
+  .tournament__block_big {
+    flex-direction: column;
   }
 }
 .tournament__block_small {
@@ -1169,6 +1186,11 @@ button {
   align-items: flex-start;
   gap: 20px;
   width: calc(50% - 8px);
+}
+@media (max-width: 768px) {
+  .tournament__content {
+    width: 100%;
+  }
 }
 .tournament__label {
   background-color: rgba(255, 255, 255, 0.1019607843);
@@ -1237,6 +1259,11 @@ button {
   display: flex;
   margin-top: auto;
 }
+@media (max-width: 992px) {
+  .tournament-swiper {
+    display: none;
+  }
+}
 .tournament-swiper__slide {
   display: flex;
   aspect-ratio: 1/1;
@@ -1283,6 +1310,12 @@ button {
   border-radius: 12px;
   padding: 12px;
   font-size: 14px;
+}
+@media (max-width: 576px) {
+  .tournament-list {
+    width: 100%;
+    height: 250px;
+  }
 }
 .tournament-list__head {
   color: var(--dimTextColor);
@@ -1331,6 +1364,11 @@ button {
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 12px;
+}
+@media (max-width: 576px) {
+  .program__items {
+    flex-direction: column;
+  }
 }
 .program__link {
   border: 2px solid #df2dbd;
