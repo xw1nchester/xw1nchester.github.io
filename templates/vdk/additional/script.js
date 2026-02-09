@@ -31,7 +31,12 @@ document.addEventListener('DOMContentLoaded', e => {
 
     new Swiper('.liveBetsSwiper', {
         slidesPerView: 'auto',
-        freeMode: true
+        freeMode: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true
+        }
     });
 
     document.querySelectorAll('.gameSwiper').forEach(s => {
