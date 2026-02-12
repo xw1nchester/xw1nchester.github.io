@@ -1,0 +1,15 @@
+.coverflowSwiper {
+    overflow: visible;
+}
+
+.coverflowSwiper__slide {
+    opacity: 0.5;
+}
+
+.coverflowSwiper__slide.swiper-slide-active {
+    opacity: 1;
+}
+
+body.lock {
+    overflow: hidden;
+}
