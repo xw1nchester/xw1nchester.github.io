@@ -10034,7 +10034,7 @@ button.Zebra_DatePicker_Icon.Zebra_DatePicker_Icon_Disabled {
 }
 
 .footer .c-social__link--telegram::after {
-    background-image: url("telegram_black.svg")
+    /* background-image: url("telegram_black.svg") */
 }
 
 .footer .c-social__link--instagram::after {
@@ -10042,11 +10042,11 @@ button.Zebra_DatePicker_Icon.Zebra_DatePicker_Icon_Disabled {
 }
 
 .footer .c-social__link--vkontakte::after {
-    background-image: url("vkontakte-black.svg")
+    /* background-image: url("vkontakte-black.svg") */
 }
 
 .footer .c-social__link--twitter::after {
-    background-image: url("x-black.svg")
+    /* background-image: url("x-black.svg") */
 }
 
 .inner-mobile-menu-block .c-social__title {
@@ -16988,7 +16988,7 @@ html:not(.touch) .c-modal.c-modal--autocashout-alerts .autocashout-alert__verifi
     right: 6px;
     width: 26px;
     height: 35px;
-    background-image: url(top_popular.png);
+    /* background-image: url(top_popular.png); */
     background-repeat: no-repeat
 }
 
@@ -17016,7 +17016,7 @@ html:not(.touch) .c-modal.c-modal--autocashout-alerts .autocashout-alert__verifi
     left: -4px;
     width: 75px;
     height: 75px;
-    background-image: url(game-labels.png);
+    /* background-image: url(game-labels.png); */
     background-repeat: no-repeat
 }
 
@@ -27566,7 +27566,7 @@ img {
         top: 155px;
         width: 47px;
         height: 80px;
-        background: url(bonus-slider-icon-sprite.png) no-repeat 0 0;
+        /* background: url(bonus-slider-icon-sprite.png) no-repeat 0 0; */
         cursor: pointer
     }
 
@@ -28889,7 +28889,7 @@ img {
     }
 
     .main-video-block {
-        background: url(/video/LasVegas/lasvegas_video.jpg) no-repeat center !important;
+        /* background: url(/video/LasVegas/lasvegas_video.jpg) no-repeat center !important; */
         background-size: cover !important;
         width: 100%
     }
@@ -29102,6 +29102,7 @@ img {
 
 .ksnyf {
     padding-bottom: 80px;
+    color: #FFF;
 }
 
 .ksnyf h1 {
@@ -30811,7 +30812,7 @@ img {
     }
 
     .for-right-back {
-        background: url("round-right.png") no-repeat right center;
+        /* background: url("round-right.png") no-repeat right center; */
         position: absolute;
         right: -1px;
         top: 0;
@@ -30820,7 +30821,7 @@ img {
     }
 
     .main-money {
-        background: url("round-center.png") repeat-x center #1a1a1a;
+        /* background: url("round-center.png") repeat-x center #1a1a1a; */
         border-radius: 29px;
         padding: 0
     }
@@ -30846,7 +30847,7 @@ img {
     }
 
     .main-background-line {
-        background: url("back-for-line.png") repeat-x 0 37px #151515
+        /* background: url("back-for-line.png") repeat-x 0 37px #151515 */
     }
 
     .main-wrap-money {
@@ -31100,7 +31101,7 @@ img {
 
     .footer__logo {
         width: 83px;
-        background: url("logo-bottom.svg") no-repeat center top;
+        /* background: url("logo-bottom.svg") no-repeat center top; */
         padding-top: 50px;
         grid-column: 1/2;
         grid-row: 3/5;
@@ -31258,7 +31259,7 @@ img {
         position: absolute;
         top: 46px;
         display: none;
-        background: url("back-for-line.png") repeat-x center
+        /* background: url("back-for-line.png") repeat-x center */
     }
 
     .inner-main-color-horizontal-line {
@@ -31471,7 +31472,7 @@ img {
 
     .main-star-back:after {
         content: "";
-        background: url("star.png") no-repeat center;
+        /* background: url("star.png") no-repeat center; */
         width: 10px;
         height: 10px;
         display: none;
@@ -31621,7 +31622,7 @@ img {
     }
 
     .main-klip-block {
-        background: url("back-for-main.png") repeat-y center 0 #141414;
+        /* background: url("back-for-main.png") repeat-y center 0 #141414; */
         margin-top: -33px
     }
 
@@ -31676,7 +31677,7 @@ img {
     }
 
     .star-line ul li {
-        background: url("star.png") no-repeat center top;
+        /* background: url("star.png") no-repeat center top; */
         width: 10px;
         height: 10px;
         display: inline-block;
@@ -31728,7 +31729,7 @@ img {
 
     .main-star-back:after {
         content: "";
-        background: url("star.png") no-repeat center;
+        /* background: url("star.png") no-repeat center; */
         width: 10px;
         height: 10px;
         display: block;
@@ -31841,7 +31842,7 @@ img {
 
     .main-klip-block {
         margin-top: 80px;
-        background: url("back-for-main.png") repeat-y center 0 #141414
+        /* background: url("back-for-main.png") repeat-y center 0 #141414 */
     }
 
     .main-color-horizontal-line {
