@@ -20,22 +20,23 @@ document.addEventListener('DOMContentLoaded', e => {
             document.body.classList.remove('lock');
         }
 
-        if(targetEl.closest('.multipl-list')) {
-            console.log(1);
-            const dropdown = targetEl.closest('li').querySelector('.double-ul-menu');
+        if (targetEl.closest('.multipl-list')) {
+            const dropdown = targetEl
+                .closest('li')
+                .querySelector('.double-ul-menu');
             dropdown.classList.toggle('opened');
         }
     });
 
     document.querySelectorAll('.sidebar-swiper').forEach(el => {
-        console.log({
-                nextEl: el.closest('.promotions-sidebar').querySelector('.sidebar-swiper__btn_next'),
-                prevEl: el.closest('.promotions-sidebar').querySelector('.sidebar-swiper__btn_prev')
-            });
         new Swiper(el, {
             navigation: {
-                nextEl: el.closest('.promotions-sidebar').querySelector('.sidebar-swiper__btn_next'),
-                prevEl: el.closest('.promotions-sidebar').querySelector('.sidebar-swiper__btn_prev')
+                nextEl: el
+                    .closest('.promotions-sidebar')
+                    .querySelector('.sidebar-swiper__btn_next'),
+                prevEl: el
+                    .closest('.promotions-sidebar')
+                    .querySelector('.sidebar-swiper__btn_prev')
             },
 
             slidesPerView: 1,
@@ -54,4 +55,35 @@ document.addEventListener('DOMContentLoaded', e => {
             slidesPerView: 1
         });
     });
+
+    const flipSlider = new Swiper('.flip-swiper', {
+        navigation: {
+        nextEl: '.flip-swiper__next',
+        prevEl: '.flip-swiper__prev',
+    },
+        direction: 'vertical',
+        effect: 'flip',
+        speed: 750,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false
+        },
+        loop: true,
+        pagination: {
+            el: '.main-slider-nav',
+            clickable: true
+        }
+    });
+
+    const infoSlider = new Swiper('.info-swiper', {
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
+        loop: true,
+        allowTouchMove: false
+    });
+
+    flipSlider.controller.control = infoSlider;
+    infoSlider.controller.control = flipSlider;
 });

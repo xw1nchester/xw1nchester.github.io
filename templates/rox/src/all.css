@@ -12185,7 +12185,7 @@ body:not(.home) #main-container .c-widget .multistage-tournaments {
     align-self: center;
     grid-row: 1/2;
     grid-column: 1/2;
-    background-image: url("logo-m.svg");
+    /* background-image: url("logo-m.svg"); */
     background-repeat: no-repeat;
     background-position: 0 0;
     cursor: pointer;
@@ -17007,7 +17007,7 @@ html:not(.touch) .c-modal.c-modal--autocashout-alerts .autocashout-alert__verifi
     display: block;
     width: 20px;
     height: 24px;
-    background: url(white-hand.svg) no-repeat
+    /* background: url(white-hand.svg) no-repeat */
 }
 
 .c-game-thumbnail__badge--tournament-desktop {
@@ -17035,7 +17035,7 @@ html:not(.touch) .c-modal.c-modal--autocashout-alerts .autocashout-alert__verifi
     display: block;
     width: 20px;
     height: 24px;
-    background: url(white-cup.svg) no-repeat
+    /* background: url(white-cup.svg) no-repeat */
 }
 
 .c-game-thumbnail__badge--dropsandwins {
@@ -17043,7 +17043,7 @@ html:not(.touch) .c-modal.c-modal--autocashout-alerts .autocashout-alert__verifi
     bottom: 0;
     width: 48px;
     height: 44px;
-    background-image: url(badges/dropsandwins.svg);
+    /* background-image: url(badges/dropsandwins.svg); */
     background-position: left bottom;
     background-size: cover
 }
@@ -17239,7 +17239,7 @@ html:not(.touch) .c-modal.c-modal--autocashout-alerts .autocashout-alert__verifi
     height: 10px;
     width: 10px;
     color: #e7c28b;
-    background: url(min-star.svg) no-repeat center
+    /* background: url(min-star.svg) no-repeat center */
 }
 
 .c-game-thumbnail__btn-demo::before {
@@ -23251,7 +23251,7 @@ img {
 
 @media all and (min-width: 1px) {
     .mobile-soc-buttons .telega::after {
-        background: url("telega.svg") no-repeat center center;
+        /* background: url("telega.svg") no-repeat center center; */
         left: calc(50% - 2px)
     }
 }
@@ -24932,7 +24932,7 @@ img {
         text-align: center;
         height: 30px;
         vertical-align: top;
-        background: #3c3c3c url(back-li.png) repeat-x center;
+        /* background: #3c3c3c url(back-li.png) repeat-x center; */
         border-radius: 7px;
         border: 2px solid #efc688;
         color: #efc688;
@@ -27961,7 +27961,7 @@ img {
     .home-page .gorrizontal-line-behind-slider-and-content {
         display: block;
         border-radius: 5px;
-        background: url(back-ul.png) repeat-x center;
+        /* background: url(back-ul.png) repeat-x center; */
         padding: 2px 0;
         width: 738px;
         margin: 10px auto 26px
@@ -30989,7 +30989,7 @@ img {
     .footer__logo {
         display: block;
         width: 75px;
-        background: url("footer-star.png") no-repeat top center;
+        /* background: url("footer-star.png") no-repeat top center; */
         background-size: 22px;
         margin: 0 auto;
         padding-top: 25px;
@@ -31240,7 +31240,7 @@ img {
 @media all and (min-width: 1px) {
     .main-content-wrap {
         padding-top: 15px !important;
-        background: url(back-for-main2.png) repeat-y center #141414
+        /* background: url(back-for-main2.png) repeat-y center #141414 */
     }
 
     .main-star-back video {
@@ -31280,13 +31280,13 @@ img {
 
     .main-klip-wrap {
         padding-top: 7px;
-        background: url("back-ul.png") repeat-x center 58px
+        /* background: url("back-ul.png") repeat-x center 58px */
     }
 
     .main-klip-wrap>div {
         text-align: center;
         padding: 0;
-        background: url("back-ul.png") repeat-x center 14px;
+        /* background: url("back-ul.png") repeat-x center 14px; */
         margin: 0
     }
 
@@ -31300,7 +31300,7 @@ img {
         text-align: center;
         height: 30px;
         vertical-align: top;
-        background: #3c3c3c url("back-li.png") repeat-x center;
+        /* background: #3c3c3c url("back-li.png") repeat-x center; */
         -webkit-border-radius: 7px;
         -moz-border-radius: 7px;
         border: 2px solid #efc688;
@@ -31334,7 +31334,7 @@ img {
         left: -15px;
         width: 32px;
         height: 32px;
-        background: url("li1.png") no-repeat center;
+        /* background: url("li1.png") no-repeat center; */
         background-size: 100% 100%
     }
 
@@ -31345,7 +31345,7 @@ img {
         right: -15px;
         width: 32px;
         height: 32px;
-        background: url("li3.png") no-repeat center;
+        /* background: url("li3.png") no-repeat center; */
         background-size: 100% 100%
     }
 
@@ -31356,7 +31356,7 @@ img {
         left: -15px;
         width: 32px;
         height: 32px;
-        background: url("li2.png") no-repeat center;
+        /* background: url("li2.png") no-repeat center; */
         background-size: 100% 100%
     }
 
@@ -31367,7 +31367,7 @@ img {
         right: -15px;
         width: 32px;
         height: 32px;
-        background: url("sport_icon_mobile.png") no-repeat center;
+        /* background: url("sport_icon_mobile.png") no-repeat center; */
         background-size: cover
     }
 
@@ -31514,7 +31514,7 @@ img {
     }
 
     .main-klip-block {
-        background: url("back-ul.png") repeat-x center 28px #141414
+        /* background: url("back-ul.png") repeat-x center 28px #141414 */
     }
 
     .main-klip-wrap>div {
@@ -31585,7 +31585,7 @@ img {
     }
 
     .main-content-wrap {
-        background: url(back-for-main2.png) repeat-y center #141414
+        /* background: url(back-for-main2.png) repeat-y center #141414 */
     }
 
     .main-klip-in {
@@ -31817,7 +31817,7 @@ img {
     }
 
     .main-content-wrap {
-        background: url("back-for-main2.png") repeat-y center #141414
+        /* background: url("back-for-main2.png") repeat-y center #141414 */
     }
 
     .conteiner962 {
@@ -32036,18 +32036,18 @@ img {
         top: 0;
         margin: 0;
         cursor: pointer;
-        margin-top: 84px
+        margin-top: 84px;
     }
 
     .arrow-block .left-arrow {
         background: rgba(0, 0, 0, .8) url("arrow-left.png") no-repeat center center;
-        background-size: 24% 72%;
+        background-size: 40% 72%;
         left: 0
     }
 
     .arrow-block .right-arrow {
         background: rgba(0, 0, 0, .8) url("arrow-right.png") no-repeat center center;
-        background-size: 24% 72%;
+        background-size: 40% 72%;
         right: 0
     }
 }
@@ -33053,7 +33053,7 @@ img {
         height: 10px;
         width: 10px;
         color: #e7c28b;
-        background: url(min-star.svg) no-repeat center
+        /* background: url(min-star.svg) no-repeat center */
     }
 
     .demo-block::after {
@@ -33064,15 +33064,15 @@ img {
         height: 10px;
         width: 10px;
         color: #e7c28b;
-        background: url(min-star.svg) no-repeat center
+        /* background: url(min-star.svg) no-repeat center */
     }
 
     .demo-block:hover::before {
-        background: url(min-star.svg) no-repeat center
+        /* background: url(min-star.svg) no-repeat center */
     }
 
     .demo-block:hover::after {
-        background: url(min-star.svg) no-repeat center
+        /* background: url(min-star.svg) no-repeat center */
     }
 
     .game-block-stars {
@@ -35786,7 +35786,7 @@ input:-webkit-autofill[name=mobile_phone]::first-line {
 
 @media all and (min-width: 1px) {
     .main-video-block {
-        background-image: url(MobLasVegas514px.jpg);
+        /* background-image: url(MobLasVegas514px.jpg); */
         background-repeat: no-repeat;
         background-position: center;
         width: 100%

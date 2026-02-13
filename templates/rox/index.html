@@ -415,11 +415,11 @@
 
 		html,
 		body {
-			background: url('/images/loading-bg.png') #000;
+			/* background: url('/images/loading-bg.png') #000; */
 		}
 
 		.loading {
-			background: url('/images/loading-bg.png') #000;
+			/* background: url('/images/loading-bg.png') #000; */
 			position: fixed;
 			top: 0 !important;
 			width: 100%;
@@ -1802,156 +1802,64 @@
 						<div class="dot dot-2"></div>
 						<div class="dot dot-3"></div>
 						<div class="dot dot-4"></div>
+
+						<div class="swiper flip-swiper">
+							<div class="swiper-wrapper">
+								<a href="#" class="swiper-slide flip-swiper__slide">
+									<img src="src/slide-0.webp" alt="slide">
+								</a>
+								<a href="#" class="swiper-slide flip-swiper__slide">
+									<img src="src/promotions.webp" alt="slide">
+								</a>
+								<a href="#" class="swiper-slide flip-swiper__slide">
+									<img src="src/luckyleague.webp" alt="slide">
+								</a>
+								<a href="#" class="swiper-slide flip-swiper__slide">
+									<img src="src/slide-2.webp" alt="slide">
+								</a>
+								<a href="#" class="swiper-slide flip-swiper__slide">
+									<img src="src/slide-7.webp" alt="slide">
+								</a>
+							</div>
+						</div>
 					</div>
+
 					<div class="arrow-block">
-						<div class="left-arrow"></div>
-						<div class="right-arrow"></div>
+						<div class="left-arrow flip-swiper__prev"></div>
+						<div class="right-arrow flip-swiper__next"></div>
 					</div>
-					<!-- FIRST DEPOSIT BONUS SLIDE -->
-					<div class="slide active animationIn" data-currencies="" data-user-groups="">
-						<div class="spin">
-							<div class="svg-gradient-spin">
-								<svg baseprofile="full" class="svg-box" version="1.1" viewbox="0 0 458 220"
-									xmlns="http://www.w3.org/2000/svg">
-									<lineargradient id="linear-gradient" x1="100%" x2="100%" y1="0" y2="100%">
-										<stop offset="0%" stop-color="white"></stop>
-										<stop offset="100%" stop-color="#efc689"></stop>
-									</lineargradient>
-									<rect fill="none" height="99%" rx="108" ry="108" stroke="url(#linear-gradient)"
-										stroke-width="3" width="99%" x="1" y="1"></rect>
-								</svg>
+
+					<div class="swiper info-swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide info-swiper__slide">
+								<p class="info-swiper__title">100% + 500 FS</p>
+								<p class="info-swiper__subtitle">Бонус за первый депозит</p>
+								<a href="#" class="info-swiper__link">Подробнее</a>
 							</div>
-							<div class="spin-inner" style="background-image: url('/images/banners/slide-0.webp')"></div>
-						</div>
-						<div class="spin-shadow js-go-slide-link"></div>
-						<div class="upper-text js-go-slide-link">100% + 500 FS</div>
-						<div class="lower-text js-go-slide-link">Бонус за первый депозит</div>
-						<div class="main-right-slid">
-							<div class="clear"></div>
-							<div class="main-slide-but">
-								<a data-gtm-goal='{"event":"Click Event","button":"main-banner","position":0,"name":"First_deposit_bonus_banner"}'
-									href="#">Подробнее</a>
+							<div class="swiper-slide info-swiper__slide">
+								<p class="info-swiper__title">До 3 500 000 € в акциях</p>
+								<p class="info-swiper__subtitle">Участвуйте и выигрывайте призы</p>
+								<a href="#" class="info-swiper__link">Участвовать</a>
 							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<div class="slide" data-currencies="" data-user-groups="">
-						<div class="spin">
-							<div class="svg-gradient-spin">
-								<svg baseprofile="full" class="svg-box" version="1.1" viewbox="0 0 458 220"
-									xmlns="http://www.w3.org/2000/svg">
-									<lineargradient id="linear-gradient" x1="100%" x2="100%" y1="0" y2="100%">
-										<stop offset="0%" stop-color="white"></stop>
-										<stop offset="100%" stop-color="#efc689"></stop>
-									</lineargradient>
-									<rect fill="none" height="99%" rx="108" ry="108" stroke="url(#linear-gradient)"
-										stroke-width="3" width="99%" x="1" y="1"></rect>
-								</svg>
+							<div class="swiper-slide info-swiper__slide">
+								<p class="info-swiper__title">1 500 000 ₽ в турнире</p>
+								<p class="info-swiper__subtitle">100 призов по пятницам</p>
+								<a href="#" class="info-swiper__link">Подробнее</a>
 							</div>
-							<div class="spin-inner" style="background-image: url('/images/banners/promotions.webp')">
+							<div class="swiper-slide info-swiper__slide">
+								<p class="info-swiper__title">Раздача 15000+ FS в месяц</p>
+								<p class="info-swiper__subtitle">Заберите 100 FS за регистрацию</p>
+								<a href="#" class="info-swiper__link">Подписаться</a>
 							</div>
-						</div>
-						<div class="spin-shadow js-go-slide-link"></div>
-						<div class="upper-text js-go-slide-link">До 3 500 000 € в акциях</div>
-						<div class="lower-text js-go-slide-link">Участвуйте и выигрывайте призы</div>
-						<div class="main-right-slid">
-							<div class="clear"></div>
-							<div class="main-slide-but">
-								<a data-gtm-goal='{"event":"Click Event","button":"main-banner","position":1,"name":"promotions_banner"}'
-									href="#">Участвовать</a>
+							<div class="swiper-slide info-swiper__slide">
+								<p class="info-swiper__title">КЕШБЭК 10%</p>
+								<p class="info-swiper__subtitle">Еженедельный возврат средств на счет</p>
+								<a href="#" class="info-swiper__link">Подробнее</a>
 							</div>
-							<div class="clear"></div>
 						</div>
 					</div>
-					<!-- IF TOURNAMENT "doublekey1" ACTIVE SLIDE -->
-					<!-- IF TOURNAMENT "doublekey2" ACTIVE SLIDE -->
-					<!-- IF TOURNAMENT "luckyleague" ACTIVE SLIDE -->
-					<div class="slide" data-currencies="" data-user-groups="">
-						<div class="spin">
-							<div class="svg-gradient-spin">
-								<svg baseprofile="full" class="svg-box" version="1.1" viewbox="0 0 458 220"
-									xmlns="http://www.w3.org/2000/svg">
-									<lineargradient id="linear-gradient" x1="100%" x2="100%" y1="0" y2="100%">
-										<stop offset="0%" stop-color="white"></stop>
-										<stop offset="100%" stop-color="#efc689"></stop>
-									</lineargradient>
-									<rect fill="none" height="99%" rx="108" ry="108" stroke="url(#linear-gradient)"
-										stroke-width="3" width="99%" x="1" y="1"></rect>
-								</svg>
-							</div>
-							<div class="spin-inner" style="background-image: url('/images/banners/luckyleague.webp')">
-							</div>
-						</div>
-						<div class="spin-shadow js-go-slide-link"></div>
-						<div class="upper-text js-go-slide-link">
-							<span class="currency-content rub default">1 500 000 ₽</span>
-							<span class="currency-content uah">675 000 ₴</span>
-							<span class="currency-content kzt">9 000 000 ₸</span>
-							<span class="currency-content eur">15 000 €</span>
-							<span class="currency-content usd">17 400 $</span>
-							<span class="currency-content nok">165 000 kr</span>
-							<span class="currency-content try">660 000 ₺</span>
-							<span class="currency-content pln">67 500 zł</span> в турнире
-						</div>
-						<div class="lower-text js-go-slide-link">100 призов по пятницам</div>
-						<div class="main-right-slid">
-							<div class="clear"></div>
-							<div class="main-slide-but">
-								<a data-gtm-goal='{"event":"Click Event","button":"main-banner","position":2,"name":"luckyleague_banner"}'
-									href="#">Участвовать</a>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<!-- SOCIAL MEDIA SLIDE -->
-					<div class="slide" data-currencies="" data-user-groups="">
-						<div class="spin">
-							<div class="svg-gradient-spin">
-								<svg baseprofile="full" class="svg-box" height="220" version="1.1" viewbox="0 0 458 220"
-									width="458" xmlns="http://www.w3.org/2000/svg">
-									<lineargradient id="linear-gradient" x1="100%" x2="100%" y1="0" y2="100%">
-										<stop offset="0%" stop-color="white"></stop>
-										<stop offset="100%" stop-color="#efc689"></stop>
-									</lineargradient>
-									<rect fill="none" height="99%" rx="108" ry="108" stroke="url(#linear-gradient)"
-										stroke-width="3" width="99%" x="1" y="1"></rect>
-								</svg>
-							</div>
-							<div class="spin-inner" style="background-image: url('/images/banners/slide-7.webp')"></div>
-						</div>
-						<div class="spin-shadow js-go-slide-link"></div>
-						<div class="upper-text js-go-slide-link">КЕШБЭК 10%</div>
-						<div class="lower-text js-go-slide-link">Еженедельный возврат средств на счет</div>
-						<div class="main-right-slid">
-							<div class="clear"></div>
-							<div class="main-slide-but">
-								<a data-gtm-goal='{"event":"Click Event","button":"main-banner","position":3,"name":"Cashback_banner"}'
-									href="#">Подробнее</a>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-					<div class="main-stars-slide">
-						<ul id="main-stars-slide-list">
-							<li class="star-list-top2 painted"
-								data-gtm-goal="{event: 'Click Event', button: 'main_banner-dot_pagging', position: '0', name: 'First_deposit_bonus_banner'}"
-								data-id="0">
-							</li>
-							<li class="star-list-top2"
-								data-gtm-goal="{event: 'Click Event', button: 'main_banner-dot_pagging', position: '1', name: 'promotions_banner'}"
-								data-id="1">
-							</li>
-							<li class="star-list-top2"
-								data-gtm-goal="{event: 'Click Event', button: 'main_banner-dot_pagging', position: '2', name: 'luckyleague_banner'}"
-								data-id="2">
-							</li>
-							<li class="star-list-top2"
-								data-gtm-goal="{event: 'Click Event', button: 'main_banner-dot_pagging', position: '3', name: 'Cashback_banner'}"
-								data-id="3">
-							</li>
-						</ul>
-						<div class="clear"></div>
-					</div>
+
+					<div class="main-slider-nav"></div>
 				</div>
 			</div>
 			<div data-template="jackpot">
@@ -7840,10 +7748,6 @@
 	</script>
 	<script src="src/client" async="" defer="defer"></script>
 	<script src="src/api.js" async="" defer="defer"></script>
-	<script defer="defer" src="src/vcd15cbe7772f49c399c6a5babf22c1241717689176015.js"
-		integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
-		data-cf-beacon="{&quot;rayId&quot;:&quot;9c995a6889c232d6&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;version&quot;:&quot;2025.9.1&quot;,&quot;token&quot;:&quot;bf6adcf2fde84cd690184bcc67168b64&quot;}"
-		crossorigin="anonymous"></script> -->
 	<iframe src="src/store.html" style="display: none;"></iframe>
 	<!-- <script id="" text="" charset="" type="text/javascript" src="src/js"></script>
 	<script type="text/javascript" id=""
