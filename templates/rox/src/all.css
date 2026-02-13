@@ -29100,6 +29100,10 @@ img {
     margin-left: 6px
 }
 
+.ksnyf {
+    padding-bottom: 80px;
+}
+
 .ksnyf h1 {
     font-size: 30px
 }
@@ -35827,10 +35831,6 @@ input:-webkit-autofill[name=mobile_phone]::first-line {
         top: 1px;
         border: 10px solid transparent;
         border-left: 16px solid gray
-    }
-
-    video.desktop-video {
-        display: none
     }
 }
 

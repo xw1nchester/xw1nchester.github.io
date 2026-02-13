@@ -958,6 +958,7 @@
 	<link href="src/style.css" id="googleidentityservice" media="all" rel="stylesheet" type="text/css" />
 	<link href="src/main.chat.7cfafbdf.css" rel="stylesheet" />
 	<link href="src/chunk-vendors.chat.7cfafbdf.css" rel="stylesheet" />
+	<link rel="stylesheet" href="src/additional/swiper-bundle.min.css">
 	<link rel="stylesheet" href="src/additional/style.css">
 	<!-- <script src="src/main.chat.7cfafbdf.js"></script>
 	<script src="src/npmliveswitch.chat.chat.7cfafbdf.js"></script>
@@ -1771,8 +1772,7 @@
 		<div class="c-widget" data-template="widgets/multistage-tournaments"></div>
 		<div class="container-fluid main-slider">
 			<div class="container-fluid main-video-block">
-				<video autoplay="autoplay" class="desktop-video" id="main-video-vegas" loop="" muted="muted"
-					onplay="$(this).css('opacity', 1)" playsinline="" style="opacity: 1;" width="100%">
+				<video autoplay="autoplay" class="desktop-video" id="main-video-vegas" loop="" muted="" playsinline="" preload="auto" style="opacity: 1;" width="100%">
 					<source media="(min-width: 1400px)" src="src/LasVegas-min1400.mp4" type="video/mp4" />
 					<source media="(min-width: 1400px)" src="src/LasVegas-min1400.ogv" type="video/ogg" />
 					<source media="(min-width: 1180px)" src="src/LasVegas-min1180.mp4" type="video/mp4" />
@@ -4414,9 +4414,8 @@
 							<p class="main-win-now-label">турниры</p>
 							<div class="tournaments-sidebar owl-carousel owl-carousel-sidebar owl-loaded">
 								<div class="owl-stage-outer">
-									<div class="owl-stage"
-										style="transform: translate3d(0px, 0px, 0px); transition: all;">
-										<div class="owl-item">
+									<div class="owl-stage">
+										<div class="owl-item w100p">
 											<div class="tournament-sidebar">
 												<div class="tournament-sidebar__link">
 													<a class="main-icon-tour"
@@ -4523,9 +4522,8 @@
 							<p class="main-win-now-label">лотерея</p>
 							<div class="owl-carousel owl-carousel-sidebar lottery-sidebar owl-loaded">
 								<div class="owl-stage-outer">
-									<div class="owl-stage"
-										style="transform: translate3d(0px, 0px, 0px); transition: all;">
-										<div class="owl-item">
+									<div class="owl-stage">
+										<div class="owl-item w100p">
 											<div class="lottery-sidebar">
 												<div class="main-current-tournament curent-rozgr">
 													<div class="tournament-sidebar__link">
@@ -4623,18 +4621,17 @@
 							data-template="home-page/widgets/promotions/container">
 							<p class="main-win-now-label">Акции</p>
 							<div class="main-action">
-								<div class="promotions-sidebar owl-carousel owl-carousel-sidebar owl-loaded">
-									<div class="owl-stage-outer">
-										<div class="owl-stage"
-											style="transform: translate3d(0px, 0px, 0px); transition: all;">
-											<div class="owl-item">
+								<div class="promotions-sidebar">
+									<div class="mob-swiper swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
 												<div class="promotions-sidebar">
 													<div class="promotion-sidebar__link">
 														<a class="main-icon-tour"
 															data-gtm-goal='{"event":"Click Event","button":"widgets-promotions","name":"Amuzons Clash","position":0}'
 															href="#">
 															<div class="tournir-img"
-																style="background-image: url('/images/news/promotions/amuzonsclash137.webp');">
+																style="background-image: url('src/amuzonsclash137.webp');">
 															</div>
 															<div class="bottom-block-tournir">
 																<div class="wrap-left-tournir">
@@ -4724,14 +4721,14 @@
 													</div>
 												</div>
 											</div>
-											<div class="owl-item">
+											<div class="swiper-slide">
 												<div class="promotions-sidebar">
 													<div class="promotion-sidebar__link">
 														<a class="main-icon-tour"
 															data-gtm-goal='{"event":"Click Event","button":"widgets-promotions","name":"Spinomenal Drops","position":1}'
 															href="#">
 															<div class="tournir-img"
-																style="background-image: url('/images/news/promotions/megaflashwin-banner.webp');">
+																style="background-image: url('src/megaflashwin-banner.webp');">
 															</div>
 															<div class="bottom-block-tournir">
 																<div class="wrap-left-tournir">
@@ -4806,14 +4803,14 @@
 													</div>
 												</div>
 											</div>
-											<div class="owl-item">
+											<div class="swiper-slide">
 												<div class="promotions-sidebar">
 													<div class="promotion-sidebar__link">
 														<a class="main-icon-tour"
 															data-gtm-goal='{"event":"Click Event","button":"widgets-promotions","name":"Platipus Network Tournament","position":2}'
 															href="#">
 															<div class="tournir-img"
-																style="background-image: url('/images/news/promotions/platipusnetworktournament134.webp');">
+																style="background-image: url('src/platipusnetworktournament134.webp');">
 															</div>
 															<div class="bottom-block-tournir">
 																<div class="wrap-left-tournir">
@@ -4906,7 +4903,7 @@
 													</div>
 												</div>
 											</div>
-											<div class="owl-item">
+											<div class="swiper-slide">
 												<div class="promotions-sidebar">
 													<div class="promotion-sidebar__link">
 														<a class="main-icon-tour"
@@ -5009,14 +5006,14 @@
 													</div>
 												</div>
 											</div>
-											<div class="owl-item">
+											<div class="swiper-slide">
 												<div class="promotions-sidebar">
 													<div class="promotion-sidebar__link">
 														<a class="main-icon-tour"
 															data-gtm-goal='{"event":"Click Event","button":"widgets-promotions","name":"BGaming Million Drops","position":4}'
 															href="#">
 															<div class="tournir-img"
-																style="background-image: url('/images/news/promotions/bgamingmilliondrops138.webp');">
+																style="background-image: url('src/bgamingmilliondrops138.webp');">
 															</div>
 															<div class="bottom-block-tournir">
 																<div class="wrap-left-tournir">
@@ -5112,14 +5109,14 @@
 													</div>
 												</div>
 											</div>
-											<div class="owl-item">
+											<div class="swiper-slide">
 												<div class="promotions-sidebar">
 													<div class="promotion-sidebar__link">
 														<a class="main-icon-tour"
 															data-gtm-goal='{"event":"Click Event","button":"widgets-promotions","name":"Drops &amp; Wins","position":5}'
 															href="#">
 															<div class="tournir-img"
-																style="background-image: url('/images/news/promotions/dropsandwinsslots25-banner.webp');">
+																style="background-image: url('src/dropsandwinsslots25-banner.webp');">
 															</div>
 															<div class="bottom-block-tournir">
 																<div class="wrap-left-tournir">
@@ -5218,14 +5215,14 @@
 													</div>
 												</div>
 											</div>
-											<div class="owl-item">
+											<div class="swiper-slide">
 												<div class="promotions-sidebar">
 													<div class="promotion-sidebar__link">
 														<a class="main-icon-tour"
 															data-gtm-goal='{"event":"Click Event","button":"widgets-promotions","name":"Spinoleague","position":6}'
 															href="#">
 															<div class="tournir-img"
-																style="background-image: url('/images/news/promotions/spinoleague1.webp');">
+																style="background-image: url('src/spinoleague1.webp');">
 															</div>
 															<div class="bottom-block-tournir">
 																<div class="wrap-left-tournir">
@@ -5325,19 +5322,10 @@
 												</div>
 											</div>
 										</div>
-									</div>
-									<div class="owl-nav">
-										<div class="owl-prev"></div>
-										<div class="owl-next"></div>
-									</div>
-									<div class="owl-dots">
-										<div class="owl-dot"><span></span></div>
-										<div class="owl-dot"><span></span></div>
-										<div class="owl-dot"><span></span></div>
-										<div class="owl-dot active"><span></span></div>
-										<div class="owl-dot"><span></span></div>
-										<div class="owl-dot"><span></span></div>
-										<div class="owl-dot"><span></span></div>
+										<div class="mob-swiper__nav">
+											<div class="mob-swiper__btn mob-swiper__btn_prev"></div>
+											<div class="mob-swiper__btn mob-swiper__btn_next"></div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -5448,390 +5436,8 @@
 								<p class="main-win-now-label">турниры</p>
 								<div class="tournaments-sidebar owl-carousel owl-carousel-sidebar owl-loaded">
 									<div class="owl-stage-outer">
-										<div class="owl-stage"
-											style="transform: translate3d(-792px, 0px, 0px); transition: all; width: 1980px;">
-											<div class="owl-item cloned" style="width: 366px; margin-right: 30px;">
-												<div class="tournament-sidebar">
-													<div class="tournament-sidebar__link">
-														<a class="main-icon-tour" data-gtm-goal="{
-						event: 'Click Event', 
-						button: 'widgets-tournaments', 
-						position: '', 
-						name: 'Lucky League'
-					}" href="#">
-															<div class="tournir-img"
-																style="background-image: url('src/luckyleague.webp');">
-															</div>
-															<div class="bottom-block-tournir">
-																<div class="wrap-left-tournir">
-																	<div class="wrap-right-tournir">
-																		<p>
-
-
-
-
-
-																			турнир по FACTOR
-
-																		</p>
-																	</div>
-																</div>
-															</div>
-														</a>
-													</div>
-													<div class="main-priz-box">
-														<div class="main-priz">
-															<div class="main-left-prizfond">
-																<p class="main-priz-f">призовой фонд</p>
-																<div class="main-priz__left-amount-wr">
-																	<ul
-																		class="main-priz-number main-priz-number--with-cur">
-																		<li>
-																			<p>1</p>
-																		</li>
-																		<li>
-																			<p>5</p>
-																		</li>
-																		<li>
-																			<p>0</p>
-																		</li>
-																		<li>
-																			<p>0</p>
-																		</li>
-																		<li>
-																			<p>0</p>
-																		</li>
-																		<li>
-																			<p>€</p>
-																		</li>
-																	</ul>
-																</div>
-															</div>
-															<div class="main-right-prizfond">
-																<div class="main-priz__right-amount-wr">
-																	<div class="c-countdown" data-countdown=""
-																		data-countdown-format="ddhhmmss"
-																		data-countdown-labels="{beforeFinish: 'до конца осталось', beforeStart: 'до начала осталось'}"
-																		data-finish-at="Fri Feb 06 2026 20:00:00 GMT+0300 (Москва, стандартное время)"
-																		data-has-destroyers="true"
-																		data-render="countdown"
-																		data-start-at="Fri Jan 30 2026 20:00:00 GMT+0300 (Москва, стандартное время)">
-																		<div class="c-countdown__label"
-																			data-countdown-label="">до конца осталось
-																		</div>
-																		<div class="c-countdown__timer">
-																			<div class="c-countdown__hours"
-																				data-countdown-format="h"
-																				data-countdown-hours="">
-																				<span class="c-countdown__value"
-																					data-countdown-value="">08</span>
-																			</div>
-																			<div class="c-countdown__minutes"
-																				data-countdown-format="m"
-																				data-countdown-minutes="">
-																				<span class="c-countdown__value"
-																					data-countdown-value="">16</span>
-																			</div>
-																			<div class="c-countdown__seconds"
-																				data-countdown-format="s"
-																				data-countdown-seconds="">
-																				<span class="c-countdown__value"
-																					data-countdown-value="">21</span>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="owl-item cloned" style="width: 366px; margin-right: 30px;">
-												<div class="tournament-sidebar">
-													<div class="tournament-sidebar__link">
-														<a class="main-icon-tour" data-gtm-goal="{
-						event: 'Click Event', 
-						button: 'widgets-tournaments', 
-						position: '', 
-						name: 'Lucky League'
-					}" href="#">
-															<div class="tournir-img"
-																style="background-image: url('src/luckyleague.webp');">
-															</div>
-															<div class="bottom-block-tournir">
-																<div class="wrap-left-tournir">
-																	<div class="wrap-right-tournir">
-																		<p>
-
-
-
-
-
-																			турнир по FACTOR
-
-																		</p>
-																	</div>
-																</div>
-															</div>
-														</a>
-													</div>
-													<div class="main-priz-box">
-														<div class="main-priz">
-															<div class="main-left-prizfond">
-																<p class="main-priz-f">призовой фонд</p>
-																<div class="main-priz__left-amount-wr">
-																	<ul
-																		class="main-priz-number main-priz-number--with-cur">
-																		<li>
-																			<p>1</p>
-																		</li>
-																		<li>
-																			<p>5</p>
-																		</li>
-																		<li>
-																			<p>0</p>
-																		</li>
-																		<li>
-																			<p>0</p>
-																		</li>
-																		<li>
-																			<p>0</p>
-																		</li>
-																		<li>
-																			<p>€</p>
-																		</li>
-																	</ul>
-																</div>
-															</div>
-															<div class="main-right-prizfond">
-																<div class="main-priz__right-amount-wr">
-																	<div class="c-countdown" data-countdown=""
-																		data-countdown-format="ddhhmmss"
-																		data-countdown-labels="{beforeFinish: 'до конца осталось', beforeStart: 'до начала осталось'}"
-																		data-finish-at="Fri Feb 06 2026 20:00:00 GMT+0300 (Москва, стандартное время)"
-																		data-has-destroyers="true"
-																		data-render="countdown"
-																		data-start-at="Fri Jan 30 2026 20:00:00 GMT+0300 (Москва, стандартное время)">
-																		<div class="c-countdown__label"
-																			data-countdown-label="">до конца осталось
-																		</div>
-																		<div class="c-countdown__timer">
-																			<div class="c-countdown__hours"
-																				data-countdown-format="h"
-																				data-countdown-hours="">
-																				<span class="c-countdown__value"
-																					data-countdown-value="">08</span>
-																			</div>
-																			<div class="c-countdown__minutes"
-																				data-countdown-format="m"
-																				data-countdown-minutes="">
-																				<span class="c-countdown__value"
-																					data-countdown-value="">16</span>
-																			</div>
-																			<div class="c-countdown__seconds"
-																				data-countdown-format="s"
-																				data-countdown-seconds="">
-																				<span class="c-countdown__value"
-																					data-countdown-value="">21</span>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="owl-item active" style="width: 366px; margin-right: 30px;">
-												<div class="tournament-sidebar">
-													<div class="tournament-sidebar__link">
-														<a class="main-icon-tour"
-															data-gtm-goal='{"event":"Click Event","button":"widgets-tournaments","position":0,"name":"Lucky League"}'
-															href="#">
-															<div class="tournir-img"
-																style="background-image: url('src/luckyleague.webp');">
-															</div>
-															<div class="bottom-block-tournir">
-																<div class="wrap-left-tournir">
-																	<div class="wrap-right-tournir">
-																		<p>
-
-
-
-
-
-																			турнир по FACTOR
-
-																		</p>
-																	</div>
-																</div>
-															</div>
-														</a>
-													</div>
-													<div class="main-priz-box">
-														<div class="main-priz">
-															<div class="main-left-prizfond">
-																<p class="main-priz-f">призовой фонд</p>
-																<div class="main-priz__left-amount-wr">
-																	<ul
-																		class="main-priz-number main-priz-number--with-cur">
-																		<li>
-																			<p>1</p>
-																		</li>
-																		<li>
-																			<p>5</p>
-																		</li>
-																		<li>
-																			<p>0</p>
-																		</li>
-																		<li>
-																			<p>0</p>
-																		</li>
-																		<li>
-																			<p>0</p>
-																		</li>
-																		<li>
-																			<p>€</p>
-																		</li>
-																	</ul>
-																</div>
-															</div>
-															<div class="main-right-prizfond">
-																<div class="main-priz__right-amount-wr">
-																	<div class="c-countdown" data-countdown=""
-																		data-countdown-format="ddhhmmss"
-																		data-countdown-labels="{beforeFinish: 'до конца осталось', beforeStart: 'до начала осталось'}"
-																		data-finish-at="Fri Feb 06 2026 20:00:00 GMT+0300 (Москва, стандартное время)"
-																		data-has-destroyers="true"
-																		data-render="countdown"
-																		data-start-at="Fri Jan 30 2026 20:00:00 GMT+0300 (Москва, стандартное время)">
-																		<div class="c-countdown__label"
-																			data-countdown-label="">до конца осталось
-																		</div>
-																		<div class="c-countdown__timer">
-																			<div class="c-countdown__hours"
-																				data-countdown-format="h"
-																				data-countdown-hours="">
-																				<span class="c-countdown__value"
-																					data-countdown-value="">08</span>
-																			</div>
-																			<div class="c-countdown__minutes"
-																				data-countdown-format="m"
-																				data-countdown-minutes="">
-																				<span class="c-countdown__value"
-																					data-countdown-value="">16</span>
-																			</div>
-																			<div class="c-countdown__seconds"
-																				data-countdown-format="s"
-																				data-countdown-seconds="">
-																				<span class="c-countdown__value"
-																					data-countdown-value="">21</span>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="owl-item cloned" style="width: 366px; margin-right: 30px;">
-												<div class="tournament-sidebar">
-													<div class="tournament-sidebar__link">
-														<a class="main-icon-tour" data-gtm-goal="{
-						event: 'Click Event', 
-						button: 'widgets-tournaments', 
-						position: '', 
-						name: 'Lucky League'
-					}" href="#">
-															<div class="tournir-img"
-																style="background-image: url('src/luckyleague.webp');">
-															</div>
-															<div class="bottom-block-tournir">
-																<div class="wrap-left-tournir">
-																	<div class="wrap-right-tournir">
-																		<p>
-
-
-
-
-
-																			турнир по FACTOR
-
-																		</p>
-																	</div>
-																</div>
-															</div>
-														</a>
-													</div>
-													<div class="main-priz-box">
-														<div class="main-priz">
-															<div class="main-left-prizfond">
-																<p class="main-priz-f">призовой фонд</p>
-																<div class="main-priz__left-amount-wr">
-																	<ul
-																		class="main-priz-number main-priz-number--with-cur">
-																		<li>
-																			<p>1</p>
-																		</li>
-																		<li>
-																			<p>5</p>
-																		</li>
-																		<li>
-																			<p>0</p>
-																		</li>
-																		<li>
-																			<p>0</p>
-																		</li>
-																		<li>
-																			<p>0</p>
-																		</li>
-																		<li>
-																			<p>€</p>
-																		</li>
-																	</ul>
-																</div>
-															</div>
-															<div class="main-right-prizfond">
-																<div class="main-priz__right-amount-wr">
-																	<div class="c-countdown" data-countdown=""
-																		data-countdown-format="ddhhmmss"
-																		data-countdown-labels="{beforeFinish: 'до конца осталось', beforeStart: 'до начала осталось'}"
-																		data-finish-at="Fri Feb 06 2026 20:00:00 GMT+0300 (Москва, стандартное время)"
-																		data-has-destroyers="true"
-																		data-render="countdown"
-																		data-start-at="Fri Jan 30 2026 20:00:00 GMT+0300 (Москва, стандартное время)">
-																		<div class="c-countdown__label"
-																			data-countdown-label="">до конца осталось
-																		</div>
-																		<div class="c-countdown__timer">
-																			<div class="c-countdown__hours"
-																				data-countdown-format="h"
-																				data-countdown-hours="">
-																				<span class="c-countdown__value"
-																					data-countdown-value="">08</span>
-																			</div>
-																			<div class="c-countdown__minutes"
-																				data-countdown-format="m"
-																				data-countdown-minutes="">
-																				<span class="c-countdown__value"
-																					data-countdown-value="">16</span>
-																			</div>
-																			<div class="c-countdown__seconds"
-																				data-countdown-format="s"
-																				data-countdown-seconds="">
-																				<span class="c-countdown__value"
-																					data-countdown-value="">21</span>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="owl-item cloned" style="width: 366px; margin-right: 30px;">
+										<div class="owl-stage">
+											<div class="w100p">
 												<div class="tournament-sidebar">
 													<div class="tournament-sidebar__link">
 														<a class="main-icon-tour" data-gtm-goal="{
@@ -6390,447 +5996,16 @@
 								<p class="main-win-now-label">Акции</p>
 								<div class="main-action">
 									<div class="promotions-sidebar owl-carousel owl-carousel-sidebar owl-loaded">
-										<div class="owl-stage-outer">
-											<div class="owl-stage"
-												style="transform: translate3d(-2772px, 0px, 0px); transition: 1s; width: 5940px;">
-												<div class="owl-item cloned" style="width: 366px; margin-right: 30px;">
-													<div class="promotions-sidebar">
-														<div class="promotion-sidebar__link">
-															<a class="main-icon-tour" data-gtm-goal="{
-							event: 'Click Event',
-							button: 'widgets-promotions',
-							name: 'Spin Express',
-							position: '',
-						}" href="#">
-																<div class="tournir-img"
-																	style="background-image: url('src/spinexpress136.webp');">
-																</div>
-																<div class="bottom-block-tournir">
-																	<div class="wrap-left-tournir">
-																		<div class="wrap-right-tournir">
-																			<p>
-																				Spin Express
-																			</p>
-																		</div>
-																	</div>
-																</div>
-															</a>
-														</div>
-														<div data-context="app.data.contentConfig.news.special.promoNews.relevance"
-															data-context-item="3"
-															data-template="home-page/widgets/promotions/item-default">
-															<div class="main-priz-box">
-																<div class="main-priz">
-																	<div class="main-left-prizfond">
-																		<p class="main-priz-f">Призовой фонд</p>
-																		<div class="main-priz__left-amount-wr">
-																			<ul
-																				class="main-priz-number main-priz-number--with-cur">
-																				<li>
-																					<p>1</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>€</p>
-																				</li>
-																			</ul>
-																		</div>
-																	</div>
-																	<div class="main-right-prizfond">
-																		<div class="main-priz__right-amount-wr">
-																			<div class="c-countdown" data-countdown=""
-																				data-countdown-format="ddhhmmss"
-																				data-countdown-labels="{beforeFinish: 'до конца осталось', beforeStart: 'до начала осталось'}"
-																				data-finish-at="Sun Jan 03 2027 01:00:00 GMT+0300 (Москва, стандартное время)"
-																				data-has-destroyers="true"
-																				data-render="countdown"
-																				data-start-at="2026-01-01T15:00:00.000Z">
-																				<div class="c-countdown__label"
-																					data-countdown-label="">до конца
-																					осталось</div>
-																				<div class="c-countdown__timer">
-																					<div class="c-countdown__days"
-																						data-countdown-days=""
-																						data-countdown-format="d">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">330</span>
-																					</div>
-																					<div class="c-countdown__hours"
-																						data-countdown-format="h"
-																						data-countdown-hours="">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">13</span>
-																					</div>
-																					<div class="c-countdown__minutes"
-																						data-countdown-format="m"
-																						data-countdown-minutes="">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">16</span>
-																					</div>
-																					<div class="c-countdown__seconds"
-																						data-countdown-format="s"
-																						data-countdown-seconds="">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">21</span>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="owl-item cloned" style="width: 366px; margin-right: 30px;">
-													<div class="promotions-sidebar">
-														<div class="promotion-sidebar__link">
-															<a class="main-icon-tour" data-gtm-goal="{
-							event: 'Click Event',
-							button: 'widgets-promotions',
-							name: 'BGaming Million Drops',
-							position: '',
-						}" href="#">
-																<div class="tournir-img"
-																	style="background-image: url('/images/news/promotions/bgamingmilliondrops138.webp');">
-																</div>
-																<div class="bottom-block-tournir">
-																	<div class="wrap-left-tournir">
-																		<div class="wrap-right-tournir">
-																			<p>
-																				BGaming Million Drops
-																			</p>
-																		</div>
-																	</div>
-																</div>
-															</a>
-														</div>
-														<div data-context="app.data.contentConfig.news.special.promoNews.relevance"
-															data-context-item="4"
-															data-template="home-page/widgets/promotions/item-default">
-															<div class="main-priz-box">
-																<div class="main-priz">
-																	<div class="main-left-prizfond">
-																		<p class="main-priz-f">Призовой фонд</p>
-																		<div class="main-priz__left-amount-wr">
-																			<ul
-																				class="main-priz-number main-priz-number--with-cur">
-																				<li>
-																					<p>1</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>€</p>
-																				</li>
-																			</ul>
-																		</div>
-																	</div>
-																	<div class="main-right-prizfond">
-																		<div class="main-priz__right-amount-wr">
-																			<div class="c-countdown" data-countdown=""
-																				data-countdown-format="ddhhmmss"
-																				data-countdown-labels="{beforeFinish: 'до конца осталось', beforeStart: 'до начала осталось'}"
-																				data-finish-at="Fri Jan 01 2027 02:00:00 GMT+0300 (Москва, стандартное время)"
-																				data-has-destroyers="true"
-																				data-render="countdown"
-																				data-start-at="2026-01-01T00:00:00.000Z">
-																				<div class="c-countdown__label"
-																					data-countdown-label="">до конца
-																					осталось</div>
-																				<div class="c-countdown__timer">
-																					<div class="c-countdown__days"
-																						data-countdown-days=""
-																						data-countdown-format="d">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">328</span>
-																					</div>
-																					<div class="c-countdown__hours"
-																						data-countdown-format="h"
-																						data-countdown-hours="">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">14</span>
-																					</div>
-																					<div class="c-countdown__minutes"
-																						data-countdown-format="m"
-																						data-countdown-minutes="">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">16</span>
-																					</div>
-																					<div class="c-countdown__seconds"
-																						data-countdown-format="s"
-																						data-countdown-seconds="">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">21</span>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="owl-item cloned" style="width: 366px; margin-right: 30px;">
-													<div class="promotions-sidebar">
-														<div class="promotion-sidebar__link">
-															<a class="main-icon-tour" data-gtm-goal="{
-							event: 'Click Event',
-							button: 'widgets-promotions',
-							name: 'Drops &amp; Wins',
-							position: '',
-						}" href="#">
-																<div class="tournir-img"
-																	style="background-image: url('/images/news/promotions/dropsandwinsslots25-banner.webp');">
-																</div>
-																<div class="bottom-block-tournir">
-																	<div class="wrap-left-tournir">
-																		<div class="wrap-right-tournir">
-																			<p>
-																				Drops &amp; Wins
-																			</p>
-																		</div>
-																	</div>
-																</div>
-															</a>
-														</div>
-														<div data-context="app.data.contentConfig.news.special.promoNews.relevance"
-															data-context-item="5"
-															data-template="home-page/widgets/promotions/item-default">
-															<div class="main-priz-box">
-																<div class="main-priz">
-																	<div class="main-left-prizfond">
-																		<p class="main-priz-f">Призовой фонд</p>
-																		<div class="main-priz__left-amount-wr">
-																			<ul
-																				class="main-priz-number main-priz-number--with-cur">
-																				<li>
-																					<p>2</p>
-																				</li>
-																				<li>
-																					<p>4</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>€</p>
-																				</li>
-																			</ul>
-																		</div>
-																	</div>
-																	<div class="main-right-prizfond">
-																		<div class="main-priz__right-amount-wr">
-																			<div class="c-countdown" data-countdown=""
-																				data-countdown-format="ddhhmmss"
-																				data-countdown-labels="{beforeFinish: 'до конца осталось', beforeStart: 'до начала осталось'}"
-																				data-finish-at="Wed Mar 04 2026 21:00:00 GMT+0300 (Москва, стандартное время)"
-																				data-has-destroyers="true"
-																				data-render="countdown"
-																				data-start-at="2025-11-19T18:00:00.000Z">
-																				<div class="c-countdown__label"
-																					data-countdown-label="">до конца
-																					осталось</div>
-																				<div class="c-countdown__timer">
-																					<div class="c-countdown__days"
-																						data-countdown-days=""
-																						data-countdown-format="d">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">26</span>
-																					</div>
-																					<div class="c-countdown__hours"
-																						data-countdown-format="h"
-																						data-countdown-hours="">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">09</span>
-																					</div>
-																					<div class="c-countdown__minutes"
-																						data-countdown-format="m"
-																						data-countdown-minutes="">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">16</span>
-																					</div>
-																					<div class="c-countdown__seconds"
-																						data-countdown-format="s"
-																						data-countdown-seconds="">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">21</span>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="owl-item cloned" style="width: 366px; margin-right: 30px;">
-													<div class="promotions-sidebar">
-														<div class="promotion-sidebar__link">
-															<a class="main-icon-tour" data-gtm-goal="{
-							event: 'Click Event',
-							button: 'widgets-promotions',
-							name: 'Spinoleague',
-							position: '',
-						}" href="#">
-																<div class="tournir-img"
-																	style="background-image: url('/images/news/promotions/spinoleague1.webp');">
-																</div>
-																<div class="bottom-block-tournir">
-																	<div class="wrap-left-tournir">
-																		<div class="wrap-right-tournir">
-																			<p>
-																				Spinoleague
-																			</p>
-																		</div>
-																	</div>
-																</div>
-															</a>
-														</div>
-														<div data-context="app.data.contentConfig.news.special.promoNews.relevance"
-															data-context-item="6"
-															data-template="home-page/widgets/promotions/item-default">
-															<div class="main-priz-box">
-																<div class="main-priz">
-																	<div class="main-left-prizfond">
-																		<p class="main-priz-f">Призовой фонд</p>
-																		<div class="main-priz__left-amount-wr">
-																			<ul
-																				class="main-priz-number main-priz-number--with-cur">
-																				<li>
-																					<p>1</p>
-																				</li>
-																				<li>
-																					<p>2</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>€</p>
-																				</li>
-																			</ul>
-																		</div>
-																	</div>
-																	<div class="main-right-prizfond">
-																		<div class="main-priz__right-amount-wr">
-																			<div class="c-countdown" data-countdown=""
-																				data-countdown-format="ddhhmmss"
-																				data-countdown-labels="{beforeFinish: 'до конца осталось', beforeStart: 'до начала осталось'}"
-																				data-finish-at="Wed Mar 04 2026 16:00:00 GMT+0300 (Москва, стандартное время)"
-																				data-has-destroyers="true"
-																				data-render="countdown"
-																				data-start-at="2025-02-27T13:00:00.000Z">
-																				<div class="c-countdown__label"
-																					data-countdown-label="">до конца
-																					осталось</div>
-																				<div class="c-countdown__timer">
-																					<div class="c-countdown__days"
-																						data-countdown-days=""
-																						data-countdown-format="d">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">26</span>
-																					</div>
-																					<div class="c-countdown__hours"
-																						data-countdown-format="h"
-																						data-countdown-hours="">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">04</span>
-																					</div>
-																					<div class="c-countdown__minutes"
-																						data-countdown-format="m"
-																						data-countdown-minutes="">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">16</span>
-																					</div>
-																					<div class="c-countdown__seconds"
-																						data-countdown-format="s"
-																						data-countdown-seconds="">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">21</span>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="owl-item" style="width: 366px; margin-right: 30px;">
+										<div class="owl-stage-outer sidebar-swiper">
+											<div class="owl-stage swiper-wrapper">
+												<div class="owl-item swiper-slide">
 													<div class="promotions-sidebar">
 														<div class="promotion-sidebar__link">
 															<a class="main-icon-tour"
 																data-gtm-goal='{"event":"Click Event","button":"widgets-promotions","name":"Amuzons Clash","position":0}'
 																href="#">
 																<div class="tournir-img"
-																	style="background-image: url('/images/news/promotions/amuzonsclash137.webp');">
+																	style="background-image: url('src/amuzonsclash137.webp');">
 																</div>
 																<div class="bottom-block-tournir">
 																	<div class="wrap-left-tournir">
@@ -6920,14 +6095,14 @@
 														</div>
 													</div>
 												</div>
-												<div class="owl-item" style="width: 366px; margin-right: 30px;">
+												<div class="owl-item swiper-slide">
 													<div class="promotions-sidebar">
 														<div class="promotion-sidebar__link">
 															<a class="main-icon-tour"
 																data-gtm-goal='{"event":"Click Event","button":"widgets-promotions","name":"Spinomenal Drops","position":1}'
 																href="#">
 																<div class="tournir-img"
-																	style="background-image: url('/images/news/promotions/megaflashwin-banner.webp');">
+																	style="background-image: url('src/megaflashwin-banner.webp');">
 																</div>
 																<div class="bottom-block-tournir">
 																	<div class="wrap-left-tournir">
@@ -7002,14 +6177,14 @@
 														</div>
 													</div>
 												</div>
-												<div class="owl-item" style="width: 366px; margin-right: 30px;">
+												<div class="owl-item swiper-slide">
 													<div class="promotions-sidebar">
 														<div class="promotion-sidebar__link">
 															<a class="main-icon-tour"
 																data-gtm-goal='{"event":"Click Event","button":"widgets-promotions","name":"Platipus Network Tournament","position":2}'
 																href="#">
 																<div class="tournir-img"
-																	style="background-image: url('/images/news/promotions/platipusnetworktournament134.webp');">
+																	style="background-image: url('src/platipusnetworktournament134.webp');">
 																</div>
 																<div class="bottom-block-tournir">
 																	<div class="wrap-left-tournir">
@@ -7102,7 +6277,7 @@
 														</div>
 													</div>
 												</div>
-												<div class="owl-item active" style="width: 366px; margin-right: 30px;">
+												<div class="owl-item swiper-slide">
 													<div class="promotions-sidebar">
 														<div class="promotion-sidebar__link">
 															<a class="main-icon-tour"
@@ -7205,14 +6380,14 @@
 														</div>
 													</div>
 												</div>
-												<div class="owl-item" style="width: 366px; margin-right: 30px;">
+												<div class="owl-item swiper-slide">
 													<div class="promotions-sidebar">
 														<div class="promotion-sidebar__link">
 															<a class="main-icon-tour"
 																data-gtm-goal='{"event":"Click Event","button":"widgets-promotions","name":"BGaming Million Drops","position":4}'
 																href="#">
 																<div class="tournir-img"
-																	style="background-image: url('/images/news/promotions/bgamingmilliondrops138.webp');">
+																	style="background-image: url('src/bgamingmilliondrops138.webp');">
 																</div>
 																<div class="bottom-block-tournir">
 																	<div class="wrap-left-tournir">
@@ -7308,14 +6483,14 @@
 														</div>
 													</div>
 												</div>
-												<div class="owl-item" style="width: 366px; margin-right: 30px;">
+												<div class="owl-item swiper-slide">
 													<div class="promotions-sidebar">
 														<div class="promotion-sidebar__link">
 															<a class="main-icon-tour"
 																data-gtm-goal='{"event":"Click Event","button":"widgets-promotions","name":"Drops &amp; Wins","position":5}'
 																href="#">
 																<div class="tournir-img"
-																	style="background-image: url('/images/news/promotions/dropsandwinsslots25-banner.webp');">
+																	style="background-image: url('src/dropsandwinsslots25-banner.webp');">
 																</div>
 																<div class="bottom-block-tournir">
 																	<div class="wrap-left-tournir">
@@ -7414,14 +6589,14 @@
 														</div>
 													</div>
 												</div>
-												<div class="owl-item" style="width: 366px; margin-right: 30px;">
+												<div class="owl-item swiper-slide">
 													<div class="promotions-sidebar">
 														<div class="promotion-sidebar__link">
 															<a class="main-icon-tour"
 																data-gtm-goal='{"event":"Click Event","button":"widgets-promotions","name":"Spinoleague","position":6}'
 																href="#">
 																<div class="tournir-img"
-																	style="background-image: url('/images/news/promotions/spinoleague1.webp');">
+																	style="background-image: url('src/spinoleague1.webp');">
 																</div>
 																<div class="bottom-block-tournir">
 																	<div class="wrap-left-tournir">
@@ -7520,415 +6695,10 @@
 														</div>
 													</div>
 												</div>
-												<div class="owl-item cloned" style="width: 366px; margin-right: 30px;">
-													<div class="promotions-sidebar">
-														<div class="promotion-sidebar__link">
-															<a class="main-icon-tour" data-gtm-goal="{
-							event: 'Click Event',
-							button: 'widgets-promotions',
-							name: 'Amuzons Clash',
-							position: '',
-						}" href="#">
-																<div class="tournir-img"
-																	style="background-image: url('/images/news/promotions/amuzonsclash137.webp');">
-																</div>
-																<div class="bottom-block-tournir">
-																	<div class="wrap-left-tournir">
-																		<div class="wrap-right-tournir">
-																			<p>
-																				Amuzons Clash
-																			</p>
-																		</div>
-																	</div>
-																</div>
-															</a>
-														</div>
-														<div data-context="app.data.contentConfig.news.special.promoNews.relevance"
-															data-context-item="0"
-															data-template="home-page/widgets/promotions/item-default">
-															<div class="main-priz-box">
-																<div class="main-priz">
-																	<div class="main-left-prizfond">
-																		<p class="main-priz-f">Призовой фонд</p>
-																		<div class="main-priz__left-amount-wr">
-																			<ul
-																				class="main-priz-number main-priz-number--with-cur">
-																				<li>
-																					<p>5</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>€</p>
-																				</li>
-																			</ul>
-																		</div>
-																	</div>
-																	<div class="main-right-prizfond">
-																		<div class="main-priz__right-amount-wr">
-																			<div class="c-countdown" data-countdown=""
-																				data-countdown-format="ddhhmmss"
-																				data-countdown-labels="{beforeFinish: 'до конца осталось', beforeStart: 'до начала осталось'}"
-																				data-finish-at="Tue Feb 10 2026 02:01:00 GMT+0300 (Москва, стандартное время)"
-																				data-has-destroyers="true"
-																				data-render="countdown"
-																				data-start-at="2026-02-03T00:01:00.000Z">
-																				<div class="c-countdown__label"
-																					data-countdown-label="">до конца
-																					осталось</div>
-																				<div class="c-countdown__timer">
-																					<div class="c-countdown__days"
-																						data-countdown-days=""
-																						data-countdown-format="d">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">03</span>
-																					</div>
-																					<div class="c-countdown__hours"
-																						data-countdown-format="h"
-																						data-countdown-hours="">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">14</span>
-																					</div>
-																					<div class="c-countdown__minutes"
-																						data-countdown-format="m"
-																						data-countdown-minutes="">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">17</span>
-																					</div>
-																					<div class="c-countdown__seconds"
-																						data-countdown-format="s"
-																						data-countdown-seconds="">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">21</span>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="owl-item cloned" style="width: 366px; margin-right: 30px;">
-													<div class="promotions-sidebar">
-														<div class="promotion-sidebar__link">
-															<a class="main-icon-tour" data-gtm-goal="{
-							event: 'Click Event',
-							button: 'widgets-promotions',
-							name: 'Spinomenal Drops',
-							position: '',
-						}" href="#">
-																<div class="tournir-img"
-																	style="background-image: url('/images/news/promotions/megaflashwin-banner.webp');">
-																</div>
-																<div class="bottom-block-tournir">
-																	<div class="wrap-left-tournir">
-																		<div class="wrap-right-tournir">
-																			<p>
-																				Spinomenal Drops
-																			</p>
-																		</div>
-																	</div>
-																</div>
-															</a>
-														</div>
-														<div data-context="app.data.contentConfig.news.special.promoNews.relevance"
-															data-context-item="1"
-															data-template="home-page/widgets/promotions/item-default">
-															<div class="main-priz-box">
-																<div class="main-priz">
-																	<div class="main-left-prizfond">
-																		<p class="main-priz-f">Призовой фонд</p>
-																		<div class="main-priz__left-amount-wr">
-																			<ul
-																				class="main-priz-number main-priz-number--with-cur">
-																				<li>
-																					<p>∞</p>
-																				</li>
-																			</ul>
-																		</div>
-																	</div>
-																	<div class="main-right-prizfond">
-																		<div class="main-priz__right-amount-wr">
-																			<div class="c-countdown" data-countdown=""
-																				data-countdown-format="ddhhmmss"
-																				data-countdown-labels="{beforeFinish: 'до конца осталось', beforeStart: 'до начала осталось'}"
-																				data-finish-at="Mon Mar 02 2026 00:00:00 GMT+0300 (Москва, стандартное время)"
-																				data-has-destroyers="true"
-																				data-render="countdown"
-																				data-start-at="2026-02-02T00:00:00.000Z">
-																				<div class="c-countdown__label"
-																					data-countdown-label="">до конца
-																					осталось</div>
-																				<div class="c-countdown__timer">
-																					<div class="c-countdown__days"
-																						data-countdown-days=""
-																						data-countdown-format="d">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">23</span>
-																					</div>
-																					<div class="c-countdown__hours"
-																						data-countdown-format="h"
-																						data-countdown-hours="">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">12</span>
-																					</div>
-																					<div class="c-countdown__minutes"
-																						data-countdown-format="m"
-																						data-countdown-minutes="">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">16</span>
-																					</div>
-																					<div class="c-countdown__seconds"
-																						data-countdown-format="s"
-																						data-countdown-seconds="">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">21</span>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="owl-item cloned" style="width: 366px; margin-right: 30px;">
-													<div class="promotions-sidebar">
-														<div class="promotion-sidebar__link">
-															<a class="main-icon-tour" data-gtm-goal="{
-							event: 'Click Event',
-							button: 'widgets-promotions',
-							name: 'Platipus Network Tournament',
-							position: '',
-						}" href="#">
-																<div class="tournir-img"
-																	style="background-image: url('/images/news/promotions/platipusnetworktournament134.webp');">
-																</div>
-																<div class="bottom-block-tournir">
-																	<div class="wrap-left-tournir">
-																		<div class="wrap-right-tournir">
-																			<p>
-																				Platipus Network Tournament
-																			</p>
-																		</div>
-																	</div>
-																</div>
-															</a>
-														</div>
-														<div data-context="app.data.contentConfig.news.special.promoNews.relevance"
-															data-context-item="2"
-															data-template="home-page/widgets/promotions/item-default">
-															<div class="main-priz-box">
-																<div class="main-priz">
-																	<div class="main-left-prizfond">
-																		<p class="main-priz-f">Призовой фонд</p>
-																		<div class="main-priz__left-amount-wr">
-																			<ul
-																				class="main-priz-number main-priz-number--with-cur">
-																				<li>
-																					<p>1</p>
-																				</li>
-																				<li>
-																					<p>2</p>
-																				</li>
-																				<li>
-																					<p>5</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>€</p>
-																				</li>
-																			</ul>
-																		</div>
-																	</div>
-																	<div class="main-right-prizfond">
-																		<div class="main-priz__right-amount-wr">
-																			<div class="c-countdown" data-countdown=""
-																				data-countdown-format="ddhhmmss"
-																				data-countdown-labels="{beforeFinish: 'до конца осталось', beforeStart: 'до начала осталось'}"
-																				data-finish-at="Sun Sep 20 2026 02:01:00 GMT+0300 (Москва, стандартное время)"
-																				data-has-destroyers="true"
-																				data-render="countdown"
-																				data-start-at="2026-01-29T00:01:00.000Z">
-																				<div class="c-countdown__label"
-																					data-countdown-label="">до конца
-																					осталось</div>
-																				<div class="c-countdown__timer">
-																					<div class="c-countdown__days"
-																						data-countdown-days=""
-																						data-countdown-format="d">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">225</span>
-																					</div>
-																					<div class="c-countdown__hours"
-																						data-countdown-format="h"
-																						data-countdown-hours="">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">14</span>
-																					</div>
-																					<div class="c-countdown__minutes"
-																						data-countdown-format="m"
-																						data-countdown-minutes="">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">17</span>
-																					</div>
-																					<div class="c-countdown__seconds"
-																						data-countdown-format="s"
-																						data-countdown-seconds="">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">21</span>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-												<div class="owl-item cloned" style="width: 366px; margin-right: 30px;">
-													<div class="promotions-sidebar">
-														<div class="promotion-sidebar__link">
-															<a class="main-icon-tour" data-gtm-goal="{
-							event: 'Click Event',
-							button: 'widgets-promotions',
-							name: 'Spin Express',
-							position: '',
-						}" href="#">
-																<div class="tournir-img"
-																	style="background-image: url('src/spinexpress136.webp');">
-																</div>
-																<div class="bottom-block-tournir">
-																	<div class="wrap-left-tournir">
-																		<div class="wrap-right-tournir">
-																			<p>
-																				Spin Express
-																			</p>
-																		</div>
-																	</div>
-																</div>
-															</a>
-														</div>
-														<div data-context="app.data.contentConfig.news.special.promoNews.relevance"
-															data-context-item="3"
-															data-template="home-page/widgets/promotions/item-default">
-															<div class="main-priz-box">
-																<div class="main-priz">
-																	<div class="main-left-prizfond">
-																		<p class="main-priz-f">Призовой фонд</p>
-																		<div class="main-priz__left-amount-wr">
-																			<ul
-																				class="main-priz-number main-priz-number--with-cur">
-																				<li>
-																					<p>1</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>0</p>
-																				</li>
-																				<li>
-																					<p>€</p>
-																				</li>
-																			</ul>
-																		</div>
-																	</div>
-																	<div class="main-right-prizfond">
-																		<div class="main-priz__right-amount-wr">
-																			<div class="c-countdown" data-countdown=""
-																				data-countdown-format="ddhhmmss"
-																				data-countdown-labels="{beforeFinish: 'до конца осталось', beforeStart: 'до начала осталось'}"
-																				data-finish-at="Sun Jan 03 2027 01:00:00 GMT+0300 (Москва, стандартное время)"
-																				data-has-destroyers="true"
-																				data-render="countdown"
-																				data-start-at="2026-01-01T15:00:00.000Z">
-																				<div class="c-countdown__label"
-																					data-countdown-label="">до конца
-																					осталось</div>
-																				<div class="c-countdown__timer">
-																					<div class="c-countdown__days"
-																						data-countdown-days=""
-																						data-countdown-format="d">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">330</span>
-																					</div>
-																					<div class="c-countdown__hours"
-																						data-countdown-format="h"
-																						data-countdown-hours="">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">13</span>
-																					</div>
-																					<div class="c-countdown__minutes"
-																						data-countdown-format="m"
-																						data-countdown-minutes="">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">16</span>
-																					</div>
-																					<div class="c-countdown__seconds"
-																						data-countdown-format="s"
-																						data-countdown-seconds="">
-																						<span class="c-countdown__value"
-																							data-countdown-value="">21</span>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
 											</div>
 										</div>
-										<div class="owl-nav">
-											<div class="owl-prev"></div>
-											<div class="owl-next"></div>
-										</div>
-										<div class="owl-dots">
-											<div class="owl-dot"><span></span></div>
-											<div class="owl-dot"><span></span></div>
-											<div class="owl-dot"><span></span></div>
-											<div class="owl-dot active"><span></span></div>
-											<div class="owl-dot"><span></span></div>
-											<div class="owl-dot"><span></span></div>
-											<div class="owl-dot"><span></span></div>
-										</div>
+											<div class="sidebar-swiper__btn sidebar-swiper__btn_prev"></div>
+											<div class="sidebar-swiper__btn sidebar-swiper__btn_next"></div>
 									</div>
 								</div>
 								<div class="all-action">
@@ -7941,49 +6711,10 @@
 								data-event="bonusChoose" data-template="home-page/widgets/bonuses">
 								<div class="main-action">
 									<p class="main-win-now-label">Бонусы</p>
-									<div class="owl-carousel owl-carousel-sidebar mainpage-sidebar-bonuses owl-loaded">
-										<div class="owl-stage-outer">
-											<div class="owl-stage"
-												style="transform: translate3d(-1128px, 0px, 0px); transition: 1s; width: 2632px;">
-												<div class="owl-item cloned" style="width: 366px; margin-right: 10px;">
-													<div class="main-block-bonus">
-														<div class="wrapper-bonus-img">
-															<img class="disp-tournir" src="src/welcome_bonus.png" />
-															<img class="nondisp-tournir"
-																src="src/welcome_bonus-s.png" />
-														</div>
-														<div class="wrapper-text-block-bonus">
-															<p class="bonus10">Спортбонус</p>
-															<div class="btn-1 js-select-bonus" data-gtm-goal="{
-									event: 'Click Event',
-									button: 'widgets-bonuses',
-									name: 'SPORT_WELCOME_BONUS',
-									option: 'get'
-								}" data-identifier="SPORT_WELCOME_BONUS" data-redirect="/profile/deposit">Получить</div>
-														</div>
-														<div class="clear"></div>
-													</div>
-												</div>
-												<div class="owl-item cloned" style="width: 366px; margin-right: 10px;">
-													<div class="main-block-bonus">
-														<div class="wrapper-bonus-img">
-															<img class="disp-tournir" src="src/welcome_bonus_vip.png" />
-															<img class="nondisp-tournir"
-																src="src/welcome_bonus_vip-s.png" />
-														</div>
-														<div class="wrapper-text-block-bonus">
-															<p class="bonus10">Спортбонус</p>
-															<div class="btn-1 js-select-bonus" data-gtm-goal="{
-									event: 'Click Event',
-									button: 'widgets-bonuses',
-									name: 'VIP_SPORT_WELCOME_BONUS',
-									option: 'get'
-								}" data-identifier="VIP_SPORT_WELCOME_BONUS" data-redirect="/profile/deposit">Получить</div>
-														</div>
-														<div class="clear"></div>
-													</div>
-												</div>
-												<div class="owl-item" style="width: 366px; margin-right: 10px;">
+									<div class="promotions-sidebar owl-carousel owl-carousel-sidebar mainpage-sidebar-bonuses owl-loaded">
+										<div class="owl-stage-outer sidebar-swiper swiper">
+											<div class="owl-stage swiper-wrapper">
+												<div class="swiper-slide">
 													<div class="main-block-bonus">
 														<div class="wrapper-bonus-img">
 															<img class="disp-tournir"
@@ -8003,7 +6734,7 @@
 														<div class="clear"></div>
 													</div>
 												</div>
-												<div class="owl-item active" style="width: 366px; margin-right: 10px;">
+												<div class="swiper-slide">
 													<div class="main-block-bonus">
 														<div class="wrapper-bonus-img">
 															<img class="disp-tournir" src="src/welcome_bonus.png" />
@@ -8022,7 +6753,7 @@
 														<div class="clear"></div>
 													</div>
 												</div>
-												<div class="owl-item" style="width: 366px; margin-right: 10px;">
+												<div class="swiper-slide">
 													<div class="main-block-bonus">
 														<div class="wrapper-bonus-img">
 															<img class="disp-tournir" src="src/welcome_bonus_vip.png" />
@@ -8037,184 +6768,23 @@
 									name: 'VIP_SPORT_WELCOME_BONUS',
 									option: 'get'
 								}" data-identifier="VIP_SPORT_WELCOME_BONUS" data-redirect="/profile/deposit">Получить</div>
-														</div>
-														<div class="clear"></div>
-													</div>
-												</div>
-												<div class="owl-item cloned" style="width: 366px; margin-right: 10px;">
-													<div class="main-block-bonus">
-														<div class="wrapper-bonus-img">
-															<img class="disp-tournir"
-																src="src/welcome-bonus-sidebar-top.png" />
-															<img class="nondisp-tournir"
-																src="src/welcome-bonus-sidebar-top.png" />
-														</div>
-														<div class="wrapper-text-block-bonus">
-															<p class="bonus10">Бонус</p>
-															<div class="btn-1 js-select-bonus" data-gtm-goal="{
-									event: 'Click Event',
-									button: 'widgets-bonuses',
-									name: 'WELCOME_BONUS',
-									option: 'get'
-								}" data-identifier="WELCOME_BONUS" data-redirect="/profile/deposit">Получить</div>
-														</div>
-														<div class="clear"></div>
-													</div>
-												</div>
-												<div class="owl-item cloned" style="width: 366px; margin-right: 10px;">
-													<div class="main-block-bonus">
-														<div class="wrapper-bonus-img">
-															<img class="disp-tournir" src="src/welcome_bonus.png" />
-															<img class="nondisp-tournir"
-																src="src/welcome_bonus-s.png" />
-														</div>
-														<div class="wrapper-text-block-bonus">
-															<p class="bonus10">Спортбонус</p>
-															<div class="btn-1 js-select-bonus" data-gtm-goal="{
-									event: 'Click Event',
-									button: 'widgets-bonuses',
-									name: 'SPORT_WELCOME_BONUS',
-									option: 'get'
-								}" data-identifier="SPORT_WELCOME_BONUS" data-redirect="/profile/deposit">Получить</div>
 														</div>
 														<div class="clear"></div>
 													</div>
 												</div>
 											</div>
 										</div>
-										<div class="owl-nav">
-											<div class="owl-prev"></div>
-											<div class="owl-next"></div>
-										</div>
-										<div class="owl-dots">
-											<div class="owl-dot"><span></span></div>
-											<div class="owl-dot active"><span></span></div>
-											<div class="owl-dot"><span></span></div>
-										</div>
+										<div class="sidebar-swiper__btn sidebar-swiper__btn_prev sidebar-swiper__btn_half"></div>
+										<div class="sidebar-swiper__btn sidebar-swiper__btn_next sidebar-swiper__btn_half"></div>
 									</div>
 								</div>
 							</div>
 							<div data-template="home-page/widgets/games-of-month">
 								<p class="main-win-now-label">Игры месяца</p>
-								<div class="games-sidebar owl-carousel owl-carousel-sidebar owl-loaded">
-									<div class="owl-stage-outer">
-										<div class="owl-stage"
-											style="transform: translate3d(-1980px, 0px, 0px); transition: 1s; width: 4752px;">
-											<div class="owl-item cloned" style="width: 366px; margin-right: 30px;">
-												<div class="main-current-tournament curent-rozgr custom-fonts-1">
-													<div
-														class="tournament-sidebar__link tournament-sidebar__link--game">
-														<div class="main-icon-tour">
-															<img src="src/4-01-26.webp" />
-															<div class="tournament-sidebar__btn-wr">
-																<div class="tournament-sidebar__btn-wr-inner">
-																	<a class="natural-game game-button tournament-sidebar__btn"
-																		data-gtm-goal="{
-								event: 'Click Event',
-								button: 'widgets-month_game-game',
-								currency_type: 'Real',
-								game_identifier: 'truelab/FrostyRage',
-								position: 3
-							}" href="#">Играть</a>
-																	<div class="demo-block">
-																		<a data-gtm-goal="{
-									event: 'Click Event',
-									button: 'widgets-month_game-game',
-									currency_type: 'Fun',
-									game_identifier: 'truelab/FrostyRage',
-									position: 3
-								}" href="#">Демо</a>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="bottom-block-tournir">
-															<div class="wrap-left-tournir">
-																<div class="wrap-right-tournir">
-																	<p>Frosty Rage - Truelab</p>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="owl-item cloned" style="width: 366px; margin-right: 30px;">
-												<div class="main-current-tournament curent-rozgr custom-fonts-1">
-													<div
-														class="tournament-sidebar__link tournament-sidebar__link--game">
-														<div class="main-icon-tour">
-															<img src="src/5-01-26.webp" />
-															<div class="tournament-sidebar__btn-wr">
-																<div class="tournament-sidebar__btn-wr-inner">
-																	<a class="natural-game game-button tournament-sidebar__btn"
-																		data-gtm-goal="{
-								event: 'Click Event',
-								button: 'widgets-month_game-game',
-								currency_type: 'Real',
-								game_identifier: 'slotegrator/FortuneBags',
-								position: 4
-							}" href="#">Играть</a>
-																	<div class="demo-block">
-																		<a data-gtm-goal="{
-									event: 'Click Event',
-									button: 'widgets-month_game-game',
-									currency_type: 'Fun',
-									game_identifier: 'slotegrator/FortuneBags',
-									position: 4
-								}" href="#">Демо</a>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="bottom-block-tournir">
-															<div class="wrap-left-tournir">
-																<div class="wrap-right-tournir">
-																	<p>Fortune Bags - Amigo</p>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="owl-item cloned" style="width: 366px; margin-right: 30px;">
-												<div class="main-current-tournament curent-rozgr custom-fonts-1">
-													<div
-														class="tournament-sidebar__link tournament-sidebar__link--game">
-														<div class="main-icon-tour">
-															<img src="src/6-01-26.webp" />
-															<div class="tournament-sidebar__btn-wr">
-																<div class="tournament-sidebar__btn-wr-inner">
-																	<a class="natural-game game-button tournament-sidebar__btn"
-																		data-gtm-goal="{
-								event: 'Click Event',
-								button: 'widgets-month_game-game',
-								currency_type: 'Real',
-								game_identifier: 'mancala/CoinCrazeJackpot',
-								position: 5
-							}" href="#">Играть</a>
-																	<div class="demo-block">
-																		<a data-gtm-goal="{
-									event: 'Click Event',
-									button: 'widgets-month_game-game',
-									currency_type: 'Fun',
-									game_identifier: 'mancala/CoinCrazeJackpot',
-									position: 5
-								}" href="#">Демо</a>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="bottom-block-tournir">
-															<div class="wrap-left-tournir">
-																<div class="wrap-right-tournir">
-																	<p>Coin Craze Jackpot - Mancala</p>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="owl-item" style="width: 366px; margin-right: 30px;">
+								<div class="promotions-sidebar owl-carousel owl-carousel-sidebar owl-loaded">
+									<div class="owl-stage-outer sidebar-swiper swiper">
+										<div class="owl-stage swiper-wrapper">
+											<div class="swiper-slide">
 												<div class="main-current-tournament curent-rozgr custom-fonts-1">
 													<div
 														class="tournament-sidebar__link tournament-sidebar__link--game">
@@ -8252,7 +6822,7 @@
 													</div>
 												</div>
 											</div>
-											<div class="owl-item" style="width: 366px; margin-right: 30px;">
+											<div class="swiper-slide">
 												<div class="main-current-tournament curent-rozgr custom-fonts-1">
 													<div
 														class="tournament-sidebar__link tournament-sidebar__link--game">
@@ -8290,7 +6860,7 @@
 													</div>
 												</div>
 											</div>
-											<div class="owl-item active" style="width: 366px; margin-right: 30px;">
+											<div class="swiper-slide">
 												<div class="main-current-tournament curent-rozgr custom-fonts-1">
 													<div
 														class="tournament-sidebar__link tournament-sidebar__link--game">
@@ -8328,7 +6898,7 @@
 													</div>
 												</div>
 											</div>
-											<div class="owl-item" style="width: 366px; margin-right: 30px;">
+											<div class="swiper-slide">
 												<div class="main-current-tournament curent-rozgr custom-fonts-1">
 													<div
 														class="tournament-sidebar__link tournament-sidebar__link--game">
@@ -8366,7 +6936,7 @@
 													</div>
 												</div>
 											</div>
-											<div class="owl-item" style="width: 366px; margin-right: 30px;">
+											<div class="swiper-slide">
 												<div class="main-current-tournament curent-rozgr custom-fonts-1">
 													<div
 														class="tournament-sidebar__link tournament-sidebar__link--game">
@@ -8404,7 +6974,7 @@
 													</div>
 												</div>
 											</div>
-											<div class="owl-item" style="width: 366px; margin-right: 30px;">
+											<div class="swiper-slide">
 												<div class="main-current-tournament curent-rozgr custom-fonts-1">
 													<div
 														class="tournament-sidebar__link tournament-sidebar__link--game">
@@ -8436,120 +7006,6 @@
 															<div class="wrap-left-tournir">
 																<div class="wrap-right-tournir">
 																	<p>Coin Craze Jackpot - Mancala</p>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="owl-item cloned" style="width: 366px; margin-right: 30px;">
-												<div class="main-current-tournament curent-rozgr custom-fonts-1">
-													<div
-														class="tournament-sidebar__link tournament-sidebar__link--game">
-														<div class="main-icon-tour">
-															<img src="src/1-01-26.webp" />
-															<div class="tournament-sidebar__btn-wr">
-																<div class="tournament-sidebar__btn-wr-inner">
-																	<a class="natural-game game-button tournament-sidebar__btn"
-																		data-gtm-goal="{
-								event: 'Click Event',
-								button: 'widgets-month_game-game',
-								currency_type: 'Real',
-								game_identifier: 'hacksaw/LeVikingV',
-								position: 0
-							}" href="#">Играть</a>
-																	<div class="demo-block">
-																		<a data-gtm-goal="{
-									event: 'Click Event',
-									button: 'widgets-month_game-game',
-									currency_type: 'Fun',
-									game_identifier: 'hacksaw/LeVikingV',
-									position: 0
-								}" href="#">Демо</a>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="bottom-block-tournir">
-															<div class="wrap-left-tournir">
-																<div class="wrap-right-tournir">
-																	<p>Le Viking - Hacksaw</p>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="owl-item cloned" style="width: 366px; margin-right: 30px;">
-												<div class="main-current-tournament curent-rozgr custom-fonts-1">
-													<div
-														class="tournament-sidebar__link tournament-sidebar__link--game">
-														<div class="main-icon-tour">
-															<img src="src/2-01-26.webp" />
-															<div class="tournament-sidebar__btn-wr">
-																<div class="tournament-sidebar__btn-wr-inner">
-																	<a class="natural-game game-button tournament-sidebar__btn"
-																		data-gtm-goal="{
-								event: 'Click Event',
-								button: 'widgets-month_game-game',
-								currency_type: 'Real',
-								game_identifier: 'egt/SupremeHot',
-								position: 1
-							}" href="#">Играть</a>
-																	<div class="demo-block">
-																		<a data-gtm-goal="{
-									event: 'Click Event',
-									button: 'widgets-month_game-game',
-									currency_type: 'Fun',
-									game_identifier: 'egt/SupremeHot',
-									position: 1
-								}" href="#">Демо</a>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="bottom-block-tournir">
-															<div class="wrap-left-tournir">
-																<div class="wrap-right-tournir">
-																	<p>Supreme Hot - Amusnet Interactive</p>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="owl-item cloned" style="width: 366px; margin-right: 30px;">
-												<div class="main-current-tournament curent-rozgr custom-fonts-1">
-													<div
-														class="tournament-sidebar__link tournament-sidebar__link--game">
-														<div class="main-icon-tour">
-															<img src="src/3-01-26.webp" />
-															<div class="tournament-sidebar__btn-wr">
-																<div class="tournament-sidebar__btn-wr-inner">
-																	<a class="natural-game game-button tournament-sidebar__btn"
-																		data-gtm-goal="{
-								event: 'Click Event',
-								button: 'widgets-month_game-game',
-								currency_type: 'Real',
-								game_identifier: '1spin4win/RoxFruits243',
-								position: 2
-							}" href="#">Играть</a>
-																	<div class="demo-block">
-																		<a data-gtm-goal="{
-									event: 'Click Event',
-									button: 'widgets-month_game-game',
-									currency_type: 'Fun',
-									game_identifier: '1spin4win/RoxFruits243',
-									position: 2
-								}" href="#">Демо</a>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="bottom-block-tournir">
-															<div class="wrap-left-tournir">
-																<div class="wrap-right-tournir">
-																	<p>ROX Fruits 243 - 1spin4win</p>
 																</div>
 															</div>
 														</div>
@@ -8558,10 +7014,8 @@
 											</div>
 										</div>
 									</div>
-									<div class="owl-nav">
-										<div class="owl-prev"></div>
-										<div class="owl-next"></div>
-									</div>
+										<div class="sidebar-swiper__btn sidebar-swiper__btn_prev sidebar-swiper__btn_half"></div>
+										<div class="sidebar-swiper__btn sidebar-swiper__btn_next sidebar-swiper__btn_half"></div>
 									<div class="owl-dots">
 										<div class="owl-dot"><span></span></div>
 										<div class="owl-dot"><span></span></div>
@@ -9405,6 +7859,7 @@
 		charset="">"undefined" != typeof yaCounter52492093 && yaCounter52492093.userParams({ UserID: google_tag_manager["rm"]["7355668"](26), client_score: google_tag_manager["rm"]["7355668"](27) }); "function" == typeof gtag && gtag("set", "user_properties", { user_id: google_tag_manager["rm"]["7355668"](28), client_score: google_tag_manager["rm"]["7355668"](29) });</script>
 	<script type="text/javascript" id=""
 		charset="">"undefined" != typeof yaCounter52492093 && yaCounter52492093.userParams({ UserID: google_tag_manager["rm"]["7355668"](35), client_score: google_tag_manager["rm"]["7355668"](36) }); "function" == typeof gtag && gtag("set", "user_properties", { user_id: google_tag_manager["rm"]["7355668"](37), client_score: google_tag_manager["rm"]["7355668"](38) });</script> -->
+	<script src="src/additional/swiper-bundle.min.js"></script>
 	<script src="src/additional/script.js"></script>
 </body>
 
