@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', e => {
             },
 
             slidesPerView: 1,
+            loopFillGroupWithBlank: true,
             allowTouchMove: false,
             loop: true
         });
@@ -52,15 +53,15 @@ document.addEventListener('DOMContentLoaded', e => {
                 prevEl: el.querySelector('.mob-swiper__btn_prev')
             },
 
-            slidesPerView: 1
+            slidesPerView: 1,
         });
     });
 
     const flipSlider = new Swiper('.flip-swiper', {
         navigation: {
-        nextEl: '.flip-swiper__next',
-        prevEl: '.flip-swiper__prev',
-    },
+            nextEl: '.flip-swiper__next',
+            prevEl: '.flip-swiper__prev'
+        },
         direction: 'vertical',
         effect: 'flip',
         speed: 750,
@@ -68,6 +69,7 @@ document.addEventListener('DOMContentLoaded', e => {
             delay: 5000,
             disableOnInteraction: false
         },
+        slidesPerView: 1,
         loop: true,
         pagination: {
             el: '.main-slider-nav',
@@ -80,6 +82,7 @@ document.addEventListener('DOMContentLoaded', e => {
         fadeEffect: {
             crossFade: true
         },
+        slidesPerView: 1,
         loop: true,
         allowTouchMove: false
     });

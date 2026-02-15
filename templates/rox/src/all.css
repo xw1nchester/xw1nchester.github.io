@@ -30734,7 +30734,7 @@ img {
     }
 
     .main-money {
-        background: url("round-footer.png");
+        /* background: url("round-footer.png"); */
         background-repeat: no-repeat;
         background-size: 100% 100%;
         border-radius: 49px;
@@ -30812,7 +30812,7 @@ img {
     }
 
     .for-right-back {
-        /* background: url("round-right.png") no-repeat right center; */
+        background: url("round-right.png") no-repeat right center;
         position: absolute;
         right: -1px;
         top: 0;
@@ -30821,7 +30821,7 @@ img {
     }
 
     .main-money {
-        /* background: url("round-center.png") repeat-x center #1a1a1a; */
+        background: url("round-center.png") repeat-x center #1a1a1a;
         border-radius: 29px;
         padding: 0
     }
@@ -35837,7 +35837,7 @@ input:-webkit-autofill[name=mobile_phone]::first-line {
 
 @media all and (min-width: 574px) {
     .main-video-block {
-        background-image: url(MobLasVegas962px.jpg);
+        /* background-image: url(MobLasVegas962px.jpg); */
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
