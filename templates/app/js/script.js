@@ -58,6 +58,11 @@ document.addEventListener('click', function (e) {
     if (targetEl.closest('.games-categories__btn_next')) {
         scrollList(gamesCategories, 200);
     }
+
+    if (targetEl.closest('.footer-dropdown__btn')) {
+        const parent = targetEl.closest('.footer-dropdown');
+        parent.classList.toggle('active');
+    }
 });
 
 window.addEventListener('scroll', () => {
@@ -112,6 +117,27 @@ new Swiper('.games-slider', {
         992: {
             slidesPerView: 3.75,
             spaceBetween: 24
+        }
+    }
+});
+
+new Swiper('.blog-slider', {
+    slidesPerView: 1.25,
+    spaceBetween: 12,
+    navigation: {
+        nextEl: '.blog-slider__btn_next',
+        prevEl: '.blog-slider__btn_prev'
+    },
+    breakpoints: {
+        576: {
+            slidesPerView: 1.75
+        },
+        768: {
+            slidesPerView: 2.5,
+            spaceBetween: 16
+        },
+        992: {
+            slidesPerView: 3
         }
     }
 });
