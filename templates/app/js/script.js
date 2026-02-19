@@ -5,24 +5,39 @@ const wrapper = document.querySelector('.wrapper');
 const header = document.querySelector('.header');
 const categories = document.querySelector('.categories__list');
 const gamesCategories = document.querySelector('.games-categories__list');
+const gameCategories = document.querySelector('.game-category__categories');
 
 const scrollList = (el, px) => {
-    el.scrollBy({ left: px, behavior: 'smooth' });
+    const current = el.scrollLeft;
+    const max = el.scrollWidth - el.clientWidth;
+    const target = current + px;
+    const parent = el.parentElement;
 
-    setTimeout(() => {
-        const scrollLeft = el.scrollLeft;
-        const maxScrollLeft = el.scrollWidth - el.clientWidth;
-        const parent = el.parentElement;
+    let finalTarget = target;
 
-        if (scrollLeft === 0) {
-            parent.classList.add('start');
-        } else if (scrollLeft >= maxScrollLeft) {
-            parent.classList.add('end');
-        } else {
-            parent.classList.remove('start');
-            parent.classList.remove('end');
-        }
-    }, 100);
+    if (target < 100) {
+        finalTarget = 0;
+    }
+
+    if (max - target < 100) {
+        finalTarget = max;
+    }
+
+    el.scrollTo({
+        left: finalTarget,
+        behavior: 'smooth'
+    });
+
+    if (finalTarget === 0) {
+        parent.classList.add('start');
+        parent.classList.remove('end');
+    } else if (finalTarget === max) {
+        parent.classList.add('end');
+        parent.classList.remove('start');
+    } else {
+        parent.classList.remove('start');
+        parent.classList.remove('end');
+    }
 };
 
 document.addEventListener('click', function (e) {
@@ -57,6 +72,14 @@ document.addEventListener('click', function (e) {
 
     if (targetEl.closest('.games-categories__btn_next')) {
         scrollList(gamesCategories, 200);
+    }
+
+    if (targetEl.closest('.game-category__btn_prev')) {
+        scrollList(gameCategories, -200);
+    }
+
+    if (targetEl.closest('.game-category__btn_next')) {
+        scrollList(gameCategories, 200);
     }
 
     if (targetEl.closest('.footer-dropdown__btn')) {
