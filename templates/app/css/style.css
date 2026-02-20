@@ -955,6 +955,11 @@ button {
 .find-slider {
   width: 100%;
 }
+@media (max-width: 992px) {
+  .find-slider {
+    padding: 0 20px;
+  }
+}
 
 .categories {
   padding: 64px 0;
