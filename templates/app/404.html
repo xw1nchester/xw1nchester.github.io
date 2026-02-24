@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="css/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__inner">
+                <a class="header__logo" href="#">
+                    <img alt="logo" src="img/header/logo.svg" />
+                </a>
+                <nav class="header__nav-wrapper">
+                    <div class="header__nav">
+                        <div class="header__nav-menu">
+                            Меню
+
+                            <button class="header__nav-close">
+                                <img alt="close" src="img/header/close.svg" />
+                            </button>
+                        </div>
+                        <a class="header__link item" href="#">
+                            <img alt="icon" class="mobile-show" src="img/header/app.svg" />
+                            Приложения
+                        </a>
+                        <a class="header__link item" href="#">
+                            <img alt="icon" class="mobile-show" src="img/header/games.svg" />
+                            Игры
+                        </a>
+                        <a class="header__link item" href="#">
+                            <img alt="icon" class="mobile-show" src="img/header/kiosk.svg" />
+                            Киоск
+                        </a>
+                        <a class="header__link item" href="#">
+                            <img alt="icon" class="mobile-show" src="img/header/blog.svg" />
+                            Блог
+                        </a>
+                        <a class="header__link item" href="#">
+                            <img alt="icon" class="mobile-show" src="img/header/dev.svg" />
+                            Разработчикам
+                        </a>
+                        <a class="header__link item" href="#">
+                            <img alt="icon" class="mobile-show" src="img/header/help.svg" />
+                            Помощь
+                        </a>
+                    </div>
+                </nav>
+                <div class="header__btns">
+                    <!-- TODO: язык? -->
+                    <button class="header__btn item">
+                        <img alt="icon" src="img/header/search.svg" />
+                        <span class="mobile-hide">Найти</span>
+                    </button>
+                    <a class="header__btn header__btn_download" href="#">
+                        <span>Скачать<span class="mobile-hide"> RuStore</span></span>
+                    </a>
+                    <button class="header__btn mobile-show burger-btn">
+                        <img alt="burger" src="img/header/burger.svg" />
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div class="notfound">
+            <div class="notfound__container container">
+                <div class="notfound__inner inner">
+                    <div class="notfound__content">
+                        <img src="img/404.webp" alt="404" class="notfound__img">
+                        <p class="notfound__text">Такой страницы не существует</p>
+                        <a href="#" class="btn">Перейти на главную</a>
+                    </div>
+
+                    <div class="recomendations">
+                        <p class="recomendations__title">Возможно, вам понравится</p>
+
+                        <div class="slider-wrapper">
+                            <div class="similar-slider swiper">
+                                <div class="swiper-wrapper">
+                                    <a href="#" class="game swiper-slide">
+                                        <div class="game__icon ibg">
+                                            <img alt="app" src="img/apps/avito.webp" />
+                                        </div>
+                                        <div class="game__content">
+                                            <p class="game__title">Авито – услуги, работа, авто</p>
+                                            <p class="game__text">Объявления: услуги, товары, недвижимость,
+                                                отели
+                                                и
+                                                гостиницы для путешествия.</p>
+                                            <div class="game__rating item">
+                                                <svg fill="none" height="13" viewbox="0 0 14 13" width="14"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.23418 4.38299L12.1872 4.66631C13.2148 4.76489 13.5299 5.76861 12.7364 6.42804L10.4245 8.34948L11.2828 11.4797C11.5646 12.5076 10.6902 13.1299 9.81434 12.5113L7.00521 10.527L4.19608 12.5113C3.32378 13.1274 2.44575 12.5078 2.72764 11.4797L3.5859 8.34948L1.27399 6.42804C0.477216 5.76584 0.791105 4.76534 1.82304 4.66631L4.77555 4.38299L6.07635 1.3839C6.48371 0.444699 7.52696 0.44517 7.93398 1.38399L9.23418 4.38299Z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                                4.7
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="game swiper-slide">
+                                        <div class="game__icon ibg">
+                                            <img alt="app" src="img/apps/avito.webp" />
+                                        </div>
+                                        <div class="game__content">
+                                            <p class="game__title">Авито – услуги, работа, авто</p>
+                                            <p class="game__text">Объявления: услуги, товары, недвижимость,
+                                                отели
+                                                и
+                                                гостиницы для путешествия.</p>
+                                            <div class="game__rating item">
+                                                <svg fill="none" height="13" viewbox="0 0 14 13" width="14"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.23418 4.38299L12.1872 4.66631C13.2148 4.76489 13.5299 5.76861 12.7364 6.42804L10.4245 8.34948L11.2828 11.4797C11.5646 12.5076 10.6902 13.1299 9.81434 12.5113L7.00521 10.527L4.19608 12.5113C3.32378 13.1274 2.44575 12.5078 2.72764 11.4797L3.5859 8.34948L1.27399 6.42804C0.477216 5.76584 0.791105 4.76534 1.82304 4.66631L4.77555 4.38299L6.07635 1.3839C6.48371 0.444699 7.52696 0.44517 7.93398 1.38399L9.23418 4.38299Z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                                4.7
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="game swiper-slide">
+                                        <div class="game__icon ibg">
+                                            <img alt="app" src="img/apps/avito.webp" />
+                                        </div>
+                                        <div class="game__content">
+                                            <p class="game__title">Авито – услуги, работа, авто</p>
+                                            <p class="game__text">Объявления: услуги, товары, недвижимость,
+                                                отели
+                                                и
+                                                гостиницы для путешествия.</p>
+                                            <div class="game__rating item">
+                                                <svg fill="none" height="13" viewbox="0 0 14 13" width="14"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.23418 4.38299L12.1872 4.66631C13.2148 4.76489 13.5299 5.76861 12.7364 6.42804L10.4245 8.34948L11.2828 11.4797C11.5646 12.5076 10.6902 13.1299 9.81434 12.5113L7.00521 10.527L4.19608 12.5113C3.32378 13.1274 2.44575 12.5078 2.72764 11.4797L3.5859 8.34948L1.27399 6.42804C0.477216 5.76584 0.791105 4.76534 1.82304 4.66631L4.77555 4.38299L6.07635 1.3839C6.48371 0.444699 7.52696 0.44517 7.93398 1.38399L9.23418 4.38299Z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                                4.7
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="game swiper-slide">
+                                        <div class="game__icon ibg">
+                                            <img alt="app" src="img/apps/avito.webp" />
+                                        </div>
+                                        <div class="game__content">
+                                            <p class="game__title">Авито – услуги, работа, авто</p>
+                                            <p class="game__text">Объявления: услуги, товары, недвижимость,
+                                                отели
+                                                и
+                                                гостиницы для путешествия.</p>
+                                            <div class="game__rating item">
+                                                <svg fill="none" height="13" viewbox="0 0 14 13" width="14"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.23418 4.38299L12.1872 4.66631C13.2148 4.76489 13.5299 5.76861 12.7364 6.42804L10.4245 8.34948L11.2828 11.4797C11.5646 12.5076 10.6902 13.1299 9.81434 12.5113L7.00521 10.527L4.19608 12.5113C3.32378 13.1274 2.44575 12.5078 2.72764 11.4797L3.5859 8.34948L1.27399 6.42804C0.477216 5.76584 0.791105 4.76534 1.82304 4.66631L4.77555 4.38299L6.07635 1.3839C6.48371 0.444699 7.52696 0.44517 7.93398 1.38399L9.23418 4.38299Z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                                4.7
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="game swiper-slide">
+                                        <div class="game__icon ibg">
+                                            <img alt="app" src="img/apps/avito.webp" />
+                                        </div>
+                                        <div class="game__content">
+                                            <p class="game__title">Авито – услуги, работа, авто</p>
+                                            <p class="game__text">Объявления: услуги, товары, недвижимость,
+                                                отели
+                                                и
+                                                гостиницы для путешествия.</p>
+                                            <div class="game__rating item">
+                                                <svg fill="none" height="13" viewbox="0 0 14 13" width="14"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.23418 4.38299L12.1872 4.66631C13.2148 4.76489 13.5299 5.76861 12.7364 6.42804L10.4245 8.34948L11.2828 11.4797C11.5646 12.5076 10.6902 13.1299 9.81434 12.5113L7.00521 10.527L4.19608 12.5113C3.32378 13.1274 2.44575 12.5078 2.72764 11.4797L3.5859 8.34948L1.27399 6.42804C0.477216 5.76584 0.791105 4.76534 1.82304 4.66631L4.77555 4.38299L6.07635 1.3839C6.48371 0.444699 7.52696 0.44517 7.93398 1.38399L9.23418 4.38299Z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                                4.7
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="game swiper-slide">
+                                        <div class="game__icon ibg">
+                                            <img alt="app" src="img/apps/avito.webp" />
+                                        </div>
+                                        <div class="game__content">
+                                            <p class="game__title">Авито – услуги, работа, авто</p>
+                                            <p class="game__text">Объявления: услуги, товары, недвижимость,
+                                                отели
+                                                и
+                                                гостиницы для путешествия.</p>
+                                            <div class="game__rating item">
+                                                <svg fill="none" height="13" viewbox="0 0 14 13" width="14"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.23418 4.38299L12.1872 4.66631C13.2148 4.76489 13.5299 5.76861 12.7364 6.42804L10.4245 8.34948L11.2828 11.4797C11.5646 12.5076 10.6902 13.1299 9.81434 12.5113L7.00521 10.527L4.19608 12.5113C3.32378 13.1274 2.44575 12.5078 2.72764 11.4797L3.5859 8.34948L1.27399 6.42804C0.477216 5.76584 0.791105 4.76534 1.82304 4.66631L4.77555 4.38299L6.07635 1.3839C6.48371 0.444699 7.52696 0.44517 7.93398 1.38399L9.23418 4.38299Z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                                4.7
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="game swiper-slide">
+                                        <div class="game__icon ibg">
+                                            <img alt="app" src="img/apps/avito.webp" />
+                                        </div>
+                                        <div class="game__content">
+                                            <p class="game__title">Авито – услуги, работа, авто</p>
+                                            <p class="game__text">Объявления: услуги, товары, недвижимость,
+                                                отели
+                                                и
+                                                гостиницы для путешествия.</p>
+                                            <div class="game__rating item">
+                                                <svg fill="none" height="13" viewbox="0 0 14 13" width="14"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.23418 4.38299L12.1872 4.66631C13.2148 4.76489 13.5299 5.76861 12.7364 6.42804L10.4245 8.34948L11.2828 11.4797C11.5646 12.5076 10.6902 13.1299 9.81434 12.5113L7.00521 10.527L4.19608 12.5113C3.32378 13.1274 2.44575 12.5078 2.72764 11.4797L3.5859 8.34948L1.27399 6.42804C0.477216 5.76584 0.791105 4.76534 1.82304 4.66631L4.77555 4.38299L6.07635 1.3839C6.48371 0.444699 7.52696 0.44517 7.93398 1.38399L9.23418 4.38299Z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                                4.7
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="game swiper-slide">
+                                        <div class="game__icon ibg">
+                                            <img alt="app" src="img/apps/avito.webp" />
+                                        </div>
+                                        <div class="game__content">
+                                            <p class="game__title">Авито – услуги, работа, авто</p>
+                                            <p class="game__text">Объявления: услуги, товары, недвижимость,
+                                                отели
+                                                и
+                                                гостиницы для путешествия.</p>
+                                            <div class="game__rating item">
+                                                <svg fill="none" height="13" viewbox="0 0 14 13" width="14"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.23418 4.38299L12.1872 4.66631C13.2148 4.76489 13.5299 5.76861 12.7364 6.42804L10.4245 8.34948L11.2828 11.4797C11.5646 12.5076 10.6902 13.1299 9.81434 12.5113L7.00521 10.527L4.19608 12.5113C3.32378 13.1274 2.44575 12.5078 2.72764 11.4797L3.5859 8.34948L1.27399 6.42804C0.477216 5.76584 0.791105 4.76534 1.82304 4.66631L4.77555 4.38299L6.07635 1.3839C6.48371 0.444699 7.52696 0.44517 7.93398 1.38399L9.23418 4.38299Z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                                4.7
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <button class="slider-btn slider-btn_prev similar-slider__btn_prev">
+                                <svg class="ArrowButton_icon__wIZUM" fill="none" height="32" viewbox="0 0 32 32"
+                                    width="32" xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd"
+                                        d="M19.7071 8.29289C20.0976 8.68342 20.0976 9.31658 19.7071 9.70711L13.4142 16L19.7071 22.2929C20.0976 22.6834 20.0976 23.3166 19.7071 23.7071C19.3166 24.0976 18.6834 24.0976 18.2929 23.7071L11.6464 17.0607C11.0606 16.4749 11.0606 15.5251 11.6464 14.9393L18.2929 8.29289C18.6834 7.90237 19.3166 7.90237 19.7071 8.29289Z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                </svg>
+                            </button>
+
+                            <button class="slider-btn slider-btn_next similar-slider__btn_next">
+                                <svg class="ArrowButton_icon__wIZUM" fill="none" height="32" viewbox="0 0 32 32"
+                                    width="32" xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd"
+                                        d="M19.7071 8.29289C20.0976 8.68342 20.0976 9.31658 19.7071 9.70711L13.4142 16L19.7071 22.2929C20.0976 22.6834 20.0976 23.3166 19.7071 23.7071C19.3166 24.0976 18.6834 24.0976 18.2929 23.7071L11.6464 17.0607C11.0606 16.4749 11.0606 15.5251 11.6464 14.9393L18.2929 8.29289C18.6834 7.90237 19.3166 7.90237 19.7071 8.29289Z"
+                                        fill="currentColor" fill-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__inner">
+                    <div class="footer__column footer__column_small">
+                        <img alt="logo" class="footer__logo" src="img/footer/logo.svg" />
+                        <div class="footer__qr">
+                            <img alt="qr" src="img/footer/qr.svg" />
+                            Наведите камеру<br />для загрузки RuStore<br />и следуйте инструкции
+                        </div>
+                        <div class="footer__communication">
+                            <img alt="digital" class="footer__digital" src="img/footer/digital.svg" />
+                            <div class="footer__social">
+                                <a class="item" href="#">
+                                    <img alt="social" src="img/footer/vk.svg" />
+                                </a>
+                                <a class="item" href="#">
+                                    <img alt="social" src="img/footer/ok.svg" />
+                                </a>
+                                <a class="item" href="#">
+                                    <img alt="social" src="img/footer/max.svg" />
+                                </a>
+                                <a class="item" href="#">
+                                    <img alt="social" src="img/footer/tg.svg" />
+                                </a>
+                                <a class="item" href="#">
+                                    <img alt="social" src="img/footer/dzen.svg" />
+                                </a>
+                            </div>
+                            <div class="footer__btns">
+                                <button class="footer__btn">Предложить приложение</button>
+                                <button class="footer__btn">Обратиться в поддержку</button>
+                            </div>
+                            <p class="footer__copy">
+                                © VK 2022–2026 RuStore —<br />приложения и игры для Андроид
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer__column">
+                        <div class="footer-dropdown active">
+                            <button class="footer-dropdown__btn">
+                                RuStore магазин приложений
+                                <img alt="arrow" class="footer-dropdown__arrow" src="img/footer/arrow.svg" />
+                            </button>
+                            <div class="footer-dropdown__links">
+                                <a class="footer-dropdown__link" href="#">О RuStore</a>
+                                <a class="footer-dropdown__link" href="#">Карьера в RuStore</a>
+                                <a class="footer-dropdown__link" href="#">RuStore для TV</a>
+                                <a class="footer-dropdown__link" href="#">RuStore для телефона</a>
+                                <a class="footer-dropdown__link" href="#">RuStore для ОС Аврора</a>
+                                <a class="footer-dropdown__link" href="#">Медиа-кит (для СМИ и блогеров)</a>
+                                <a class="footer-dropdown__link" href="#">Нашли уязвимость? (программа Bug Bounty)</a>
+                                <a class="footer-dropdown__link" href="#">Пользовательское соглашение</a>
+                                <a class="footer-dropdown__link" href="#">Конфиденциальность для пользователей</a>
+                                <a class="footer-dropdown__link" href="#">Дистрибутив для производителей</a>
+                            </div>
+                        </div>
+                        <div class="footer-dropdown">
+                            <button class="footer-dropdown__btn">
+                                Популярные категории
+                                <img alt="arrow" class="footer-dropdown__arrow" src="img/footer/arrow.svg" />
+                            </button>
+                            <div class="footer-dropdown__links">
+                                <a class="footer-dropdown__link" href="#">Игры для Android</a>
+                                <a class="footer-dropdown__link" href="#">Приложения банков</a>
+                                <a class="footer-dropdown__link" href="#">Государственные</a>
+                                <a class="footer-dropdown__link" href="#">Родителям</a>
+                                <a class="footer-dropdown__link" href="#">Приложения для шопинга</a>
+                                <a class="footer-dropdown__link" href="#">Приложения для ТВ</a>
+                                <a class="footer-dropdown__link" href="#">Топ бесплатных игр</a>
+                                <a class="footer-dropdown__link" href="#">Лучшие платные игры</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__column">
+                        <div class="footer-dropdown">
+                            <button class="footer-dropdown__btn">
+                                Помощь
+                                <img alt="arrow" class="footer-dropdown__arrow" src="img/footer/arrow.svg" />
+                            </button>
+                            <div class="footer-dropdown__links">
+                                <a class="footer-dropdown__link" href="#">Установка RuStore на TV</a>
+                                <a class="footer-dropdown__link" href="#">Установка RuStore на телефон</a>
+                                <a class="footer-dropdown__link" href="#">Установка RuStore в машину</a>
+                                <a class="footer-dropdown__link" href="#">Помощь пользователям RuStore</a>
+                                <a class="footer-dropdown__link" href="#">Покупки и возвраты</a>
+                                <a class="footer-dropdown__link" href="#">Авторизация в RuStore</a>
+                                <a class="footer-dropdown__link" href="#">Сбой обновления приложений</a>
+                                <a class="footer-dropdown__link" href="#">Детский режим</a>
+                                <a class="footer-dropdown__link" href="#">Автообновление приложений</a>
+                                <a class="footer-dropdown__link" href="#">Как написать отзыв к приложению</a>
+                            </div>
+                        </div>
+                        <div class="footer-dropdown">
+                            <button class="footer-dropdown__btn">
+                                Блог RuStore
+                                <img alt="arrow" class="footer-dropdown__arrow" src="img/footer/arrow.svg" />
+                            </button>
+                            <div class="footer-dropdown__links">
+                                <a class="footer-dropdown__link" href="#">Обзоры игр для Android 2025</a>
+                                <a class="footer-dropdown__link" href="#">Обзоры мобильных приложений 2025</a>
+                                <a class="footer-dropdown__link" href="#">Лайфхаки и советы для
+                                    Android-пользователей</a>
+                                <a class="footer-dropdown__link" href="#">Обзоры и инструкции по установке игр и
+                                    программ</a>
+                                <a class="footer-dropdown__link" href="#">Материалы RuStore: инструкции, обзоры,
+                                    новости</a>
+                                <a class="footer-dropdown__link" href="#">Детальные разборы приложений и игр</a>
+                                <a class="footer-dropdown__link" href="#">Топ приложений для Android TV</a>
+                                <a class="footer-dropdown__link" href="#">Приложения для мам и детей</a>
+                                <a class="footer-dropdown__link" href="#">Последние новости RuStore</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__column">
+                        <div class="footer-dropdown">
+                            <button class="footer-dropdown__btn">
+                                Разработчикам
+                                <img alt="arrow" class="footer-dropdown__arrow" src="img/footer/arrow.svg" />
+                            </button>
+                            <div class="footer-dropdown__links">
+                                <a class="footer-dropdown__link" href="#">Зарабатывать с RuStore</a>
+                                <a class="footer-dropdown__link" href="#">Стать разработчиком</a>
+                                <a class="footer-dropdown__link" href="#">Доступ к RuStore Консоль</a>
+                                <a class="footer-dropdown__link" href="#">RuStore SDK (документация)</a>
+                                <a class="footer-dropdown__link" href="#">Блог RuStore для разработчиков</a>
+                                <a class="footer-dropdown__link" href="#">Соглашение о распространении</a>
+                                <a class="footer-dropdown__link" href="#">Регистрация иностранной компании</a>
+                                <a class="footer-dropdown__link" href="#">Конфиденциальность для разработчиков</a>
+                            </div>
+                        </div>
+                        <div class="footer-dropdown">
+                            <button class="footer-dropdown__btn">
+                                Подборки
+                                <img alt="arrow" class="mobile-show" src="img/footer/arrow.svg" />
+                            </button>
+                            <div class="footer-dropdown__links">
+                                <a class="footer-dropdown__link" href="#">Игровой набор</a>
+                                <a class="footer-dropdown__link" href="#">Финансы</a>
+                                <a class="footer-dropdown__link" href="#">Самое необходимое</a>
+                                <a class="footer-dropdown__link" href="#">Полезные инструменты</a>
+                                <a class="footer-dropdown__link" href="#">Приложения для часов</a>
+                                <a class="footer-dropdown__link" href="#">Высокий рейтинг</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- <script src="js/jquery-3.6.1.min.js"></script> -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

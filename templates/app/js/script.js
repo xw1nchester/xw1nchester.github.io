@@ -104,6 +104,11 @@ document.addEventListener('click', function (e) {
         const parent = targetEl.closest('.game-page-faq__item');
         parent.classList.toggle('active');
     }
+
+    if(targetEl.closest('.article-faq__btn')) {
+        const parent = targetEl.closest('.article-faq__item');
+        parent.classList.toggle('active');
+    }
 });
 
 window.addEventListener('scroll', () => {
