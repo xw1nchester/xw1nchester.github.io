@@ -1623,6 +1623,7 @@ button {
 }
 @media (max-width: 992px) {
   .game-page-head {
+    width: 100%;
     gap: 20px;
   }
 }
@@ -1643,6 +1644,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-grow: 1;
 }
 @media (max-width: 992px) {
   .game-page-head__content {
