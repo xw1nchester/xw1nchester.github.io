@@ -6,6 +6,13 @@
     <meta charset="utf-8" />
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+
     <link href="css/swiper-bundle.min.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <title>Document</title>
@@ -63,7 +70,8 @@
                         <span>Скачать<span class="mobile-hide"> RuStore</span></span>
                     </a>
                     <button class="header__btn mobile-show burger-btn">
-                        <img alt="burger" src="img/header/burger.svg" />
+                        <img width="24" alt="burger" src="img/header/burger.svg" class="burger-btn__open" />
+                        <img width="24" alt="close" src="img/header/close.svg" class="burger-btn__close" />
                     </button>
                 </div>
             </div>
@@ -80,12 +88,13 @@
                                 <a href="#" class="game-category__item item">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="var(--mainColor)" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" class="lucide lucide-sparkle-icon lucide-sparkle">
+                                        stroke-linejoin="round">
                                         <path
                                             d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" />
                                     </svg>
                                     Интересное
                                 </a>
+
                                 <a href="#" class="game-category__item item">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none" stroke="var(--mainColor)" stroke-width="1.5" stroke-linecap="round"
@@ -108,103 +117,141 @@
                                     </svg>
                                     Все игры
                                 </a>
+
                                 <a href="#" class="game-category__item active item">
                                     <img src="img/games/action.svg" alt="icon">
                                     Экшен
                                 </a>
+
                                 <a href="#" class="game-category__item item">
                                     <img src="img/categories/puzzle.svg" alt="icon">
                                     Головоломки
                                 </a>
+
                                 <a href="#" class="game-category__item item">
-                                    <img src="img/categories/shooter.svg" alt="icon">
+                                    <img src="img/categories/shooter.svg" alt="icon"
+                                        style="filter: brightness(0) saturate(100%) invert(56%) sepia(33%) saturate(6153%) hue-rotate(333deg) brightness(96%) contrast(97%);">
                                     Шутеры
                                 </a>
+
                                 <a href="#" class="game-category__item item">
-                                    <img src="img/categories/simulator.svg" alt="icon">
+                                    <img src="img/categories/simulator.svg" alt="icon"
+                                        style="filter: brightness(0) saturate(100%) invert(57%) sepia(54%) saturate(497%) hue-rotate(71deg) brightness(94%) contrast(90%);">
                                     Симуляторы
                                 </a>
+
                                 <a href="#" class="game-category__item item">
-                                    <img src="img/categories/strategy.svg" alt="icon">
+                                    <img src="img/categories/strategy.svg" alt="icon"
+                                        style="filter: brightness(0) saturate(100%) invert(53%) sepia(72%) saturate(5559%) hue-rotate(231deg) brightness(93%) contrast(94%);">
                                     Стратегии
                                 </a>
+
                                 <a href="#" class="game-category__item item">
-                                    <img src="img/categories/role.svg" alt="icon">
+                                    <img src="img/categories/role.svg" alt="icon"
+                                        style="filter: brightness(0) saturate(100%) invert(53%) sepia(72%) saturate(5559%) hue-rotate(231deg) brightness(93%) contrast(94%);">
                                     Ролевые
                                 </a>
+
                                 <a href="#" class="game-category__item item">
-                                    <img src="img/categories/arcade.svg" alt="icon">
+                                    <img src="img/categories/arcade.svg" alt="icon"
+                                        style="filter: brightness(0) saturate(100%) invert(76%) sepia(76%) saturate(3938%) hue-rotate(0deg) brightness(104%) contrast(103%);">
                                     Аркады
                                 </a>
+
                                 <a href="#" class="game-category__item item">
-                                    <img src="img/categories/adventure.svg" alt="icon">
+                                    <img src="img/categories/adventure.svg" alt="icon"
+                                        style="filter: brightness(0) saturate(100%) invert(56%) sepia(33%) saturate(6153%) hue-rotate(333deg) brightness(96%) contrast(97%);">
                                     Приключения
                                 </a>
+
                                 <a href="#" class="game-category__item item">
-                                    <img src="img/categories/BoardAndCard.svg" alt="icon">
+                                    <img src="img/categories/BoardAndCard.svg" alt="icon"
+                                        style="filter: brightness(0) saturate(100%) invert(36%) sepia(95%) saturate(2405%) hue-rotate(296deg) brightness(93%) contrast(88%);">
                                     Настольные и карточные
                                 </a>
+
                                 <a href="#" class="game-category__item item">
                                     <img src="img/categories/casual.svg" alt="icon">
                                     Казуальные
                                 </a>
+
                                 <a href="#" class="game-category__item item">
-                                    <img src="img/categories/children.svg" alt="icon">
+                                    <img src="img/categories/children.svg" alt="icon"
+                                        style="filter: brightness(0) saturate(100%) invert(76%) sepia(76%) saturate(3938%) hue-rotate(0deg) brightness(104%) contrast(103%);">
                                     Детские
                                 </a>
                             </div>
 
                             <div class="game-category__row">
                                 <a href="#" class="game-category__item item">
-                                    <img src="img/categories/race.svg" alt="icon">
+                                    <img src="img/categories/race.svg" alt="icon"
+                                        style="filter: brightness(0) saturate(100%) invert(36%) sepia(95%) saturate(2405%) hue-rotate(296deg) brightness(93%) contrast(88%);">
                                     Гоночные
                                 </a>
+
                                 <a href="#" class="game-category__item item">
                                     <img src="img/categories/word.svg" alt="icon">
                                     Словесные
                                 </a>
+
                                 <a href="#" class="game-category__item item">
-                                    <img src="img/categories/quiz.svg" alt="icon">
+                                    <img src="img/categories/quiz.svg" alt="icon"
+                                        style="filter: brightness(0) saturate(100%) invert(57%) sepia(54%) saturate(497%) hue-rotate(71deg) brightness(94%) contrast(90%);">
                                     Викторины
                                 </a>
+
                                 <a href="#" class="game-category__item item">
                                     <img src="img/categories/sports.svg" alt="icon">
                                     Спортивные
                                 </a>
+
                                 <a href="#" class="game-category__item item">
-                                    <img src="img/categories/utilities.svg" alt="icon">
+                                    <img src="img/categories/utilities.svg" alt="icon"
+                                        style="filter: brightness(0) saturate(100%) invert(53%) sepia(72%) saturate(5559%) hue-rotate(231deg) brightness(93%) contrast(94%);">
                                     Утилиты
                                 </a>
+
                                 <a href="#" class="game-category__item item">
                                     <img src="img/categories/paid.svg" alt="icon">
                                     Платные
                                 </a>
+
                                 <a href="#" class="game-category__item item">
-                                    <img src="img/categories/casino.svg" alt="icon">
+                                    <img src="img/categories/casino.svg" alt="icon"
+                                        style="filter: brightness(0) saturate(100%) invert(56%) sepia(33%) saturate(6153%) hue-rotate(333deg) brightness(96%) contrast(97%);">
                                     Казино
                                 </a>
+
                                 <a href="#" class="game-category__item item">
                                     <img src="img/categories/music.svg" alt="icon">
                                     Музыкальные
                                 </a>
+
                                 <a href="#" class="game-category__item item">
-                                    <img src="img/categories/ar.svg" alt="icon">
+                                    <img src="img/categories/ar.svg" alt="icon"
+                                        style="filter: brightness(0) saturate(100%) invert(76%) sepia(76%) saturate(3938%) hue-rotate(0deg) brightness(104%) contrast(103%);">
                                     Игры с AR
                                 </a>
+
                                 <a href="#" class="game-category__item item">
                                     <img src="img/categories/indie.svg" alt="icon">
                                     Инди
                                 </a>
+
                                 <a href="#" class="game-category__item item">
-                                    <img src="img/categories/card.svg" alt="icon">
+                                    <img src="img/categories/card.svg" alt="icon"
+                                        style="filter: brightness(0) saturate(100%) invert(36%) sepia(95%) saturate(2405%) hue-rotate(296deg) brightness(93%) contrast(88%);">
                                     Карточные
                                 </a>
+
                                 <a href="#" class="game-category__item item">
                                     <img src="img/categories/board.svg" alt="icon">
                                     Настольные игры
                                 </a>
+
                                 <a href="#" class="game-category__item item">
-                                    <img src="img/categories/family.svg" alt="icon">
+                                    <img src="img/categories/family.svg" alt="icon"
+                                        style="filter: brightness(0) saturate(100%) invert(57%) sepia(54%) saturate(497%) hue-rotate(71deg) brightness(94%) contrast(90%);">
                                     Семейные
                                 </a>
                             </div>

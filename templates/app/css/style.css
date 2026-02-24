@@ -405,16 +405,14 @@ button {
   }
 }
 
-.burger-btn {
-  flex: 0 0 40px;
-  height: 24px;
-  position: relative;
+.burger-btn__close {
   display: none;
 }
-@media (max-width: 768px) {
-  .burger-btn {
-    display: flex;
-  }
+.burger-btn.active .burger-btn__open {
+  display: none;
+}
+.burger-btn.active .burger-btn__close {
+  display: block;
 }
 
 .popup {
@@ -522,6 +520,12 @@ button {
     transform: translateX(0);
   }
 }
+@media (max-width: 576px) {
+  .header__nav-wrapper {
+    top: 56px;
+    height: calc(100vh - 56px);
+  }
+}
 .header__nav {
   display: flex;
   align-items: center;
@@ -545,6 +549,11 @@ button {
     overflow-y: auto;
   }
 }
+@media (max-width: 480px) {
+  .header__nav {
+    max-width: unset;
+  }
+}
 .header__nav-menu {
   display: none;
   width: 100%;
@@ -557,6 +566,11 @@ button {
 @media (max-width: 992px) {
   .header__nav-menu {
     display: flex;
+  }
+}
+@media (max-width: 576px) {
+  .header__nav-menu {
+    display: none;
   }
 }
 .header__nav-close {
@@ -1105,6 +1119,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   gap: 12px;
 }
 @media (max-width: 576px) {
@@ -1135,7 +1150,6 @@ button {
 }
 .games-categories__icon img {
   width: 64px;
-  filter: brightness(0) saturate(100%) invert(56%) sepia(33%) saturate(6153%) hue-rotate(333deg) brightness(96%) contrast(97%);
 }
 @media (max-width: 992px) {
   .games-categories__icon img {
@@ -1367,6 +1381,7 @@ button {
 }
 .footer-dropdown__arrow {
   display: none;
+  transform: rotate(180deg);
 }
 @media (max-width: 576px) {
   .footer-dropdown__arrow {
@@ -1386,7 +1401,7 @@ button {
 }
 @media (max-width: 576px) {
   .footer-dropdown.active .footer-dropdown__arrow {
-    transform: rotate(-180deg);
+    transform: rotate(0);
   }
   .footer-dropdown.active .footer-dropdown__links {
     display: flex;
@@ -1442,7 +1457,8 @@ button {
   background-color: var(--mainColor);
   color: #fff;
 }
-.game-category__item.active img, .game-category__item.active svg {
+.game-category__item.active img,
+.game-category__item.active svg {
   filter: invert(100%) sepia(100%) brightness(200%) contrast(100%);
 }
 .game-category__content {

@@ -436,7 +436,22 @@ $safety: 20;
     }
 }
 
-@import 'menu';
+.burger-btn {
+    &__close {
+        display: none;
+    }
+
+    &.active {
+        .burger-btn__open {
+            display: none;
+        }
+
+        .burger-btn__close {
+            display: block;
+        }
+    }
+}
+
 @import 'popup';
 
 .header {
@@ -511,6 +526,11 @@ $safety: 20;
                 }
             }
         }
+
+        @media (max-width: 576px) {
+            top: 56px;
+            height: calc(100vh - 56px);
+        }
     }
 
     &__nav {
@@ -533,6 +553,10 @@ $safety: 20;
             transform: translateX(100%);
             overflow-y: auto;
         }
+
+        @media (max-width: 480px) {
+            max-width: unset;
+        }
     }
 
     &__nav-menu {
@@ -547,6 +571,10 @@ $safety: 20;
 
         @media (max-width: 992px) {
             display: flex;
+        }
+
+        @media (max-width: 576px) {
+            display: none;
         }
     }
 
@@ -1120,6 +1148,7 @@ $safety: 20;
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
         gap: 12px;
 
         @media (max-width: 576px) {
@@ -1149,8 +1178,8 @@ $safety: 20;
         img {
             width: 64px;
             // по хорошему нужна сразу иконка с правильным цветом
-            filter: brightness(0) saturate(100%) invert(56%) sepia(33%)
-                saturate(6153%) hue-rotate(333deg) brightness(96%) contrast(97%);
+            // filter: brightness(0) saturate(100%) invert(56%) sepia(33%)
+            //     saturate(6153%) hue-rotate(333deg) brightness(96%) contrast(97%);
 
             @media (max-width: 992px) {
                 width: 56px;
@@ -1391,6 +1420,7 @@ $safety: 20;
 
     &__arrow {
         display: none;
+        transform: rotate(180deg);
 
         @media (max-width: 576px) {
             display: block;
@@ -1411,7 +1441,7 @@ $safety: 20;
     @media (max-width: 576px) {
         &.active {
             .footer-dropdown__arrow {
-                transform: rotate(-180deg);
+                transform: rotate(0);
             }
 
             .footer-dropdown__links {
@@ -1469,7 +1499,8 @@ $safety: 20;
             background-color: var(--mainColor);
             color: #fff;
 
-            img, svg {
+            img,
+            svg {
                 // по хорошему нужна сразу иконка с правильным цветом
                 filter: invert(100%) sepia(100%) brightness(200%) contrast(100%);
             }

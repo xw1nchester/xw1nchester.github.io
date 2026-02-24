@@ -44,8 +44,9 @@ document.addEventListener('click', function (e) {
     const targetEl = e.target;
 
     if (targetEl.closest('.burger-btn')) {
-        body.classList.add('lock');
-        nav.classList.add('active');
+        body.classList.toggle('lock');
+        nav.classList.toggle('active');
+        targetEl.closest('.burger-btn').classList.toggle('active');
     }
 
     if (
@@ -56,6 +57,7 @@ document.addEventListener('click', function (e) {
     ) {
         body.classList.remove('lock');
         nav.classList.remove('active');
+        document.querySelector('.burger-btn').classList.remove('active');
     }
 
     if (targetEl.closest('.categories__btn_prev')) {
