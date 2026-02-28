@@ -1,0 +1,56 @@
+.header__logo {
+    display: none;
+}
+
+@media (max-width:1280px) {
+    .header__logo {
+        display: flex;
+        width: 100%;
+        max-width: 120px;
+    }
+
+    .pu-sidebar,
+    .winners-now {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__logo {
+        max-width: 80px;
+    }
+}
+
+.sport-slider__slide {
+    width: 100%;
+    flex: 0 0 788px;
+}
+
+@media (max-width: 992px) {
+    .sport-slider__slide {
+        flex: 0 0 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sport-slider__slide {
+        flex: 0 0 500px;
+    }
+}
+
+@media (max-width: 576px) {
+    .sport-slider__slide {
+        flex: 0 0 300px;
+    }
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.socials_first {
+    padding-bottom: 20px;
+}
