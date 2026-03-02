@@ -1,3 +1,7 @@
+body.lock {
+    overflow: hidden;
+}
+
 .header__logo {
     display: none;
 }
@@ -9,8 +13,42 @@
         max-width: 120px;
     }
 
-    .pu-sidebar,
     .winners-now {
+        display: none;
+    }
+
+    .pu-sidebar {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        z-index: 1000;
+        transition: .3s;
+    }
+
+    .pu-sidebar.active {
+        left: 0;
+    }
+
+    .pu-sidebar__container[_ngcontent-ng-c59562891] {
+        height: 100%;
+        overflow: auto;
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .pu-sidebar__main[_ngcontent-ng-c59562891]{
+        overflow: unset;
+        padding: 0;
+    }
+    
+    .pu-sidebar__bottom[_ngcontent-ng-c59562891] {
+        overflow: unset;
+        position: static;
+    }
+
+    .pu-sidebar__top {
         display: none;
     }
 }
@@ -53,4 +91,73 @@
 
 .socials_first {
     padding-bottom: 20px;
+}
+
+.mobile-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #37322E;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 2;
+    padding: 4px 0;
+}
+
+@media (max-width:1280px) {
+    .mobile-menu {
+        display: flex;
+    }
+}
+
+.mobile-menu__link {
+    display: flex;
+    background-color: transparent;
+    color: rgba(252, 252, 252, .75);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    text-decoration: none;
+    font-size: 12px;
+    gap: 2px;
+    width: 100%;
+    max-width: 66px;
+    text-align: center;
+}
+
+.menu-blose-btn {
+    gap: 4px;
+    background-color: transparent;
+    border: 0;
+    position: fixed;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFF;
+    font-size: 12px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.menu-blose-btn.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-blose-btn__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
 }
