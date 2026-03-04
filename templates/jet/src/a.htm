@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<html data-l10n-sync="true" lang="ru" dir="ltr"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src chrome:; object-src 'none'">
+    <meta name="color-scheme" content="light dark">
+    <title data-l10n-id="neterror-page-title">Проблема при загрузке страницы</title>
+    <link rel="stylesheet" href="chrome://global/skin/aboutNetError.css" type="text/css" media="all">
+    <link rel="icon" id="favicon" href="chrome://global/skin/icons/info.svg">
+    <link rel="localization" href="branding/brand.ftl">
+    <link rel="localization" href="toolkit/neterror/certError.ftl">
+    <link rel="localization" href="toolkit/neterror/netError.ftl">
+  </head>
+  <body class="neterror">
+    <div class="container">
+      <div id="text-container">
+        <!-- Error Title -->
+        <div class="title">
+          <h1 class="title-text" data-l10n-id="csp-xfo-error-title">Firefox не может открыть эту страницу</h1>
+        </div>
+
+        <!-- Short Description -->
+        <p id="errorShortDesc" hidden="">Эта страница имеет политику X-Frame-Options, блокирующую её загрузку в этом контексте.<p id="response-status-label" data-l10n-args="{&quot;responsestatus&quot;:403,&quot;responsestatustext&quot;:&quot;Forbidden&quot;}" data-l10n-id="neterror-response-status-code">Код ошибки: 403 Forbidden</p></p>
+        <p id="errorShortDesc2"></p>
+
+        <div id="errorWhatToDo" hidden="">
+          <p id="errorWhatToDoTitle" data-l10n-id="certerror-what-can-you-do-about-it-title">Как вы можете это исправить?</p>
+          <p id="badStsCertExplanation" hidden=""></p>
+          <p id="errorWhatToDoText"></p>
+        </div>
+
+        <!-- Long Description -->
+        <div id="errorLongDesc" data-l10n-args="{&quot;hostname&quot;:&quot;jetsts.net&quot;}" data-l10n-id="csp-xfo-blocked-long-desc">Для
+ обеспечения вашей безопасности jetsts.net не разрешил Firefox 
+отобразить страницу, так как она встроена в другой сайт. Чтобы увидеть 
+эту страницу, вам нужно открыть её в новом окне.</div>
+
+        <div id="trrOnlyContainer" hidden="">
+          <p id="trrOnlyMessage"></p>
+          <div class="trr-message-container">
+            <span id="trrOnlyDescription"></span>
+            <p id="trrLearnMoreContainer" hidden="">
+              <a id="trrOnlylearnMoreLink" target="_blank" rel="noopener noreferrer" data-l10n-id="neterror-learn-more-link">Подробнее…</a>
+            </p>
+          </div>
+          <p data-l10n-id="neterror-dns-not-found-trr-third-party-warning2">Вы можете продолжить работу с разрешителем имён DNS по умолчанию. Однако третья сторона может увидеть, какие сайты вы посещаете.</p>
+        </div>
+
+        <p id="tlsVersionNotice" hidden=""></p>
+
+        <p id="learnMoreContainer">
+          <a id="learnMoreLink" target="_blank" rel="noopener noreferrer" data-telemetry-id="learn_more_link" data-l10n-id="neterror-learn-more-link" href="https://support.mozilla.org/1/firefox/145.0/WINNT/ru/xframe-neterror-page">Подробнее…</a>
+        </p>
+
+        <!-- UI for option to report certificate errors to Mozilla. Removed on
+             init for other error types .-->
+        <div id="prefChangeContainer" class="button-container" hidden="">
+          <p data-l10n-id="neterror-pref-reset">Похоже, что причиной этого могут быть настройки безопасности вашей сети. Вы хотите восстановить настройки по умолчанию?</p>
+          <button id="prefResetButton" class="primary" data-l10n-id="neterror-pref-reset-button">Восстановить настройки по умолчанию</button>
+        </div>
+
+        <div id="certErrorAndCaptivePortalButtonContainer" class="button-container" hidden="">
+          <button id="returnButton" class="primary" data-telemetry-id="return_button_top" data-l10n-id="neterror-return-to-previous-page-recommended-button">Вернуться назад (рекомендуется)</button>
+          <button id="openPortalLoginPageButton" class="primary" data-l10n-id="neterror-open-portal-login-page-button" hidden="">Открыть страницу входа в сеть</button>
+          <button id="certErrorTryAgainButton" class="primary try-again" data-l10n-id="neterror-try-again-button" hidden="">Попробовать снова</button>
+          <button id="advancedButton" data-telemetry-id="advanced_button" data-l10n-id="neterror-advanced-button">Дополнительно…</button>
+        </div>
+      </div>
+
+      <div id="netErrorButtonContainer" class="button-container" hidden="">
+        <button id="neterrorTryAgainButton" class="primary try-again" data-l10n-id="neterror-try-again-button" data-telemetry-id="try_again_button">Попробовать снова</button>
+        <button id="trrExceptionButton" data-l10n-id="neterror-add-exception-button" data-telemetry-id="add_exception_button" hidden="">Всегда продолжать для этого сайта</button>
+        <button id="trrSettingsButton" data-l10n-id="neterror-settings-button" data-telemetry-id="settings_button" hidden="">Изменить настройки DNS</button>
+      </div>
+
+      <div class="advanced-panel-container">
+        <div id="badCertAdvancedPanel" class="advanced-panel" hidden="">
+          <p id="badCertTechnicalInfo"></p>
+          <a id="viewCertificate" href="javascript:void(0)" data-l10n-id="neterror-view-certificate-link">Просмотреть сертификат</a>
+          <div id="advancedPanelButtonContainer" class="button-container">
+            <button id="advancedPanelReturnButton" class="primary" data-telemetry-id="return_button_adv" data-l10n-id="neterror-return-to-previous-page-recommended-button">Вернуться назад (рекомендуется)</button>
+            <button id="advancedPanelTryAgainButton" class="primary try-again" data-l10n-id="neterror-try-again-button" hidden="">Попробовать снова</button>
+            <button id="exceptionDialogButton" data-telemetry-id="exception_button" data-l10n-id="neterror-override-exception-button">Принять риск и продолжить</button>
+          </div>
+        </div>
+
+        <div id="certificateErrorDebugInformation" class="advanced-panel" hidden="">
+          <button id="copyToClipboardTop" data-telemetry-id="clipboard_button_top" data-l10n-id="neterror-copy-to-clipboard-button">Копировать текст в буфер обмена</button>
+          <div id="certificateErrorText"></div>
+          <button id="copyToClipboardBottom" data-telemetry-id="clipboard_button_bot" data-l10n-id="neterror-copy-to-clipboard-button">Копировать текст в буфер обмена</button>
+        </div>
+      </div>
+    </div>
+    <script src="chrome://global/content/neterror/aboutNetErrorCodes.js"></script>
+    <script type="module" src="chrome://global/content/aboutNetError.mjs"></script>
+  
+
+</body></html>

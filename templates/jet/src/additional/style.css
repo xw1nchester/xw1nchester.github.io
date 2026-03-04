@@ -1,0 +1,33 @@
+/* .section-games__list-item {
+    display: flex;
+} */
+
+.section-games__list-item-img {
+    transition: .3s;
+}
+
+@media (any-hover:hover) {
+    .section-games__list-item-content:hover .section-games__list-item-img {
+        transform: scale(1.1);
+    }
+}
+
+.main-slider__inner {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari, Chrome */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+.main-slider__item-bg, .main-slider__item-desktop-img {
+    pointer-events: none;
+}
+
+a {
+    color: inherit;
+}
