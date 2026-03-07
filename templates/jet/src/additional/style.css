@@ -1,3 +1,7 @@
+body.lock {
+    overflow: hidden;
+}
+
 /* .section-games__list-item {
     display: flex;
 } */
@@ -30,4 +34,35 @@
 
 a {
     color: inherit;
+}
+
+.mobile-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #232E39;
+    display: none;
+    z-index: 1;
+}
+
+@media (max-width: 576px) {
+    .mobile-menu {
+        display: flex;
+    }
+}
+
+.mobile-menu__link {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+    gap: 4px;
+    height: 60px;
+}
+
+.mobile-menu__link.active {
+    background-image: linear-gradient(90deg, rgba(35, 46, 57, 0) 10%, rgba(35, 46, 57, .52) 77%, #232e39), linear-gradient(180deg, #232e39, rgba(35, 46, 57, .48), rgba(35, 46, 57, .27) 51%, rgba(35, 46, 57, .3)), linear-gradient(90deg, #7159a6 0, #3c479d);
 }

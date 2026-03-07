@@ -3978,6 +3978,12 @@
     transition: opacity .2s ease-in-out
 }
 
+@media (max-width:1025px) {
+    .real-time-winners {
+        display: none;
+    }
+}
+
 body:has(.sport-betby-widget) .real-time-winners {
     z-index: 10
 }
@@ -5668,7 +5674,7 @@ body:has(.sport-betby-widget) .real-time-winners__toggle {
 }
 
 .seo-block-content {
-    padding: 1rem 1rem 1.7333333333rem
+    padding: 1rem 1rem 5rem;
 }
 
 @media(min-width:769px)and (max-width:1024px) {
@@ -10915,9 +10921,9 @@ p:last-child {
 }
 
 @media(max-width:768px) {
-    .homepage .container-sidebar__sidebar {
+    /* .homepage .container-sidebar__sidebar {
         min-height: 66.6666666667rem
-    }
+    } */
 
     .homepage .container-sidebar__sidebar:has(.table-winner-item) {
         min-height: 0
@@ -13233,19 +13239,8 @@ p:last-child {
 .top-bar__logo {
     flex-shrink: 0;
     display: inline-block;
-    cursor: pointer
-}
-
-@media(min-width:769px)and (max-width:1024px) {
-    .top-bar__logo {
-        margin-right: 3rem
-    }
-}
-
-@media(min-width:1025px) {
-    .top-bar__logo {
-        margin-right: 3.4444444444rem
-    }
+    cursor: pointer;
+    margin-right: 3rem;
 }
 
 .top-bar__logo-img {
@@ -13275,9 +13270,13 @@ p:last-child {
     cursor: pointer
 }
 
-@media(min-width:769px)and (max-width:1024px) {
+@media (max-width:1025px) {
     .top-bar__links-item {
-        margin-right: 3.6rem
+        display: none;
+    }
+
+    .top-bar__links-item_search {
+        display: flex;
     }
 }
 

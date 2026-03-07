@@ -441,6 +441,12 @@
     }
 }
 
+@media (max-width:1025px) {
+    .jackpot {
+        display: none;
+    }
+}
+
 @media(max-width:768px) {
     .jackpot:only-child {
         background: linear-gradient(270deg, #3c479d -7%, #232e39 25%);
@@ -3808,7 +3814,7 @@
 
 @media(max-width:768px) {
     .providers-list__providers {
-        display: grid;
+        /* display: grid;
         grid-auto-flow: column dense;
         grid-template-rows: repeat(2, 1fr);
         grid-auto-columns: 9.3333333333rem;
@@ -3820,12 +3826,12 @@
         padding: 0 1.0666666667rem;
         margin: 0 -1.0666666667rem;
         -ms-overflow-style: none;
-        scrollbar-width: none
+        scrollbar-width: none */
     }
 
-    .providers-list__providers::-webkit-scrollbar {
+    /* .providers-list__providers::-webkit-scrollbar {
         display: none
-    }
+    } */
 }
 
 @property --providerGradientOpacity {
