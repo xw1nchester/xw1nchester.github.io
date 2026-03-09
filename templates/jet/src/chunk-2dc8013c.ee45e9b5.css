@@ -683,7 +683,7 @@
     top: -1.2222222222rem;
     left: 4.6666666667rem;
     z-index: 2;
-    background-image: url(/img/odometer/jackpot.svg);
+    /* background-image: url(/img/odometer/jackpot.svg); */
     background-size: contain;
     width: 16.3333333333rem;
     height: 5.6666666667rem;
@@ -691,7 +691,7 @@
 }
 
 .no-touch .jackpot__inner:hover .jackpot__title-img {
-    background-image: url(/img/odometer/jackpot_hover.svg)
+    /* background-image: url(/img/odometer/jackpot_hover.svg) */
 }
 
 .jackpot__title-ic {
@@ -739,14 +739,14 @@
         left: -7.2222222222rem;
         width: 32rem;
         height: 9.5rem;
-        background-image: url(/img/odometer/odometer_defult.svg);
+        /* background-image: url(/img/odometer/odometer_defult.svg); */
         background-repeat: no-repeat;
         background-size: contain;
         transition: background-image .2s ease-in-out
     }
 
     .no-touch .jackpot__inner:hover .jackpot__sum:before {
-        background-image: url(/img/odometer/odometer_hover.svg)
+        /* background-image: url(/img/odometer/odometer_hover.svg) */
     }
 }
 
@@ -1809,7 +1809,7 @@
     justify-content: center;
     gap: .8rem;
     border-radius: 2px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, .65) 38.49%, rgba(22, 22, 88, .65)), url(/img/providers/selected-provider-bg.webp);
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, .65) 38.49%, rgba(22, 22, 88, .65)), url(/img/providers/selected-provider-bg.webp); */
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
     background-repeat: no-repeat;
@@ -1830,7 +1830,7 @@
 }
 
 .no-webp .section-games__provider-img-wr {
-    background: linear-gradient(180deg, rgba(0, 0, 0, .65) 38.49%, rgba(22, 22, 88, .65)), url(/img/providers/selected-provider-bg.jpg)
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, .65) 38.49%, rgba(22, 22, 88, .65)), url(/img/providers/selected-provider-bg.jpg) */
 }
 
 @media(min-width:451px)and (max-width:768px) {
@@ -2945,7 +2945,7 @@
     flex: 50%;
     background-position: 50%;
     background-size: 110%;
-    background-image: url(/img/favorites/favorite-background.png)
+    /* background-image: url(/img/favorites/favorite-background.png) */
 }
 
 @media(max-width:768px) {
@@ -3218,7 +3218,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
-    background-image: url(/img/jackpots/bg.jpg)
+    /* background-image: url(/img/jackpots/bg.jpg) */
 }
 
 .jackpot-list__items-wr:before {

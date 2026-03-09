@@ -49,13 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
     let startX = 0;
 
     mainSlider.el.addEventListener('pointerdown', e => {
-        console.log('pointerdown');
         if (e.button !== 0) return; // только ЛКМ
         startX = e.clientX;
     });
 
     mainSlider.el.addEventListener('pointerup', e => {
-        console.log('pointerup');
         const diff = e.clientX - startX;
 
         if (diff > 50) mainSlider.slidePrev();
@@ -85,6 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         slidesPerView: 2.25,
         spaceBetween: 8,
+        freeMode: true,
 
         grid: {
             rows: 2,
@@ -96,7 +95,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 slidesPerView: 3.25,
                 grid: {
                     rows: 1
-                }
+                },
+                freeMode: false
             },
             768: {
                 slidesPerView: 5.25

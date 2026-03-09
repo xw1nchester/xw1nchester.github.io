@@ -6966,7 +6966,7 @@ body:has(.sport-betby-widget) .real-time-winners__toggle {
     }
 }
 
-@font-face {
+/* @font-face {
     font-family: OpenSans;
     src: url(../../../assets/677256/fonts/OpenSans-ExtraBold.32b0d28b.woff2) format("woff2"), url(../../../assets/677256/fonts/OpenSans-ExtraBold.0b54a812.woff) format("woff");
     font-weight: 800;
@@ -7034,7 +7034,7 @@ body:has(.sport-betby-widget) .real-time-winners__toggle {
     src: url(../../../assets/677256/fonts/Unbounded-Bold.6513e722.woff2) format("woff2");
     font-weight: 800;
     font-style: normal
-}
+} */
 
 html {
     font-family: sans-serif
