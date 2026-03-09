@@ -10920,6 +10920,12 @@ p:last-child {
     flex-shrink: 0
 }
 
+@media (max-width: 1025px) {
+    .container-sidebar__sidebar {
+        display: none;
+    }
+}
+
 @media(max-width:768px) {
     /* .homepage .container-sidebar__sidebar {
         min-height: 66.6666666667rem

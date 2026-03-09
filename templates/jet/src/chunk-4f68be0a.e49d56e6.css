@@ -252,7 +252,7 @@
 @media (max-width: 576px) {
     .main-slider__item-text-wr {
         top: 40px;
-        min-height: 155px;
+        min-height: 170px;
     }
 }
 
@@ -624,7 +624,7 @@
 @media (max-width: 576px) {
     .main-slider__item-btn {
         bottom: -65px;
-        left: -138px;
+        left: -147px;
     }
 }
 
