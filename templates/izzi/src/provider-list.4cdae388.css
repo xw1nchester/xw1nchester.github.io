@@ -1,0 +1,68 @@
+.provider-list::part(wrapper) {
+    position: relative;
+    height: 136rem;
+    gap: 8rem
+}
+
+.provider-list__btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 146rem;
+    z-index: 3;
+    transition: opacity .2s ease-in-out, visibility .2s ease-in-out
+}
+
+.provider-list__btn--prev {
+    left: 0;
+    background: linear-gradient(90deg, #242232 15.22%, rgba(36, 34, 50, .79) 55.63%, transparent)
+}
+
+.provider-list__btn--next {
+    right: 0;
+    background: linear-gradient(270deg, #242232 15.22%, rgba(36, 34, 50, .79) 55.63%, transparent)
+}
+
+button.provider-list__btn.swiper-button-disabled {
+    opacity: 0;
+    visibility: hidden
+}
+
+.provider-list__btn-ic {
+    width: 14rem;
+    color: #74dcd2;
+    transition: opacity .2s ease-in-out
+}
+
+.no-touch .provider-list__btn:hover .provider-list__btn-ic {
+    opacity: .5
+}
+
+.provider-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200rem;
+    height: 64rem !important;
+    padding: 12rem;
+    border-radius: 3rem;
+    background-color: #1c1b29;
+    transition: background-color .2s ease-in-out
+}
+
+.no-touch .provider-list__link:hover {
+    background-color: #302d48
+}
+
+.provider-list__img {
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+.provider-list__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center
+}

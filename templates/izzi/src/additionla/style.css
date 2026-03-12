@@ -1,0 +1,7 @@
+:root {
+    --mainColor: #74DCD2;
+}
+
+.promotions-slider__slider-item {
+    height: 440px;
+}
