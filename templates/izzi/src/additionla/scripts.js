@@ -1,4 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const sidebar = document.querySelector('.quick-bar');
+    const body = document.body;
+
+    document.addEventListener('click', function (e) {
+        const targetEl = e.target;
+
+        if (targetEl.closest('.burger')) {
+            sidebar.classList.add('active');
+            body.classList.add('lock');
+        }
+
+        if (
+            (targetEl.closest('.quick-bar') &&
+                !targetEl.closest('.quick-bar__sidebar') &&
+                sidebar.classList.contains('active')) ||
+            targetEl.closest('.quick-bar__close')
+        ) {
+            sidebar.classList.remove('active');
+            body.classList.remove('lock');
+        }
+    });
+
     new Swiper('.main-slider', {
         navigation: {
             nextEl: '.main-slider__next',
@@ -9,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loop: true,
         centeredSlides: true,
         speed: 1500,
-        autoplay: true,
+        autoplay: true
 
         // breakpoints: {
         //     768: {}
@@ -23,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
 
         slidesPerView: 1.25,
-        spaceBetween: 16,
+        spaceBetween: 16
         // loop: true
 
         // breakpoints: {

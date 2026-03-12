@@ -5,3 +5,7 @@
 .promotions-slider__slider-item {
     height: 440px;
 }
+
+body.lock {
+    overflow: hidden;
+}
