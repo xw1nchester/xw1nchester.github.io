@@ -5,14 +5,14 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('click', function (e) {
         const targetEl = e.target;
 
-        if (targetEl.closest('.burger')) {
+        if (targetEl.closest('.burger') || targetEl.closest('.mobile-menu__btn_burger')) {
             sidebar.classList.add('active');
             body.classList.add('lock');
         }
 
         if (
             (targetEl.closest('.quick-bar') &&
-                !targetEl.closest('.quick-bar__sidebar') &&
+                !targetEl.closest('.quick-bar__box') &&
                 sidebar.classList.contains('active')) ||
             targetEl.closest('.quick-bar__close')
         ) {
@@ -27,15 +27,18 @@ document.addEventListener('DOMContentLoaded', () => {
             prevEl: '.main-slider__prev'
         },
 
-        slidesPerView: 1.35,
+        slidesPerView: 1,
         loop: true,
         centeredSlides: true,
-        speed: 1500,
-        autoplay: true
+        speed: 750,
+        autoplay: true,
 
-        // breakpoints: {
-        //     768: {}
-        // }
+        breakpoints: {
+            576: {
+                slidesPerView: 1.35,
+                speed: 1500
+            }
+        }
     });
 
     new Swiper('.promotions-slider', {
@@ -44,13 +47,15 @@ document.addEventListener('DOMContentLoaded', () => {
             prevEl: '.promotions-slider__prev'
         },
 
-        slidesPerView: 1.25,
-        spaceBetween: 16
-        // loop: true
+        slidesPerView: 1.1,
+        spaceBetween: 16,
+        loop: true,
 
-        // breakpoints: {
-        //     768: {}
-        // }
+        breakpoints: {
+            768: {
+                slidesPerView: 1.25
+            }
+        }
     });
 
     new Swiper('.provider-slider', {

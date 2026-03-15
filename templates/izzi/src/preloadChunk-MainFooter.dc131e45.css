@@ -91,7 +91,7 @@
 }
 
 .buttons-app--column {
-    display: block
+    flex-direction: column;
 }
 
 .buttons-app__item {

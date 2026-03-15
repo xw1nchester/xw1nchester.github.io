@@ -13,6 +13,12 @@
     transition: opacity .2s ease-in-out, visibility .2s ease-in-out
 }
 
+@media (max-width: 768px) {
+    .provider-list__btn {
+        display: none;
+    }
+}
+
 .provider-list__btn--prev {
     left: 0;
     background: linear-gradient(90deg, #242232 15.22%, rgba(36, 34, 50, .79) 55.63%, transparent)
