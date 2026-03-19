@@ -1,0 +1,725 @@
+.games-list-card {
+    transform: translateZ(0);
+    width: 156px;
+    height: 120px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background-color: #35302b
+}
+
+.no-touch .games-list-card {
+    box-shadow: 0 6px 17px -7px rgba(0, 0, 0, .5)
+}
+
+@media(min-width:1280px) {
+    .games-list-card {
+        border-radius: 12px;
+        width: 248px;
+        height: 192px
+    }
+}
+
+.games-list-card:hover {
+    z-index: 1
+}
+
+.favorites__played-games .games-list-card {
+    margin-bottom: 0;
+    background-color: unset
+}
+
+.no-touch .favorites__played-games .games-list-card {
+    box-shadow: unset
+}
+
+.games-sort-page .games-list-card,
+.show-all-modal .games-list-card {
+    width: 100%;
+    margin-right: 0;
+    height: auto
+}
+
+.search-result__inner .games-list-card {
+    width: auto;
+    box-shadow: none;
+    height: auto;
+    margin-right: 0
+}
+
+@media(max-width:711px) {
+    .search-result__inner .search-result_slider .games-list-card {
+        width: 144px
+    }
+}
+
+@media(max-width:711px) {
+    .search-result__inner .search-result_slider-group:last-child .games-list-card {
+        margin-right: 0
+    }
+}
+
+.games-list-card--hovered {
+    z-index: 2
+}
+
+.games-list-card__img-area {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 8px;
+    height: 100%
+}
+
+.games-list-card__img-area:before {
+    content: "";
+    flex-shrink: 0;
+    display: block;
+    width: 100%;
+    margin-right: -100%;
+    padding-top: 76.92%
+}
+
+@media(min-width:1280px) {
+    .games-list-card__img-area {
+        border-radius: 12px
+    }
+}
+
+.games-list-card__body {
+    position: absolute;
+    inset: -8px;
+    z-index: 1;
+    transform: scale(.9);
+    display: flex;
+    border-radius: 12px;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: transform .2s linear, opacity .2s linear;
+    overflow: hidden
+}
+
+.games-list-card__body--visible {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto
+}
+
+.games-list-card__body--visible .games-list-card__img-wr {
+    height: 101%;
+    width: 101%;
+    border-radius: 8px
+}
+
+.games-list-card__body--visible:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    animation: setPointer .2s linear 0s 1 forwards
+}
+
+@keyframes setPointer {
+    0% {
+        z-index: 10
+    }
+
+    99% {
+        z-index: 10
+    }
+
+    to {
+        z-index: -10
+    }
+}
+
+.games-list-card__body-inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 12px 4px 4px
+}
+
+@media(min-width:1280px) {
+    .games-list-card__body-inner {
+        padding: 24px 8px 8px
+    }
+
+    .search-result__inner .games-list-card__body-inner {
+        padding: 12px 4px 4px
+    }
+}
+
+.games-list-card__img-wr {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px
+}
+
+.games-list-card__img-wr:before {
+    content: "";
+    position: relative;
+    z-index: 1;
+    flex-shrink: 0;
+    display: block;
+    width: 101%;
+    height: 101%;
+    background-color: rgba(49, 45, 43, .7);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px)
+}
+
+.games-list-card__body--visible .games-list-card__img-wr:after {
+    content: "";
+    position: absolute;
+    left: -80%;
+    right: -80%;
+    top: -100%;
+    z-index: 2;
+    transform: translateY(0) rotate(-12deg);
+    height: 120%;
+    opacity: .6;
+    background-image: linear-gradient(hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, .4) 29%, hsla(0, 0%, 100%, 0));
+    animation: flareAnim .4s ease-in-out 0s 1 forwards
+}
+
+@media(min-width:1280px) {
+    .games-list-card__img-wr {
+        border-radius: 12px
+    }
+}
+
+@keyframes flareAnim {
+    0% {
+        transform: translateY(0) rotate(-12deg)
+    }
+
+    to {
+        transform: translateY(180%) rotate(-12deg)
+    }
+}
+
+.games-list-card__body-img {
+    position: absolute;
+    inset: 0;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.games-list-card__body-top {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center
+}
+
+.games-list-card--blocked-clicked .games-list-card__body-top {
+    display: none
+}
+
+.games-list-card__body-title-wr-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+    line-height: 0;
+    letter-spacing: -4px
+}
+
+.games-list-card__body-title {
+    display: inline;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    min-height: 32px;
+    letter-spacing: normal;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color .1s ease-in-out
+}
+
+@media(min-width:1280px) {
+    .games-list-card__body-title {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 10px;
+        min-height: 40px
+    }
+
+    .search-result__inner .games-list-card__body-title {
+        font-size: 12px;
+        line-height: 16px;
+        min-height: 32px;
+        margin-bottom: 0
+    }
+}
+
+.games-list-card__rm-message {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: rgba(33, 30, 28, .8)
+}
+
+@media(min-width:1280px) {
+    .games-list-card__rm-message {
+        border-radius: 12px
+    }
+}
+
+.games-list-card__body-rm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f09235
+}
+
+.games-list-card__bg-text .games-list-card__body-rm {
+    margin-bottom: 8px
+}
+
+@media(min-width:1280px) {
+    .games-list-card__bg-text .games-list-card__body-rm {
+        margin-bottom: 10px
+    }
+}
+
+.games-list-card__body-rm-ic {
+    width: 12px;
+    height: auto;
+    margin-right: 4px
+}
+
+@media(min-width:1280px) {
+    .games-list-card__body-rm-ic {
+        width: 15px;
+        margin-right: 9px
+    }
+}
+
+.games-list-card__body-rm-text {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 1.33;
+    letter-spacing: normal;
+    white-space: nowrap
+}
+
+@media(min-width:1280px) {
+    .games-list-card__body-rm-text {
+        font-size: 12px
+    }
+}
+
+.games-list-card__body-play {
+    width: auto;
+    height: 48px;
+    cursor: pointer;
+    transition: transform .2s ease-in-out
+}
+
+.games-list-card__body-play:last-child {
+    margin-bottom: 0
+}
+
+.no-touch .games-list-card__body-play:hover {
+    transform: scale(1.2)
+}
+
+@media(min-width:1280px) {
+    .games-list-card__body-play {
+        height: 60px
+    }
+
+    .search-result__inner .games-list-card__body-play {
+        height: 48px
+    }
+}
+
+.games-list-card__body-bottom {
+    position: relative;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center
+}
+
+.games-list-card--blocked-clicked .games-list-card__body-bottom {
+    display: none
+}
+
+.games-list-card__demo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    height: 24px;
+    flex-shrink: 0;
+    padding: 0 5px;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 1;
+    color: #f09235;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 0;
+    margin-top: 4px;
+    z-index: 1;
+    transition: all .2s ease-out
+}
+
+.no-touch .games-list-card__demo:hover {
+    color: #fff
+}
+
+@media(min-width:1280px) {
+    .games-list-card__demo {
+        min-width: 70px;
+        padding: 0 10px;
+        height: 32px;
+        font-size: 12px;
+        margin-top: 8px
+    }
+}
+
+.games-list-card__favorites {
+    z-index: 1;
+    flex-shrink: 0;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    transition: color .1s ease-in-out
+}
+
+.favorites__played-games .games-list-card__favorites {
+    color: #cc3743
+}
+
+.games-list-card__badges-container {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    pointer-events: none
+}
+
+@media(min-width:712px) {
+    .games-list-card__badges-container {
+        padding: 8px
+    }
+}
+
+.games-list-card__badges-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3px
+}
+
+.games-list-card__badges-list:first-child {
+    align-items: flex-start
+}
+
+.games-list-card__badges-list:last-child {
+    align-items: flex-end
+}
+
+@media(min-width:712px) {
+    .games-list-card__badges-list {
+        gap: 4px
+    }
+}
+
+.games-list-card__badge,
+.games-list-card__live {
+    display: flex;
+    pointer-events: none
+}
+
+.games-list-card__live {
+    background-color: rgba(33, 30, 28, .9);
+    align-items: center;
+    gap: 4px;
+    border-radius: 2px;
+    height: 16px;
+    padding: 2px 4px
+}
+
+@media(min-width:1280px) {
+    .games-list-card__live {
+        height: 24px;
+        border-radius: 4px;
+        padding: 2px 8px
+    }
+}
+
+.games-list-card__live-point {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #4ad429;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .5);
+    animation: blink .5s, opacityBlink 1s infinite
+}
+
+@media(min-width:1280px) {
+    .games-list-card__live-point {
+        width: 10px;
+        height: 10px
+    }
+}
+
+.games-list-card__live-text {
+    font-size: 10px;
+    line-height: 1;
+    color: #faf6f2
+}
+
+@media(min-width:1280px) {
+    .games-list-card__live-text {
+        font-size: 12px
+    }
+}
+
+@keyframes opacityBlink {
+
+    0%,
+    60%,
+    to {
+        opacity: 1
+    }
+
+    99% {
+        opacity: .15
+    }
+}
+
+.games-list-card__sticker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    min-width: 31px;
+    height: 16px;
+    text-align: center
+}
+
+.games-list-card--blocked-clicked,
+.touch .games-list-card__sticker {
+    pointer-events: none
+}
+
+.games-list-card__bg-text {
+    width: 100%;
+    font-size: 11px;
+    line-height: 1.36;
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .1s ease-out
+}
+
+.games-list-card--blocked-clicked .games-list-card__bg-text {
+    opacity: 1
+}
+
+@media(min-width:1280px) {
+    .games-list-card__bg-text {
+        font-size: 15px
+    }
+}
+
+.games-item--not-time-work {
+    filter: contrast(.8)
+}
+
+.games-item--not-time-work .games-list-card__footer {
+    z-index: 1
+}
+
+.games-item-closed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 .5rem;
+    background: radial-gradient(#000, transparent)
+}
+
+.games-item-closed__text {
+    font-size: 16px;
+    text-align: center
+}
+
+.games-list-card__body-jackpot {
+    color: #312d2b;
+    padding: 0 4px;
+    border-radius: 2px;
+    background-color: #e3c544;
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    height: 16px
+}
+
+@media(min-width:1280px) {
+    .games-list-card__body-jackpot {
+        border-radius: 4px;
+        height: 24px;
+        gap: 4px;
+        padding: 1px 4px 0
+    }
+}
+
+.games-list-card__body-jackpot-text {
+    font-size: 12px
+}
+
+.games-list-card__body-jackpot-money {
+    font-size: 12px;
+    line-height: 1.29;
+    color: #fff;
+    font-weight: 600
+}
+
+.gams-list-card__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    inset: auto 4px 4px
+}
+
+@media(min-width:1280px) {
+    .gams-list-card__footer {
+        inset: auto 8px 8px
+    }
+}
+
+.games-list-card__body-provider {
+    position: relative;
+    z-index: 1
+}
+
+.games-list-card__body-provider:before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: -1px;
+    border: 4px solid #f09235;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    box-sizing: border-box;
+    transition: opacity .2s ease-out
+}
+
+.no-touch .games-list-card__body-provider:hover:before {
+    opacity: 1;
+    visibility: visible
+}
+
+.games-list-card__provider-image {
+    width: 28px;
+    height: 28px;
+    transition: border-color .2s ease-out;
+    border-radius: 50%;
+    position: relative
+}
+
+.games-list-card--drops-and-wins {
+    position: relative
+}
+
+.games-list-card--drops-and-wins:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 32px;
+    height: 32px;
+    background-image: url(data:image/png;base64,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);
+    background-position: -1px 1px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    pointer-events: none
+}
+
+@supports(background-image:url("~@/assets/images/dropandwins.webp")) {
+    .games-list-card--drops-and-wins:after {
+        background-image: url(data:image/webp;base64,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)
+    }
+}
+
+@media(min-width:1280px) {
+    .games-list-card--drops-and-wins:after {
+        width: 48px;
+        height: 48px
+    }
+}
+
+.games-list-card__sticker-icon {
+    width: 12px;
+    height: 12px
+}
+
+@media(min-width:1280px) {
+    .games-list-card__sticker-icon {
+        width: 16px;
+        height: 16px
+    }
+}
+
+.games-list-card__sticker--rm {
+    background-color: #006fff;
+    color: #fff;
+    border-radius: 2px
+}
+
+@media(min-width:1280px) {
+    .games-list-card__sticker--rm {
+        height: 24px;
+        border-radius: 4px
+    }
+}
+
+.games-list-card__sticker--tr {
+    background-color: #f09235;
+    color: #fff;
+    border-radius: 2px
+}
+
+@media(min-width:1280px) {
+    .games-list-card__sticker--tr {
+        height: 24px;
+        border-radius: 4px
+    }
+}
