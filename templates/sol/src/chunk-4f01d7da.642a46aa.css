@@ -363,6 +363,12 @@
     }
 }
 
+@media (max-width: 1280px) {
+    .games-list-collections-jackpot {
+        width: 100%;
+    }
+}
+
 .games-list-collections-wrap {
     z-index: 21;
     padding: 0 32px;
@@ -386,8 +392,8 @@
     z-index: 21;
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
-    height: 88px;
     margin-bottom: 24px
 }
 
@@ -417,6 +423,18 @@
     height: auto;
     background-color: #3b352f;
     border-radius: 8px
+}
+
+@media (max-width:1280px) {
+    .games-list-collections__item {
+        min-width: 90px;
+    }
+}
+
+@media (max-width:712px) {
+    .games-list-collections__item {
+        display: none;
+    }
 }
 
 .games-list-collections__item:first-child {
@@ -851,6 +869,12 @@
     }
 }
 
+@media (max-width:712px) {
+    .main-slider__item-btn {
+        display: none;
+    }
+}
+
 .main-slider__item-img-wr {
     flex-shrink: 0;
     width: 190px;
@@ -1017,18 +1041,19 @@
     z-index: 3;
     position: absolute;
     left: calc(50% - 141px);
-    transform: translateX(-50%)
-}
-
-@media(min-width:1280px) {
-    .main-slider__pagination {
-        top: 334px
-    }
+    transform: translateX(-50%);
+    top: 334px
 }
 
 @media(min-width:1580px) {
     .main-slider__pagination {
         top: 364px
+    }
+}
+
+@media (max-width:1280px) {
+    .main-slider__pagination {
+        display: none;
     }
 }
 

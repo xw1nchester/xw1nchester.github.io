@@ -7,6 +7,16 @@
     background-color: #35302b
 }
 
+.games-list-card:hover .games-list-card__body-img {
+    transition: .3s;
+}
+
+@media (any-hover:hover) {
+    .games-list-card:hover .games-list-card__body-img {
+        transform: scale(1.05);
+    }
+}
+
 .no-touch .games-list-card {
     box-shadow: 0 6px 17px -7px rgba(0, 0, 0, .5)
 }
@@ -213,9 +223,13 @@
 
 .games-list-card__body-img {
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border-radius: 8px;
     width: 100%;
+    object-fit: cover;
 }
 
 .games-list-card__body-top {

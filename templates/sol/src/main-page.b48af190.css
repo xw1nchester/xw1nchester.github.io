@@ -306,13 +306,13 @@
     font-size: 16px;
     font-weight: 600;
     color: #fff;
-    max-width: 70%
+    max-width: 70%;
+        margin-right: 16px
 }
 
 @media(min-width:712px) {
     .games-slider__title {
         font-size: 20px;
-        margin-right: 20px
     }
 }
 
@@ -585,7 +585,10 @@
 
 .no-touch .game-card-video:hover .game-card-video__nav[data-v-b5f1c356],
 .no-touch .game-card-video:hover .game-card-video__title[data-v-b5f1c356] {
-    color: #f09235
+    color: #f09235;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .game-card-video__button[data-v-b5f1c356] {
@@ -1543,11 +1546,11 @@
     color: #fff
 }
 
-@media(min-width:712px) {
-    .record-winnings__table-th-inner {
-        display: flex;
-        align-items: center
-    }
+
+.record-winnings__table-th-inner {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 @media(min-width:712px) {

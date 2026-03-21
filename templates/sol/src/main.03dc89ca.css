@@ -1703,6 +1703,12 @@ body:has(.main-super-widget) .main-wrapper:not(.scrolled) .top-bar {
     }
 }
 
+@media (max-width:712px) {
+    .btn-search {
+        display: none !important;
+    }
+}
+
 .search-block-wrap {
     height: 100%
 }
@@ -3826,6 +3832,19 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader {
     cursor: pointer;
     opacity: 0.5;
     transition: .3s;
+}
+
+.nav-links__item--download {
+    padding: 0 20px;
+    opacity: 0;
+}
+
+.nav-links__item_download {
+    margin-bottom: 16px;
+}
+
+.nav-links__item--download img {
+    width: 100%;
 }
 
 .nav-links--v .nav-links__item-link:hover {

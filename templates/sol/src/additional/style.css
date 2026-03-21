@@ -1,0 +1,68 @@
+.home-bg-section-inner_mobile {
+    display: none;
+}
+
+@media (max-width:712px) {
+    .home-bg-section-inner_mobile {
+        display: block;
+    }
+}
+
+.mobile-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    background-color: #35302B;
+    z-index: 6;
+}
+
+@media (max-width:712px) {
+    .mobile-menu {
+        display: flex;
+    }
+}
+
+@media (max-width:712px) {
+    .games-slider__navigation {
+        display: none;
+    }
+}
+
+.mobile-menu__btn {
+    width: 20%;
+    height: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    background-color: transparent;
+    border: 0;
+    font-size: 10px;
+}
+
+.mobile-menu__btn.active {
+    border-bottom: 2px solid #F09235;
+}
+
+.mobile-menu__btn.active svg {
+    color: #F09235;
+}
+
+.quick-bar.active, .quick-bar.active .nav-links {
+    width: 250px;
+}
+
+@media (max-width:712px) {
+    .quick-bar.active {
+        height: unset;
+        bottom: 0;
+    }
+}
+
+.quick-bar.active .nav-links__item--download,
+.quick-bar.active .quick-bar__social-links {
+    opacity: 1;
+}
