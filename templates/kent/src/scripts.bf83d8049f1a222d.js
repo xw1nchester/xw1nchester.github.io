@@ -1,0 +1,1 @@
+function gettext(t){return t}
