@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const basicSliders = document.querySelectorAll('.basic-slider');
     const loyalSlider = document.querySelector('.loyal-slider');
     const jackpotSlider = document.querySelector('.jackpot-slider');
+    const sidebar = document.querySelector('.sidebar');
+    const body = document.body;
 
     mainSliders.forEach(
         s =>
@@ -36,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         .querySelector('.wlc-swiper-button-prev')
                 },
 
-                slidesPerView: 6,
+                slidesPerView: 2.25,
                 spaceBetween: 12,
                 grid: {
                     fill: 'row',
@@ -44,7 +46,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
 
                 breakpoints: {
-                    768: {}
+                    576: {
+                        slidesPerView: 3
+                    },
+                    768: {
+                        slidesPerView: 4
+                    },
+                    992: {
+                        slidesPerView: 5
+                    },
+                    1200: {
+                        slidesPerView: 6
+                    }
                 }
             })
     );
@@ -59,11 +72,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 .querySelector('.wlc-swiper-button-prev')
         },
 
-        slidesPerView: 5,
+        slidesPerView: 2,
         spaceBetween: 20,
 
         breakpoints: {
-            768: {}
+            576: {
+                slidesPerView: 3
+            },
+            768: {
+                slidesPerView: 4
+            },
+            1200: {
+                slidesPerView: 5
+            }
         }
     });
 
@@ -77,20 +98,56 @@ document.addEventListener('DOMContentLoaded', () => {
                 .querySelector('.wlc-swiper-button-prev')
         },
 
-        slidesPerView: 5,
+        slidesPerView: 2.25,
         spaceBetween: 20,
 
         breakpoints: {
-            768: {}
+            576: {
+                slidesPerView: 3
+            },
+            768: {
+                slidesPerView: 4
+            },
+            992: {
+                slidesPerView: 5
+            },
+            1200: {
+                slidesPerView: 6
+            }
         }
     });
 
     new Swiper('.providers-slider', {
-        slidesPerView: 7,
+        slidesPerView: 2.25,
         spaceBetween: 15,
 
         breakpoints: {
-            768: {}
+            576: {
+                slidesPerView: 3
+            },
+            768: {
+                slidesPerView: 4
+            },
+            992: {
+                slidesPerView: 5
+            },
+            1200: {
+                slidesPerView: 7
+            }
+        }
+    });
+
+    document.addEventListener('click', function (e) {
+        const targetEl = e.target;
+
+        if (targetEl.closest('.burger-btn')) {
+            sidebar.classList.add('active');
+            body.classList.add('lock');
+        }
+
+        if (targetEl.closest('.sidebar__close')) {
+            sidebar.classList.remove('active');
+            body.classList.remove('lock');
         }
     });
 });

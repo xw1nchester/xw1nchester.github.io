@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" height="34" viewBox="0 0 34 34" width="34"><metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Description><dc:creator>RealFaviconGenerator</dc:creator><dc:source>https://realfavicongenerator.net</dc:source></rdf:Description></rdf:RDF></metadata><g filter="url(#svg-662db9)">
+                      <rect fill="#FF0068" height="33.4727" rx="8.36829" width="33.4727" x="0.234375" y="0.530273">
+                      </rect>
+                      <path d="M23.4492 22.3601L22.8695 25.6432H8.11719L9.88382 15.623H23.8541L23.2745 18.9062H12.6747L12.0673 22.3601H23.4492Z" fill="#F6F6F6"></path>
+                      <path d="M25.8194 8.89014L25.0492 13.2611H10.2969L11.067 8.89014L14.4653 10.5377L18.4432 8.89014L21.8415 10.5377L25.8194 8.89014Z" fill="#F6F6F6"></path>
+                    </g><defs>
+                      <filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="33.4727" id="svg-662db9" width="33.4688" x="0.234375" y="0.530273">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                        <feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape"></feBlend>
+                        <feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"></feColorMatrix>
+                        <feOffset></feOffset>
+                        <feGaussianBlur stdDeviation="4.18414"></feGaussianBlur>
+                        <feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic">
+                        </feComposite>
+                        <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0">
+                        </feColorMatrix>
+                        <feBlend in2="shape" mode="normal" result="effect1_innerShadow_1902_468"></feBlend>
+                      </filter>
+                    </defs></svg>

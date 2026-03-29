@@ -648,7 +648,7 @@
         font-weight: 400;
         font-family: Switzer;
         font-style: normal;
-        src: url(/static/fonts/Switzer/switzer-regular.woff2) format("woff2"), url(/static/fonts/Switzer/switzer-regular.woff) format("woff");
+        src: url(../switzer-regular.woff2) format("woff2"), url(../switzer-regular.woff) format("woff");
         font-display: swap
     }
 
@@ -656,7 +656,7 @@
         font-weight: 500;
         font-family: Switzer;
         font-style: normal;
-        src: url(/static/fonts/Switzer/switzer-500.woff2) format("woff2"), url(/static/fonts/Switzer/switzer-500.woff) format("woff");
+        src: url(../switzer-500.woff2) format("woff2"), url(../switzer-500.woff) format("woff");
         font-display: swap
     }
 
@@ -664,7 +664,7 @@
         font-weight: 600;
         font-family: Switzer;
         font-style: normal;
-        src: url(/static/fonts/Switzer/switzer-600.woff2) format("woff2"), url(/static/fonts/Switzer/switzer-600.woff) format("woff");
+        src: url(../switzer-600.woff2) format("woff2"), url(../switzer-600.woff) format("woff");
         font-display: swap
     }
 
@@ -672,7 +672,7 @@
         font-weight: 700;
         font-family: Switzer;
         font-style: normal;
-        src: url(/static/fonts/Switzer/switzer-700.woff2) format("woff2"), url(/static/fonts/Switzer/switzer-700.woff) format("woff");
+        src: url(../switzer-700.woff2) format("woff2"), url(../switzer-700.woff) format("woff");
         font-display: swap
     }
 
@@ -680,7 +680,7 @@
         font-weight: 800;
         font-family: Switzer;
         font-style: normal;
-        src: url(/static/fonts/Switzer/switzer-800.woff2) format("woff2"), url(/static/fonts/Switzer/switzer-800.woff) format("woff");
+        src: url(../switzer-800.woff2) format("woff2"), url(../switzer-800.woff) format("woff");
         font-display: swap
     }
 
@@ -688,7 +688,7 @@
         font-weight: 400;
         font-family: Switzer;
         font-style: italic;
-        src: url(/static/fonts/Switzer/switzer-italic.woff2) format("woff2"), url(/static/fonts/Switzer/switzer-italic.woff) format("woff");
+        src: url(../switzer-italic.woff2) format("woff2"), url(../switzer-italic.woff) format("woff");
         font-display: swap
     }
 
@@ -696,7 +696,7 @@
         font-weight: 500;
         font-family: Switzer;
         font-style: italic;
-        src: url(/static/fonts/Switzer/switzer-500-italic.woff2) format("woff2"), url(/static/fonts/Switzer/switzer-500-italic.woff) format("woff");
+        src: url(../switzer-500-italic.woff2) format("woff2"), url(../switzer-500-italic.woff) format("woff");
         font-display: swap
     }
 
@@ -704,7 +704,7 @@
         font-weight: 600;
         font-family: Switzer;
         font-style: italic;
-        src: url(/static/fonts/Switzer/switzer-600-italic.woff2) format("woff2"), url(/static/fonts/Switzer/switzer-600-italic.woff) format("woff");
+        src: url(../switzer-600-italic.woff2) format("woff2"), url(../switzer-600-italic.woff) format("woff");
         font-display: swap
     }
 
@@ -712,7 +712,7 @@
         font-weight: 700;
         font-family: Switzer;
         font-style: italic;
-        src: url(/static/fonts/Switzer/switzer-700-italic.woff2) format("woff2"), url(/static/fonts/Switzer/switzer-700-italic.woff) format("woff");
+        src: url(../switzer-700-italic.woff2) format("woff2"), url(../switzer-700-italic.woff) format("woff");
         font-display: swap
     }
 
@@ -720,7 +720,7 @@
         font-weight: 800;
         font-family: Switzer;
         font-style: italic;
-        src: url(/static/fonts/Switzer/switzer-800-italic.woff2) format("woff2"), url(/static/fonts/Switzer/switzer-800-italic.woff) format("woff");
+        src: url(../switzer-800-italic.woff2) format("woff2"), url(../switzer-800-italic.woff) format("woff");
         font-display: swap
     }
 
@@ -3529,6 +3529,17 @@
         --us-display: block
     }
 
+    @media (max-width: 992px) {
+        .wlc-burger-panel--theme-left.wlc-burger-panel--type-left-fixed.wlc-burger-panel--view-expanded[_nghost-wlc-app-c2977347956] {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            max-width: unset;
+            transition: .3s;
+        }
+    }
+
     .wlc-burger-panel--theme-left.wlc-burger-panel--type-left-fixed.wlc-burger-panel--view-compact[_nghost-wlc-app-c2977347956] {
         --bp-header-padding: 10px 5px;
         --bp-login-display: none;
@@ -4538,14 +4549,6 @@
     .wlc-scrollbar--theme-default[class][_nghost-wlc-app-c264346179]::-webkit-scrollbar-thumb {
         background: var(--mc-bg100);
         border-radius: 10px
-    }
-
-
-    .wlc-icon svg,
-    .wlc-icon img {
-        width: var(--wlc-icon-width);
-        height: var(--wlc-icon-height);
-        overflow: visible
     }
 
     .wlc-icon-spin {
@@ -6316,7 +6319,7 @@
 
     .wlc-winners-slider--theme-vertical[_nghost-wlc-app-c2388703720] .wlc-winners-slider__wrapper[_ngcontent-wlc-app-c2388703720] {
         height: 100%;
-        background: url(../wins_bg.png) right top no-repeat;
+        /* background: url(../wins_bg.png) right top no-repeat; */
         border-radius: 10px;
         overflow: hidden
     }
@@ -6719,7 +6722,7 @@
         bottom: 0;
         display: block;
         width: 130px;
-        background: center no-repeat url(//agstatic.com/wlc/icons/reflection.png);
+        background: center no-repeat url(..///agstatic.com/wlc/icons/reflection.png);
         animation-name: _ngcontent-wlc-app-c590251617_buttonGlare;
         animation-duration: 3s;
         animation-timing-function: ease-in-out;
@@ -7408,6 +7411,12 @@
         font-style: italic
     }
 
+    @media (max-width: 992px) {
+        .wlc-btn--theme-skew[_nghost-wlc-app-c590251617] {
+            min-width: unset;
+        }
+    }
+
     .wlc-btn--theme-skew.wlc-btn--animate-shine[_nghost-wlc-app-c590251617],
     .wlc-btn--theme-skew.wlc-btn--deposit[_nghost-wlc-app-c590251617] {
         position: relative;
@@ -8054,7 +8063,7 @@
         font-weight: 400;
         font-family: TotalJackpot;
         font-style: normal;
-        src: local(""), url(//vibrant-pulsepath.com/wlc/fonts/rowdies/rowdies-v15-latin-regular.woff2) format("woff2"), url(//vibrant-pulsepath.com/wlc/fonts/rowdies/rowdies-v15-latin-regular.woff) format("woff")
+        src: local(""), url(..///vibrant-pulsepath.com/wlc/fonts/rowdies/rowdies-v15-latin-regular.woff2) format("woff2"), url(..///vibrant-pulsepath.com/wlc/fonts/rowdies/rowdies-v15-latin-regular.woff) format("woff")
     }
 
     .wlc-total-jackpot--theme-games-inside[_nghost-wlc-app-c99056782] {
@@ -8254,7 +8263,7 @@
         height: 40px;
         left: 7%;
         top: 20px;
-        background: url(//vibrant-pulsepath.com/wlc/total-jackpot/decor-1.png) center/contain no-repeat;
+        background: url(..///vibrant-pulsepath.com/wlc/total-jackpot/decor-1.png) center/contain no-repeat;
         animation: _ngcontent-wlc-app-c99056782_rotateRight 60s linear infinite
     }
 
@@ -8299,7 +8308,7 @@
         height: 40px;
         right: 7%;
         top: 20px;
-        background: url(//vibrant-pulsepath.com/wlc/total-jackpot/decor-2.png) center/contain no-repeat;
+        background: url(..///vibrant-pulsepath.com/wlc/total-jackpot/decor-2.png) center/contain no-repeat;
         animation: _ngcontent-wlc-app-c99056782_rotateLeft 60s linear infinite
     }
 
@@ -9019,6 +9028,12 @@
 
     a.wlc-section-title--theme-default[_nghost-wlc-app-c679633311] .wlc-section-title__content[_ngcontent-wlc-app-c679633311] .wlc-icon svg {
         fill: var(--mc-baseMain)
+    }
+
+    @media (max-width:992px) {
+        a.wlc-section-title--theme-default[_nghost-wlc-app-c679633311] .wlc-section-title__content[_ngcontent-wlc-app-c679633311] {
+            font-size: 18px;
+        }
     }
 
     @media (pointer: fine) {
@@ -9950,7 +9965,7 @@
         display: none;
         width: 100%;
         height: 100%;
-        background-image: url(//vibrant-pulsepath.com/wlc/new-banners/banner-4/left-fixed.svg), url(//vibrant-pulsepath.com/wlc/new-banners/banner-4/right-fixed.svg);
+        background-image: url(..///vibrant-pulsepath.com/wlc/new-banners/banner-4/left-fixed.svg), url(..///vibrant-pulsepath.com/wlc/new-banners/banner-4/right-fixed.svg);
         background-position: -375% 0, 110% 0;
         position: absolute;
         background-repeat: no-repeat
@@ -11990,7 +12005,7 @@
 
     @font-face {
         font-family: swiper-icons;
-        src: url(data:application/font-woff;charset=utf-8;base64,\ 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) format("woff");
+        src: url(../data:application/font-woff;charset=utf-8;base64,\ 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) format("woff");
         font-weight: 400;
         font-style: normal
     }
@@ -13977,7 +13992,7 @@
         right: 0;
         width: 40px;
         height: 40px;
-        background: url(/static/images/wlc/decors/newbonus.svg) no-repeat;
+        /* background: url(..//static/images/wlc/decors/newbonus.svg) no-repeat; */
         background-size: cover;
         pointer-events: none
     }
@@ -16200,18 +16215,13 @@
             max-width: 220px
         }
 
-        .wlc-login-signup--theme-default[_nghost-wlc-app-c4208157022] .wlc-btn--type-default[data-wlc-element=button_login-modal] {
-            min-width: 0;
-            padding: 5px 10px
-        }
-
         .wlc-login-signup--theme-default[_nghost-wlc-app-c4208157022] .wlc-btn--type-default[data-wlc-element=button_login-modal] .wlc-btn__text {
             line-height: 1
         }
 
         .wlc-login-signup--theme-default[_nghost-wlc-app-c4208157022] .wlc-btn--type-default[data-wlc-element=button_register-modal] {
-            min-width: 0;
-            padding: 5px 15px
+            min-width: unset;
+            padding: 5px
         }
 
         .wlc-login-signup--theme-default[_nghost-wlc-app-c4208157022] .wlc-btn--type-default[data-wlc-element=button_register-modal] .wlc-btn__text {
@@ -23457,7 +23467,7 @@
         border-radius: 6px;
         background-position: center;
         background-color: var(--mc-bg-d10);
-        background-image: url(/static/images/logo.svg);
+        background-image: url(../logo.svg);
         background-size: 50%;
         background-repeat: no-repeat
     }
@@ -24128,7 +24138,7 @@
     .wlc-game-thumb--theme-default.wlc-game-thumb--theme-mod-circle[_nghost-wlc-app-c796713769] .wlc-btn--play[_ngcontent-wlc-app-c796713769]:before {
         content: "";
         position: absolute;
-        background: url(//vibrant-pulsepath.com/wlc/icons/game-play.svg);
+        background: url(..///vibrant-pulsepath.com/wlc/icons/game-play.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: auto 100%
@@ -24283,7 +24293,7 @@
     .wlc-game-thumb--theme-default.wlc-game-thumb--theme-mod-wolf[_nghost-wlc-app-c796713769] .wlc-btn--play[_ngcontent-wlc-app-c796713769]:before {
         content: "";
         position: absolute;
-        background: url(//vibrant-pulsepath.com/wlc/icons/game-play.svg);
+        background: url(..///vibrant-pulsepath.com/wlc/icons/game-play.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: auto 100%
@@ -24598,7 +24608,7 @@
         border-radius: 6px;
         background-position: center;
         background-color: var(--mc-bg-d10);
-        background-image: url(/static/images/logo.svg);
+        background-image: url(../logo.svg);
         background-size: 50%;
         background-repeat: no-repeat
     }
@@ -24865,7 +24875,7 @@
         width: 100%;
         background-position: center;
         background-color: var(--mc-bg-d10);
-        background-image: url(/static/images/logo.svg);
+        background-image: url(../logo.svg);
         background-repeat: no-repeat;
         background-size: 50%
     }
@@ -25040,7 +25050,7 @@
     .wlc-game-thumb--theme-vertical.wlc-game-thumb--theme-mod-circle[_nghost-wlc-app-c796713769] .wlc-game-thumb__control[_ngcontent-wlc-app-c796713769] .wlc-btn--play[_ngcontent-wlc-app-c796713769]:before {
         content: "";
         position: absolute;
-        background: url(//vibrant-pulsepath.com/wlc/icons/game-play.svg);
+        background: url(..///vibrant-pulsepath.com/wlc/icons/game-play.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: auto 100%
@@ -25197,7 +25207,7 @@
     .wlc-game-thumb--theme-vertical.wlc-game-thumb--theme-mod-wolf[_nghost-wlc-app-c796713769] .wlc-game-thumb__control[_ngcontent-wlc-app-c796713769] .wlc-btn--play[_ngcontent-wlc-app-c796713769]:before {
         content: "";
         position: absolute;
-        background: url(//vibrant-pulsepath.com/wlc/icons/game-play.svg);
+        background: url(..///vibrant-pulsepath.com/wlc/icons/game-play.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: auto 100%
@@ -25464,7 +25474,7 @@
         width: 100%;
         background-position: center;
         background-color: var(--mc-bg-d10);
-        background-image: url(/static/images/logo.svg);
+        background-image: url(../logo.svg);
         background-size: 50%;
         background-repeat: no-repeat
     }
@@ -25557,7 +25567,7 @@
         justify-content: center;
         width: 24px;
         height: 100%;
-        background-image: url(/static/images/wlc/icons/hot-rtp.png);
+        background-image: url(..//static/images/wlc/icons/hot-rtp.png);
         background-repeat: no-repeat;
         background-size: contain
     }
