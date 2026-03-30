@@ -6,9 +6,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const sidebar = document.querySelector('.sidebar');
     const body = document.body;
 
+    new Swiper('.banner-slider', {
+        pagination: {
+            el: '.banner-slider__pagination',
+            clickable: true
+        },
+
+        slidesPerView: 'auto',
+        spaceBetween: 10
+    });
+
     mainSliders.forEach(
         s =>
             new Swiper(s, {
+                pagination: {
+                    el: s.querySelector('.slider__pagination'),
+                    clickable: true
+                },
                 navigation: {
                     nextEl: s
                         .closest('.main-slider-wrapper')

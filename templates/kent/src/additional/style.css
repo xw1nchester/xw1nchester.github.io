@@ -3,7 +3,7 @@ body {
 }
 
 body.lock {
-    overflow: hidden!important;
+    overflow: hidden !important;
 }
 
 .bottom-menu {
@@ -58,8 +58,8 @@ body.lock {
 }
 
 .feedback-btn {
-    width: 60px!important;
-    height: 60px!important;
+    width: 60px !important;
+    height: 60px !important;
 }
 
 .feedback-btn img {
@@ -68,19 +68,19 @@ body.lock {
 
 @media (max-width: 992px) {
     .feedback-btn {
-        width: 50px!important;
-        height: 50px!important;
+        width: 50px !important;
+        height: 50px !important;
     }
 }
 
 @media (max-width: 992px) {
     .footer {
-        padding-bottom: 60px!important;
+        padding-bottom: 60px !important;
     }
 }
 
 .sidebar.active {
-    left: 0!important;
+    left: 0 !important;
 }
 
 .sidebar__head {
@@ -96,4 +96,24 @@ body.lock {
     background-color: transparent;
     border: 0;
     color: #999;
+}
+
+.slider__pagination {
+    position: absolute;
+    bottom: 8px;
+    z-index: 2;
+}
+
+@media (min-width: 992px) {
+    .slider__pagination {
+        display: none;
+    }
+
+    .banner-slider__first {
+        width: calc(100% * 2 / 3 - 2 * 10px / 3);
+    }
+
+    .banner-slider__second {
+        width: calc(100% / 3 - 2 * 10px / 3);
+    }
 }

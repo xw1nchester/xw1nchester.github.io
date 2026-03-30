@@ -11916,7 +11916,8 @@
     }
 
     .wlc-category-menu--theme-icons-compact[_nghost-wlc-app-c3914343325] .wlc-menu .wlc-nav-slider__container {
-        padding: 0 8px
+        padding: 0 8px;
+        overflow-x: auto;
     }
 
     .wlc-category-menu--theme-icons-compact[_nghost-wlc-app-c3914343325] .wlc-menu .wlc-nav-slider__slide:last-of-type .wlc-menu__item .wlc-menu__link {
@@ -12471,7 +12472,7 @@
     }
 
     .swiper-pagination-bullet-active {
-        width: 16px;
+        width: 8px;
         height: 8px;
         background: var(--mc-baseMain-locked)
     }

@@ -5135,7 +5135,7 @@ bs-datepicker-container {
 
 .wlc-sections__banner-wolf-fixed .wlc-slider--theme-wolf-banner,
 .wlc-sections__banner-wolf-fixed .wolf-banner-1 {
-    min-width: 100%
+    /* min-width: 100% */
 }
 
 .wlc-sections__banner-wolf-fixed .banner,
