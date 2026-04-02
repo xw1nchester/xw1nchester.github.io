@@ -1,0 +1,9 @@
+.sidebar-close {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .sidebar-close {
+        display: flex;
+    }
+}
