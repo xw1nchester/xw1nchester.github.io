@@ -661,7 +661,7 @@ img {
     font-weight: 400;
     font-family: Rubik;
     font-style: normal;
-    src: url(/static/fonts/rubik/rubik-regular.woff2) format("woff2");
+    src: url(../rubik-regular.woff2) format("woff2");
     font-display: swap
 }
 
@@ -669,7 +669,7 @@ img {
     font-weight: 600;
     font-family: Rubik;
     font-style: normal;
-    src: url(/static/fonts/rubik/rubik-600.woff2) format("woff2");
+    src: url(../rubik-600.woff2) format("woff2");
     font-display: swap
 }
 
@@ -677,12 +677,12 @@ img {
     font-weight: 700;
     font-family: Rubik;
     font-style: normal;
-    src: url(/static/fonts/rubik/rubik-700.woff2) format("woff2");
+    src: url(../rubik-700.woff2) format("woff2");
     font-display: swap
 }
 
 .wlc-app {
-    background: url(/static/images/base/bg_left2.png) top 30% left/10% no-repeat, url(/static/images/base/bg_right4.png) top 10% right/10% no-repeat
+    background: url(../bg_left2.png) top 30% left/10% no-repeat, url(../bg_right4.png) top 10% right/10% no-repeat
 }
 
 @media (max-width: 1199px) {
@@ -2625,6 +2625,12 @@ body.wlc-body--panels-open {
     }
 }
 
+@media (max-width: 992px) {
+    .wlc-app-content .wlc-sections__footer {
+        padding-bottom: 100px !important;
+    }
+}
+
 .app-gameplay-state .wlc-sections__footer,
 .app-gameplay-state .wlc-sections__header {
     display: none
@@ -4177,7 +4183,7 @@ body.wlc-body--panels-open {
 
 .wlc-burger-panel--theme-left.wlc-burger-panel--theme-mod-wolf.wlc-burger-panel--view-expanded[_nghost-wlc-app-c1243143471] .wlc-burger-panel__inner,
 .wlc-burger-panel--theme-left.wlc-burger-panel--theme-mod-wolf.wlc-burger-panel--view-compact[_nghost-wlc-app-c1243143471] .wlc-burger-panel__inner {
-    padding-bottom: 200px
+    /* padding-bottom: 200px */
 }
 
 .wlc-burger-panel--theme-left.wlc-burger-panel--theme-mod-wolf.wlc-burger-panel--view-expanded[_nghost-wlc-app-c1243143471] .wlc-language-selector--theme-wolf .wlc-language-selector__icon .wlc-icon-content {
@@ -8442,6 +8448,12 @@ a.wlc-section-title--theme-default[_nghost-wlc-app-c679633311] .wlc-section-titl
     line-height: 1.4
 }
 
+@media (max-width: 576px) {
+    .wlc-section-title--theme-default[_nghost-wlc-app-c679633311] .wlc-section-title__content[_ngcontent-wlc-app-c679633311] {
+        font-size: 1.7rem;
+    }
+}
+
 .wlc-section-title--theme-default[_nghost-wlc-app-c679633311] .wlc-section-title__icon[_ngcontent-wlc-app-c679633311] {
     --wlc-icon-width: 20px;
     --wlc-icon-height: 20px;
@@ -10386,7 +10398,8 @@ a.wlc-section-title--theme-swiper[_nghost-wlc-app-c679633311] .wlc-section-title
 }
 
 .wlc-category-menu--theme-icons-compact[_nghost-wlc-app-c3914343325] .wlc-menu .wlc-nav-slider__container {
-    margin: 0 -5px
+    margin: 0 -5px;
+    overflow-x: auto;
 }
 
 .wlc-category-menu--theme-icons-compact[_nghost-wlc-app-c3914343325] .wlc-menu .wlc-nav-slider__slide:last-of-type .wlc-menu__item {
@@ -10913,7 +10926,7 @@ a.wlc-section-title--theme-swiper[_nghost-wlc-app-c679633311] .wlc-section-title
 
 .wlc-winners-slider--theme-vertical[_nghost-wlc-app-c2388703720] .wlc-winners-slider__wrapper[_ngcontent-wlc-app-c2388703720] {
     height: 100%;
-    background: url(/static/images/promo/wins_bg.png) top/cover no-repeat;
+    /* background: url(/static/images/promo/wins_bg.png) top/cover no-repeat; */
     border-radius: 20px;
     overflow: hidden
 }
@@ -15303,7 +15316,7 @@ button.swiper-pagination-bullet {
     .wlc-login-signup--theme-default[_nghost-wlc-app-c4208157022] .wlc-btn--type-default[data-wlc-element=button_login-modal],
     .wlc-login-signup--theme-default[_nghost-wlc-app-c4208157022] .wlc-btn--type-default[data-wlc-element=button_register-modal] {
         min-width: unset;
-        padding: 5px 24px
+        /* padding: 5px 24px */
     }
 }
 
@@ -18067,7 +18080,7 @@ button.swiper-pagination-bullet {
     border-radius: 16px 16px 0 0;
     background-position: center;
     background-color: var(--mc-bg-d10);
-    background-image: url(/static/images/logo.svg);
+    background-image: url(../logo.svg);
     background-size: 50%;
     background-repeat: no-repeat
 }
@@ -19208,7 +19221,7 @@ button.swiper-pagination-bullet {
     border-radius: 16px 16px 0 0;
     background-position: center;
     background-color: var(--mc-bg-d10);
-    background-image: url(/static/images/logo.svg);
+    background-image: url(../logo.svg);
     background-size: 50%;
     background-repeat: no-repeat
 }
@@ -19257,7 +19270,11 @@ button.swiper-pagination-bullet {
     font-style: normal;
     font-weight: 400;
     font-size: 1.6rem;
-    line-height: 1.45
+    line-height: 1.45;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 @media (min-width: 1200px) {
@@ -19469,7 +19486,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     background-position: center;
     background-color: var(--mc-bg-d10);
-    background-image: url(/static/images/logo.svg);
+    background-image: url(../logo.svg);
     background-repeat: no-repeat;
     background-size: 50%
 }
@@ -20062,7 +20079,7 @@ button.swiper-pagination-bullet {
     width: 100%;
     background-position: center;
     background-color: var(--mc-bg-d10);
-    background-image: url(/static/images/logo.svg);
+    background-image: url(../logo.svg);
     background-size: 50%;
     background-repeat: no-repeat
 }

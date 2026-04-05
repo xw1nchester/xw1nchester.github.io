@@ -27,39 +27,40 @@ document.addEventListener('DOMContentLoaded', () => {
             })
     );
 
-    basicSliders.forEach(s => 
-        new Swiper(s, {
-            navigation: {
-                nextEl: s
-                    .closest('.basic-slider-wrapper')
-                    .querySelector('.wlc-swiper-button-next'),
-                prevEl: s
-                    .closest('.basic-slider-wrapper')
-                    .querySelector('.wlc-swiper-button-prev')
-            },
+    basicSliders.forEach(
+        s =>
+            new Swiper(s, {
+                navigation: {
+                    nextEl: s
+                        .closest('.basic-slider-wrapper')
+                        .querySelector('.wlc-swiper-button-next'),
+                    prevEl: s
+                        .closest('.basic-slider-wrapper')
+                        .querySelector('.wlc-swiper-button-prev')
+                },
 
-            slidesPerView: 2.25,
-            spaceBetween: 12,
-            grid: {
-                fill: 'row',
-                rows: 2
-            },
+                slidesPerView: 2.15,
+                spaceBetween: 12,
+                grid: {
+                    fill: 'row',
+                    rows: 2
+                },
 
-            breakpoints: {
-                576: {
-                    slidesPerView: 3
-                },
-                768: {
-                    slidesPerView: 4
-                },
-                992: {
-                    slidesPerView: 5
-                },
-                1200: {
-                    slidesPerView: 6
+                breakpoints: {
+                    576: {
+                        slidesPerView: 3
+                    },
+                    768: {
+                        slidesPerView: 4
+                    },
+                    992: {
+                        slidesPerView: 5
+                    },
+                    1200: {
+                        slidesPerView: 6
+                    }
                 }
-            }
-        })
+            })
     );
 
     new Swiper('.providers-slider', {
@@ -84,16 +85,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     new Swiper('.streamers-slider', {
         navigation: {
-                nextEl: document.querySelector('.streamers-slider-next'),
-                prevEl: document.querySelector('.streamers-slider-prev')
-            },
-            
-        slidesPerView: 3,
+            nextEl: document.querySelector('.streamers-slider-next'),
+            prevEl: document.querySelector('.streamers-slider-prev')
+        },
+
+        slidesPerView: 1.5,
+        centeredSlides: true,
+        loop: true,
         spaceBetween: 15,
 
         breakpoints: {
             576: {
+                slidesPerView: 2
             },
+            768: {
+                slidesPerView: 3
+            }
         }
     });
 
@@ -103,12 +110,41 @@ document.addEventListener('DOMContentLoaded', () => {
             prevEl: document.querySelector('.jackpot-prev')
         },
 
-        slidesPerView: 4,
-        spaceBetween: 20,
+        slidesPerView: 1.5,
+        spaceBetween: 8,
 
         breakpoints: {
             576: {
+                slidesPerView: 2.5,
+                spaceBetween: 12
             },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 16
+            },
+            992: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+                centeredSlides: false,
+                loop: false
+            }
+        }
+    });
+
+    const sidebar = document.querySelector('.sidebar');
+    const body = document.body;
+
+    document.addEventListener('click', function (e) {
+        const targetEl = e.target;
+
+        if (targetEl.closest('.burger-btn')) {
+            sidebar.classList.add('active');
+            body.classList.add('lock');
+        }
+
+        if (targetEl.closest('.sidebar-close')) {
+            sidebar.classList.remove('active');
+            body.classList.remove('lock');
         }
     });
 });
