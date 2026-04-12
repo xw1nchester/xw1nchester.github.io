@@ -29,6 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
         },
 
         slidesPerView: 'auto',
+        freeMode: true,
+    });
+
+    new Swiper('.winners-slider', {
+        slidesPerView: 'auto',
 
         breakpoints: {
             768: {}

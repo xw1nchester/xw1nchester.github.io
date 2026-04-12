@@ -538,7 +538,7 @@ img {
     font-weight: 400;
     font-family: Firs;
     font-style: normal;
-    src: url(/static/fonts/TTFirs-regular.woff2) format("woff2"), url(/static/fonts/TTFirs-regular.woff) format("woff");
+    src: url(TTFirs-regular.woff) format("woff2"), url(TTFirs-regular.woff) format("woff");
     font-display: swap
 }
 
@@ -554,7 +554,7 @@ img {
     font-weight: 700;
     font-family: Firs;
     font-style: normal;
-    src: url(/static/fonts/TTFirs-700.woff2) format("woff2"), url(/static/fonts/TTFirs-700.woff) format("woff");
+    src: url(TTFirs-700.woff) format("woff");
     font-display: swap
 }
 
@@ -562,7 +562,7 @@ img {
     font-weight: 800;
     font-family: Firs;
     font-style: normal;
-    src: url(/static/fonts/TTFirs-800.woff2) format("woff2"), url(/static/fonts/TTFirs-800.woff) format("woff");
+    src: url(TTFirs-800.woff) format("woff");
     font-display: swap
 }
 
@@ -570,7 +570,7 @@ img {
     font-weight: 900;
     font-family: Firs;
     font-style: normal;
-    src: url(/static/fonts/TTFirs-900.woff2) format("woff2"), url(/static/fonts/TTFirs-900.woff) format("woff");
+    src: url(TTFirs-900.woff) format("woff2"), url(TTFirs-900.woff) format("woff");
     font-display: swap
 }
 
@@ -3940,9 +3940,10 @@ body.wlc-body--panels-open {
 
 .wlc-burger-panel[_nghost-wlc-app-c2197207287] .wlc-burger-panel__header {
     position: relative;
-    display: grid;
+    display: flex;
     grid-template-columns: var(--bp-header-grid-cols);
     align-items: center;
+    justify-content: space-between;
     padding: var(--bp-header-padding);
     color: var(--mc-baseMain);
     background: transparent;
@@ -5465,6 +5466,12 @@ body.wlc-body--panels-open {
     position: relative
 }
 
+@media (max-width: 992px) {
+    .wlc-main-menu--theme-default[_nghost-wlc-app-c4101291220] {
+        display: none;
+    }
+}
+
 .wlc-main-menu--theme-default[_nghost-wlc-app-c4101291220] .wlc-main-menu__controls {
     position: absolute;
     top: 0;
@@ -5827,7 +5834,7 @@ body.wlc-body--panels-open {
 @media (max-width: 767px) {
     .wlc-login-signup--theme-default[_nghost-wlc-app-c4208157022] {
         gap: 7px;
-        max-width: 200px
+        /* max-width: 200px */
     }
 
     .wlc-login-signup--theme-default[_nghost-wlc-app-c4208157022] .wlc-btn--type-default[data-wlc-element=button_login-modal] {
@@ -9391,7 +9398,7 @@ body.wlc-body--panels-open {
         width: 20px;
         height: 20px;
         border-radius: 50%;
-        background: #ff3737 url(/static/images/wlc/icons/pwa-install-buttons_gift.svg) no-repeat center;
+        background: #ff3737 url(pwa-install-buttons_gift.svg) no-repeat center;
         transform: translate(20%, -20%)
     }
 }
@@ -12920,6 +12927,12 @@ button.wlc-lite-slider__pagination-bullet {
     }
 }
 
+@media (max-width: 576px) {
+    .wlc-icon-list--theme-merchants .wlc-icon-list__item {
+        flex-basis: calc(100% / 3);
+    }
+}
+
 .wlc-icon-list--theme-cat-payments {
     max-width: 100%;
     padding: 0;
@@ -13172,6 +13185,13 @@ button.wlc-lite-slider__pagination-bullet {
 @media (max-width: 559px) {
     .wlc-icon-list--theme-cat-payments {
         background: var(--mc-bg)
+    }
+}
+
+@media (max-width: 576px) {
+    .wlc-icon-list--theme-cat-payments .wlc-icon-list__item,
+    .wlc-icon-list--theme-cat-payments .wlc-icon-list-item {
+        flex-basis: calc(25%);
     }
 }
 
@@ -14821,7 +14841,7 @@ button.wlc-lite-slider__pagination-bullet {
     border-radius: 10px;
     background-position: center;
     background-color: var(--mc-bg-d10);
-    background-image: url(/static/images/logo.svg);
+    background-image: url(logo.svg);
     background-size: 50%;
     background-repeat: no-repeat
 }
@@ -16986,9 +17006,9 @@ button.wlc-lite-slider__pagination-bullet {
     border-radius: 10px
 }
 
-.wlc-game-thumb--theme-default[_nghost-wlc-app-c2793021523] .wlc-game-thumb__rtp[_ngcontent-wlc-app-c2793021523]:before {
+/* .wlc-game-thumb--theme-default[_nghost-wlc-app-c2793021523] .wlc-game-thumb__rtp[_ngcontent-wlc-app-c2793021523]:before {
     content: "";
-    background-image: url(/static/images/wlc/icons/hot-rtp.png);
+    background-image: url(hot-rtp.png);
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-flex;
@@ -16999,7 +17019,7 @@ button.wlc-lite-slider__pagination-bullet {
     position: absolute;
     bottom: 0;
     right: 5px
-}
+} */
 
 .wlc-game-thumb--theme-default[_nghost-wlc-app-c2793021523] .wlc-game-thumb__label--new[_ngcontent-wlc-app-c2793021523] {
     transform: translateY(-50%)
@@ -19181,7 +19201,7 @@ sentinel {}
 
 
 .wlc-dummy-livechat-button--theme-default[_nghost-wlc-app-c2257184252] .wlc-dummy-livechat-button__button[_ngcontent-wlc-app-c2257184252] {
-    bottom: 80px;
+    bottom: 10px;
     position: fixed;
     right: 10px;
     z-index: 100;
@@ -20419,17 +20439,6 @@ sentinel {}
     display: block
 }
 
-.wlc-winner--theme-default.wlc-winner--theme-mod-divider[_nghost-wlc-app-c4106057495]:before {
-    content: "";
-    position: absolute;
-    top: 10%;
-    left: 0;
-    width: 3px;
-    height: 90%;
-    background-color: var(--mc-bg500);
-    border-radius: 3px
-}
-
 .wlc-winner--theme-vertical[_nghost-wlc-app-c4106057495] .wlc-winner__wrapper[_ngcontent-wlc-app-c4106057495] {
     position: relative;
     gap: 10px;
@@ -20882,7 +20891,7 @@ sentinel {}
 /* Mobile devices */
 @media (max-width: 768px) {
     #telegram-button {
-        bottom: 145px !important;
+        bottom: 75px !important;
         /* Mobile spacing */
     }
 }

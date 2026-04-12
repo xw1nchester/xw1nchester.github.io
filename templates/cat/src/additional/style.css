@@ -1,3 +1,9 @@
 body.lock {
     overflow: hidden;
 }
+
+@media (max-width: 576px) {
+    .providers {
+        display: none!important;
+    }
+}

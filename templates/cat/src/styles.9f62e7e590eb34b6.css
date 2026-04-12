@@ -3224,6 +3224,12 @@ bs-datepicker-container {
     overflow: visible
 }
 
+@media (max-width: 576px) {
+    .wlc-sections__header .container .wlc-btn-search {
+        display: none;
+    }
+}
+
 .wlc-sections__header .container .wlc-widget-wheel {
     position: absolute
 }
@@ -3454,7 +3460,7 @@ bs-datepicker-container {
 .wlc-sections__total-jackpot .jackpot-container {
     padding: 20px;
     min-height: 400px;
-    background: no-repeat center url(/static/images/jackpots/total-jackpot-bg-mobile.jpg);
+    background: no-repeat center url(total-jackpot-bg-mobile.jpg);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -5710,11 +5716,11 @@ body.wlc-body--os-android .wlc-menu__item--install-pwa-ios,
 body.wlc-body--os-android .wlc-btn--pwa.wlc-btn--pwa-ios {
     display: none !important
 }
+.container {
+    max-width: calc(100% - 30px)
+}
 
 @media (min-width: 375px) {
-    .container {
-        max-width: calc(100% - 30px)
-    }
 
     .wlc-sections__footer--theme-1 .container {
         row-gap: 0
@@ -7422,10 +7428,6 @@ body.wlc-body--os-android .wlc-btn--pwa.wlc-btn--pwa-ios {
         padding: 5px 10px
     }
 
-    .wlc-sections__header--theme-1.wlc-sections__header--theme-toggler .container {
-        grid-template-columns: repeat(2, auto) minmax(0, 1fr) repeat(3, auto)
-    }
-
     .wlc-sections__header--theme-2 .container {
         width: 100%
     }
@@ -8593,5 +8595,11 @@ body.wlc-body--os-android .wlc-btn--pwa.wlc-btn--pwa-ios {
     .wlc-aff-content .wlc-btn:hover {
         background: var(--mc-buttonColor-l20);
         border: 2px solid var(--mc-buttonColor-l20)
+    }
+}
+
+@media (min-width:576px) {
+    .wlc-sections__header--theme-1.wlc-sections__header--theme-toggler .container {
+        grid-template-columns: repeat(2, auto) minmax(0, 1fr) repeat(3, auto)
     }
 }
