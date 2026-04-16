@@ -51,4 +51,29 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 5,
         spaceBetween: 20
     });
+
+    new Swiper('.providers-slider', {
+        navigation: {
+            nextEl: '.providers-slider__next',
+            prevEl: '.providers-slider__prev'
+        },
+
+        slidesPerView: 2.25,
+        spaceBetween: 15,
+
+        breakpoints: {
+            576: {
+                slidesPerView: 3
+            },
+            768: {
+                slidesPerView: 4
+            },
+            992: {
+                slidesPerView: 5
+            },
+            1200: {
+                slidesPerView: 7
+            }
+        }
+    });
 });

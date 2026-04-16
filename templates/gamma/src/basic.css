@@ -11366,7 +11366,7 @@ button.wlc-lite-slider__pagination-bullet {
 .wlc-lite-slider__slide {
     position: relative;
     display: grid;
-    flex: 0 0 100%;
+    /* flex: 0 0 100%; */
     justify-items: var(--wlc-slide-justify-items, initial);
     scroll-snap-align: start;
     box-sizing: border-box;
