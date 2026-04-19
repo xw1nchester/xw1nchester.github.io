@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     new Swiper('.random-slider', {
         effect: 'coverflow',
         coverflowEffect: {
-            rotate: 0,
+            rotate: 0
         },
         grabCursor: true,
         centeredSlides: true,
@@ -48,8 +48,20 @@ document.addEventListener('DOMContentLoaded', () => {
             prevEl: '.wlc-swiper-button-prev-90cd47'
         },
 
-        slidesPerView: 5,
-        spaceBetween: 20
+        slidesPerView: 2,
+        spaceBetween: 20,
+
+        breakpoints: {
+            576: {
+                slidesPerView: 3
+            },
+            768: {
+                slidesPerView: 4
+            },
+            1200: {
+                slidesPerView: 5
+            }
+        }
     });
 
     new Swiper('.providers-slider', {
@@ -60,6 +72,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         slidesPerView: 2.25,
         spaceBetween: 15,
+        grid: {
+            fill: 'row',
+            rows: 2
+        },
 
         breakpoints: {
             576: {
@@ -74,6 +90,30 @@ document.addEventListener('DOMContentLoaded', () => {
             1200: {
                 slidesPerView: 7
             }
+        }
+    });
+
+    const sidebarWrapper = document.querySelector('.sidebar-wrapper');
+    const body = document.body;
+
+    document.addEventListener('click', function (e) {
+        const targetEl = e.target;
+
+        if (targetEl.closest('.burger-btn')) {
+            sidebarWrapper.classList.add('active');
+            sidebarWrapper.classList.add('wlc-float-panels--open');
+            body.classList.add('lock');
+        }
+
+        if (
+            targetEl.closest('.sidebar-wrapper') &&
+            !targetEl.closest('.sidebar') &&
+            sidebarWrapper.classList.contains('active') ||
+            targetEl.closest('.sidebar-close')
+        ) {
+            sidebarWrapper.classList.remove('active');
+            sidebarWrapper.classList.remove('wlc-float-panels--open');
+            body.classList.remove('lock');
         }
     });
 });

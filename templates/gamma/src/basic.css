@@ -2510,6 +2510,12 @@ body.wlc-body--panels-open {
     }
 }
 
+@media (max-width: 992px) {
+    .wlc-app-content .wlc-sections__footer {
+        padding-bottom: 80px;
+    }
+}
+
 .app-gameplay-state .wlc-sections__footer,
 .app-gameplay-state .wlc-sections__header {
     display: none
@@ -4058,13 +4064,13 @@ body.wlc-body--panels-open {
     max-height: 40px;
     padding: var(--bp-menu-link-padding);
     border: none;
-    background: url(/static/images/wlc/decors/telegram-btn-decor.webp) no-repeat center, linear-gradient(180deg, #2aabee, #229ed9 99.21%);
+    background: url(telegram-btn-decor.webp) no-repeat center, linear-gradient(180deg, #2aabee, #229ed9 99.21%);
     background-size: cover;
     will-change: background
 }
 
 .wlc-burger-panel--theme-left[_nghost-wlc-app-c2197207287] .wlc-menu__item--telegram-panel .wlc-menu__link:not(.active):hover {
-    background: url(/static/images/wlc/decors/telegram-btn-decor.webp) no-repeat center, linear-gradient(180deg, #2aabee, #229ed9 99.21%);
+    background: url(telegram-btn-decor.webp) no-repeat center, linear-gradient(180deg, #2aabee, #229ed9 99.21%);
     background-size: cover;
     opacity: .8
 }
@@ -4418,7 +4424,7 @@ body.wlc-body--panels-open {
 
     .wlc-login-signup--theme-default[_nghost-wlc-app-c4208157022] .wlc-btn--type-default[data-wlc-element=button_register-modal] {
         min-width: 0;
-        padding: 5px 10px
+        padding: 5px;
     }
 
     .wlc-login-signup--theme-default[_nghost-wlc-app-c4208157022] .wlc-btn--type-default[data-wlc-element=button_register-modal] .wlc-btn__text {
@@ -5289,7 +5295,7 @@ body.wlc-body--panels-open {
     padding: 5px 10px;
     border: none;
     border-radius: 10px;
-    background: url(/static/images/wlc/decors/telegram-btn-decor.webp) no-repeat center, linear-gradient(180deg, #2aabee, #229ed9 99.21%);
+    background: url(telegram-btn-decor.webp) no-repeat center, linear-gradient(180deg, #2aabee, #229ed9 99.21%);
     background-size: cover
 }
 
@@ -5317,7 +5323,7 @@ body.wlc-body--panels-open {
 
     .wlc-btn.wlc-btn--theme-default.wlc-btn--telegram-panel[_nghost-wlc-app-c590251617]:hover,
     .wlc-btn.wlc-btn--theme-default.wlc-btn--stableaccess[_nghost-wlc-app-c590251617]:hover {
-        background: url(/static/images/wlc/decors/telegram-btn-decor.webp) no-repeat center, linear-gradient(180deg, #3bb7f5, #33a9e2 99.21%);
+        background: url(telegram-btn-decor.webp) no-repeat center, linear-gradient(180deg, #3bb7f5, #33a9e2 99.21%);
         background-size: cover;
         border: none
     }
@@ -5503,7 +5509,7 @@ body.wlc-body--panels-open {
         width: 20px;
         height: 20px;
         border-radius: 50%;
-        background: #ff3737 url(/static/images/wlc/icons/pwa-install-buttons_gift.svg) no-repeat center;
+        background: #ff3737 url(pwa-install-buttons_gift.svg) no-repeat center;
         transform: translate(20%, -20%)
     }
 }
@@ -5959,7 +5965,7 @@ body.wlc-body--panels-open {
     pointer-events: initial
 }
 
-.wlc-slider--theme-default-banner .swiper-button-container.desktop {
+/* .wlc-slider--theme-default-banner .swiper-button-container.desktop {
     display: none
 }
 
@@ -5967,6 +5973,9 @@ body.wlc-body--panels-open {
     .wlc-slider--theme-default-banner .swiper-button-container.desktop {
         display: flex
     }
+} */
+.wlc-slider--theme-default-banner .swiper-button-container.desktop {
+    display: flex
 }
 
 .wlc-slider--theme-default-banner .swiper-button-container.mobile {
@@ -6480,7 +6489,7 @@ body.wlc-body--panels-open {
     height: 16px;
     margin-right: 10px;
     vertical-align: sub;
-    background: url(/static/images/icons/recent.svg);
+    background: url(recent.svg);
     background-repeat: no-repeat;
     background-size: contain
 }
@@ -8596,7 +8605,7 @@ body.wlc-body--panels-open {
     justify-content: center;
     width: 415px;
     min-height: 325px;
-    background: url(/static/images/wlc/lotteries/tickets.png) center/430px no-repeat;
+    background: url(tickets.png) center/430px no-repeat;
     border-radius: 20px
 }
 
@@ -10169,6 +10178,12 @@ a.wlc-section-title--theme-default[_nghost-wlc-app-c679633311] .wlc-section-titl
     font-weight: 700;
     font-size: 2.4rem;
     line-height: 1.45
+}
+
+@media (max-width: 768px) {
+    .wlc-section-title--theme-default[_nghost-wlc-app-c679633311] .wlc-section-title__content[_ngcontent-wlc-app-c679633311] {
+        font-size: 2rem;
+    }
 }
 
 .wlc-section-title--theme-default[_nghost-wlc-app-c679633311] .wlc-section-title__icon[_ngcontent-wlc-app-c679633311] {
@@ -15249,7 +15264,7 @@ button.wlc-lite-slider__pagination-bullet {
     right: -15px;
     width: 16px;
     height: 16px;
-    background: no-repeat url(/static/images/wlc/icons/arrow-circle-color.svg)
+    background: no-repeat url(arrow-circle-color.svg)
 }
 
 .wlc-games-grid--theme-mod-default.wlc-games-grid[_nghost-wlc-app-c331847529] .wlc-games-grid__link[_ngcontent-wlc-app-c331847529] .wlc-icon svg {
@@ -15279,7 +15294,7 @@ button.wlc-lite-slider__pagination-bullet {
     right: -21px;
     width: 16px;
     height: 16px;
-    background: no-repeat url(/static/images/wlc/icons/arrow-circle-color.svg)
+    background: no-repeat url(arrow-circle-color.svg)
 }
 
 @media (pointer: fine) {
@@ -18108,7 +18123,7 @@ sentinel {}
     border-radius: 20px;
     background-position: center;
     background-color: var(--mc-bg-d10);
-    background-image: url(/static/images/logo.svg);
+    background-image: url(logo.svg);
     background-size: 50%;
     background-repeat: no-repeat
 }
@@ -18950,7 +18965,7 @@ sentinel {}
 .wlc-game-thumb--theme-default.wlc-game-thumb--theme-mod-wolf[_nghost-wlc-app-c2767910043] .wlc-btn--play[_ngcontent-wlc-app-c2767910043]:before {
     content: "";
     position: absolute;
-    background: url(/static/images/wlc/icons/game-play.svg);
+    background: url(game-play.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100%
@@ -19263,7 +19278,7 @@ sentinel {}
     border-radius: 20px;
     background-position: center;
     background-color: var(--mc-bg-d10);
-    background-image: url(/static/images/logo.svg);
+    background-image: url(logo.svg);
     background-size: 50%;
     background-repeat: no-repeat
 }
@@ -19530,7 +19545,7 @@ sentinel {}
     width: 100%;
     background-position: center;
     background-color: var(--mc-bg-d10);
-    background-image: url(/static/images/logo.svg);
+    background-image: url(logo.svg);
     background-repeat: no-repeat;
     background-size: 50%
 }
@@ -19705,7 +19720,7 @@ sentinel {}
 .wlc-game-thumb--theme-vertical.wlc-game-thumb--theme-mod-circle[_nghost-wlc-app-c2767910043] .wlc-game-thumb__control[_ngcontent-wlc-app-c2767910043] .wlc-btn--play[_ngcontent-wlc-app-c2767910043]:before {
     content: "";
     position: absolute;
-    background: url(/static/images/wlc/icons/game-play.svg);
+    background: url(game-play.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100%
@@ -19862,7 +19877,7 @@ sentinel {}
 .wlc-game-thumb--theme-vertical.wlc-game-thumb--theme-mod-wolf[_nghost-wlc-app-c2767910043] .wlc-game-thumb__control[_ngcontent-wlc-app-c2767910043] .wlc-btn--play[_ngcontent-wlc-app-c2767910043]:before {
     content: "";
     position: absolute;
-    background: url(/static/images/wlc/icons/game-play.svg);
+    background: url(game-play.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100%
@@ -20129,7 +20144,7 @@ sentinel {}
     width: 100%;
     background-position: center;
     background-color: var(--mc-bg-d10);
-    background-image: url(/static/images/logo.svg);
+    background-image: url(logo.svg);
     background-size: 50%;
     background-repeat: no-repeat
 }
@@ -20256,7 +20271,7 @@ sentinel {}
 
 .wlc-game-thumb--theme-default[_nghost-wlc-app-c2767910043] .wlc-game-thumb__rtp[_ngcontent-wlc-app-c2767910043]:before {
     content: "";
-    background-image: url(/static/images/wlc/icons/hot-rtp.png);
+    background-image: url(hot-rtp.webp);
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-flex;
@@ -21017,7 +21032,7 @@ button.swiper-pagination-bullet {
     pointer-events: initial
 }
 
-.wlc-slider--theme-default-banner .swiper-button-container.desktop {
+/* .wlc-slider--theme-default-banner .swiper-button-container.desktop {
     display: none
 }
 
@@ -21025,7 +21040,7 @@ button.swiper-pagination-bullet {
     .wlc-slider--theme-default-banner .swiper-button-container.desktop {
         display: flex
     }
-}
+} */
 
 .wlc-slider--theme-default-banner .swiper-button-container.mobile {
     display: flex
@@ -21050,6 +21065,14 @@ button.swiper-pagination-bullet {
 .wlc-slider--theme-default-banner.wlc-slider--theme-mod-ears .banner,
 .wlc-slider--theme-default-banner.wlc-slider--theme-mod-ears .swiper-button-container {
     padding: 40px
+}
+
+@media (max-width: 768px) {
+    .wlc-slider--theme-default-banner.wlc-slider--theme-mod-ears .swiper-button-container {
+        max-width: unset;
+        width: 100%;
+        padding: 24px 16px;
+    }
 }
 
 .container>.wlc-slider--theme-default-banner {
@@ -21390,7 +21413,7 @@ button.swiper-pagination-bullet {
 
 
 .wlc-banner--theme-default-banner[_nghost-wlc-app-c1258616718] .banner {
-    min-height: 230px;
+    height: 230px;
     position: relative;
     display: flex;
     align-items: center;
@@ -21422,15 +21445,33 @@ button.swiper-pagination-bullet {
     margin: 30px auto 0
 }
 
+@media (max-width: 768px) {
+    .wlc-banner--theme-default-banner[_nghost-wlc-app-c1258616718] .banner .wlc-btn {
+        margin: 30px 0 0
+    }
+}
+
 @media (min-width: 768px) {
     .wlc-banner--theme-default-banner[_nghost-wlc-app-c1258616718] .banner .wlc-btn {
-        margin: 40px auto 0 0
+        margin: 40px auto 0 0;
+        width: auto;
     }
 }
 
 .wlc-banner--theme-default-banner[_nghost-wlc-app-c1258616718] .banner .container {
     position: relative;
     z-index: 20
+}
+
+@media (max-width: 768px) {
+    .wlc-banner--theme-default-banner[_nghost-wlc-app-c1258616718] .banner .container {
+        margin: unset;
+        width: auto;
+        max-width: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .wlc-banner--theme-default-banner[_nghost-wlc-app-c1258616718] .banner__decor {
@@ -22514,4 +22555,8 @@ button.swiper-pagination-bullet {
 #telegram-button img {
     display: block;
     cursor: pointer;
+}
+
+.ng-tns-c2197207287-1 {
+    padding-top: 8px;
 }
