@@ -2512,7 +2512,7 @@ body.wlc-body--panels-open {
 
 @media (max-width: 992px) {
     .wlc-app-content .wlc-sections__footer {
-        padding-bottom: 80px;
+        padding-bottom: 90px!important;
     }
 }
 
@@ -9064,7 +9064,7 @@ body.wlc-body--panels-open {
     font-weight: 400;
     font-family: TotalJackpot;
     font-style: normal;
-    src: local(""), url(//vibrant-pulsepath.com/wlc/fonts/rowdies/rowdies-v15-latin-regular.woff2) format("woff2"), url(//vibrant-pulsepath.com/wlc/fonts/rowdies/rowdies-v15-latin-regular.woff) format("woff")
+    src: local(""), url(rowdies-v15-latin-regular.woff2) format("woff2"), url(rowdies-v15-latin-regular.woff) format("woff")
 }
 
 .wlc-total-jackpot--theme-games-inside[_nghost-wlc-app-c99056782] {
@@ -9295,7 +9295,7 @@ body.wlc-body--panels-open {
     height: 40px;
     left: 7%;
     top: 20px;
-    background: url(//vibrant-pulsepath.com/wlc/total-jackpot/decor-1.png) center/contain no-repeat;
+    background: url(decor-1.png) center/contain no-repeat;
     animation: _ngcontent-wlc-app-c99056782_rotateRight 60s linear infinite
 }
 
@@ -9340,7 +9340,7 @@ body.wlc-body--panels-open {
     height: 40px;
     right: 7%;
     top: 20px;
-    background: url(//vibrant-pulsepath.com/wlc/total-jackpot/decor-2.png) center/contain no-repeat;
+    background: url(decor-2.png) center/contain no-repeat;
     animation: _ngcontent-wlc-app-c99056782_rotateLeft 60s linear infinite
 }
 
@@ -21866,7 +21866,7 @@ button.swiper-pagination-bullet {
     display: none;
     width: 100%;
     height: 100%;
-    background-image: url(//vibrant-pulsepath.com/wlc/new-banners/banner-4/left-fixed.svg), url(//vibrant-pulsepath.com/wlc/new-banners/banner-4/right-fixed.svg);
+    background-image: url(left-fixed.svg), url(right-fixed.svg);
     background-position: -375% 0, 110% 0;
     position: absolute;
     background-repeat: no-repeat
