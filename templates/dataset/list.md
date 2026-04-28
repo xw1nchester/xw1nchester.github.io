@@ -1,4 +1,116 @@
 
+## gamma
+
+
+### Быстрые игры
+
+| Название | Картинка |
+|-----------|----------|
+| Penalty Shoot-out: Street | ![](./images/penalty-shoot-out-street.jpeg) |
+
+### Джекпот
+
+| Название | Картинка |
+|-----------|----------|
+| 10 Burning Heart | ![](./images/10-burning-heart.jpeg) |
+| 100 Golden Coins | ![](./images/100-golden-coins.jpeg) |
+| 100 Super Hot | ![](./images/100-super-hot.jpeg) |
+| 20 Burning Hot | ![](./images/20-burning-hot.jpeg) |
+| 20 Hot Blast | ![](./images/20-hot-blast.jpeg) |
+| 27 Eternal Hot | ![](./images/27-eternal-hot.jpeg) |
+| 40 Burning Hot | ![](./images/40-burning-hot.jpeg) |
+| 5 Dazzling Hot | ![](./images/5-dazzling-hot.jpeg) |
+| Big Wild Buffalo 2 | ![](./images/big-wild-buffalo-2.jpeg) |
+| Chili Coins | ![](./images/chili-coins.jpeg) |
+| Dice & Roll | ![](./images/dice-roll.jpeg) |
+| Great 27 | ![](./images/great-27.jpeg) |
+| High Noon Riches | ![](./images/high-noon-riches.jpeg) |
+| Hot Deco Super Pot | ![](./images/hot-deco-super-pot.jpeg) |
+| Hot Slot™: Diamond Coins | ![](./images/hot-slot-diamond-coins.jpeg) |
+| More Dice & Roll | ![](./images/more-dice-roll.jpeg) |
+| Secrets of Alchemy | ![](./images/secrets-of-alchemy.jpeg) |
+| Shining Crown | ![](./images/shining-crown.jpeg) |
+| Sticky Coin: Hold The Spi... | ![](./images/sticky-coin-hold-the-spi.jpeg) |
+| Ultimate Hot | ![](./images/ultimate-hot.jpeg) |
+| Very Lucky 256 | ![](./images/very-lucky-256.jpeg) |
+| Zodiac Wheel | ![](./images/zodiac-wheel.jpeg) |
+
+### Лайв Казино
+
+| Название | Картинка |
+|-----------|----------|
+| Speed Auto Roulette | ![](./images/speed-auto-roulette.jpeg) |
+| Speed Roulette 1 | ![](./images/speed-roulette-1.jpeg) |
+
+### Покупка бонуса
+
+| Название | Картинка |
+|-----------|----------|
+| Detective Donut Kickback | ![](./images/detective-donut-kickback.jpeg) |
+| Minotaurus | ![](./images/minotaurus.jpeg) |
+| Twister Fortunes Hold & W... | ![](./images/twister-fortunes-hold-w.jpeg) |
+
+### Популярные
+
+| Название | Картинка |
+|-----------|----------|
+| Bill & Coin 2: Mummy Mish... | ![](./images/bill-coin-2-mummy-mish.jpeg) |
+| Book of Ra | ![](./images/book-of-ra.jpeg) |
+| Digger's Fortune | ![](./images/diggers-fortune.jpeg) |
+| Gama Wild Buffalo | ![](./images/gama-wild-buffalo.jpeg) |
+| Jack Hammer | ![](./images/jack-hammer.jpeg) |
+
+## izzi
+
+
+### Быстрые игры
+
+| Название | Картинка |
+|-----------|----------|
+| Aviamasters X-mas | ![](./images/aviamasters-x-mas.jpeg) |
+| Aviator | ![](./images/aviator.jpeg) |
+| Balloon Joker | ![](./images/balloon-joker.jpeg) |
+| Ninja Crash | ![](./images/ninja-crash.jpeg) |
+| Plinko XY | ![](./images/plinko-xy.jpeg) |
+| Thunder Land | ![](./images/thunder-land.jpeg) |
+| Tower Rush | ![](./images/tower-rush.jpeg) |
+
+### Горячие
+
+| Название | Картинка |
+|-----------|----------|
+| Book Of Money | ![](./images/book-of-money.jpeg) |
+| Divine Queen: Heart of Ice | ![](./images/divine-queen-heart-of-ice.jpeg) |
+| Geisha | ![](./images/geisha.jpeg) |
+| Kraken's Hunger | ![](./images/krakens-hunger.jpeg) |
+| Lady Wolf Moon | ![](./images/lady-wolf-moon.jpeg) |
+| Lucky Jane In Egypt Fortune | ![](./images/lucky-jane-in-egypt-fortune.jpeg) |
+| Mysterious Witch | ![](./images/mysterious-witch.jpeg) |
+| Wild Love | ![](./images/wild-love.jpeg) |
+
+### Новые
+
+| Название | Картинка |
+|-----------|----------|
+| 3 Royal Dracos | ![](./images/3-royal-dracos.jpeg) |
+| Always Up! x10000 | ![](./images/always-up-x10000.jpeg) |
+| Buffalo's Wealth Fortune | ![](./images/buffalos-wealth-fortune.jpeg) |
+| Cockroach Fortune | ![](./images/cockroach-fortune.jpeg) |
+| Crown Coins Dice | ![](./images/crown-coins-dice.jpeg) |
+| Gems Of Love Hold And Win | ![](./images/gems-of-love-hold-and-win.jpeg) |
+| Golden Joker Fortune | ![](./images/golden-joker-fortune.jpeg) |
+| Jackpot Pagoda | ![](./images/jackpot-pagoda.jpeg) |
+| Lucky Arena Hold And Win | ![](./images/lucky-arena-hold-and-win.jpeg) |
+| Taco Hell | ![](./images/taco-hell.jpeg) |
+| Winter Trophy Hold and Win | ![](./images/winter-trophy-hold-and-win.jpeg) |
+
+### Популярные
+
+| Название | Картинка |
+|-----------|----------|
+| Royal Xmass 2 | ![](./images/royal-xmass-2.jpeg) |
+| Slattors Battle - Orcs vs Elves | ![](./images/slattors-battle-orcs-vs-elves.jpeg) |
+
 ## kent
 
 
@@ -228,6 +340,228 @@
 | Valley of the Gods | ![](./images/valley-of-the-gods.jpeg) |
 | Wild West TRUEWAYS | ![](./images/wild-west-trueways.jpeg) |
 | Zeus vs Hades - Gods of W... | ![](./images/zeus-vs-hades-gods-of-w.jpeg) |
+
+## pinco
+
+
+### Джекпот
+
+| Название | Картинка |
+|-----------|----------|
+| 3 Daruma Dolls | ![](./images/3-daruma-dolls.jpeg) |
+| All Lucky Clovers 100 | ![](./images/all-lucky-clovers-100.jpeg) |
+| ANAKI SkyWalkers | ![](./images/anaki-skywalkers.jpeg) |
+| Chingiz Furious Fist | ![](./images/chingiz-furious-fist.jpeg) |
+| Diamond of Jungle | ![](./images/diamond-of-jungle.jpeg) |
+| Luck & Magic | ![](./images/luck-magic.jpeg) |
+| Lucky Ladys Clover | ![](./images/lucky-ladys-clover.jpeg) |
+| PINCO Bonanza | ![](./images/pinco-bonanza.jpeg) |
+| PINCO Million | ![](./images/pinco-million.jpeg) |
+| Quick Play Jewels | ![](./images/quick-play-jewels.jpeg) |
+| Wild Tiger | ![](./images/wild-tiger.jpeg) |
+
+### Покупка бонуса
+
+| Название | Картинка |
+|-----------|----------|
+| 4 Pots Riches: Hold and Win Power Chance | ![](./images/4-pots-riches-hold-and-win-power-chance.jpeg) |
+| Clover Clover | ![](./images/clover-clover.jpeg) |
+| Crystal Chef | ![](./images/crystal-chef.jpeg) |
+| Golden Penny x1000 Power Chance | ![](./images/golden-penny-x1000-power-chance.jpeg) |
+| Hot Chilli Party | ![](./images/hot-chilli-party.jpeg) |
+| Lucky Ladys Charm Deluxe Buy Bonus | ![](./images/lucky-ladys-charm-deluxe-buy-bonus.jpeg) |
+| Mighty Wild: Panther Grand Gold Edition | ![](./images/mighty-wild-panther-grand-gold-edition.jpeg) |
+| Most Wanted | ![](./images/most-wanted.jpeg) |
+| Sky of Olympus | ![](./images/sky-of-olympus.jpeg) |
+| Summer Heat | ![](./images/summer-heat.jpeg) |
+| Tasty Bonanza 10000 | ![](./images/tasty-bonanza-10000.jpeg) |
+
+### Популярные
+
+| Название | Картинка |
+|-----------|----------|
+| Aztec Fire 2 | ![](./images/aztec-fire-2.jpeg) |
+| Cashn Fruits 243 | ![](./images/cashn-fruits-243.jpeg) |
+| Coin Strike: Hold and Win | ![](./images/coin-strike-hold-and-win.jpeg) |
+| Leprechaun Riches | ![](./images/leprechaun-riches.jpeg) |
+| Mega Lucky 100 | ![](./images/mega-lucky-100.jpeg) |
+
+## r7
+
+
+### Быстрые игры
+
+| Название | Картинка |
+|-----------|----------|
+| 10000 x Rush | ![](./images/10000-x-rush.jpeg) |
+| 5000 x Rush | ![](./images/5000-x-rush.jpeg) |
+| Cashybara Ski Jump Editio... | ![](./images/cashybara-ski-jump-editio.jpeg) |
+| Cock-a-Doodle Cash | ![](./images/cock-a-doodle-cash.jpeg) |
+| FlyX | ![](./images/flyx.jpeg) |
+| Football X | ![](./images/football-x.jpeg) |
+| Fortune Red Packets | ![](./images/fortune-red-packets.jpeg) |
+| HiLo | ![](./images/hilo.jpeg) |
+| Hippo Splash | ![](./images/hippo-splash.jpeg) |
+| Hot Racing | ![](./images/hot-racing.jpeg) |
+| Jackpot Mines | ![](./images/jackpot-mines.jpeg) |
+| Limbo XY | ![](./images/limbo-xy.jpeg) |
+| Mines+ | ![](./images/mines.jpeg) |
+| Mini Roulette | ![](./images/mini-roulette.jpeg) |
+| Monopoly Deluxe | ![](./images/monopoly-deluxe.jpeg) |
+| Open It! | ![](./images/open-it.jpeg) |
+| Penalty shoot-out | ![](./images/penalty-shoot-out.jpeg) |
+| Pilot Coin | ![](./images/pilot-coin.jpeg) |
+| Topo-Mole | ![](./images/topo-mole.jpeg) |
+| TowerX | ![](./images/towerx.jpeg) |
+
+### Лайв Казино
+
+| Название | Картинка |
+|-----------|----------|
+| Blackjack Diamond VIP | ![](./images/blackjack-diamond-vip.jpeg) |
+| Candy Wheel | ![](./images/candy-wheel.jpeg) |
+| Craps | ![](./images/craps.jpeg) |
+| Crazy Pachinko | ![](./images/crazy-pachinko.jpeg) |
+| Extra Chilli Epic Spins | ![](./images/extra-chilli-epic-spins.jpeg) |
+| Extra Crown Deluxe Live | ![](./images/extra-crown-deluxe-live.jpeg) |
+| Football Studio | ![](./images/football-studio.jpeg) |
+| Gold Vault Roulette | ![](./images/gold-vault-roulette.jpeg) |
+| Infinite Blackjack | ![](./images/infinite-blackjack.jpeg) |
+| Lightning Ball | ![](./images/lightning-ball.jpeg) |
+| Lightning Dice | ![](./images/lightning-dice.jpeg) |
+| MONOPOLY Live | ![](./images/monopoly-live.jpeg) |
+| Power Blackjack | ![](./images/power-blackjack.jpeg) |
+| Speed Roulette | ![](./images/speed-roulette.jpeg) |
+| Teen Patti | ![](./images/teen-patti.jpeg) |
+| Ultimate Texas Hold'em | ![](./images/ultimate-texas-holdem.jpeg) |
+| Vegas Roulette 500x | ![](./images/vegas-roulette-500x.jpeg) |
+| XXXtreme Lightning Roulet... | ![](./images/xxxtreme-lightning-roulet.jpeg) |
+
+### Новые
+
+| Название | Картинка |
+|-----------|----------|
+| Baba Yaga Tales 2 | ![](./images/baba-yaga-tales-2.jpeg) |
+| Candy Palace 1000 | ![](./images/candy-palace-1000.jpeg) |
+| Coin Spark | ![](./images/coin-spark.jpeg) |
+| Dragon Pots Megaways™ | ![](./images/dragon-pots-megaways.jpeg) |
+| Multi Fruits: Charging Wi... | ![](./images/multi-fruits-charging-wi.jpeg) |
+| Power Of Tiger | ![](./images/power-of-tiger.jpeg) |
+
+### Покупка бонуса
+
+| Название | Картинка |
+|-----------|----------|
+| 25 Coins™ Grand Gold Edit... | ![](./images/25-coins-grand-gold-edit.jpeg) |
+| Abrakadabra | ![](./images/abrakadabra.jpeg) |
+| Alien Fruits 2 | ![](./images/alien-fruits-2.jpeg) |
+| Area 69 | ![](./images/area-69.jpeg) |
+| Big Bass Secrets of the G... | ![](./images/big-bass-secrets-of-the-g.jpeg) |
+| Big Bass Splash 1000 | ![](./images/big-bass-splash-1000.jpeg) |
+| Billie Wild | ![](./images/billie-wild.jpeg) |
+| Book Of Lucky Jack - Ra's... | ![](./images/book-of-lucky-jack-ras.jpeg) |
+| Brawlers Brew | ![](./images/brawlers-brew.jpeg) |
+| Cabin Crashers | ![](./images/cabin-crashers.jpeg) |
+| CherryPop Burst | ![](./images/cherrypop-burst.jpeg) |
+| Cocktail Rush Buy Bonus | ![](./images/cocktail-rush-buy-bonus.jpeg) |
+| Coins'n Fruits Spins | ![](./images/coinsn-fruits-spins.jpeg) |
+| Demi Gods VI | ![](./images/demi-gods-vi.jpeg) |
+| Echnaton Gold | ![](./images/echnaton-gold.jpeg) |
+| Golden Fish Tank 2 Gigabl... | ![](./images/golden-fish-tank-2-gigabl.jpeg) |
+| Haunted Coins™ x1000 | ![](./images/haunted-coins-x1000.jpeg) |
+| Kenneth Must Die | ![](./images/kenneth-must-die.jpeg) |
+| Lucky Crown Hold And Win | ![](./images/lucky-crown-hold-and-win.jpeg) |
+| Maxzilla | ![](./images/maxzilla.jpeg) |
+| Mega Thunder: RUNNING WIN... | ![](./images/mega-thunder-running-win.jpeg) |
+| Mongol Treasures | ![](./images/mongol-treasures.jpeg) |
+| Olympus of Luck: Hold The... | ![](./images/olympus-of-luck-hold-the.jpeg) |
+| Slattors Battle - Orcs vs... | ![](./images/slattors-battle-orcs-vs.jpeg) |
+| The Dog House – Dog or Al... | ![](./images/the-dog-house-dog-or-al.jpeg) |
+| The Greatest Catch Bonus ... | ![](./images/the-greatest-catch-bonus.jpeg) |
+| TRINITY GOLD LINK: RUNNIN... | ![](./images/trinity-gold-link-runnin.jpeg) |
+
+### Популярные
+
+| Название | Картинка |
+|-----------|----------|
+| 3 Hot Chillies | ![](./images/3-hot-chillies.jpeg) |
+| Book of Money | ![](./images/book-of-money.jpeg) |
+| Egypt Sphere: Hold The Sp... | ![](./images/egypt-sphere-hold-the-sp.jpeg) |
+| Fisherman's Luck™ | ![](./images/fishermans-luck.jpeg) |
+| Ghostly Hallows | ![](./images/ghostly-hallows.jpeg) |
+| Hot Ro$$ | ![](./images/hot-ro.jpeg) |
+| Iron Bank 2 | ![](./images/iron-bank-2.jpeg) |
+| Ivan and the Immortal Kin... | ![](./images/ivan-and-the-immortal-kin.jpeg) |
+| Lucky Retro Fruits 243 | ![](./images/lucky-retro-fruits-243.jpeg) |
+| Magic Apple: Hold and Win | ![](./images/magic-apple-hold-and-win.jpeg) |
+| Mega Booming Fruits | ![](./images/mega-booming-fruits.jpeg) |
+| Penguin Royale | ![](./images/penguin-royale.jpeg) |
+| Space Wars | ![](./images/space-wars.jpeg) |
+| Sweet Alchemy 100 | ![](./images/sweet-alchemy-100.jpeg) |
+| Ultra Hot Deluxe | ![](./images/ultra-hot-deluxe.jpeg) |
+| Wild West Gold | ![](./images/wild-west-gold.jpeg) |
+| Zeus God of Gaming | ![](./images/zeus-god-of-gaming.jpeg) |
+
+## rox
+
+
+### Популярные
+
+| Название | Картинка |
+|-----------|----------|
+| 3 Super Hot Chillies | ![](./images/3-super-hot-chillies.jpeg) |
+| 777 Coins | ![](./images/777-coins.jpeg) |
+| Army of Ares | ![](./images/army-of-ares.jpeg) |
+| Bigger Bass Bonanza | ![](./images/bigger-bass-bonanza.jpeg) |
+| Bonanza Billion | ![](./images/bonanza-billion.jpeg) |
+| Book of Santa | ![](./images/book-of-santa.jpeg) |
+| Buffalo's Sun 3 | ![](./images/buffalos-sun-3.jpeg) |
+| Buffalo Trail | ![](./images/buffalo-trail.jpeg) |
+| Cash'n Fruits Hold and Win | ![](./images/cashn-fruits-hold-and-win.jpeg) |
+| Chance Machine 20 | ![](./images/chance-machine-20.jpeg) |
+| Coin Craze Jackpot | ![](./images/coin-craze-jackpot.jpeg) |
+| Das xBoot | ![](./images/das-xboot.jpeg) |
+| Divine Fortune | ![](./images/divine-fortune.jpeg) |
+| Dogmasons | ![](./images/dogmasons.jpeg) |
+| Donny and Danny | ![](./images/donny-and-danny.jpeg) |
+| Dr. Rock & the Riff Reactor | ![](./images/dr-rock-the-riff-reactor.jpeg) |
+| Duck Hunters | ![](./images/duck-hunters.jpeg) |
+| Duel at Dawn | ![](./images/duel-at-dawn.jpeg) |
+| Esqueleto Explosivo Feliz Navidead | ![](./images/esqueleto-explosivo-feliz-navidead.jpeg) |
+| Extra Win X | ![](./images/extra-win-x.jpeg) |
+| Fangs & Fire | ![](./images/fangs-fire.jpeg) |
+| Flight Mode | ![](./images/flight-mode.jpeg) |
+| Fortune Bags | ![](./images/fortune-bags.jpeg) |
+| Forty Fruity Million | ![](./images/forty-fruity-million.jpeg) |
+| Frozen Barrel Tavern | ![](./images/frozen-barrel-tavern.jpeg) |
+| Hell Hot 100 | ![](./images/hell-hot-100.jpeg) |
+| Hit the Gold! | ![](./images/hit-the-gold.jpeg) |
+| Hot Chilli Bells | ![](./images/hot-chilli-bells.jpeg) |
+| Lava Coins 2 | ![](./images/lava-coins-2.jpeg) |
+| Le King | ![](./images/le-king.jpeg) |
+| Le Viking | ![](./images/le-viking.jpeg) |
+| Le Zeus | ![](./images/le-zeus.jpeg) |
+| Legacy of Dead | ![](./images/legacy-of-dead.jpeg) |
+| Mega Greatest Catch Blue Marlin | ![](./images/mega-greatest-catch-blue-marlin.jpeg) |
+| Mental | ![](./images/mental.jpeg) |
+| Mexomax 2 Wildenergy Multimax | ![](./images/mexomax-2-wildenergy-multimax.jpeg) |
+| Moon princess 100 | ![](./images/moon-princess-100.jpeg) |
+| More Magic Apple | ![](./images/more-magic-apple.jpeg) |
+| Mr Bells 40 | ![](./images/mr-bells-40.jpeg) |
+| Mummyland Treasures | ![](./images/mummyland-treasures.jpeg) |
+| Rich Wilde and the Tome of Madness | ![](./images/rich-wilde-and-the-tome-of-madness.jpeg) |
+| Rise of Merlin | ![](./images/rise-of-merlin.jpeg) |
+| Rise of Olympus 100 | ![](./images/rise-of-olympus-100.jpeg) |
+| Santa Mummy | ![](./images/santa-mummy.jpeg) |
+| Space Coins | ![](./images/space-coins.jpeg) |
+| Star Joker | ![](./images/star-joker.jpeg) |
+| Sugar Rush | ![](./images/sugar-rush.jpeg) |
+| Sweet Bonanza 1000 | ![](./images/sweet-bonanza-1000.jpeg) |
+| Tanked | ![](./images/tanked.jpeg) |
+| The Biggest Win x50 | ![](./images/the-biggest-win-x50.jpeg) |
+| The Dog House Megaways | ![](./images/the-dog-house-megaways.jpeg) |
+| The Sword and The Grail | ![](./images/the-sword-and-the-grail.jpeg) |
+| Ultra Fresh | ![](./images/ultra-fresh.jpeg) |
 
 ## vodka
 
