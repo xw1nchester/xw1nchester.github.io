@@ -398,12 +398,12 @@
 | Cashybara Ski Jump Editio... | ![](./images/cashybara-ski-jump-editio.jpeg) |
 | Cock-a-Doodle Cash | ![](./images/cock-a-doodle-cash.jpeg) |
 | FlyX | ![](./images/flyx.jpeg) |
-| Football X | ![](./images/football-x.jpeg) |
+| Football X | ![](./images/football-x.webp) |
 | Fortune Red Packets | ![](./images/fortune-red-packets.jpeg) |
 | HiLo | ![](./images/hilo.jpeg) |
 | Hippo Splash | ![](./images/hippo-splash.jpeg) |
 | Hot Racing | ![](./images/hot-racing.jpeg) |
-| Jackpot Mines | ![](./images/jackpot-mines.jpeg) |
+| Jackpot Mines | ![](./images/jackpot-mines.jpg) |
 | Limbo XY | ![](./images/limbo-xy.jpeg) |
 | Mines+ | ![](./images/mines.jpeg) |
 | Mini Roulette | ![](./images/mini-roulette.jpeg) |
